@@ -1,0 +1,32 @@
+\subsection{Background}
+
+This section covers the details of the Renewable Energy System where this work is inserted.
+
+\subsubsection{Introduction}
+
+Renewable Energy Systems as been intensivelly researched
+
+A centralized RES requires real-time controllers, supervisors and communication channels [1]. The reliability, fault tolerance capability and the computational speed are requirements of such systems. Usually, these systems include more than one renewable energy source and, often, are accompanied by energy storage by means of battery packs [IECON].
+
+The microgeneration system is a centralized RES focusing on self-sustainability. This system includes the following power subsystems:
+
+\begin{itemize}
+	\item  Permanent Magnet Synchronous Generator (PMSG)
+	\item  AC/DC converter
+	\item  Photovoltaic panels
+	\item  Batteries: DAB converter 
+\end{itemize}
+
+\subsubsection{Wind Harvesting System}
+
+The Wind Harvesting System is based on a wind turbine coupled to a Permanent Magnet Synchronous Generator (PMSG). The PMSG is controlled with a AC/DC connected to the common DC-bus and the control loop forces the power converter to extract the maximum power according to the wind operation conditions [IECON].
+
+All data acquisition, actuation and the control loop are implemented in a FPGA. The relevant data is gathered in a microcontroller gateway using an isolated communication interface to the FPGA and then sent to the system supervisor. The references and command actions are sent back to the microcontroller gateway and to the FPGA.
+
+\subsubsection{Grid Interface System}
+The energy master of this centralized RES is the Grid Interface Inverter. This system controlls the power flow accordingly to the energy gathered or injected in the DC-bus. 
+
+The computational architecture is similar to the Wind Harvesting System controller having a microcontroller gateway to exchange data and commands with the system supervisor.
+
+\subsubsection{Batteries: DAB converter}
+An Energy Storage System (ESS) is implemented in this project to balance the produced renewable energy. 

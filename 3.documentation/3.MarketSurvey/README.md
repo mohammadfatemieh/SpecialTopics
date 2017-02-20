@@ -1,7 +1,7 @@
-# Documentation
+# Market Survey
 
-###Background
-Covers all the background regarding the power system and the communication architecture
+###SAM R21
+Covers the evaluation of SAM R21 Xplained
 ***
 
 ##SRS

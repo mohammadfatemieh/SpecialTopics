@@ -1,0 +1,17 @@
+Waived DRC Error Report
+C:/svn_work/cc13xx/CC13xx_EM_Design/7x7/CC13xxEM-7XD-7793/Cadence/CC13xxEM-7XD-7793.brd
+Mon Jan 19 15:00:55 2015
+
+DRC Error Count Summary
+DRC Error Type,DRC Error Count
+Package to Package,1
+Etch to Pad,1
+Etch to Etch,1
+Total DRC Errors,3
+
+Detailed DRC Errors
+Constraint Name,DRC Marker Location,Required Value,Actual Value,Constraint Source,Constraint Source Type,Element 1,Element 2,Comment
+Package to Package Spacing,(130.950 120.650),0 MM,0.4 MM,NONE,DESIGN,"Shape "R11, Package Geometry/Place_Bound_Top"","Shape "R12, Package Geometry/Place_Bound_Top"",SMA Antenna selector
+Shape to SMD Pin Spacing,(127.050 126.050),0.15 MM,0 MM,DEFAULT,NET SPACING CONSTRAINTS,"Shape "Dummy Net, Etch/Top"",Pin "A1.1 (N353082)",PCB antenna
+Line to Shape Spacing,(127.550 125.550),0.15 MM,0.135 MM,DEFAULT,NET SPACING CONSTRAINTS,"Shape "Dummy Net, Etch/Top"","Vertical Line Segment "N353082, Etch/Top"",PCB antenna
+

@@ -1,0 +1,13 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Context and motivation}{3}
+\contentsline {section}{\numberline {1.2}Document structure}{3}
+\contentsline {chapter}{\numberline {2}Railways Remote Monitoring Systems}{4}
+\contentsline {section}{\numberline {2.1}Smart Meters}{4}
+\contentsline {section}{\numberline {2.2}Synthesis}{4}
+\contentsline {chapter}{\numberline {3}Outliers Detection}{5}
+\contentsline {section}{\numberline {3.1}Outliers detection definition}{5}
+\contentsline {section}{\numberline {3.2}Synthesis}{5}
+\contentsline {chapter}{\numberline {4}Future Research}{6}
+\contentsline {section}{\numberline {4.1}Outliers detection definition}{6}
+\contentsline {section}{\numberline {4.2}Synthesis}{6}
+\contentsline {chapter}{\numberline {5}Conclusion}{7}

@@ -1,0 +1,84 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Abid, Kachouri, and Mahfoudhi}{Abid
+  et~al.}{2016}]{nn:abid:2016}
+Abid, A., A.~Kachouri, and A.~Mahfoudhi (2016, mar).
+\newblock Anomaly detection through outlier and neighborhood data in wireless
+  sensor networks.
+\newblock In {\em 2016 2nd International Conference on Advanced Technologies
+  for Signal and Image Processing ({ATSIP})}. Institute of Electrical and
+  Electronics Engineers ({IEEE}).
+
+\bibitem[\protect\citeauthoryear{Birol and Loubinoux}{Birol and
+  Loubinoux}{2016}]{iea-uic2016}
+Birol, F. and J.-P. Loubinoux (2016).
+\newblock 2016 edition of the uic-iea railway handbook on energy consumption
+  and co2 emissions focuses on sustainability targets.
+\newblock Technical report, IEA - International Energy Agency; UIC -
+  International Union of Railways.
+
+\bibitem[\protect\citeauthoryear{Branch, Szymanski, Giannella, Wolff, and
+  Kargupta}{Branch et~al.}{2006}]{class:branch:2006}
+Branch, J., B.~Szymanski, C.~Giannella, R.~Wolff, and H.~Kargupta (2006).
+\newblock In-network outlier detection in wireless sensor networks.
+\newblock In {\em 26th {IEEE} International Conference on Distributed Computing
+  Systems ({ICDCS}06)}. Institute of Electrical and Electronics Engineers
+  ({IEEE}).
+
+\bibitem[\protect\citeauthoryear{Chandola, Banerjee, and Kumar}{Chandola
+  et~al.}{2009}]{gen:chandola:2009}
+Chandola, V., A.~Banerjee, and V.~Kumar (2009, jul).
+\newblock Anomaly detection.
+\newblock {\em {ACM} Computing Surveys\/}~{\em 41\/}(3), 1--58.
+
+\bibitem[\protect\citeauthoryear{Ghorbel, Ayedi, Snoussi, and Abid}{Ghorbel
+  et~al.}{2015}]{stat:ghorbel:2015}
+Ghorbel, O., W.~Ayedi, H.~Snoussi, and M.~Abid (2015, jun).
+\newblock Fast and efficient outlier detection method in wireless sensor
+  networks.
+\newblock {\em {IEEE} Sensors Journal\/}~{\em 15\/}(6), 3403--3411.
+
+\bibitem[\protect\citeauthoryear{Martins, Palma, Cardoso, and Gil}{Martins
+  et~al.}{2015}]{class:martins:2015b}
+Martins, H., L.~Palma, A.~Cardoso, and P.~Gil (2015, may).
+\newblock A support vector machine based technique for online detection of
+  outliers in transient time series.
+\newblock In {\em 2015 10th Asian Control Conference ({ASCC})}. Institute of
+  Electrical and Electronics Engineers ({IEEE}).
+
+\bibitem[\protect\citeauthoryear{Rajasegarar, Leckie, Palaniswami, and
+  Bezdek}{Rajasegarar et~al.}{2007}]{class:rajasegarar:2007}
+Rajasegarar, S., C.~Leckie, M.~Palaniswami, and J.~C. Bezdek (2007, jun).
+\newblock Quarter sphere based distributed anomaly detection in wireless sensor
+  networks.
+\newblock In {\em 2007 {IEEE} International Conference on Communications}.
+  Institute of Electrical and Electronics Engineers ({IEEE}).
+
+\bibitem[\protect\citeauthoryear{Sheng, Li, Mao, and Jin}{Sheng
+  et~al.}{2007}]{stat:sheng:2007}
+Sheng, B., Q.~Li, W.~Mao, and W.~Jin (2007).
+\newblock Outlier detection in sensor networks.
+\newblock In {\em Proceedings of the 8th {ACM} international symposium on
+  Mobile ad hoc networking and computing - {MobiHoc} 07}. Association for
+  Computing Machinery ({ACM}).
+
+\bibitem[\protect\citeauthoryear{{Shift2Rail Joint Undertaking}}{{Shift2Rail
+  Joint Undertaking}}{2015}]{shift2rail2015}
+{Shift2Rail Joint Undertaking} (2015).
+\newblock Shift2rail joint undertaking multi-annual action plan.
+\newblock Technical report, Shift2Rail.
+
+\bibitem[\protect\citeauthoryear{Zhang, Meratnia, and Havinga}{Zhang
+  et~al.}{2010}]{gen:zhang:2010}
+Zhang, Y., N.~Meratnia, and P.~Havinga (2010).
+\newblock Outlier detection techniques for wireless sensor networks: A survey.
+\newblock {\em {IEEE} Communications Surveys {\&} Tutorials\/}~{\em 12\/}(2),
+  159--170.
+
+\bibitem[\protect\citeauthoryear{Zhuang and Chen}{Zhuang and
+  Chen}{2006}]{nn:zhuang:2006}
+Zhuang, Y. and L.~Chen (2006).
+\newblock In-network outlier cleaning for data collection in sensor networks.
+\newblock In {\em In CleanDB, Workshop in VLDB 2006}, pp.\  41--48. APPENDIX.
+
+\end{thebibliography}

@@ -1,0 +1,190 @@
+%\lipsum[4-4]
+In this chapter it is  made the study of the state of the art of outliers and it's relevance in railways.
+
+In section \ref{sec:def} is defined what is an outlier either with base on the literature and with base on the scope of the PhD. 
+In section \ref{sec:od_wsn} is covered the motivation, research opportunities and challenges in outlier detection for WSNs and for the scope of the PhD. 
+In section \ref{sec:classint} different aspects of outlier detection that has been used in the literature are presented. 
+In section \ref{sec:taxon} the taxonomy to divide and classify the different techniques is presented.
+
+The remaining sections will extensively cover the different techniques. Section \ref{sec:classbased} covers the classification techniques; Section \ref{sec:statbased} presents the statistical based techniques; In section \ref{sec:nnbased} the nearest neighbor techniques are covered; Section \ref{sec:clustbased} presents the cluster-based techniques and section \ref{sec:specbased} covers the Spectral-based techniques.
+
+In section \ref{sec:synth} is made a synthesis of the outlier detection techniques for WSNs.
+
+
+\section{Definition of outlier detection}
+\label{sec:def}
+Outlier detection is a computational task to detect and retrieve information from erroneous data values. The definition is usually close to anomaly detection or deviation detection. 
+
+\cite{class:branch:2006} identifies the outlier detection as an essential step to either suppress or amplify outliers and precedes most any data analysis routine. \cite{nn:abid:2016} points the need of detecting aberrant data and sensors within an WSN. \cite{nn:zhuang:2006} extends the outlier definition to the case where the outliers introduce in sensing queries and in sensing data analysis.
+
+%%%%%%%%%%%  outlier defnition in the scope of my phd
+\vspace{1em}
+
+In the scope of the PhD and as previously presented in chapter 1, an outlier is a data value or a data instance that do not represent the correct consumption status.
+
+The threshold of what is an outlier or not (or a value that do represent the correct consumption status or not) is given by the output of the subsystem that is immediately after the acquisition of consumption status subsystem, the decision support subsystem, gave a correct output or not. Figure \ref{fig:general} illustrates the integration of the consumption acquisition subsystems with the decision support subsystem.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth,keepaspectratio]{figures/general}
+	\caption{Integration of the WSN with a decision support system. }
+	\label{fig:general}
+\end{figure}
+
+\newpage
+Without an outlier detection mechanism, the decision support subsystem may have the following outputs:
+
+
+\begin{description}
+	\setlength\itemsep{-0.5em}
+	\item[Input deviation from real value lower than a threshold]
+	The Decision Support Subsystem output is according to the real consumption conditions.
+	\item[Input deviation from real value greater than a threshold]
+	The Decision Support Subsystem output is not according to the real consumption conditions.	
+\end{description}
+
+The problem of taking decisions based on wrong considerations of the consumption status may lead to loss in desirable efficiency or increase of costs.
+
+Let us consider a simple and hypothetical example where the DSS will provide an output towards suggesting an action in preventive maintenance based on the usage of a component. Considering that the usage of the component is depending on the counting of situations that the component is working above the nominal conditions. Without an outlier detection mechanism, the outliers will induce the DSS to count situations of overcharge of the component where the measurement is not related to the working above the nominal conditions but is related to external influences such as EMI or temperature. The output of DSS may suggest a preventive maintenance on a component that is working in proper conditions.
+
+To conclude, with an outlier detection mechanism in the consumption acquisition subsystem the decision support subsystem may know if the value of consumption is an outlier or not and, with that information, the DSS output will be more accurate with the real conditions of operation.
+
+%%%%%%%%%%%%%%%%%%%%%
+%%   Wireless sensor networks
+%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Outlier detection in WSNs}
+\label{sec:od_wsn}
+Wireless sensor networks (WSNs) has been widely used in several applications in several domains such as industrial, scientific, medical and others. Those applications have been supported by the advances in wireless technologies as well as in the evolution of microcontroller technologies, with enhanced processing capabilities associated with reduced energy consumption.
+
+\subsection{Motivation}
+
+\cite{class:rajasegarar:2007} points an important motivation for the inclusion of computational algorithms, i.e. outlier detection algorithms, to reduce the transmission of erroneous data, since in WSNs, the majority of the energy consumption occurs in the radio communication. In particular, they present the case of Sensoria sensors and Berkeley motes where the energy consumption in communication exceeds in ranges from 1000 to 10000 the energy consumption of computation.
+
+Thus, a research opportunity is raised to reduce the communication usage of $\mu C$s by adding processing features where the small increase in the computation will significantly reduce the energy consumption in the transmission. These processing features are, among others, the outlier detection algorithms.
+
+
+On the field of the quality of the data acquired by WSNs, the motivation of detecting outliers in data acquired from WSNs has been extensively presented in the literature. The need for acquire data from harsh or "highly dynamic" environments as well as the need to validate and extract knowledge from the acquired data are one of the main points in the motivation to study the outlier detection in WSNs,  \cite{gen:zhang:2010,gen:chandola:2009,stat:ghorbel:2015,class:martins:2015b}.
+
+
+
+\subsection{Research areas}
+Zhang et al. \cite{gen:zhang:2010} identifies the outlier detection research areas in three domains: 
+
+\begin{itemize}
+	\item Intrusion detection: Situation caused by malicious attacks, where the detection techniques are query-driven techniques;
+	
+	\item Fault detection: Situation where the data suffer from noise and errors and where the detection techniques are data-driven ones;
+	
+	\item Event detection: Situation caused by the occurrence of one atomic or multiple events and where the majority of the research has been developed due to its complexity.
+\end{itemize}
+
+Based on the division of this three domains, the upcoming research is intended to be focused on the event detection and fault detection techniques. Specifically, the main goal for this research will be the event detection algorithms.
+
+
+\subsection{Challenges}
+
+The challenges of outlier detection in WSNs are related to the quality of the acquisition of the sensors, the reliability of the modules in terms of energy or environmental susceptibility, and the communication requirements and restrictions.
+
+Zhang et al. \cite{gen:zhang:2010} lists the challenges as the following:
+
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+	
+	\item Resource constraints;
+	
+	\item High communication costs;
+	
+	\item Distributed streaming data;
+	
+	\item Dynamic network topology, \\ frequent communication failures, \\ mobility and heterogeneity of nodes;
+	
+	\item Large-scale deployment;
+	
+	\item Identifier outlier sources;
+	
+\end{itemize}
+
+\cite{class:branch:2006} identifies an important challenge, where the probability of occurrence of outlier events are extremely small. \cite{nn:abid:2016} as well as \cite{stat:sheng:2007} identifies the large amount of data as the main challenge for outlier detection in WSN. \cite{nn:zhuang:2006} identifies the inexpensive and low fidelity sensors as the main reason for the error generation and, the main challenge are identified on the distributed streaming data among a large amount of sensors. \cite{stat:ghorbel:2015} points a main challenge as the processing of data from sensors that generates continuously data that is uncertain and unreliable. 
+
+To conclude, and in the scope of the PhD, the main challenges will be the usage of inexpensive and low fidelity sensors that will be affected by the rush railway environment. Complementary, the main challenge of using outlier detection mechanisms in the railway WSN is the balance between the detection accuracy and the influence that undetected data-instances will induce in other subsystems (in particular in decision support systems dependent on data from the WSN). In addition, the detection accuracy is directly related with the memory usage, computational requirements, communication overhead, etc. 
+
+
+\newpage
+
+\section{Classification of outlier}
+\label{sec:classint}
+\cite{gen:zhang:2010} presents aspects to be used as metrics to compare characteristics of different outlier detection techniques. In parallel, \cite{gen:chandola:2009} presents a similar approach for the classification of outlier detection. 
+In table \ref{table:t1} is present a comparison between two approaches to classify the nature of input sensor data.
+
+	
+%\input{tables/t1}
+	
+
+Based on the work of \cite{gen:zhang:2010} and \cite{gen:chandola:2009}, the table \ref{table:t2} identifies the different types of outliers. 
+Those types differ on the objective of the outlier detection techniques: detect anomalies in individual data instances or in groups of data to detect irregularities, respectively, in local or in the global measuring system.
+
+%\input{tables/t2}
+
+\newpage
+
+
+Table \ref{table:t3} continues the classification, focusing in three parts: 
+\begin{itemize}
+		\setlength\itemsep{-0.5em}
+		\item The need of pre-classified data (to implement supervised, semi-supervised or unsupervised outlier detection techniques);
+		
+		\item The output of outlier detection techniques (binary labels for normal/abnormal data-set and a score for each data-set to evaluate the weight of being an anomaly)
+		
+		\item The identity of the outliers (detect errors, events or malicious attacks)
+\end{itemize}
+
+\newpage
+
+%\input{tables/t3}
+
+\vspace{2em}
+
+
+
+\section{Taxonomy of Outlier Detection Techniques}
+\label{sec:taxon}
+The study of detection techniques requires a well-defined taxonomy framework that addresses the related work on the different areas. This taxonomy is well defined and solid in the literature, where the works of \cite{gen:zhang:2010} and \cite{gen:chandola:2009} reflect a similar approach on presenting a taxonomy for outlier detection techniques.
+
+In the following sections a coverage in relevant techniques is presented:
+
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+	\item Classification based techniques.
+	\subitem Bayesian Networks
+	\subitem Rule-based techniques
+	\subitem Support Vector Machines
+	
+	\item Statistical based techniques.
+	\subitem Parametric --- Gaussian based
+	\subitem Non-parametric --- Histogram based
+	\subitem Non-parametric --- Kernel function based
+	
+	\item Nearest Neighbor-based techniques.
+	\subitem Using distance
+	\subitem Using relative density
+	
+	\item Clustering based techniques.
+	
+	\item Spectral Decomposition based techniques.
+	
+\end{itemize}
+
+
+%%%o resto deste capítulo está dividido em ficheiros
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+
+**** Build of configuration Debug for project rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../ccfg.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"ccfg.d" -MT"ccfg.o" -o"ccfg.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: ../ccfg.c'
+' '
+'Building file: ../DmConcentratorTask.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"DmConcentratorTask.d" -MT"DmConcentratorTask.o" -o"DmConcentratorTask.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../DmConcentratorTask.c"
+'Finished building: ../DmConcentratorTask.c'
+' '
+'Building file: ../DmConcentratorRadioTask.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"DmConcentratorRadioTask.d" -MT"DmConcentratorRadioTask.o" -o"DmConcentratorRadioTask.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../DmConcentratorRadioTask.c"
+'Finished building: ../DmConcentratorRadioTask.c'
+' '
+'Building file: ../CC1350_LAUNCHXL.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"CC1350_LAUNCHXL.d" -MT"CC1350_LAUNCHXL.o" -o"CC1350_LAUNCHXL.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
+'Finished building: ../CC1350_LAUNCHXL.c'
+' '
+'Building file: ../rfWsnDmConcentrator.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"rfWsnDmConcentrator.d" -MT"rfWsnDmConcentrator.o" -o"rfWsnDmConcentrator.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../rfWsnDmConcentrator.c"
+'Finished building: ../rfWsnDmConcentrator.c'
+' '
+'Building file: ../bim/oad_switch.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"bim/oad_switch.d" -MT"bim/oad_switch.o" -o"bim/oad_switch.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../bim/oad_switch.c"
+'Finished building: ../bim/oad_switch.c'
+' '
+'Building file: ../seb/SEB.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"seb/SEB.d" -MT"seb/SEB.o" -o"seb/SEB.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../seb/SEB.c"
+'Finished building: ../seb/SEB.c'
+' '
+'Building file: ../easylink/EasyLink.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"easylink/EasyLink.d" -MT"easylink/EasyLink.o" -o"easylink/EasyLink.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: ../easylink/EasyLink.c'
+' '
+'Building file: ../extflash/ExtFlash.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"extflash/ExtFlash.d" -MT"extflash/ExtFlash.o" -o"extflash/ExtFlash.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../extflash/ExtFlash.c"
+'Finished building: ../extflash/ExtFlash.c'
+' '
+'Building file: ../seb/SimpleBeacon.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"seb/SimpleBeacon.d" -MT"seb/SimpleBeacon.o" -o"seb/SimpleBeacon.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../seb/SimpleBeacon.c"
+'Finished building: ../seb/SimpleBeacon.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"smartrf_settings/smartrf_settings.d" -MT"smartrf_settings/smartrf_settings.o" -o"smartrf_settings/smartrf_settings.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: ../smartrf_settings/smartrf_settings.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings_ble.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"smartrf_settings/smartrf_settings_ble.d" -MT"smartrf_settings/smartrf_settings_ble.o" -o"smartrf_settings/smartrf_settings_ble.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_ble.c"
+'Finished building: ../smartrf_settings/smartrf_settings_ble.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings_predefined.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -I"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc" -I"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"smartrf_settings/smartrf_settings_predefined.d" -MT"smartrf_settings/smartrf_settings_predefined.o" -o"smartrf_settings/smartrf_settings_predefined.o" @"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: ../smartrf_settings/smartrf_settings_predefined.c'
+' '
+'Building target: rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc.out'
+'Invoking: GNU Linker'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -DBOARD_DISPLAY_USE_LCD=1 -DDEVICE_FAMILY=cc13x0 -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -march=armv7-m -mthumb -Wl,-Map,"rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc.map" -nostartfiles -static -Wl,--gc-sections -L"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/armv7-m" -march=armv7-m -mthumb -o"rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc.out" "./CC1350_LAUNCHXL.o" "./DmConcentratorRadioTask.o" "./DmConcentratorTask.o" "./ccfg.o" "./rfWsnDmConcentrator.o" "./bim/oad_switch.o" "./easylink/EasyLink.o" "./extflash/ExtFlash.o" "./seb/SEB.o" "./seb/SimpleBeacon.o" "./smartrf_settings/smartrf_settings.o" "./smartrf_settings/smartrf_settings_ble.o" "./smartrf_settings/smartrf_settings_predefined.o" -Wl,-T"../CC1350_LAUNCHXL_TIRTOS.lds" -Wl,-T"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/1.CCS_workspace/tirtos_builds_CC1350_LAUNCHXL_release_gcc/Debug/configPkg/linker.cmd" -Wl,--start-group -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/display/lib/display.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/mw/lcd/lib/lcd.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/grlib/lib/grlib.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/lib/drivers_cc13x0.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/pdm/lib/pdm_cc13x0.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.am3g -l:C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/bin/gcc/driverlib.lib -lgcc -lm -lnosys -lc -Wl,--end-group 
+'Finished building target: rfWsnDmConcentrator_CC1350_LAUNCHXL_tirtos_gcc.out'
+' '
+
+**** Build Finished ****

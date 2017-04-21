@@ -14,7 +14,10 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>C:\Users\Vitor\Desktop\Doutoramento\2nd_semester\SpecialTopics\4.development\2.WSN\dvt\AnalysisSolutionsTemp\AnalysisSolution1488310391999\null</string>
+   <string>C:\Users\Vitor\Desktop\Doutoramento\2nd_semester\SpecialTopics\4.development\2.WSN\dvt\AnalysisSolutionsTemp\AnalysisSolution1492796013171\null</string>
+  </void>
+  <void method="add">
+   <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\AnalysisLibrary\DataProviders\EnergyTrace\null</string>
   </void>
   <void method="add">
    <string>C:\ti\ccsv6\ccs_base\dvt_4.1.0.201608181627\CodeGen\solutions\CodeGenCoverage</string>

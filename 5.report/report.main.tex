@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper,twoside,openright]{report}
+\usepackage[utf8]{inputenc}
+
+\usepackage[]{feupteses}
+%\usepackage[square,sort,comma,numbers]{natbib}
+
+\input{report.preamble}
+
+
+\include{report.macros}
+
+\begin{document}
+
+\include{report.info}
+
+
+
+%\chapter*{Abstract}
+%Abstract goes here
+%%
+%%   Section 
+%%
+\begin{Prolog}
+\cleardoublepage
+
+\tableofcontents
+
+
+%\printnomenclature
+
+%\chapter*{Symbols}
+%\input{chapters/B.symbols}
+
+	
+\end{Prolog}
+
+\StartBody
+
+\chapter{Introduction}
+\input{chapters/1.Introduction}
+
+
+\chapter{Railways Remote Monitoring Systems}
+\input{chapters/2.Railways}
+
+
+\chapter{Railways Energy Model}
+\input{chapters/3.Models}
+
+\chapter{Outliers Detection}
+\input{chapters/4.Outliers}
+
+\chapter{Future Research}
+\input{chapters/4.Future}
+
+\chapter{Conclusion}
+\input{chapters/5.Conclusions}
+
+
+
+\bibliographystyle{chicago}
+%chicago}
+
+\bibliography{outliers,shift2rail,references}
+%\bibliography{outliers}
+%\PrintBib{outliers, }
+
+
+%\bibliographystyle{plainnat}
+%\bibliography{references}
+
+
+\end{document}

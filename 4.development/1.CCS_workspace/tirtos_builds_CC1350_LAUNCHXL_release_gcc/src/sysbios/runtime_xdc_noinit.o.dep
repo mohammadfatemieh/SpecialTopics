@@ -1,0 +1,2 @@
+runtime_xdc_noinit.o: \
+ C:/ti/xdctools_3_50_00_10_core/packages/xdc/runtime/xdc_noinit.c

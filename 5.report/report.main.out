@@ -1,0 +1,25 @@
+\BOOKMARK [0][-]{init.0}{Front Page}{}% 1
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 2
+\BOOKMARK [1][-]{section.1.1}{1.1 Context and motivation of PhD}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{1.2 Shift2Rail Framework}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{1.3 PhD state of the art}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{1.4 Influence of outliers in a railway remote monitoring system}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.5}{1.5 Document structure}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{2 Railways Remote Monitoring Systems}{}% 8
+\BOOKMARK [1][-]{section.2.1}{2.1 Smart Meters}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{2.2 Synthesis}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{3 Railways Energy Model}{}% 11
+\BOOKMARK [1][-]{section.3.1}{3.1 Smart Meters}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{3.2 Synthesis}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{4 Outliers Detection}{}% 14
+\BOOKMARK [1][-]{section.4.1}{4.1 Definition of outlier detection}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{4.2 Outlier detection in WSNs}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Motivation}{section.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Research areas}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Challenges}{section.4.2}% 19
+\BOOKMARK [1][-]{section.4.3}{4.3 Classification of outlier}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{4.4 Taxonomy of Outlier Detection Techniques}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{5 Future Research}{}% 22
+\BOOKMARK [1][-]{section.5.1}{5.1 Outliers detection definition}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{5.2 Synthesis}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion}{}% 25

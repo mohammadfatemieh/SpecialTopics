@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_gcc ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+making ../src/sysbios/rom_sysbios.am3g ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.am3g ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****

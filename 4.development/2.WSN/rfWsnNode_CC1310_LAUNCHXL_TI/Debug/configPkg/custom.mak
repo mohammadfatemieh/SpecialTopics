@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/rfExamples_pem3.xdl
-	$(SED) 's"^\"\(package/cfg/rfExamples_pem3cfg.cmd\)\"$""\"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/Debug/configPkg/\1\""' package/cfg/rfExamples_pem3.xdl > $@
+	$(SED) 's"^\"\(package/cfg/rfExamples_pem3cfg.cmd\)\"$""\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/Debug/configPkg/\1\""' package/cfg/rfExamples_pem3.xdl > $@
 	-$(SETDATE) -r:max package/cfg/rfExamples_pem3.h compiler.opt compiler.opt.defs

@@ -1,0 +1,1033 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-progress/paper-progress.html">
+<link rel="import" href="../ti-service-programloader/ti-service-programloader.html">
+<link rel="import" href="../ti-service-programloader/ti-service-programloader-dialog.html">
+<link rel="import" href="../ti-service-serialio/ti-service-serialio.html">
+<link rel="import" href="../ti-service-targetaccess/ti-service-targetaccess.html">
+<link rel="import" href="../ti-widget-statusbar/ti-widget-statusbar.html">
+<link rel="import" href="../ti-widget-common/ti-widget-progressbar.html">
+<link rel="import" href="../ti-core-backplane/ti-core-backplane.html">
+<link rel="import" href="../paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../paper-item/paper-item.html">
+<link rel="import" href="../paper-listbox/paper-listbox.html">
+<link rel="import" href="../iron-icons/iron-icons.html"> 
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-icons/image-icons.html"> 
+
+
+
+<dom-module id='ti-widget-flashtool'>
+    <template>
+
+        <style>
+
+            paper-dialog {
+                height: 700px;
+            }
+
+            #flashBtnDiv {
+                background-color: #323232;
+	            color: white;
+	            min-width: 180px;
+	            width: 180px;
+            }
+
+            .container {
+	            margin:  auto;
+	            width: 100%;
+	            display:inline-table;
+            }
+
+             .col1 {
+	            float: left;
+	            width: auto;
+            }
+            .col2 {
+	            float: left;
+	            width: auto;
+            }
+
+            .col3 {
+	            float: right;
+				width: auto;
+            }
+            
+            #inputToSerialPort {
+            	    float: left;
+            		height: 100%;
+            		width: auto;
+ 			        margin-top: 10px;
+            }
+            
+            #sendBtnDiv {
+                    background-color: #323232;
+		            color: white;
+            	    float: right;
+            		min-width: 80px;
+             		width: 80px;
+            		height: auto;
+            		top: 15px;
+            		margin-left:15px;
+            }
+            
+  		    #statusbar::shadow .poweredby, #statusbar /deep/ #imageWidget, #statusbar /deep/ #toast  {
+			  display: none;
+			  position: relative;
+			}
+
+			#statusbar::shadow .container {
+
+                background-color: #ececec;
+		        width: 100%;
+		        height: auto;
+		        position: relative;
+		        font-size: small;
+		        z-index:1;
+		        bottom:0px;
+		        left:0px;
+		        right:0px;
+		        margin-bottom:0px;
+		        border-top-style: outset;
+		        border-width: 1px;
+		        white-space:nowrap;
+		    }
+
+			#statusbar::shadow paper-progress {
+                display: block;
+                width: 100%;
+                position: relative;
+                z-index:1;
+                bottom:0px;
+                left:0px;
+                right:0px;
+                margin-bottom:0px;
+                padding:0;
+            }
+            
+            #icon {
+              float: left;
+		      left: 0px;
+		      top: 3px;
+		      position: relative;
+		      padding-left: 5px;
+		      padding-right: 5px;
+           }
+           
+           
+           #ti_widget_progressbar {
+                  position: sticky; 
+                  width:100%; 
+                  background-color:darkgray;
+           }
+
+	       .poweredby {
+	          position: relative;
+	          bottom:24px;
+	          float: right;
+   		      clear: both;
+		      color: #b0b0b0;
+		      font-size: 0.9em;
+		      font-style: italic;
+		      background: #fff;
+  	       }
+	       .poweredby a {
+		      color: #b0b0b0;
+ 		   }
+ 		   
+		   a {
+		      color: #189;
+		      text-decoration: none;
+		      outline: 0;
+		   }
+
+        </style>
+
+          <ti-service-programloader-dialog id="programLoaderDialog" style="width:660px;height:400px"></ti-service-programloader-dialog>
+          <ti-service-programloader id="tiserviceprogramloader"  style="display:none"></ti-service-programloader>
+          <ti-service-serialio id="serialIO" style="display:hidden; width: 175px; height: 0px;"></ti-service-serialio>
+<!--          <ti-service-targetaccess id="targetaccess" statusChanged="myStatusChangedHdlr()" ></ti-service-targetaccess>-->
+
+<!------------------ FLASH BEGIN --------------------------------->
+            <div id="flashContainer" class="container">
+                <div id="flashTooltip" class="col1" title="Disconnect serialIO to flash device">    
+                    <paper-button raised  id="flashBtnDiv" on-click="onBtnFlashClicked">
+                        <iron-icon id="flashIconId" icon="image:flash-on"></iron-icon>
+                        <span id="devname"></span>
+                    </paper-button>
+                </div>
+
+                <!-- set hidden="false" if you wish to monitor the state changes here...-->
+                <div id="currentState" style="display:none"></div>
+            </div>
+            <!--<ti-widget-progressbar id="ti_widget_progressbar" color="green" value="0"></ti-widget-progressbar><p>&nbsp;</p>-->
+<!------------------ FLASH END --------------------------------->
+
+
+      
+
+<!------------------ SERIAL IO BEGIN --------------------------------->
+            
+            <div id="serialIOContainer" class="container">
+		            <div class="col1">
+			            <paper-dropdown-menu label="Serial Ports" id="ports"  style="display:none">
+	                          <paper-listbox id="portsListBox"  class="dropdown-content" selected="{{selectedPortIndex}}">
+	                              <template is="dom-repeat" items="[[ports]]" >
+	                                  <paper-item>[[item.displayName]]</paper-item>  
+	                              </template>  
+	                          </paper-listbox>
+	                    </paper-dropdown-menu> 
+		            </div>
+		            
+		            <div class="col2">    
+			            <paper-dropdown-menu label="Baud Rates" id="baudrates"  style="display:none">  
+	                          <paper-listbox  id="baudratesListBox" class="dropdown-content"  selected="{{selectedBaudRateIndex}}" >  
+	                              <template is="dom-repeat" items="[[baudRates]]" >  
+	                                  <paper-item>[[item.rate]]</paper-item>  
+	                              </template>  
+	                          </paper-listbox>  
+	                    </paper-dropdown-menu> 
+		            </div>
+		            <div class="col3">
+		    	        <paper-input id="inputToSerialPort" required label="Send to Port" style="display:none"></paper-input>
+     				    <paper-button raised id="sendBtnDiv" on-click="onBtnSendClicked" style="display:none">Send</paper-button>
+		            </div>
+
+
+					<div id="portOutput" style="display:none; border:none;width:100%;">
+			               <div style="background-color:#323232; width:100%; height:5px;">
+			               </div>
+			               <textarea  id="rxTextArea"   rows="12" cols="80" style="display:none; border:none;width:100%;"></textarea>
+			               <div style="background-color:#323232; width:100%; height:5px;">
+			               </div>
+			        </div>    
+    
+		            <div id="replugNotice"></div>
+		            <div id="serialPortIO"></div>
+            </div>
+			<ti-widget-statusbar
+				id="statusbar" progress="0"  
+				iconName="ti-core-icons:nolink" 
+				statusString1="Status field 1" 
+				progress="0" 
+				progressBarEnabled="true">
+			</ti-widget-statusbar>  
+<!------------------ SERIAL IO END --------------------------------->
+<!------------------ FOOTER BEGIN --------------------------------->
+			<div class="poweredby" id="poweredby"><a href="/ide">powered by <span style="color:#189;background: #fff;">CCS Cloud</span></a></div>
+<!------------------ FOOTER END --------------------------------->
+			
+    </template>
+</dom-module>
+    <script src="./detect.min.js"></script>
+    <script>
+        
+        
+        // ensure that the global gc variable is defined
+        var gc = gc || {};
+        
+        
+        
+        Polymer ({      
+            is: 'ti-widget-flashtool', 
+            properties: {
+
+            	/* device name should be one of the supported device id in supporteddevices.json file within backplane*/
+                devicename:{
+                    type: String,
+                    value: ''
+                } ,
+                
+                serviceprogramloader: {
+                    notify: true,
+                    type: String,
+                    value: undefined,
+                    observer: "serviceProgramloaderChanged"
+                },
+                
+                backplane: {
+                    notify: true,
+                    type: String,
+                    value: undefined,
+                    observer: "backplaneChanged"
+                },
+                
+             	/* file to be flashed to the device*/
+                filename: {
+                    type: String,
+                    value: ''
+                },
+                
+            	/* relative path to the file to be flashed directory*/
+                filefoldername: {
+                    type: String,
+                    value: ''
+                },
+ 
+             	/* boolean to keep track of if the flash button was clicked or not.  The observer will grey out the button until flashbutton is unclicked.*/
+                flashClicked: {
+                    type: Boolean,
+                    value: false,
+    		        observer: "disableflashnconnect"
+                },
+
+            	/* boolean to keep track of if the connect button was clicked or not.  The observer will grey out the button until connect is unclicked.*/
+                connectClicked: {
+                    type: Boolean,
+                    value: false,
+                    observer: "disableflashnconnect"
+                    
+                },
+                timer:{
+   		            type: Number,
+		            value: "0",
+                },
+                perc:{
+   		            type: Number,
+		            value: "0",
+                },
+                timeTotal:{
+   		            type: Number,
+		            value: "835000",
+                },
+                timeCount:{
+   		            type: Number,
+		            value: "50",
+                },
+            	/* index of the selected serial port from GUI*/
+                selectedPortIndex:{
+		          type: Number,
+		          value: "0",
+		          observer: "portChanged"
+		        },
+		       
+             	/* index of the selected baudrate from GUI*/
+		        selectedBaudRateIndex:{
+		          type: Number,
+		          value: "0",
+		          observer: "portChanged"
+		        }, 
+
+		        /*boolean to show or hide flash button*/
+		        showflashbtn:{
+		          type: Boolean,
+		          value: false
+		        },
+
+		        /*boolean to show or hide serial io widget*/
+		        showserialio:{
+		          type: Boolean,
+		          value: false
+		        }
+
+            },
+            
+            updateProgress: function(percentage) {
+			    var x = (percentage/this.timeTotal)*100;
+
+			    this.$.ti_widget_progressbar.value = 44;
+			},
+			
+			animateUpdate:function() {
+			    if(this.perc < this.timeTotal) {
+			        this.perc++;
+			        this.updateProgress(this.perc);
+			        this.timer = setTimeout(this.animateUpdate, this.timeCount);
+			    }
+			},
+
+           	postData : function (params, async, callback) {
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', '/analytics', async);
+				
+				//Send the proper header information along with the request
+				xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+			
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						if (callback) {
+							callback(xhr.responseText);
+						}
+					}
+				};
+				
+				xhr.send(params);
+			},
+            
+            /* observer when a flash or connect has been updated.. This will update the UI as necessary for each
+               action. */
+            disableflashnconnect: function() {
+            	if(this.connectClicked || this.flashClicked) {
+                	this.$.flashBtnDiv.disabled = true;
+                	this.$.flashBtnDiv.title = "Disconnect serial IO to flash device";
+                	this.$.flashBtnDiv.noink = true;
+                	this.$.flashBtnDiv.style.opacity = .75; //For real browsers;
+					this.$.flashBtnDiv.style.filter = "alpha(opacity=75)"; //For IE;
+
+                         /**
+                        clearTimeout(this.timer);
+                	this.perc = 0;
+                	this.animateUpdate();
+                	**/
+            	} else {
+                	this.$.flashBtnDiv.disabled = false;
+                	this.$.flashBtnDiv.title = "Click to flash device";
+                	this.$.flashBtnDiv.noink = false;
+                	this.$.flashBtnDiv.style.opacity = 1; //For real browsers;
+					this.$.flashBtnDiv.style.filter = "alpha(opacity=100)"; //For IE;
+            	}
+
+              	if(this.flashClicked) {
+      	            	this.$.statusbar.disabled=true;
+                  	    this.$.statusbar.statusString1 = 'Wait for flash tool to complete';
+                      	this.$.statusbar.iconEnabled = false;
+      	            	this.$.statusbar.tooltipIconImage = "Wait for flash tool to complete"
+              	} else {
+      	            	this.$.statusbar.disabled=false;
+                          this.$.statusbar.statusString1 = 'Click to Connect to Hardware.';
+                          this.$.statusbar.iconEnabled = true;
+      	            	this.$.statusbar.tooltipIconImage = "Click to Connect to Hardware."
+              	}
+              	
+              	
+              	
+              	var browser = detect.parse(navigator.userAgent).browser;
+              	var version = browser.version.toString(); 
+              	
+	            if ((browser.family === "Chrome" && this.compareVersion(version,"46") >= 0) 
+	              || (browser.family === "Safari" && this.compareVersion(version,"8") >= 0)
+	              || (browser.family === "IE" && this.compareVersion(version,"11") >= 0)
+	              || (browser.family === "Firefox" && this.compareVersion(version,"38") >= 0) 
+	            ) {
+	                // allow
+	            } else {
+	
+	
+	                	this.$.flashTooltip.title = "Flashing is not supported on this browser";
+	                	this.$.flashBtnDiv.noink = true;
+	                	this.$.flashBtnDiv.style.opacity = .75; //For real browsers;
+						this.$.flashBtnDiv.style.filter = "alpha(opacity=75)"; //For IE;
+	                	this.$.flashBtnDiv.disabled = true;
+	
+		                this.$.statusbar.style.display = "none";
+	            }
+              	
+
+            },
+
+            /* observer when a new serial port is selected this will set the appropriate attributes in 
+               serialIO component and then close the existing port.*/            
+            portChanged: function(e){
+		        if(this.baudRates && this.ports && !this.updateEvent) {
+		        
+                   	selectedBaudRate = this.baudRates[this.selectedBaudRateIndex];
+                   	selectedBaudRate.selected = true;
+				    selectedPort = this.ports[this.selectedPortIndex];	
+				    selectedPort.baudRate = selectedBaudRate.rate;
+				    this.$.serialIO.selectedSerialPort = selectedPort;
+				    this.$.serialIO.selectedBaudRate =  selectedBaudRate.rate;
+				    
+				    for(var i = 0; i< this.baudRates.length; i++) {
+                       	    if(this.baudRates[i].rate == selectedBaudRate) {
+                       	        this.baudRates[i].selected = true;
+                       	    } else {
+                       	        this.baudRates[i].selected = false;                       	    
+                       	    }
+                    }
+		        
+		        	/* This should trigger disconnect from serialIO state machine. And we will reconnect when 
+		        	   backPlane state goes to ready.*/
+                    if (this.$.serialIO.currentState.name.indexOf("running") === 0) {
+	                    this.$.serialIO.updateStateMachine('userCloseSerialPort');
+	                }
+
+			        this.$.ports.close();
+		        }
+            },
+            
+            compareVersion: function(a, b) {
+			    if (a === b) {
+			       return 0;
+			    }
+			
+			    var a_components = a.split(".");
+			    var b_components = b.split(".");
+			
+			    var len = Math.min(a_components.length, b_components.length);
+			
+			    // loop while the components are equal
+			    for (var i = 0; i < len; i++) {
+			        // A bigger than B
+			        if (parseInt(a_components[i]) > parseInt(b_components[i])) {
+			            return 1;
+			        }
+			
+			        // B bigger than A
+			        if (parseInt(a_components[i]) < parseInt(b_components[i])) {
+			            return -1;
+			        }
+			    }
+			
+			    // If one's a prefix of the other, the longer one is greater.
+			    if (a_components.length > b_components.length) {
+			        return 1;
+			    }
+			
+			    if (a_components.length < b_components.length) {
+			        return -1;
+			    }
+			
+			    // Otherwise they are the same.
+			    return 0;
+			},
+            
+            
+            serviceProgramloaderChanged: function(newProgramLoader,oldProgramLoader) {
+            
+                        var myDevice =
+                            {
+                                deviceName: this.devicename,
+                                fileName: this.filename,
+                                fileFolderName: this.filefoldername
+                            };
+	                if ((oldProgramLoader !== undefined) &&(oldProgramLoader !== null)){
+	                    oldProgramLoader.removeEventListener("programDownloadUIVisibilityChanged", this.myProgramDownloadBtnVisibilityChangedHdlr);
+	                    oldProgramLoader.removeEventListener("ready", this.downloadReady);
+	                    oldProgramLoader.removeEventListener("statusMsgUpdated", this.myStatusChangedHdlr);
+	                    oldProgramLoader.removeEventListener("currentStateUpdated", this.programLoaderStateHandler);
+	                    oldProgramLoader.removeEventListener("cancelBtnClicked", this.cancelBtnClickedChangedHdlr);
+	                }
+	                if (this.serviceprogramloader !== undefined) {
+
+	                    this.serviceprogramloader.addEventListener("programDownloadUIVisibilityChanged", this.myProgramDownloadBtnVisibilityChangedHdlr.bind(this));
+                        this.serviceprogramloader.addEventListener("ready", this.downloadReady.bind(this));                    
+                        this.serviceprogramloader.addEventListener("statusMsgUpdated", this.myStatusChangedHdlr.bind(this));
+                        this.serviceprogramloader.addEventListener("currentStateUpdated", this.programLoaderStateHandler.bind(this));
+                        this.serviceprogramloader.addEventListener("cancelBtnClicked", this.cancelBtnClickedChangedHdlr.bind(this));
+	                }
+
+                       this.serviceprogramloader.backplane = this.backplane;
+                       this.serviceprogramloader.selectedDevice = myDevice;
+	            },
+
+	            backplaneChanged: function(newBackplane,oldBackplane) {
+                        var myDevice =
+                            {
+                                deviceName: this.devicename,
+                                fileName: this.filename,
+                                fileFolderName: this.filefoldername
+                            };
+
+	                if ((oldBackplane !== undefined) &&(oldBackplane !== null)){
+	                    oldBackplane.removeEventListener("currentStateUpdated", this.myCurrentStateChangedHdlr);
+	                    oldBackplane.removeEventListener("statusMsgUpdated", this.myStatusChangedHdlr);
+	                    oldBackplane.removeEventListener("btnVisibilityChanged", this.myBtnVisibilityChangedHdlr);
+	                }
+	                if (this.backplane !== undefined) {
+
+                        this.backplane.addEventListener("statusMsgUpdated",this.myStatusChangedHdlr.bind(this));
+	                    this.backplane.addEventListener("currentStateUpdated", this.myCurrentStateChangedHdlr.bind(this));
+	                    //this.backplane.addEventListener("connectionStatusChanged", this.backplaneConnectionStatusChangedHdlr);
+	                    this.backplane.addEventListener("btnVisibilityChanged", this.myBtnVisibilityChangedHdlr.bind(this));
+
+	                }
+
+      	                this.backplane.selectedDevice = myDevice;
+
+                        if(!this.serviceprogramloader) {
+                           this.serviceprogramloader =   gc.services['ti-service-programloader'];
+
+                        }
+                        this.serviceprogramloader.backplane = this.backplane;
+                        this.serviceprogramloader.selectedDevice = myDevice;
+                        this.$.serialIO.backplane = this.backplane;
+                        this.$.serialIO.selectedDevice = myDevice;
+                        this.$.serialIO.serialPortTextOutputHdlr = {text:this.mySerialPortOutputHdlr.bind(this)};
+                        this.$.serialIO.addEventListener("statusMsgUpdated", this.myStatusChangedHdlr.bind(this));
+                        this.$.serialIO.addEventListener('replugNoticeVisibilityChanged', this.myReplugNoticeHdlr.bind(this));
+                        this.$.serialIO.addEventListener("serialPortUIVisibilityChanged", this.mySerialPortVisibilityChangedHdlr.bind(this));
+                        this.$.serialIO.addEventListener("serialPortsReadyToBeOpened", this.myPortListHndler.bind(this));
+
+                        this.$.statusbar.statusString1 = 'Click to Connect to Hardware.';
+                        this.$.statusbar.iconEnabled = true;
+                        this.$.statusbar.addEventListener("iconclicked", this.onStatusBarClickHdlr.bind(this));
+
+                        /*Tell back plane about status bar. */
+                        this.backplane.domReady();
+
+
+	            },
+	            
+	            
+
+	            
+
+			/*Array of avaliable ports */
+            ports: undefined,
+
+            /*Array of avaliable baudrates */
+            baudRates: undefined,
+
+            /*String - selected port*/
+            selectPort: undefined,
+            
+            /*String - selected baud*/
+            selectedBaudRate: undefined,
+            
+            /* Send msg to serial port */
+            onBtnSendClicked: function () {              
+               var msg = this.$.inputToSerialPort.value;
+               this.$.serialIO.serialSend(msg);
+            },
+            
+            /* Handle serial port list avalaible event. */
+            myPortListHndler: function (e) {
+            		   this.updateEvent = true;
+                       this.ports = this.$.serialIO.serialPorts;
+                       this.baudRates = this.$.serialIO.baudRates;
+                       this.defaultbaudRate = this.$.serialIO.selectedBaudRate;
+                       
+                       for(var i = 0; i< this.ports.length; i++) {
+                       	    if(this.ports[i].selected) {
+                       	        this.selectPort = this.ports[i];
+                       	        this.selectedPortIndex = i;
+                       	    }
+                       }
+                       
+                       for(var i = 0; i< this.baudRates.length; i++) {
+                       	    if(this.baudRates[i].selected) {
+                       	        this.selectedBaudRate = this.ports[i];
+                       	        this.selectedBaudRateIndex = i;
+                       	    }
+                       }
+                       
+            		   this.updateEvent = false;
+
+					   /* open serial port when list changes.  */	
+  	   				   if(this.connectClicked) {
+                  		this.openSerialPort();
+					   }
+            		   
+            },
+            
+            domReady: function(){
+                var programLoaderElement = gc.services['ti-services-programloader'];//window.document.querySelector("ti-service-programloader");
+                if (programLoaderElement !== undefined)  {
+                    this.serviceprogramloader = programLoaderElement; // triggers the programLoaderChanged method
+                }
+            },
+            
+            findComponent: function(componentName){
+                var result = undefined;
+                if (document !== undefined){
+                    result = Polymer.dom(document).querySelector(componentName);
+                }
+                if ((document === undefined) || (result === undefined)){
+                    if (window.document === undefined){
+                        throw "window.document is not defined"
+                    }
+                    result = Polymer.dom(window.document).querySelector(componentName);
+                }
+                return result;
+            },
+
+		    /*Flash tool widget is ready show relevent parts of the widget*/
+            ready: function (){
+
+                var _self = this;
+                var onProgramloaderReady = function() {
+                    _self.serviceprogramloader = gc.services['ti-service-programloader']
+                };
+
+                if ((gc.services !== undefined) && (gc.services['ti-service-programloader'])) {
+                    onProgramloaderReady();
+                } else {
+                    document.addEventListener('ti-service-programloader-ready', onProgramloaderReady);
+                }
+                
+                
+                var onBackplaneReady = function() {
+                    _self.backplane = gc.services['ti-core-backplane']
+                };
+
+                if ((gc.services !== undefined) && (gc.services['ti-core-backplane'])) {
+                    onBackplaneReady();
+                } else {
+                    document.addEventListener('ti-core-backplane-ready', onBackplaneReady);
+                }
+                
+
+
+                this.$.devname.textContent =this.devicename;
+
+                if(!this.showflashbtn) {
+	                this.$.flashContainer.style.display = "none";
+                }
+
+                if(!this.showserialio) {
+	                this.$.serialIOContainer.style.display = "none";
+	               	this.$.statusbar.showOnlyProgressBar();
+                }
+                
+
+            },
+
+			
+            /*One backpane ready, initialize the other widget with device info and common backplane component*/
+            onBackplaneReadyHdlr: function(){
+					
+                    var i;
+
+                    var myDevice =
+                        {
+                            deviceName: this.devicename,
+                            fileName: this.filename,
+                            fileFolderName: this.filefoldername
+                        };
+                        
+                    this.backplane.selectedDevice = myDevice;
+                    this.serviceprogramloader.backplane = this.backplane;
+                    this.serviceprogramloader.selectedDevice = myDevice;
+
+                    this.$.serialIO.backplane = this.backplane;
+                    this.$.serialIO.selectedDevice = myDevice;
+                    this.$.serialIO.serialPortTextOutputHdlr = {text:this.mySerialPortOutputHdlr.bind(this)};
+                    this.$.serialIO.addEventListener("statusMsgUpdated", this.myStatusChangedHdlr.bind(this));
+                    this.$.serialIO.addEventListener('replugNoticeVisibilityChanged', this.myReplugNoticeHdlr.bind(this));
+                    this.$.serialIO.addEventListener("serialPortUIVisibilityChanged", this.mySerialPortVisibilityChangedHdlr.bind(this));
+                    this.$.serialIO.addEventListener("serialPortsReadyToBeOpened", this.myPortListHndler.bind(this));
+                                        
+                    this.$.statusbar.statusString1 = 'Click to Connect to Hardware.';
+                    this.$.statusbar.iconEnabled = true;
+                    this.$.statusbar.addEventListener("iconclicked", this.onStatusBarClickHdlr.bind(this));
+
+                    /*Tell back plane about status bar. */
+                    this.backplane.domReady();
+                    
+                    //this.$.targetaccess.backplane = this.backplane;
+                    //this.$.targetaccess.selectedDevice = myDevice;
+                    //this.$.targetaccess.autoConnect = false;
+                    
+                },
+            
+	            programLoaderStateHandler: function (){
+	            	 this.resetFlashButton();
+	            },
+                
+            
+	            /*Flash tool widget is ready. Display only relevent parts of the widget*/
+	            attached: function() {
+
+/*	                this.async(function(){
+	                    var backplaneObj = document.querySelector("ti-core-backplane");
+	                    if (!backplaneObj){
+	                        backplaneObj = document.createElement("ti-core-backplane");
+	                        document.body.appendChild(backplaneObj);
+	                        document.addEventListener('ti-core-backplane-ready',function(event){
+	                            this.onBackplaneReadyHdlr();
+		                    }.bind(this));
+	                        this.backplane = backplaneObj;
+	                    } else {
+	                        this.backplane = backplaneObj;
+	                        this.onBackplaneReadyHdlr();
+	                    }
+	                
+	
+	                }.bind(this), 100);
+*/	                
+	                /* Post Analytics*/
+					var params = {
+						'action': 'widgetLoad',
+						'appName': 'ti-widget-flashtool',
+						'appVersion':'1.0',
+						'data': {'url': window.location.href}
+					};
+			
+					this.postData(JSON.stringify(params), true);
+	                
+	
+	            },
+            
+		        onStatusBarClickHdlr: function(e){
+                                var myDevice =
+                                  {
+                                      deviceName: this.devicename,
+                                      fileName: this.filename,
+                                      fileFolderName: this.filefoldername
+                                  };
+
+                                  this.backplane.selectedDevice = myDevice;
+                                  this.serviceprogramloader.selectedDevice = myDevice;
+                                  this.$.serialIO.selectedDevice = myDevice;
+
+
+
+
+		        	if(!this.connectClicked) {
+			        //    this.onBtnConnectClicked();   
+			            this.connectClicked = true;      		
+		        	} else {
+						this.connectClicked = false;
+		        	}
+		        },
+
+	            setStateMachine: function(strEvent) {
+	                if (this.backplane) {
+	                    this.backplane.updateStateMachine(strEvent);
+	                }
+	            },
+
+				/*Flash button click handler */
+	            onBtnFlashClicked: function() {
+	            
+                        var myDevice =
+                        {
+                            deviceName: this.devicename,
+                            fileName: this.filename,
+                            fileFolderName: this.filefoldername
+                        };
+    
+                        this.backplane.selectedDevice = myDevice;
+                        this.serviceprogramloader.selectedDevice = myDevice;
+                        this.$.serialIO.selectedDevice = myDevice;
+
+	            	if( this.flashClicked ) {
+	            		this.onBtnDisconnectClicked();
+	                    this.flashClicked = false;
+	            	} else {
+			            this.flashClicked = true;
+			            this.onBtnConnectClicked();
+	            	}
+	            },
+	
+				resetFlashButton: function() {
+				
+					if(this.flashClicked) {
+					   if(this.serviceprogramloader.currentState.name === "waitForDeviceToBePluggedIn" ||
+					   	  this.serviceprogramloader.currentState.name === "failed" ||
+					   	  this.serviceprogramloader.currentState.name === "disconnected"
+					   	  
+					   	  ){
+					   	  		
+					         	this.flashClicked = false;
+					            this.onBtnDisconnectClicked();
+				       }
+	
+					} 
+					
+				},
+			
+				/*Connect to TI Cloud Agent*/
+		        onBtnConnectClicked: function() {
+		        	
+		            if (this.backplane) {
+		                this.backplane.updateStateMachine('onConnectBtnClicked');
+		            }
+		        },
+
+				/*Disconnect from TI Cloud Agent*/
+				onBtnDisconnectClicked: function () {
+				    if (this.backplane) {
+				        this.backplane.updateStateMachine('onDisconnectBtnClicked');
+				    }
+				},
+
+				/*Open serial port*/            
+	            openSerialPort: function(e) {
+	                this.$.serialIO.updateStateMachine('userOpenSerialPort');
+	            },
+	
+				/*Close serial port*/	
+	            closeSerialPort: function(e) {
+	                    this.$.serialIO.updateStateMachine('userCloseSerialPort');
+	            },
+
+	            myStatusChangedHdlr: function(e){
+	                //this.$.statusBar.innerHTML = "<b>Target Status:</b> "+ e.currentTarget.status;
+	                //this.$.currentState.innerHTML = "Current State: "+e.currentTarget.currentState.name;
+	                //if(e.currentTarget.status == 'Flash Successful!') {
+	                //   			this.flashClicked = false;
+					//            this.onBtnDisconnectClicked();
+	                //}
+	                
+	                
+	                //this.$.statusBar.innerHTML = "<b>Target Status:</b> "+ e.currentTarget.status;
+	                //this.$.currentState.innerHTML = "Current State: "+e.currentTarget.currentState.name;
+	                switch(this.serviceprogramloader.currentState.name){
+	                    case 'targetProgrammed':
+			                this.flashClicked = false;
+							this.onBtnDisconnectClicked();
+							break;
+	                    
+	                    default:
+	                        break;
+	                }
+	                
+	            },
+	
+	            myCurrentStateChangedHdlr: function(e){
+	
+	
+	                this.$.currentState.innerHTML = this.backplane.currentState.name;
+	                switch(this.backplane.currentState.name){
+	                    case 'downloadTICloudAgent':
+                            this.resetFlashButton();
+	                        if ((!this.backplane.isAutoDownloadEnabled) && (!this.backplane.isProgramDownloadDisabled)) {
+	                           //this.$.downloadInstallerBtnDiv.style.display = 'block';  //hidden = false
+	                        }
+	                        break;
+	                    case 'ready':
+							
+	                        break;
+	                    default:
+	                        this.serviceprogramloader.style.display = 'none';
+	                       // this.$.downloadInstallerBtnDiv.style.display = 'none';  //hidden = true
+	                        break;
+	                }
+	            },
+            
+	            myProgramDownloadBtnVisibilityChangedHdlr: function(){
+	                if (this.serviceprogramloader) {
+	                    console.log('myProgramDownloadBtnVisibilityChangedHdlr called: isProgramDownloadBtnVisible = '+this.serviceprogramloader.isProgramDownloadBtnVisible)
+	                    if (this.serviceprogramloader.isProgramDownloadBtnVisible) {
+	                        var programoaderDialog = this.$.programLoaderDialog;
+	                        if (programoaderDialog && this.flashClicked){
+	                            programoaderDialog.toggle();
+	                        }
+	                    }
+	                    else {
+	                    	this.resetFlashButton();
+	                    }
+	                }
+	            },
+	
+	            downloadReady: function(){
+	               this.onBtnDisconnectClicked();
+	            },
+            cancelBtnClickedChangedHdlr: function(e){
+				this.onBtnDisconnectClicked();
+            },
+	            mySerialPortVisibilityChangedHdlr: function (e) {
+	
+	                if (this.$.serialIO.isSerialPortUIVisible) {
+	                    if(this.connectClicked) {
+	                        this.$.ports.style.display = 'block';
+	                        this.$.baudrates.style.display = 'block';
+	                        this.$.rxTextArea.rows = "10";  // 10 rows of text
+	                        this.$.rxTextArea.style.display = 'block';
+	                        this.$.portOutput.style.display = 'block'; 
+	                        this.$.inputToSerialPort.style.display ='block';
+	                        this.$.sendBtnDiv.style.display = 'block';
+	                        
+	                        //this.$.flashBtnDiv.showMessage  = true;
+	                        this.$.flashBtnDiv.title = "Disconnect serial communication to flash device";
+	                    }
+	                } else {
+	                    if(this.backplane.currentState == 'ready' || this.backplane.currentState == 'connectingToCloudAgent' ) {
+	                        this.$.ports.style.display = 'block';
+	                        this.$.baudrates.style.display = 'block';
+	                        this.$.inputToSerialPort.style.display ='block';
+	                        this.$.sendBtnDiv.style.display = 'block';
+	                    } else {
+	                        this.$.ports.style.display = 'none';
+	                        this.$.baudrates.style.display = 'none';
+	                        this.$.inputToSerialPort.style.display ='none';
+	                        this.$.sendBtnDiv.style.display = 'none';
+	
+	                    }
+	
+		                if(this.connectClicked) {
+		                	//Unclick
+		                	//this.connectClicked = false;
+		                }
+	                    this.$.rxTextArea.style.display = 'none';
+	                    this.$.portOutput.style.display = 'none';   
+	
+	                    //this.$.flashBtnDiv.disabled   = false;
+	                    //this.$.flashBtnDiv.title = "Click to flash device";
+	                    
+	                                      
+	                }
+	            },
+
+
+	            myReplugNoticeHdlr: function(e){
+	                if (this.$.serialIO.isReplugNoticeVisible) {
+	                    // the innerHTML will be generated by the ti-app-framework custom element.
+	                    this.$.replugNotice.innerHTML = "Please connect your "+ e.target.selectedDevice.boardName+" to a USB port of your computer and then click Connect.";
+	                    this.$.replugNotice.style.display = '';
+	                } else {
+	                    this.$.replugNotice.style.display = 'none';
+	                }
+	            },
+				replaceAll: function (str, find, replace) {
+				    return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace);
+				},
+	            mySerialPortOutputHdlr: function (message,buffer) {
+	                //$scope.serialOut += message;
+	                
+	                var n = 0;
+	
+	                //debugPrint('in $scope.serialPortOutput: message = '+message);
+	
+					//message = this.replaceAll(message, "\\e\\[[\\d;]*[^\\d;]","");  
+	                var debugStr = '';
+	                var newValue = '';
+	                var NUM_VALUES_TO_PLOT = 256;//512;
+	                if(this.$.rxTextArea.value.length < NUM_VALUES_TO_PLOT) {
+	                    this.$.rxTextArea.value += message;
+	                } else {
+	                    var str =  this.$.rxTextArea.value 
+	                     str = str.substring(message.length, str.length);                
+	                    this.$.rxTextArea.value = str+message;
+	                }
+	                this.$.rxTextArea.scrollTop = this.$.rxTextArea.scrollHeight;
+	
+	            },
+
+
+	            myBtnVisibilityChangedHdlr: function () {
+	                if (this.backplane) {
+	
+	                    if(this.connectClicked) {
+	
+	
+	                        if (this.backplane.isConnectBtnVisible) {
+	                            this.connectedClicked = false;
+	                        } else {
+	                            //this.$.connectBtn.style.display = 'none';
+	                        }
+	
+	                        if (this.backplane.isDisconnectBtnVisible) {
+	                            this.connectedClicked = true;
+	                            this.$.ports.style.display = 'block';
+	                            this.$.baudrates.style.display = 'block';
+	                            this.$.inputToSerialPort.style.display ='block';
+	                            this.$.sendBtnDiv.style.display = 'block';
+	                        } else {
+	                            //this.$.disconnectBtn.style.display = 'none';
+	                            this.$.ports.style.display = 'none';
+	                            this.$.baudrates.style.display = 'none';
+	                            this.$.inputToSerialPort.style.display ='none';
+	                            this.$.sendBtnDiv.style.display = 'none';                        
+	                        }
+	
+	                        if (this.backplane.isCloudAgentDownloadBtnVisible) {
+	                            //downloadInstallerBtnDiv.style.display = '';
+	                           // this.$.btnOpenSerialPort.style.display = 'none';
+	                            //this.$.btnCloseSerialPort.style.display = 'none';   
+	                            this.$.portOutput.style.display ='none';                     
+	                            this.$.rxTextArea.style.display = 'none';
+	                            //this.$.flashBtnDiv.disabled   = false;
+			                    this.$.flashBtnDiv.title = "Click to flash device";
+	                        } else {
+	                            //downloadInstallerBtnDiv.style.display = 'none';
+	
+	                        }
+	                    }
+	                }
+	            }
+	
+	        });
+
+    </script>
+

@@ -1,33 +1,21 @@
-<<<<<<< HEAD
-
-**** Build of configuration Debug for project rfWsnNode_CC1310_LAUNCHXL_TI ****
-
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
-=======
 
 **** Build of configuration Debug for project rfWsnNode_CC1310_LAUNCHXL_TI ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
+gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
+gmake[1]: Leaving directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
 'Building file: ../uartTask.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="uartTask.d" --cmd_file="configPkg/compiler.opt" "../uartTask.c"
-"../uartTask.c", line 88: warning #179-D: function "uartTaskFunction" was declared but never referenced
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="uartTask.d" --cmd_file="configPkg/compiler.opt" "../uartTask.c"
 'Finished building: ../uartTask.c'
 ' '
 'Building target: rfWsnNode_CC1310_LAUNCHXL_TI.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi -z -m"rfWsnNode_CC1310_LAUNCHXL_TI.map" --stack_size=256 --heap_size=0 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --warn_sections --display_error_number --xml_link_info="rfWsnNode_CC1310_LAUNCHXL_TI_linkInfo.xml" --rom_model -o "rfWsnNode_CC1310_LAUNCHXL_TI.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./uartTask.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi -z -m"rfWsnNode_CC1310_LAUNCHXL_TI.map" --stack_size=256 --heap_size=0 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --warn_sections --display_error_number --xml_link_info="rfWsnNode_CC1310_LAUNCHXL_TI_linkInfo.xml" --rom_model -o "rfWsnNode_CC1310_LAUNCHXL_TI.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./uartTask.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
 <Linking>
 'Finished building target: rfWsnNode_CC1310_LAUNCHXL_TI.out'
 ' '
->>>>>>> master
 
 **** Build Finished ****

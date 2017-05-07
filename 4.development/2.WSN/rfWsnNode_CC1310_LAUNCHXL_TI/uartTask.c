@@ -33,8 +33,8 @@
 /*
  *  ======== uartecho.c ========
  */
-#include <stdint.h>
-#include <stddef.h>
+//#include <stdint.h>
+//#include <stddef.h>
 
 #include <xdc/std.h>
 #include <xdc/runtime/System.h>
@@ -49,11 +49,13 @@
 
 
 /* Driver Header files */
-#include <ti/drivers/GPIO.h>
+//#include <ti/drivers/GPIO.h>
 #include <ti/drivers/UART.h>
 
 /* Example/Board Header files */
 #include "Board.h"
+
+//#include "uartTask.h"
 
 /***** Defines *****/
 
@@ -77,8 +79,8 @@ void uartTask_init(void)
 	    uartTaskParams.stackSize = NODE_TASK_STACK_SIZE;
 	    uartTaskParams.priority = NODE_TASK_PRIORITY;
 	    uartTaskParams.stack = &uartTaskStack;
-	   /* Task_construct(&uartTask, uartTaskFunction, &uartTaskParams, NULL);
-	   */
+	    Task_construct(&uartTask, uartTaskFunction, &uartTaskParams, NULL);
+	  /* */
 }
 
 
@@ -87,38 +89,36 @@ void uartTask_init(void)
  */
 static void uartTaskFunction(UArg arg0, UArg arg1)
 {
-    char        input;
-    const char  echoPrompt[] = "Echoing characters:\r\n";
-    UART_Handle uart;
-    UART_Params uartParams;
+	 char        input;
+	 const char  echoPrompt[] = "Echoing characters:\r\n";
 
-    /* Call driver init functions */
-    GPIO_init();
-    UART_init();
+	 UART_Handle uart;
+	 UART_Params uartParams;
 
-    /* Turn on user LED */
-    GPIO_write(Board_GPIO_LED0, Board_GPIO_LED_ON);
+	 /* Call driver init functions */
+	UART_init();
 
-    /* Create a UART with data processing off. */
-    UART_Params_init(&uartParams);
-    uartParams.writeDataMode = UART_DATA_BINARY;
-    uartParams.readDataMode = UART_DATA_BINARY;
-    uartParams.readReturnMode = UART_RETURN_FULL;
-    uartParams.readEcho = UART_ECHO_OFF;
-    uartParams.baudRate = 115200;
+	/* Create a UART with data processing off. */
+	UART_Params_init(&uartParams);
+	uartParams.writeDataMode = UART_DATA_BINARY;
+	uartParams.readDataMode = UART_DATA_BINARY;
+	uartParams.readReturnMode = UART_RETURN_FULL;
+	uartParams.readEcho = UART_ECHO_OFF;
+	uartParams.baudRate = 115200;
 
-    uart = UART_open(Board_UART0, &uartParams);
+	uart = UART_open(Board_UART0, &uartParams);
 
-    if (uart == NULL) {
-        /* UART_open() failed */
-        while (1);
-    }
+	if (uart == NULL) {
+		/* UART_open() failed */
+		while (1);
+	}
 
-    UART_write(uart, echoPrompt, sizeof(echoPrompt));
+	UART_write(uart, &echoPrompt, 1);
 
-    /* Loop forever echoing */
-    while (1) {
-        UART_read(uart, &input, 1);
-        UART_write(uart, &input, 1);
-    }
+	/* Loop forever echoing */
+	while (1) {
+		UART_read(uart, &input, 1);
+		UART_write(uart, &input, 1);
+	}
+
 }

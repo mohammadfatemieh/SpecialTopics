@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 clean::
 	$(RM) package/configPkg.sch
 	$(RM) package/.vers_g180
@@ -10,19 +9,6 @@ clean::
 	$(RM) package/package_configPkg.c
 	$(RM) package/package.defs.h
 	$(RM) package/configPkg.ccs
-=======
-clean::
-	$(RM) package/configPkg.sch
-	$(RM) package/.vers_g180
-	$(RM) package/.vers_r170
-	$(RM) package/.vers_b160
-	$(RM) package/.xdc-B06
-	$(RM) package/configPkg.java
-	$(RM) package/configPkg.class
-	$(RM) package/package_configPkg.c
-	$(RM) package/package.defs.h
-	$(RM) package/configPkg.ccs
->>>>>>> master
 
 .interfaces: package/configPkg.sch package/.vers_g180 package/.vers_r170 package/.vers_b160 package/.xdc-B06 package/configPkg.java package/package_configPkg.c package/package.defs.h package/configPkg.ccs 
 package/package.xdc.inc: package/.vers_g180
@@ -35,7 +21,6 @@ package/.vers_b160:
 .interfaces: 
 
 # schema include file dependencies
-<<<<<<< HEAD
 package.xs:
 package/package.xdc.inc: package.xs
 
@@ -63,35 +48,6 @@ C:/ti/tirex-content/xdctools_3_32_00_06_core/packages/xdc/services/intern/cmd/ja
 package/package.xdc.inc: C:/ti/tirex-content/xdctools_3_32_00_06_core/packages/xdc/services/intern/cmd/java/package.jar
 C:/ti/tirex-content/xdctools_3_32_00_06_core/packages/xdc/services/intern/xsr/java/package.jar:
 package/package.xdc.inc: C:/ti/tirex-content/xdctools_3_32_00_06_core/packages/xdc/services/intern/xsr/java/package.jar
-=======
-package.xs:
-package/package.xdc.inc: package.xs
-
-# schema update dependencies
-package/package.xdc.inc: xdc/IPackage.xdc
-xdc/IPackage.xdc:
-vpath xdc/IPackage.xdc $(XPKGVPATH)
-
-ifneq (clean,$(MAKECMDGOALS))
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/ecj.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/ecj.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/gen/java/package.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/gen/java/package.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/cmd/java/package.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/cmd/java/package.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/js.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/js.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/global/java/package.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/global/java/package.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/antlr.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/antlr.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/xsr/java/package.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/intern/xsr/java/package.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/tar.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/shelf/java/tar.jar
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/spec/java/package.jar:
-package/package.xdc.inc: C:/ti/xdctools_3_32_00_06_core/packages/xdc/services/spec/java/package.jar
->>>>>>> master
 endif
 # goals for files generated during schema generation but unspecified by schema's pattern rule
 

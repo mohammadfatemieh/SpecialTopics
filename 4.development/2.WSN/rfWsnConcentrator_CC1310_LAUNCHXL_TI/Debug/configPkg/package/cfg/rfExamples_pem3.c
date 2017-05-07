@@ -1724,11 +1724,7 @@ __FAR__ const xdc_SizeT ti_sysbios_knl_Task_Module_State_terminatedQ__O = offset
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-<<<<<<< HEAD
-xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/Debug/configPkg/package/cfg/rfExamples_pem3");
-=======
 xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/Debug/configPkg/package/cfg/rfExamples_pem3");
->>>>>>> master
 
 /*
  *  ======== __ISA__ ========

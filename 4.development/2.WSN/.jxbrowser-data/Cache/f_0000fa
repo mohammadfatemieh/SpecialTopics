@@ -1,0 +1,614 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBM6dY7kXsq6g&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "Board.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBM6dY7kXsq6g",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBM6dY7kXsq6g?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBr0XeVE_eiYk&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "CC1350_LAUNCHXL.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBr0XeVE_eiYk",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBr0XeVE_eiYk?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1350_LAUNCHXL.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBO0xubWId_Ek&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "CC1350_LAUNCHXL.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBO0xubWId_Ek",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBO0xubWId_Ek?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1350_LAUNCHXL.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBH2KqtSwcREY&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "CC1350_LAUNCHXL_TIRTOS.cmd",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBH2KqtSwcREY",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBH2KqtSwcREY?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.cmd",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1350_LAUNCHXL_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBLHBA3cMVjhU&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "README.html",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBLHBA3cMVjhU",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBLHBA3cMVjhU?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBjlvnKw8ljNM&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "README.md",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBjlvnKw8ljNM",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBjlvnKw8ljNM?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.md",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBy7kjJRhPH7Q&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "UARTMon.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBy7kjJRhPH7Q",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBy7kjJRhPH7Q?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "UARTMon.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkB2VkzSyxrcwU&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "UARTMon.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkB2VkzSyxrcwU",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkB2VkzSyxrcwU?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "UARTMon.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBFHtlAwW0OMQ&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "ccfg.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBFHtlAwW0OMQ",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBFHtlAwW0OMQ?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "ccfg.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBFTsscNd1uUM&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "main_tirtos.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBFTsscNd1uUM",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBFTsscNd1uUM?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "main_tirtos.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkB8SALXPRmBd0&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "overview.rov.json",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkB8SALXPRmBd0",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkB8SALXPRmBd0?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.json",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBk0SlInmM4ww&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 LaunchPad/TI Drivers/uartmonitor/TI-RTOS/CCS Compiler/uartmonitor&removeoffline=true",
+    "resourceType": "file",
+    "name": "uartmonitor.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1350 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "_id": "VkBk0SlInmM4ww",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBk0SlInmM4ww?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20LaunchPad%2FTI%20Drivers%2Fuartmonitor%2FTI-RTOS%2FCCS%20Compiler%2Fuartmonitor&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_269.dependency.tirex.json",
+    "parentID": "VkBRGKnLb7v4ig",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "uartmonitor.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20LaunchPad/TI%20Drivers/uartmonitor/TI-RTOS/CCS%20Compiler/uartmonitor&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  }
+]

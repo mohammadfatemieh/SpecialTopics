@@ -62,7 +62,11 @@ int main(void)
     NodeRadioTask_init();
     NodeTask_init();
 
+<<<<<<< HEAD
     //uartTask_init();
+=======
+    uartTask_init();
+>>>>>>> master
 
     /* Start BIOS */
     BIOS_start();

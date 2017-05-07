@@ -1,7 +1,7 @@
 
 **** Build of configuration Debug for project display_CC1350_LAUNCHXL_TI ****
 
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 making ../src/sysbios/rom_sysbios.aem3 ...
 gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.

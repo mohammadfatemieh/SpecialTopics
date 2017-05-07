@@ -59,6 +59,7 @@
 
 /***** Defines *****/
 
+<<<<<<< HEAD
 #define UART_TASK_STACK_SIZE 1024
 #define UART_TASK_PRIORITY  15
 
@@ -66,6 +67,15 @@
 /*static Task_Params uartTaskParams;
 static uint8_t uartTaskStack[UART_TASK_STACK_SIZE];
 Task_Struct uartTask;     not static so you can see in ROV */
+=======
+#define NODE_TASK_STACK_SIZE 1024
+#define NODE_TASK_PRIORITY  4
+
+/***** Variable declarations *****/
+static Task_Params uartTaskParams;
+Task_Struct uartTask;    /* not static so you can see in ROV */
+static uint8_t uartTaskStack[NODE_TASK_STACK_SIZE];
+>>>>>>> master
 
 /***** Prototypes *****/
 static void uartTaskFunction(UArg arg0, UArg arg1);
@@ -74,6 +84,7 @@ static void uartTaskFunction(UArg arg0, UArg arg1);
 void uartTask_init(void)
 {
 
+<<<<<<< HEAD
 
 
 
@@ -88,6 +99,15 @@ void uartTask_init(void)
 	    uartTaskParams.stack = &uartTaskStack;
 	    Task_construct(&uartTask, uartTaskFunction, &uartTaskParams, NULL);
 	   */
+=======
+	    /* Create the node task */
+	    Task_Params_init(&uartTaskParams);
+	    uartTaskParams.stackSize = NODE_TASK_STACK_SIZE;
+	    uartTaskParams.priority = NODE_TASK_PRIORITY;
+	    uartTaskParams.stack = &uartTaskStack;
+	    Task_construct(&uartTask, uartTaskFunction, &uartTaskParams, NULL);
+	  /* */
+>>>>>>> master
 }
 
 
@@ -99,6 +119,7 @@ static void uartTaskFunction(UArg arg0, UArg arg1)
 	 char        input;
 	 const char  echoPrompt[] = "Echoing characters:\r\n";
 
+<<<<<<< HEAD
 //	 UART_Handle uart;
 //	 UART_Params uartParams;
 
@@ -108,6 +129,15 @@ static void uartTaskFunction(UArg arg0, UArg arg1)
 //	UART_init();
 
 	/* Create a UART with data processing off.
+=======
+	 UART_Handle uart;
+	 UART_Params uartParams;
+
+	 /* Call driver init functions */
+	UART_init();
+
+	/* Create a UART with data processing off. */
+>>>>>>> master
 	UART_Params_init(&uartParams);
 	uartParams.writeDataMode = UART_DATA_BINARY;
 	uartParams.readDataMode = UART_DATA_BINARY;
@@ -118,6 +148,7 @@ static void uartTaskFunction(UArg arg0, UArg arg1)
 	uart = UART_open(Board_UART0, &uartParams);
 
 	if (uart == NULL) {
+<<<<<<< HEAD
 		 UART_open() failed
 		while (1);
 	}
@@ -129,5 +160,18 @@ static void uartTaskFunction(UArg arg0, UArg arg1)
 //		UART_read(uart, &input, 1);
 //		UART_write(uart, &input, 1);
 //	}
+=======
+		/* UART_open() failed */
+		while (1);
+	}
+
+	UART_write(uart, &echoPrompt, 1);
+
+	/* Loop forever echoing */
+	while (1) {
+		UART_read(uart, &input, 1);
+		UART_write(uart, &input, 1);
+	}
+>>>>>>> master
 
 }

@@ -1,10 +1,7 @@
 
 **** Build of configuration Debug for project rfWsnConcentrator_CC1310_LAUNCHXL_TI ****
 
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/src/sysbios'
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+CC1310_LAUNCHXL.d:1: *** missing separator.  Stop.
 
 **** Build Finished ****

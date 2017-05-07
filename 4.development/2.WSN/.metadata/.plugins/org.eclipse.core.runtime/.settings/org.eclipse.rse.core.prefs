@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=Vitor
 useridperkey=VMorais.Local\=Vitor;
+=======
+activeuserprofiles=DESKTOP-13Q9KAJ;Team;VMorais
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=Vitor
+useridperkey=VMorais.Local\=Vitor;
+>>>>>>> master

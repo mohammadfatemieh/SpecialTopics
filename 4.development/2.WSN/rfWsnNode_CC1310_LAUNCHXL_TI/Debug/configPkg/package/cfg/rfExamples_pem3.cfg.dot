@@ -5,7 +5,11 @@ digraph configuration {
     concentrate=true;
     compound=true;
     label="\nConfiguration for configPkg/rfExamples.xem3"
+<<<<<<< HEAD
   node [font=Helvetica, fontsize=14, fontcolor=black];  subgraph cluster0 {label=""; __cfg [label="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/rfExamples.cfg", color=white, fontcolor=blue];
+=======
+  node [font=Helvetica, fontsize=14, fontcolor=black];  subgraph cluster0 {label=""; __cfg [label="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/rfExamples.cfg", color=white, fontcolor=blue];
+>>>>>>> master
     node [font=Helvetica, fontsize=10];    subgraph cluster1 {
         label="";
         xdc_services_global__top [shape=box,label="xdc.services.global\n1,0,0,0", color=white];
@@ -479,6 +483,11 @@ digraph configuration {
     ti_mw_lcd__top -> ti_targets_arm_elf_M3__1_0_5__2_5 [ltail=cluster46];
     ti_targets_arm_elf_M3__1_0_5__2_5 [shape=record,label="ti.targets.arm.elf.M3|1,0,5.2,5",style=filled, fillcolor=lightgrey];
     ti_mw_display__top -> ti_targets_arm_elf_M3__1_0_5__2_5 [ltail=cluster47];
+<<<<<<< HEAD
     ti_targets_arm_elf_M3__1_0_15__12_3 [shape=record,label="ti.targets.arm.elf.M3|1,0,15.12,3",style=filled, fillcolor=lightgrey];
     configPkg__top -> ti_targets_arm_elf_M3__1_0_15__12_3 [ltail=cluster49];
+=======
+    ti_targets_arm_elf_M3__1_0_16__9_1 [shape=record,label="ti.targets.arm.elf.M3|1,0,16.9,1",style=filled, fillcolor=lightgrey];
+    configPkg__top -> ti_targets_arm_elf_M3__1_0_16__9_1 [ltail=cluster49];
+>>>>>>> master
 }

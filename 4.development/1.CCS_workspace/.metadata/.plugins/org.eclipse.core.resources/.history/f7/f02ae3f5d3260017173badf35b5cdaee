@@ -1,0 +1,53 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+LDS_SRCS += \
+../CC1350_LAUNCHXL_TIRTOS.lds 
+
+C_SRCS += \
+../CC1350_LAUNCHXL.c \
+../DmConcentratorRadioTask.c \
+../DmConcentratorTask.c \
+../ccfg.c \
+../rfWsnDmConcentrator.c 
+
+C_DEPS += \
+./CC1350_LAUNCHXL.d \
+./DmConcentratorRadioTask.d \
+./DmConcentratorTask.d \
+./ccfg.d \
+./rfWsnDmConcentrator.d 
+
+OBJS += \
+./CC1350_LAUNCHXL.o \
+./DmConcentratorRadioTask.o \
+./DmConcentratorTask.o \
+./ccfg.o \
+./rfWsnDmConcentrator.o 
+
+OBJS__QUOTED += \
+"CC1350_LAUNCHXL.o" \
+"DmConcentratorRadioTask.o" \
+"DmConcentratorTask.o" \
+"ccfg.o" \
+"rfWsnDmConcentrator.o" 
+
+C_DEPS__QUOTED += \
+"CC1350_LAUNCHXL.d" \
+"DmConcentratorRadioTask.d" \
+"DmConcentratorTask.d" \
+"ccfg.d" \
+"rfWsnDmConcentrator.d" 
+
+C_SRCS__QUOTED += \
+"../CC1350_LAUNCHXL.c" \
+"../DmConcentratorRadioTask.c" \
+"../DmConcentratorTask.c" \
+"../ccfg.c" \
+"../rfWsnDmConcentrator.c" 
+
+

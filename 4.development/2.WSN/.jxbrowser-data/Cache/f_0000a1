@@ -1,0 +1,162 @@
+[
+  {
+    "text": "BeagleBone Black",
+    "type": "folder",
+    "numChildren": 8,
+    "numChildrenLocal": 5,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/BeagleBone Black&removeoffline=true",
+    "overviewDescription": "BeagleBone Black is the quickest & lowest cost path to AM335x development. At just $45 you can boot Linux in under 10-seconds and get started on development in less than 5 minutes with just a single USB cable.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am335x/med_beaglebk_board_sideways.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDSICE3359",
+    "type": "folder",
+    "numChildren": 4,
+    "numChildrenLocal": 3,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDSICE3359&removeoffline=true",
+    "overviewDescription": "For industrial communication protocols such as EtherCAT, PROFIBUS, Profinet, Powerlink& Ethernet/IP the Industrial Communications Engine is the optimal platform. The ICE hardware and included software is designed to help integrate the industrial communications interfaces in a broad range of industrial systems.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am335x/med_tmdsice3359_tmdsice3359_board_image.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDSSK3358",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 3,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDSSK3358&removeoffline=true",
+    "overviewDescription": "The AM335x Starter Kit (EVM-SK) provides a stable and affordable platform to quickly start evaluation of Sitara™ ARM® Cortex™-A8 AM335x Processors (AM3352, AM3354, AM3356,AM3358) and accelerate development for smart appliance, industrial and networking applications. It is a low-cost development platform based on the ARM Cortex-A8 processor that is integrated with options such as Dual Gigabit Ethernet, DDR3 and LCD touch screen.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am335x/sitara_am335x_gs_tmdssk3358.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDXEVM3358",
+    "type": "folder",
+    "numChildren": 5,
+    "numChildrenLocal": 3,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDXEVM3358&removeoffline=true",
+    "overviewDescription": "The AM335x Evaluation Module (EVM) enables developers to immediately start evaluating the AM335x processor family (AM3352, AM3354, AM3356, AM3358) and begin building applications such as portable navigation, portable gaming, home/building automation and others.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am335x/med_tmdxevm3358_tmdxevm3358_evm.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDXEVM437x",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 2,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDXEVM437x&removeoffline=true",
+    "overviewDescription": "The AM437x Evaluation Module (EVM) enables developers to immediately start evaluating the AM437x processor family (AM4376, AM4377, AM4378 and AM4379 ) and begin building applications such as portable navigation, patient monitoring, home/building automation, barcode scanners, portable data terminals and others.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am437x/evm.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDXIDK437X",
+    "type": "folder",
+    "numChildren": 7,
+    "numChildrenLocal": 4,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDXIDK437X&removeoffline=true",
+    "overviewDescription": "The AM437x Industrial Development Kit (IDK) is an application development platform for evaluating the industrial communication and control capabilities of Sitara™ AM4379 and AM4377 processors for industrial applications. The AM4379 and AM4377 processors are ideal for industrial communications, industrial control, and industrial drives applications. The AM437x processors integrate a quad-core Programmable Real-time Unit (PRU) that has been architected to implement the real-time communication technologies used in a broad range of industrial automation equipment. It enables low foot print designs with minimal external components and with best in class low power performance.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am437x/idk.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDXSK437X",
+    "type": "folder",
+    "numChildren": 8,
+    "numChildrenLocal": 0,
+    "children": true,
+    "allowPartialDownload": false,
+    "_downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "_makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "_removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDXSK437X&removeoffline=true",
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "overviewDescription": "The AM437x Starter Kit provides a stable and affordable platform to quickly start evaluation of Sitara™ ARM® Cortex®-A9 AM437x Processors (AM4376, AM4378) and accelerate development for HMI, industrial and networking applications.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am437x/sk.jpg",
+    "packageOrder": 38
+  },
+  {
+    "text": "TMDXEVM5728",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 0,
+    "children": true,
+    "allowPartialDownload": false,
+    "_downloadLink": "api/bundle?vid=sitara__1.02.00.00&download=true",
+    "_makeofflineLink": "api/bundles?vids=sitara__1.02.00.00",
+    "_removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/Sitara/Development Tools/TMDXEVM5728&removeoffline=true",
+    "state": {
+      "opened": false
+    },
+    "package": "Sitara",
+    "packageUId": "sitara__1.02.00.00",
+    "url": "/api/resources?path=Software/Sitara/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "overviewDescription": "The AM572x Evaluation Module provides an affordable platform to quickly start evaluation of Sitara™ ARM® Cortex®-A15 AM57x Processors (AM5728, AM5726, AM5718, AM5716) and accelerate development for HMI, machine vision, networking, medical imaging and many other industrial applications.",
+    "overviewImage": "tirex-product-tree/sitara_devtools_1_00_00_00/.metadata/.tirex/assets/photos/am57x/evm.jpg",
+    "packageOrder": 38
+  }
+]

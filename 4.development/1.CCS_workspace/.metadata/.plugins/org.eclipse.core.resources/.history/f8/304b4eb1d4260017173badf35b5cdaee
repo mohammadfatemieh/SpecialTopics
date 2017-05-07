@@ -1,0 +1,59 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+LDS_SRCS += \
+../CC1350_LAUNCHXL_TIRTOS.lds 
+
+C_SRCS += \
+../CC1350_LAUNCHXL.c \
+../DmNodeRadioTask.c \
+../DmNodeTask.c \
+../SceAdc.c \
+../ccfg.c \
+../rfWsnDmNode.c 
+
+C_DEPS += \
+./CC1350_LAUNCHXL.d \
+./DmNodeRadioTask.d \
+./DmNodeTask.d \
+./SceAdc.d \
+./ccfg.d \
+./rfWsnDmNode.d 
+
+OBJS += \
+./CC1350_LAUNCHXL.o \
+./DmNodeRadioTask.o \
+./DmNodeTask.o \
+./SceAdc.o \
+./ccfg.o \
+./rfWsnDmNode.o 
+
+OBJS__QUOTED += \
+"CC1350_LAUNCHXL.o" \
+"DmNodeRadioTask.o" \
+"DmNodeTask.o" \
+"SceAdc.o" \
+"ccfg.o" \
+"rfWsnDmNode.o" 
+
+C_DEPS__QUOTED += \
+"CC1350_LAUNCHXL.d" \
+"DmNodeRadioTask.d" \
+"DmNodeTask.d" \
+"SceAdc.d" \
+"ccfg.d" \
+"rfWsnDmNode.d" 
+
+C_SRCS__QUOTED += \
+"../CC1350_LAUNCHXL.c" \
+"../DmNodeRadioTask.c" \
+"../DmNodeTask.c" \
+"../SceAdc.c" \
+"../ccfg.c" \
+"../rfWsnDmNode.c" 
+
+

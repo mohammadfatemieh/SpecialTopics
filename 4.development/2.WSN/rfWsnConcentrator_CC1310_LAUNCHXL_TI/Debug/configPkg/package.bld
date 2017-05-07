@@ -11,7 +11,11 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
+<<<<<<< HEAD
         cfgScript: 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/rfExamples.cfg',
+=======
+        cfgScript: 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/rfExamples.cfg',
+>>>>>>> master
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +45,11 @@ else {
 
 var thisObj = {
     cfg:        '../rfExamples.cfg',
+<<<<<<< HEAD
     outputPath: 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/Debug/configPkg',
+=======
+    outputPath: 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_TI/Debug/configPkg',
+>>>>>>> master
     exeName:    'rfExamples' + suffix,
     exeIntName: 'rfExamples' + suffix.replace('.', '_'),
     targ:       targ,

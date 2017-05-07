@@ -10747,7 +10747,11 @@ __o = __obj[971]
     __o['cfgArgs'] = null
     __o['cfgArgsEncoded'] = true
     __o['cfgHome'] = String(java.net.URLDecoder.decode('configPkg', 'UTF-8'))
+<<<<<<< HEAD
     __o['cfgScript'] = String(java.net.URLDecoder.decode('C%3A%2FUsers%2FVitor%2FDesktop%2FDoutoramento%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%2FrfExamples.cfg', 'UTF-8'))
+=======
+    __o['cfgScript'] = String(java.net.URLDecoder.decode('C%3A%2FUsers%2FVMORAIS%2FDesktop%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%2FrfExamples.cfg', 'UTF-8'))
+>>>>>>> master
     __o['prelink'] = false
     __o['profile'] = String(java.net.URLDecoder.decode('release', 'UTF-8'))
     __o['releases'] = __obj[972.0]
@@ -10802,8 +10806,13 @@ __o = __obj[977]  // ti.targets.arm.elf.M3
     __o['platform'] = String(java.net.URLDecoder.decode('ti.platforms.simCM3', 'UTF-8'))
     __o['platforms'] = __obj[1001.0]
     __o['profiles'] = __obj[1002.0]
+<<<<<<< HEAD
     __o['rawVersion'] = String(java.net.URLDecoder.decode('15.12.3', 'UTF-8'))
     __o['rootDir'] = String(java.net.URLDecoder.decode('C%3A%2Fti%2Fccsv6%2Ftools%2Fcompiler%2Farm_15.12.3.LTS', 'UTF-8'))
+=======
+    __o['rawVersion'] = String(java.net.URLDecoder.decode('16.9.1', 'UTF-8'))
+    __o['rootDir'] = String(java.net.URLDecoder.decode('C%3A%2Fti%2Fccsv7%2Ftools%2Fcompiler%2Fti-cgt-arm_16.9.1.LTS', 'UTF-8'))
+>>>>>>> master
     __o['rts'] = String(java.net.URLDecoder.decode('ti.targets.arm.rtsarm', 'UTF-8'))
     __o['sectMap'] = __obj[1015.0]
     __o['splitMap'] = __obj[1016.0]
@@ -10811,7 +10820,11 @@ __o = __obj[977]  // ti.targets.arm.elf.M3
     __o['stdTypes'] = __obj[1017.0]
     __o['suffix'] = String(java.net.URLDecoder.decode('em3', 'UTF-8'))
     __o['vers'] = __obj[1035.0]
+<<<<<<< HEAD
     __o['version'] = String(java.net.URLDecoder.decode('ti.targets.arm.elf.M3%7B1%2C0%2C15.12%2C3', 'UTF-8'))
+=======
+    __o['version'] = String(java.net.URLDecoder.decode('ti.targets.arm.elf.M3%7B1%2C0%2C16.9%2C1', 'UTF-8'))
+>>>>>>> master
     __o['versionMap'] = __obj[1036.0]
     __o['versionRaw'] = undefined
 
@@ -10858,7 +10871,11 @@ __o = __obj[984]  // ti.targets.arm.elf.M3/ccConfigOpts
 __o = __obj[985]  // ti.targets.arm.elf.M3/ccOpts
     __o['$category'] = String(java.net.URLDecoder.decode('Struct', 'UTF-8'))
     __o['$name'] = String(java.net.URLDecoder.decode('ti.targets.arm.elf.M3%2FccOpts', 'UTF-8'))
+<<<<<<< HEAD
     __o['prefix'] = String(java.net.URLDecoder.decode('-mv7M3+--code_state%3D16+--float_support%3Dvfplib+-me+--include_path%3D%22C%3A%2FUsers%2FVitor%2FDesktop%2FDoutoramento%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%22+--include_path%3D%22C%3A%2FUsers%2FVitor%2FDesktop%2FDoutoramento%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%2Feasylink%22+--include_path%3D%22C%3A%2FUsers%2FVitor%2FDesktop%2FDoutoramento%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%2Fsmartrf_settings%22+--include_path%3D%22C%3A%2Fti%2Ftirex-content%2Ftirtos_cc13xx_cc26xx_2_21_00_06%2Fproducts%2Fcc13xxware_2_04_03_17272%22+--include_path%3D%22C%3A%2Fti%2Fccsv6%2Ftools%2Fcompiler%2Farm_15.12.3.LTS%2Finclude%22+-g+--define%3Dccs+--diag_wrap%3Doff+--diag_warning%3D225+--diag_warning%3D255+--display_error_number+--gen_func_subsections%3Don+--abi%3Deabi+++-qq+-pdsw225', 'UTF-8'))
+=======
+    __o['prefix'] = String(java.net.URLDecoder.decode('-mv7M3+--code_state%3D16+--float_support%3Dvfplib+-me+--include_path%3D%22C%3A%2FUsers%2FVMORAIS%2FDesktop%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%22+--include_path%3D%22C%3A%2FUsers%2FVMORAIS%2FDesktop%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%2Feasylink%22+--include_path%3D%22C%3A%2FUsers%2FVMORAIS%2FDesktop%2F2nd_semester%2FSpecialTopics%2F4.development%2F2.WSN%2FrfWsnConcentrator_CC1310_LAUNCHXL_TI%2Fsmartrf_settings%22+--include_path%3D%22C%3A%2Fti%2Ftirtos_cc13xx_cc26xx_2_21_00_06%2Fproducts%2Fcc13xxware_2_04_03_17272%22+--include_path%3D%22C%3A%2Fti%2Fccsv7%2Ftools%2Fcompiler%2Fti-cgt-arm_16.9.1.LTS%2Finclude%22+-g+--define%3Dccs+--diag_wrap%3Doff+--diag_warning%3D225+--diag_warning%3D255+--display_error_number+--gen_func_subsections%3Don+--abi%3Deabi+++-qq+-pdsw225', 'UTF-8'))
+>>>>>>> master
     __o['suffix'] = String(java.net.URLDecoder.decode('', 'UTF-8'))
 
 __o = __obj[986]  // ti.targets.arm.elf.M3/compatibleSuffixes

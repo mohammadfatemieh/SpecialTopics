@@ -1,136 +1,100 @@
 
-**** Clean-only build of configuration Debug for project display_CC1350_LAUNCHXL_TI ****
+**** Build of configuration Debug for project rfWsnNode_CC1310_LAUNCHXL_TI ****
 
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k clean 
-cleaning ../src/sysbios ...
-DEL /F  "../src/makefile.libs" "display_CC1350_LAUNCHXL_TI.out"  "configPkg\linker.cmd" "configPkg\compiler.opt"  "display_CC1350_LAUNCHXL_TI.hex" 
-RMDIR /S/Q  "configPkg\" 
-DEL /F "CC1350_LAUNCHXL.d" "ccfg.d" "display.d" "splash_image.d" 
-DEL /F "CC1350_LAUNCHXL.obj" "ccfg.obj" "display.obj" "splash_image.obj" 
-Could Not Find C:\Users\Vitor\Desktop\Doutoramento\2nd_semester\SpecialTopics\4.development\2.WSN\display_CC1350_LAUNCHXL_TI\src\../src/makefile.libs
-Could Not Find C:\Users\Vitor\Desktop\Doutoramento\2nd_semester\SpecialTopics\4.development\2.WSN\display_CC1350_LAUNCHXL_TI\Debug\display_CC1350_LAUNCHXL_TI.hex
-'Finished clean'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project display_CC1350_LAUNCHXL_TI ****
-
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../display.cfg'
-'Invoking: XDCtools'
-"C:/ti/tirex-content/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/packages;C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages;C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages;C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/uia_2_01_00_01/packages;C:/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC1350F128 -r release -c "C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=vfplib -me --include_path=\"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI\" --include_path=\"C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272\" --include_path=\"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include\" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi  " "../display.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring display.xem3 from package/cfg/display_pem3.cfg ...
-generating custom ROM library makefile ... 
-Starting build of library sources ...
-making C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory `C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
-clem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/BIOS.c ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
-Build of libraries done.
-clem3 package/cfg/display_pem3.c ...
-'Finished building: ../display.cfg'
-' '
-        1 file(s) copied.
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
+gmake[1]: Entering directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
-'Building file: ../CC1350_LAUNCHXL.c'
+gmake[1]: Leaving directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/src/sysbios'
+'Building file: ../CC1310_LAUNCHXL.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC1350_LAUNCHXL.d" --cmd_file="configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
-'Finished building: ../CC1350_LAUNCHXL.c'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC1310_LAUNCHXL.d" --cmd_file="configPkg/compiler.opt" "../CC1310_LAUNCHXL.c"
+'Finished building: ../CC1310_LAUNCHXL.c'
+' '
+'Building file: ../NodeRadioTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="NodeRadioTask.d" --cmd_file="configPkg/compiler.opt" "../NodeRadioTask.c"
+'Finished building: ../NodeRadioTask.c'
+' '
+'Building file: ../NodeTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="NodeTask.d" --cmd_file="configPkg/compiler.opt" "../NodeTask.c"
+'Finished building: ../NodeTask.c'
+' '
+'Building file: ../SceAdc.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="SceAdc.d" --cmd_file="configPkg/compiler.opt" "../SceAdc.c"
+'Finished building: ../SceAdc.c'
 ' '
 'Building file: ../ccfg.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d" --cmd_file="configPkg/compiler.opt" "../ccfg.c"
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d" --cmd_file="configPkg/compiler.opt" "../ccfg.c"
 'Finished building: ../ccfg.c'
 ' '
-'Building file: ../display.c'
+'Building file: ../rfWsnNode.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="display.d" --cmd_file="configPkg/compiler.opt" "../display.c"
-'Finished building: ../display.c'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="rfWsnNode.d" --cmd_file="configPkg/compiler.opt" "../rfWsnNode.c"
+'Finished building: ../rfWsnNode.c'
 ' '
-'Building file: ../splash_image.c'
+'Building file: ../uartTask.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="splash_image.d" --cmd_file="configPkg/compiler.opt" "../splash_image.c"
-'Finished building: ../splash_image.c'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="uartTask.d" --cmd_file="configPkg/compiler.opt" "../uartTask.c"
+"../uartTask.c", line 127: warning #9-D: nested comment is not allowed
+"../uartTask.c", line 99: warning #179-D: variable "input" was declared but never referenced
+"../uartTask.c", line 100: warning #179-D: variable "echoPrompt" was declared but never referenced
+"../uartTask.c", line 97: warning #179-D: function "uartTaskFunction" was declared but never referenced
+'Finished building: ../uartTask.c'
 ' '
-'Building target: display_CC1350_LAUNCHXL_TI.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi -z -m"display_CC1350_LAUNCHXL_TI.map" --stack_size=256 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --reread_libs --diag_wrap=off --warn_sections --display_error_number --xml_link_info="display_CC1350_LAUNCHXL_TI_linkInfo.xml" --rom_model -o "display_CC1350_LAUNCHXL_TI.out" "./CC1350_LAUNCHXL.obj" "./ccfg.obj" "./display.obj" "./splash_image.obj" "../CC1350_LAUNCHXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
-<Linking>
-'Finished building target: display_CC1350_LAUNCHXL_TI.out'
+'Building file: ../easylink/EasyLink.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="easylink/EasyLink.d" --obj_directory="easylink" --cmd_file="configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: ../easylink/EasyLink.c'
 ' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project display_CC1350_LAUNCHXL_TI ****
-
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/display_CC1350_LAUNCHXL_TI/src/sysbios'
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project uartecho_CC1350_LAUNCHXL_TI ****
-
-"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../uartecho.cfg'
+'Building file: ../sce/scif.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sce/scif.d" --obj_directory="sce" --cmd_file="configPkg/compiler.opt" "../sce/scif.c"
+'Finished building: ../sce/scif.c'
+' '
+'Building file: ../sce/scif_framework.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sce/scif_framework.d" --obj_directory="sce" --cmd_file="configPkg/compiler.opt" "../sce/scif_framework.c"
+'Finished building: ../sce/scif_framework.c'
+' '
+'Building file: ../sce/scif_osal_tirtos.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sce/scif_osal_tirtos.d" --obj_directory="sce" --cmd_file="configPkg/compiler.opt" "../sce/scif_osal_tirtos.c"
+'Finished building: ../sce/scif_osal_tirtos.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d" --obj_directory="smartrf_settings" --cmd_file="configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: ../smartrf_settings/smartrf_settings.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings_predefined.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d" --obj_directory="smartrf_settings" --cmd_file="configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: ../smartrf_settings/smartrf_settings_predefined.c'
+' '
+gmake[1]: Entering directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/Debug'
+'Building file: ../rfExamples.cfg'
 'Invoking: XDCtools'
-"C:/ti/tirex-content/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/packages;C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages;C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages;C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/uia_2_01_00_01/packages;C:/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC1350F128 -r release -c "C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=vfplib -me --include_path=\"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI\" --include_path=\"C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272\" --include_path=\"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include\" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi  " "../uartecho.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring uartecho.xem3 from package/cfg/uartecho_pem3.cfg ...
-generating custom ROM library makefile ... 
-Starting build of library sources ...
-making C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI/src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory `C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI/src/sysbios'
-clem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/BIOS.c ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem3 C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI/src/sysbios'
-Build of libraries done.
-clem3 package/cfg/uartecho_pem3.c ...
-'Finished building: ../uartecho.cfg'
+"C:/ti/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/packages;C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages;C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages;C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/uia_2_01_00_01/packages;C:/ti/ccsv7/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC1310F128 -r release -c "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=vfplib -me --include_path=\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI\" --include_path=\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/easylink\" --include_path=\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/smartrf_settings\" --include_path=\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/sce\" --include_path=\"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272\" --include_path=\"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include\" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../rfExamples.cfg"
+'Finished building: ../rfExamples.cfg'
 ' '
-        1 file(s) copied.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Entering directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory 'C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI/src/sysbios'
-'Building file: ../CC1350_LAUNCHXL.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC1350_LAUNCHXL.d" --cmd_file="configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
-'Finished building: ../CC1350_LAUNCHXL.c'
-' '
-'Building file: ../ccfg.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d" --cmd_file="configPkg/compiler.opt" "../ccfg.c"
-'Finished building: ../ccfg.c'
-' '
-'Building file: ../uartecho.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/2.WSN/uartecho_CC1350_LAUNCHXL_TI" --include_path="C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="uartecho.d" --cmd_file="configPkg/compiler.opt" "../uartecho.c"
-'Finished building: ../uartecho.c'
-' '
-'Building target: uartecho_CC1350_LAUNCHXL_TI.out'
+gmake[1]: Leaving directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/2.WSN/rfWsnNode_CC1310_LAUNCHXL_TI/Debug'
+'Building target: rfWsnNode_CC1310_LAUNCHXL_TI.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me -g --define=ccs --diag_wrap=off --diag_warning=225 --diag_warning=255 --display_error_number --gen_func_subsections=on --abi=eabi -z -m"uartecho_CC1350_LAUNCHXL_TI.map" --stack_size=256 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --reread_libs --diag_wrap=off --warn_sections --display_error_number --xml_link_info="uartecho_CC1350_LAUNCHXL_TI_linkInfo.xml" --rom_model -o "uartecho_CC1350_LAUNCHXL_TI.out" "./CC1350_LAUNCHXL.obj" "./ccfg.obj" "./uartecho.obj" "../CC1350_LAUNCHXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"rfWsnNode_CC1310_LAUNCHXL_TI.map" --heap_size=0 --stack_size=256 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="rfWsnNode_CC1310_LAUNCHXL_TI_linkInfo.xml" --rom_model -o "rfWsnNode_CC1310_LAUNCHXL_TI.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./uartTask.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL.cmd" "../cc13x0f128.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
 <Linking>
-'Finished building target: uartecho_CC1350_LAUNCHXL_TI.out'
-' '
+"../cc13x0f128.cmd", line 78: error #10263: FLASH memory range has already been specified
+"../cc13x0f128.cmd", line 78: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../cc13x0f128.cmd", line 80: error #10263: SRAM memory range has already been specified
+"../cc13x0f128.cmd", line 80: error #10264: SRAM memory range overlaps existing memory range SRAM
+error #10010: errors encountered during linking; "rfWsnNode_CC1310_LAUNCHXL_TI.out" not built
+
+>> Compilation failure
+makefile:160: recipe for target 'rfWsnNode_CC1310_LAUNCHXL_TI.out' failed
+gmake: *** [rfWsnNode_CC1310_LAUNCHXL_TI.out] Error 1
+gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

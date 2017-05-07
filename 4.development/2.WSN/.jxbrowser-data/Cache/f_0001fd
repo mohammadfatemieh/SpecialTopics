@@ -1,0 +1,2590 @@
+Polymer({ is : "ti-rov-panel",
+    behaviors: [
+      Polymer.IronResizableBehavior
+    ],
+
+    properties: {
+        dashboardVersion : {
+          type : String,
+          value : '1.0'
+        },
+        allModules : {
+          type: Array,
+          value: function() { return [];}
+        },
+        viewableModules : {
+          type: Array,
+          value: []
+        },
+        favoriteModules : {
+          type: Array,
+          value: []
+        },
+        favoriteTocItems : {
+          type: Array,
+          value: function() { return [];}
+        },
+        curTocModules : {
+          type: Array,
+          value: function() { return [];}
+        },
+        tocItems : {
+          type: Array,
+          value: function() { return [];}
+        },
+        allModulesVisible : {
+          type: Boolean,
+          value: true
+        },
+        dashboards : {
+          type: Object
+        },
+        rovData : {
+          type: Object,
+          value: function() { return {};}
+        },
+        matchedModules : {
+          type: Array,
+          value: function() { return [];}
+        },
+        matchedModuleNames : {
+          type: Array,
+          value: function() { return [];}
+        },
+        filterValue : {
+          type: String,
+          value: ''
+        },
+        showFilterButtonLeft : {
+          type: Boolean,
+          value: false
+        },
+        showFilterButtonRight : {
+          type: Boolean,
+          value: true
+        },
+        viewList : {
+          type: Object,
+          value: function() { return {};}
+        },
+        toggleIcon : {
+          type: String,
+          value: 'chevron-left'
+        },
+        toggleTooltip : {
+          type: String,
+          value: 'Hide Modules'
+        },
+        rovModuleViews : {
+          type: Array,
+          value: function() { return [];}
+        },
+        dashboardNames : {
+          type: Array,
+          value: function() { return [];}
+        },
+        refreshInterval : {
+          type : Number,
+          value : 1000
+        },
+        dataTimeoutPeriod : {
+          type : Number,
+          value : 10000
+        },
+        connectTimeoutPeriod : {
+          type : Number,
+          value : 20000
+        },
+        repeatHandle : {
+          type : Number,
+          value : 0
+        },
+        confirmTitle : {
+            type : String,
+            value : ''
+        },
+        confirmLabel : {
+            type : String,
+            value : ''
+        },
+        confirmProps : {
+          type : Object,
+          value : {}
+        },
+        rovSettings : {
+          type: Object,
+          value: {}
+        },
+        inRepeatRefresh : {
+          type: Boolean,
+          value: false
+        },
+        favoriteMenuItem : {
+          type: String,
+          value: ''
+        },
+        statusItems : {
+          type: Array,
+          value: []
+        },
+        rovInit : {
+          type: Object,
+          value: {}
+        },
+        introMessage : {
+          type: String,
+          value: ''
+        },
+        currentDashboard : {
+          type: String,
+          value: ''
+        },
+        exeName : {
+          type: String,
+          value: ''
+        },
+        viewToTopList : {
+            type: Array,
+            value: []
+        },
+        curModsLabel : {
+          type: String,
+          value: 'Viewable Modules'
+        },
+        otherModsLabel : {
+          type: String,
+          value: 'All Modules'
+        },
+        rovViews : {
+          type: Array,
+          value: function() { return [];}
+        },
+        enableOtherViews : {
+          type: Boolean,
+          value: false
+        },
+        otherViews : {
+          type: Array,
+          value: []
+        },
+        addOnMrus : {
+          type: Array,
+          value: []
+        },
+        commLinkMrus : {
+          type: Array,
+          value: []
+        },
+        exeMrus : {
+          type: Array,
+          value: []
+        },
+        viewsStorageItems : {
+          type: Array,
+          value: []
+        },
+        dashboardConflicts : {
+          type: Array,
+          value: []
+        },
+        overwriteDashboardsItems : {
+          type: Array,
+          value: []
+        },
+        addOnsHash : {
+          type: Array,
+          value: []
+        },
+        ccs7 : {
+          type: Boolean,
+          value: false
+        },
+        /*  addOn views tooltips were being cached for this.otherViews
+         *  to workaround, use this array to display this.otherViews in dialogs,
+         *  setting it to this.otherViews before showing the dialog and
+         *  then setting it to empty when the dialog is closed
+         */
+        dlgOtherViews : {
+          type: Array,
+          value: []
+        },
+        panelWidth : {
+          type: Number,
+          value: -1
+        },
+        viewContainer : {
+          type : Object,
+          value : {}
+        },
+        useCurrentProgram : {
+          type : String,
+          value : '<Use the program currently being debugged>'
+        },
+        inited : {
+          type: Boolean,
+          value: false
+        },
+        dragData : {
+          type: Array,
+          value: []
+        }
+    },
+    listeners: {
+      'iron-resize': 'onIronResize'
+    },
+    attached : function () {
+        this.set('dashboards', rovUtils.getLocalStorageObject('dashboards-storage'));
+        var favoritesStorage = rovUtils.getLocalStorageObject('favorites-storage');
+        if (Object.keys(favoritesStorage).length > 0) {
+            this.set('favoriteModules', favoritesStorage);
+        }
+        this.set('rovInit', rovUtils.getLocalStorageObject('rovInit-storage'));
+        this.setRovSettings(rovUtils.getLocalStorageObject('rovSettings-storage'));
+        if (this.rovInit.autoConnect) {
+            this.autoConnect();
+        }
+        else {
+            this.showIntro();
+        }
+        this.$.rovDrawerPanel.disableEdgeSwipe = true;
+        this.$.rovDrawerPanel.disableSwipe = true;
+        this.panelWidth = this.$.rovDrawerPanel.offsetWidth;
+        this.viewContainer = this.$.rovHeaderPanel.$.mainContainer;
+        this.$.openDashboardFileButton.hidden = !this.ccs7;
+    },
+    ready : function () {
+        this.ccs7 = window.ccs7_browser;
+        this.rovData = document.querySelector('#rovData');
+        //this.$.rovDrawerPanel.drawerWidth = '270px';
+    },
+    addFavorite : function (mod) {
+        var tempModules = rovUtils.shallowCopy(this.favoriteModules);
+        tempModules.push(mod);
+        this.set('favoriteModules', tempModules);
+        this.set('favoriteTocItems', this.makeModulesToc(this.favoriteModules));
+        rovUtils.setLocalStorageObject('favorites-storage', this.favoriteModules);
+    },
+    addOnDoneClicked : function (e) {
+        var dialog = document.getElementById('manageAddOnsDialog');
+        if (dialog) {
+            this.$.curAddOnsList.selected = -1;
+            if (this.$.addOnErrorToast.opened) {
+                this.$.addOnErrorToast.text = '';
+                this.$.addOnErrorToast.close();
+            }
+            this.$.addOnInput.value = '';
+            dialog.close();
+            this.set('dlgOtherViews', []);
+        }
+    },
+    addOnErrorCloseClicked : function(e) {
+        this.$.addOnErrorToast.close();
+        this.$.addOnErrorToast.text = '';
+    },
+    addOnKeyPress : function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13 && this.$.addOnInput.value != '') {
+            this.loadAddOnClicked(e);
+        }
+    },
+    addOnOnInput : function (e) {
+        if (this.$.addOnErrorToast.opened) {
+            this.$.addOnErrorToast.text = '';
+            this.$.addOnErrorToast.close();
+        }
+        this.$.loadAddOnButton.disabled = e.currentTarget.value == '';
+    },
+    addOnSelected : function (e) {
+        this.$.removeAddOnButton.disabled = false;
+    },
+    addOnMruSelected : function (e) {
+        this.mruSelected(e);
+        if (this.$.addOnErrorToast.opened) {
+            this.$.addOnErrorToast.text = '';
+            this.$.addOnErrorToast.close();
+        }
+        this.$.loadAddOnButton.disabled = false;
+    },
+    addOnViewsClicked : function (e) {
+        var dialog = document.getElementById('manageAddOnsDialog');
+        if (dialog) {
+            this.set('dlgOtherViews', this.otherViews);
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+            this.$.addOnInput.value = '';
+            if (this.$.addOnErrorToast.opened) {
+                this.$.addOnErrorToast.text = '';
+                this.$.addOnErrorToast.close();
+            }
+        }
+    },
+    autoConnect : function () {
+        var exe = (this.ccs7 && this.rovInit.noExe) ? '' : this.rovInit.exe;
+        var dialog = this.$.autoConnectProgressDialog;
+        if (dialog) {
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+            if (!this.rovInit.progressInfo) {
+                this.rovInit.progressInfo = {};
+                this.rovInit.progressInfo.min = 0;
+                this.rovInit.progressInfo.max = 10;
+                this.rovInit.progressInfo.step = 1;
+            }
+            this.$.autoConnectProgress.min = this.rovInit.progressInfo.min;
+            this.$.autoConnectProgress.max = this.rovInit.progressInfo.max;
+            this.$.autoConnectProgress.step = this.rovInit.progressInfo.step;
+            this.rovInit.progressInfo.notifyCount = 0;
+            this.$.autoConnectProgress.value = this.rovInit.progressInfo.step;
+            var exeName = exe;
+            if (exeName.length > 0) {
+                exeName = exeName.replace(/\\/g, '/');
+                exeName = exeName.substr(exeName.lastIndexOf('/') + 1);
+                this.exeName = exeName;
+                exeName += ', ';
+            }
+            this.introMessage = 'Connecting to ' + exeName + this.rovInit.commLink;
+        }
+        this.initRov(exe, this.rovInit.commLink);
+    },
+    averageIntroProgess : function () {
+        if (!this.rovInit.progressInfo.average) {
+            this.rovInit.progressInfo.average = this.rovInit.progressInfo.notifyCount;
+            this.rovInit.progressInfo.numLoads = 1;
+
+        }
+        else {
+            /* cumulative moving average */
+            this.rovInit.progressInfo.average = (this.rovInit.progressInfo.notifyCount +
+                                                (this.rovInit.progressInfo.numLoads * this.rovInit.progressInfo.average)) /
+                                                ++this.rovInit.progressInfo.numLoads;
+
+        }
+        this.rovInit.progressInfo.max = this.rovInit.progressInfo.average + this.rovInit.progressInfo.step;
+    },
+    checkForMissingDashboardAddOns : function (dashboard) {
+        for (var i = 0; i < dashboard.length; i++) {
+            if (dashboard[i].elemName) {   /* is otherView */
+                if (!this.otherViewsHaveElem(dashboard[i].elemName)) {
+                    this.loadMissingDashboardAddon(dashboard[i], false);
+                }
+            }
+        }
+    },
+    clearAllLocalStorage: function () {
+        rovUtils.setLocalStorageObject('dashboards-storage', null);
+        rovUtils.setLocalStorageObject('favorites-storage', null);
+        rovUtils.setLocalStorageObject('rovInit-storage', null);
+        rovUtils.setLocalStorageObject('rovSettings-storage', null);
+        rovUtils.setLocalStorageObject('viewsData-storage', null);
+        if (this.$.manageStorageDialog.opened) {
+            this.$.manageStorageDialog.close();
+        }
+    },
+    clearAllStorageClicked : function (e) {
+        this.confirmDialog('Clear all ROV storage', 'Are you sure?', 'clearAll');
+    },
+    clearAViewChecked : function (e) {
+        if (!this.$.manageStorageDialog.opened) {
+            return;
+        }
+        if (!e.currentTarget.checked) {
+            this.$.selectAllViewsStorageCheckbox.checked = false;
+        }
+        else {
+            var allChecked = true;
+            var listItems = this.$.viewsStorageList.items;
+            for (var i = 0; i < listItems.length; i++) {
+                if (!listItems[i].lastElementChild.checked) {
+                    allChecked = false;
+                    break;
+                }
+            }
+            this.$.selectAllViewsStorageCheckbox.checked = allChecked;
+        }
+        this.enableChecklistDialogActionButton(e, 'viewsStorageList',
+                                               'clearViewStorageButton');
+    },
+    clearFavorite : function(idx) {
+        /* modifying 'favoriteModules' directly didn't work, only first item was displayed */
+        var tempModules = rovUtils.shallowCopy(this.favoriteModules);
+        tempModules.splice(idx, 1);
+        this.set('favoriteModules', tempModules);
+        this.set('favoriteTocItems', this.makeModulesToc(this.favoriteModules));
+        rovUtils.setLocalStorageObject('favorites-storage', this.favoriteModules);
+    },
+    clearFavoriteConfirm : function (mod) {
+        var idx = this.favoriteModules.indexOf(mod);
+        var title = 'Remove Favorite';
+        var label = 'Remove ' + this.favoriteModules[idx] + ' ?';
+        this.confirmDialog(title, label, 'favorite', idx);
+    },
+    clearViewStorageClicked : function (e) {
+        var viewsStorage = rovUtils.getLocalStorageObject('viewsData-storage');
+        var listItems = this.$.viewsStorageList.items;
+        for (var i = 0; i < listItems.length; i++) {
+            if (listItems[i].lastElementChild.checked) {
+                viewsStorage[listItems[i].innerText.trim()] = null;
+                listItems[i].lastElementChild.checked = false;
+            }
+        }
+        rovUtils.setLocalStorageObject('viewsData-storage', viewsStorage);
+        /* repopulate list */
+        var keys = Object.keys(viewsStorage);
+        var nonNullKeys = [];
+        for (var i = 0; i < keys.length; i++) {
+            if (viewsStorage[keys[i]]) {
+                nonNullKeys.push(keys[i]);
+            }
+        }
+        if (nonNullKeys.length > 0) {
+            nonNullKeys.sort();
+            this.set('viewsStorageItems', nonNullKeys);
+            this.$.clearViewStorageButton.disabled = true;
+        }
+        else {
+            this.$.manageStorageDialog.close();
+        }
+        this.$.selectAllViewsStorageCheckbox.checked = false;
+        this.$.selectAllViewsStorageCheckbox.disabled = nonNullKeys.length == 0;
+    },
+    closeAllClicked : function () {
+       this.closeAllViews();
+    },
+    closeAllViews : function() {
+        var ids = [];
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            ids.push(this.rovModuleViews[i].id);
+        }
+        for (var i = 0; i < this.rovViews.length; i++) {
+            ids.push(this.rovViews[i].id);
+        }
+        for (var i = 0; i < ids.length; i++) {
+            this.closeView(ids[i]);
+        }
+    },
+    closeView : function(viewId) {
+        var rovViews = [];
+        var found = false;
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            if (this.rovModuleViews[i].id != viewId) {
+                rovViews.push(rovUtils.shallowCopy(this.rovModuleViews[i]));
+            }
+            else {
+                found = true;
+            }
+        }
+        if (found) {
+            this.rovModuleViews = rovViews;
+        }
+        else {
+            rovViews = [];
+            found = false;
+            for (var i = 0; i < this.rovViews.length; i++) {
+                if (this.rovViews[i].id != viewId) {
+                    rovViews.push(rovUtils.shallowCopy(this.rovViews[i]));
+                }
+                else {
+                    found = true;
+                }
+            }
+            if (found) {
+                this.rovViews = rovViews;
+            }
+        }
+        var chNodes = Polymer.dom(this.$.contentDiv).childNodes;
+        for (var i = 0; i < chNodes.length; i++) {
+            if (chNodes[i].id == viewId) {
+                contentDiv.removeChild(chNodes[i]);
+                Polymer.dom.flush();
+                break;
+            }
+        }
+        this.toolbarButtonsState();
+        this.dashboardButtonsState();
+    },
+    confirmDialog : function(title, label, objName, sel) {
+        var dialog = document.getElementById('confirmDialog');
+        if (dialog) {
+            this.confirmProps = {};
+            this.confirmProps.objName = objName;
+            this.confirmProps.sel = sel;
+            this.confirmTitle = title;
+            this.confirmLabel = label;
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+        }
+    },
+    confirmOkClicked : function (e) {
+        this.$.confirmDialog.close();
+        if (this.confirmProps.objName == 'dashboard') {
+            this.deleteDashboard(this.confirmProps.sel);
+        }
+        else if (this.confirmProps.objName == 'favorite') {
+            this.clearFavorite(this.confirmProps.sel);
+        }
+        else if (this.confirmProps.objName == 'dashboardConflict') {
+            this.saveDroppedDashboard(this.confirmProps.sel.name,
+                                      this.confirmProps.sel.dashboard,
+                                      this.confirmProps.sel.show);
+        }
+        else if (this.confirmProps.objName == 'clearAll') {
+            this.clearAllLocalStorage();
+        }
+    },
+    dashboardButtonsState : function() {
+        var hasSavedDashboards = this.hasSavedDashboards();
+        this.enableOpenDashboardButton(hasSavedDashboards);
+        this.$.deleteDashboardButton.disabled = !hasSavedDashboards;
+        var allViewsLength = this.rovModuleViews.length + this.rovViews.length;
+        this.$.openDashboardFileButton.disabled = false;
+        this.$.saveDashboardButton.disabled = allViewsLength == 0;
+        if (allViewsLength == 0) {
+            this.setCurrentDashboard('');
+        }
+    },
+    dashboardConflictsDialog : function () {
+        var dialog = document.getElementById('overwriteDashboardsDialog');
+        if (dialog) {
+            var names = [];
+            for (var i = 0; i < this.dashboardConflicts.length; i++) {
+                names.push(this.dashboardConflicts[i].name);
+            }
+            names.sort();
+            this.set('overwriteDashboardsItems', names);
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 10);
+
+            /* Init checkboxes and clear selection button */
+            var listItems = this.$.overwriteDashboardsList.items;
+            for (var i = 0; i < listItems.length; i++) {
+                listItems[i].lastElementChild.checked = true;
+            }
+            this.$.overwriteDashboardsList.selected = -1;
+            this.$.overwriteDashboardsButton.disabled = false;
+        }
+    },
+    dashboardDrag : function (e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        if (this.ccs7) {
+            return;
+        }
+        if (this.isOverOpenButton(e)) {
+            e.dataTransfer.dropEffect = 'copy';
+         //   e.dataTransfer.effectAllowed = 'copy';
+            this.enableOpenDashboardButton(true, 'dodgerblue');
+        }
+        else {
+            this.enableOpenDashboardButton(this.hasSavedDashboards());
+        }
+    },
+    dashboardDragEnter : function (e) {
+        this.dashboardDrag(e);
+    },
+    dashboardDragOver : function (e) {
+        this.dashboardDrag(e);
+    },
+    dashboardFileLoaded : function (file, e) {
+        var valid = false;
+        var error = null;
+        try {
+            var dashboard = JSON.parse(e.target.result);
+            if (rovUtils.isArray(dashboard) &&
+                (dashboard[0].moduleName || dashboard[0].elemName)) {
+                valid = true;
+                var name = dashboard.pop();
+                var savedDashboards = Object.keys(this.dashboards);
+                if (savedDashboards.length > 0 && savedDashboards.indexOf(name) >= 0) {
+                    this.confirmDialog('Overwite dashboard',
+                                       'Overwite ' + name + ' ?',
+                                       'dashboardConflict',
+                                       {name: name, dashboard: dashboard,
+                                        show: true, file: file});
+                }
+                else {
+                    this.saveDroppedDashboard(name, dashboard, true);
+                }
+            }
+        }
+        catch (e) {
+            error = e;
+        }
+        if (!valid) {
+            this.showStatus(file.name + ' is not a valid dashboard file', 'error');
+        }
+        if (error) {
+            this.showStatus(error, 'error');
+        }
+    },
+    /*
+     * dashboard storage {
+     *    id         : '',
+     *    moduleName : '',
+     *    viewName   : '',
+     *    left       : '',
+     *    top        : '',
+     *    width      : '',
+     *    height     : '',
+     *    zIndex     : ''
+     * }
+     *
+     */
+    dashboardSelected : function(e) {
+        var dialog = e.target.offsetParent;
+        if (dialog) {
+            var sel = e.currentTarget.selectedItem.textContent.trim();
+            this.$.dashboardNamesMenu.selected = -1;
+            if (dialog.name == 'Open') {
+                dialog.close();
+                /* Get the original dashboard in case one in memory has been changed */
+                var dashboards = rovUtils.getLocalStorageObject('dashboards-storage');
+                var dashboard = dashboards[sel] ? dashboards[sel] : this.dashboards[sel]; /* defensive */
+                this.showDashboard(dashboard, sel);
+            }
+            else if (dialog.name == 'Delete') {
+                this.confirmDialog('Delete dashboard',
+                                   'Delete ' + sel + ' ?',
+                                   'dashboard', sel);
+            }
+            else if (dialog.name == 'Save') {
+                dialog.close();
+                this.$.saveDashboardInput.value = sel;
+            }
+        }
+    },
+    dataOptionsClicked : function (e) {
+        var dialog = document.getElementById('dataOptionsDialog');
+        if (dialog) {
+            dialog.addEventListener('iron-overlay-closed', function() {
+                var reason = this.closingReason;
+                return (false);
+            });
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+            this.$.repeatRefreshInput.value = String(this.refreshInterval);
+            this.$.repeatRefreshInputInvalid.hidden = true;
+            this.$.dataTimeoutInput.value = String(this.dataTimeoutPeriod);
+            this.$.dataTimeoutInputInvalid.hidden = true;
+            this.$.connectTimeoutInput.value = String(this.connectTimeoutPeriod);
+            this.$.connectTimeoutInputInvalid.hidden = true;
+        }
+    },
+    dataOptionsKeyPress : function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13 && this.$.repeatRefreshInput.value != '' && this.$.dataTimeoutInput.value != '') {
+            this.saveDataOptionsOkClicked(e);
+        }
+    },
+    dataViewsShowing : function () {
+        var count = this.moduleViewsShowing();
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var elem = this.getViewById(this.rovViews[i].id);
+            if (elem) {
+                if (elem.hasViewableContent && elem.hasViewableContent()) {
+                    ++count;
+                }
+            }
+            else {
+                console.error('Undefined view, id: ' + this.rovViews[i].id);
+            }
+        }
+        return (count);
+    },
+    debuggerEvent : function (event) {
+        if (event == 'TargetHalt') {
+            if (this.inRepeatRefresh) {
+                this.stopRepeatRefresh(true);
+            }
+            this.refreshAllClicked();
+        }
+    },
+    deleteDashboard : function(sel) {
+        this.$.listDashboardsDialog.close();
+        var dashboards = {};
+        for (var name in this.dashboards) {
+            if (name != sel) {
+                dashboards[name] = this.dashboards[name];
+            }
+        }
+        if (sel == this.currentDashboard) {
+            this.setCurrentDashboard('');
+        }
+        this.dashboards = dashboards;
+        rovUtils.setLocalStorageObject('dashboards-storage', this.dashboards);
+        this.dashboardButtonsState();
+    },
+    deleteDashboardClicked : function(e) {
+        this.listDashboardsDialog('Delete', e);
+    },
+    destroyClickedElement : function(event) {
+        document.body.removeChild(event.target);
+    },
+    dialogCloseClicked : function (e) {
+        var dlgId = e.target.id.replace(/Close/, '');
+        this.$[dlgId].cancel(e);
+    },
+    dialogClosed : function (e) {
+        /* re-enable toolbar buttons */
+        this.$.rovOptionsButton.disabled = false;
+        if (this.$$('#otherViewsButton')) {
+            this.$$('#otherViewsButton').disabled = false;
+        }
+        this.toolbarButtonsState();
+        this.dashboardButtonsState();
+    },
+    dialogOpened : function () {
+        /* disable toolbar buttons */
+        this.$.viewToTopButton.disabled = true;
+        this.$.saveAllButton.disabled = true;
+        this.$.repeatRefreshButton.disabled = true;
+        this.$.refreshAllButton.disabled = true;
+        this.$.closeAllButton.disabled = true;
+        if (this.$$('#otherViewsButton')) {
+            this.$$('#otherViewsButton').disabled = true;
+        }
+
+        this.$.rovOptionsButton.disabled = true;
+        this.enableOpenDashboardButton(false);
+        this.$.deleteDashboardButton.disabled = true;
+        this.$.saveDashboardButton.disabled = true;
+        this.$.openDashboardFileButton.disabled = true;
+    },
+    dlgClicked : function(e) {
+        e.currentTarget.style.zIndex = String(this.getMaxZindex() + 1);
+    },
+    enableChecklistDialogActionButton : function (e, checklistId, buttonId) {
+        var btnDisabled = true;
+        if (e && e.currentTarget.checked) {
+            btnDisabled = false;
+        }
+        else {
+            var listItems = this.$[checklistId].items;
+            for (var i = 0; i < listItems.length; i++) {
+                if (listItems[i].lastElementChild.checked) {
+                    btnDisabled = false;
+                    break;
+                }
+            }
+        }
+        this.$[buttonId].disabled = btnDisabled;
+    },
+    enableOpenDashboardButton : function (enable, color) {
+        if (enable) {
+            this.$.openDashboardButton.style.color =  color ? color : tiRovStyles.titleToolbarColor;
+            this.$.openDashboardButton.style.cursor = 'pointer';
+            this.$.openDashboardButton.title = 'Open a dashboard';
+        }
+        else {
+            this.$.openDashboardButton.style.color =  tiRovStyles.titleToolbarDisabledColor;
+            this.$.openDashboardButton.style.cursor = 'default';
+            this.$.openDashboardButton.title = '';
+        }
+    },
+    exeInputClicked : function (e) {
+        this.$.exeInput.$.input.select();
+    },
+    exportDashboard : function(dashName, dashArr) {
+        dashArr.push(dashName);
+        var textToWrite = JSON.stringify(dashArr, null, '\t');
+        dashArr.pop();
+        var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+        var fileNameToSaveAs = (dashName + '.rov.json');
+        var downloadLink = document.createElement("a");
+        downloadLink.download = fileNameToSaveAs;
+        downloadLink.innerHTML = "Download File";
+        if (window.webkitURL != null) {
+            // Chrome allows the link to be clicked
+            // without actually adding it to the DOM.
+            downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+        }
+        else {
+            // Firefox requires the link to be added to the DOM
+            // before it can be clicked.
+            downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+            downloadLink.onclick = this.destroyClickedElement;
+            downloadLink.style.display = "none";
+            document.body.appendChild(downloadLink);
+        }
+        downloadLink.click();
+    },
+    filterLeftClicked : function(e) {
+        this.set('showFilterButtonRight', true);
+        this.set('showFilterButtonLeft', false);
+    },
+    filterModules : function(filterStr) {
+        var exp = RegExp('^' + filterStr, 'i');
+        var filterArr = (this.curModsLabel == 'All Modules') ? this.allModules : this.viewableModules;
+        var foundModules = [];
+        for (var i = 0; i < filterArr.length; i++) {
+            if (String(filterArr[i]).search(exp) == 0) {
+                foundModules.push(filterArr[i]);
+            }
+        }
+        if (foundModules.length == 0 && filterStr.length > 2) {
+            exp = RegExp(filterStr + '$', 'i');
+            var exp2 = RegExp(filterStr, 'i');
+            for (var i = 0; i < filterArr.length; i++) {
+                if (String(filterArr[i]).search(exp) > 0) {
+                    foundModules.push(filterArr[i]);
+                }
+                else if (String(filterArr[i]).search(exp2) > 0) {
+                    foundModules.push(filterArr[i]);
+                }
+            }
+        }
+        var equal = rovUtils.strArrCompare(this.curTocModules, foundModules);
+        if (!equal) {
+            this.set('curTocModules', foundModules);
+            this.set('tocItems', this.makeModulesToc(foundModules));
+        }
+        return (!equal);
+    },
+    filterModulesChanged : function(e) {
+        this.filterValue = e.currentTarget.value;
+        this.filterModules(this.filterValue);
+    },
+    filterRightClicked : function(e) {
+        if (this.allModules.length > 0) {
+            this.set('showFilterButtonRight', false);
+            this.set('showFilterButtonLeft', true);
+        }
+    },
+    getAddOnHashKey : function (href) {
+        var key = href;
+        key = key.substr(key.indexOf('href=') + 6);
+        return (key.substr(0, key.indexOf('"')));
+    },
+    getAddonPath : function (elemName) {
+        var elemPath = '';
+        for (var i = 0; i < this.otherViews.length; i++) {
+            if (this.otherViews[i].element == elemName) {
+                elemPath = this.otherViews[i].path;
+                break;
+            }
+        }
+        return (elemPath);
+    },
+    getAllModules : function () {
+        return (this.allModules);
+    },
+    getImportedAddOnId : function (activeElement) {
+        for (var i = 0; i < activeElement.children.length; i++) {
+            var ch = activeElement.children[i];
+            if (activeElement.children[i].localName == 'dom-module') {
+                return (activeElement.children[i].id);
+            }
+        }
+        return ('');
+    },
+    getMaxZindex : function () {
+        var max = 0;
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            var elem = this.getViewById(this.rovModuleViews[i].id);
+            if (elem.style.zIndex != '') {
+                if (Number(elem.style.zIndex) > max) {
+                    max = Number(elem.style.zIndex);
+                }
+            }
+        }
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var elem = this.getViewById(this.rovViews[i].id);
+            if (elem.style.zIndex != '') {
+                if (Number(elem.style.zIndex) > max) {
+                    max = Number(elem.style.zIndex);
+                }
+            }
+        }
+        return (max);
+    },
+    getNewClickedViewPosition : function () {
+        var offset = (this.rovModuleViews.length + this.rovViews.length - 1) * 28;
+        var left = offset;
+        var top = offset;
+        if (this.viewContainer.scrollLeft > 0) {
+            left += this.viewContainer.scrollLeft;
+        }
+        if (this.viewContainer.scrollTop > 0) {
+            top += this.viewContainer.scrollTop;
+        }
+        return ({left : left, top : top});
+    },
+    getNewModuleViewId : function () {
+        var maxId = -1;
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            var arr = this.rovModuleViews[i].id.split('_');
+            if (Number(arr[1]) > maxId) {
+                maxId = Number(arr[1]);
+            }
+        }
+        return ('rovModuleView_' + (maxId + 1));
+    },
+    getNewViewId : function () {
+        var maxId = -1;
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var arr = this.rovViews[i].id.split('_');
+            if (Number(arr[1]) > maxId) {
+                maxId = Number(arr[1]);
+            }
+        }
+        return ('rovView_' + (maxId + 1));
+    },
+    getRovData : function () {
+        return (this.rovData);
+    },
+    getTocIndex : function (id, tocItems) {
+        var index = -1;
+        for (var i = 0; i < tocItems.length; i++) {
+            if (tocItems[i].id == id) {
+                index = i;
+                break;
+            }
+        }
+        return (index);
+    },
+    getViewableModules : function () {
+        return (this.viewableModules);
+    },
+    getViewById : function(viewId) {
+        var view;
+        var chNodes = Polymer.dom(this.$.contentDiv).childNodes;
+        for (var i = 0; i < chNodes.length; i++) {
+            if (chNodes[i].id == viewId) {
+                view = chNodes[i];
+                break;
+            }
+        }
+        if (view == undefined) {
+            console.error('getViewById, undefined view, id: ' + viewId);
+            for (var i = 0; i < chNodes.length; i++) {
+                console.log('  child node[' + i + '] '+ chNodes[i]);
+            }
+        }
+        return (view);
+    },
+    getViewList : function () {
+        return (this.viewList);
+    },
+    getViewListCallback : function (error, viewList) {
+        if (error == null) {
+            this.viewList = viewList;
+            var keys = Object.keys(this.viewList);
+            for (var i = 0; i < keys.length; i++) {
+                this.allModules.push(keys[i]);
+                if (this.viewList[keys[i]].length > 1) {
+                    this.viewableModules.push(keys[i]);
+                }
+            }
+            this.curTocModules = (this.curModsLabel == 'All Modules') ? this.allModules : this.viewableModules;
+            this.tocItems = this.makeModulesToc(this.curTocModules);
+        }
+        else {
+            alert(error);
+        }
+    },
+    hasSavedDashboards : function (e) {
+        return (Object.keys(this.dashboards).length > 0);
+    },
+    hasView : function(moduleName, viewName) {
+        var views = [];
+        var viewObjs = this.viewList[moduleName];
+        var found = false;
+        for (var i = 0; i < viewObjs.length; i++) {
+            if (viewName == viewObjs[i].name) {
+                found = true;
+                break;
+            }
+        }
+        return (found);
+    },
+    hasViewsStorage : function () {
+        var viewsStorage = rovUtils.getLocalStorageObject('viewsData-storage');
+        var keys = Object.keys(viewsStorage);
+        for (var i = 0; i < keys.length; i++) {
+            if (viewsStorage[keys[i]]) {
+                return (true);
+            }
+        }
+        return (false);
+    },
+    hideStatus : function () {
+        this.$.statusConsole.hidden = true;
+        this.statusItems = [];
+    },
+    initRov : function (exe, commLink) {
+        var fullPath = exe + '?' + 'comm=' + (commLink == 'Debugger' ? 'DSLite' : commLink);
+        if ((commLink == 'DSLite' || commLink == 'Debugger') && window.ti != undefined) {
+            fullPath = fullPath + ":" + window.ti.debug.cloudagent.dsPort;
+        }
+        this.rovData.setExecutable(fullPath, this);
+    },
+    introKeyPress : function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13 && this.$.introLoadButton.disabled == false) {
+            this.introLoadClicked(e);
+        }
+    },
+    introLoadClicked : function (e) {
+        this.$.introMessageDiv.hidden = true;
+        var useProgram = this.$.exeInput.value == this.useCurrentProgram;
+        var exeInvalid = !useProgram && this.$.exeInput.value.length == 0;
+        var commLinkInvalid = this.$.commLinkInput.value.length == 0;
+        this.$.exeInputInvalid.hidden = !exeInvalid;
+        this.$.commLinkInputInvalid.hidden = !commLinkInvalid;
+        if (exeInvalid || commLinkInvalid) {
+            return;
+        }
+        if (!useProgram) {
+            var exe = this.$.exeInput.value.replace(/\\/g, '/');
+            if (exe.indexOf('/') >= 0) {
+                exe = exe.substr(exe.lastIndexOf('/') + 1);
+            }
+            this.exeName = exe;
+            this.introMessage = 'Connecting to ' + this.exeName + ', ' + this.$.commLinkInput.value;
+        }
+        else {
+            this.introMessage = 'Connecting to ' + this.$.commLinkInput.value;
+        }
+        this.$.introErrorIcon.hidden = true;
+        this.$.introMessageDiv.hidden = false;
+        this.$.introProgress.hidden = false;
+        this.$.introLoadButton.disabled = true;
+        this.initRov(useProgram ? '' : this.$.exeInput.value, this.$.commLinkInput.value);
+        this.rovInit.progressInfo.notifyCount = 0;
+        this.$.introProgress.value = this.rovInit.progressInfo.step;
+    },
+    isADragDropFile : function (e) {
+        if (e.dataTransfer.types) {
+            return (e.dataTransfer.types[0] == 'Files' ||
+                    e.dataTransfer.types[0] == 'public.file-url');
+        }
+        else if (e.dataTransfer.files) {
+            return (e.dataTransfer.files.length == 1);
+        }
+        return (false);
+    },
+    isDupAddOn : function (path) {
+        var lowerPath = path.toLowerCase();
+        for (var i = 0; i < this.otherViews.length; i++) {
+            var lowerOther = this.parseAddOnPath(this.otherViews[i].path).toLowerCase();
+            if (lowerOther == lowerPath) {
+                return (true);
+            }
+        }
+        return (false);
+    },
+    isNarrow : function () {
+        return (this.$.rovDrawerPanel.narrow);
+    },
+    isOverOpenButton : function (e) {
+        return ((e.target.id == 'openDashboardButton' ||
+                 (e.target.id == 'icon' && e.target.icon == 'dashboard')) &&
+                 this.isADragDropFile(e));
+    },
+    listDashboardsDialog : function(dlgName, event) {
+        var namesArr = [];
+        for (var name in this.dashboards) {
+            namesArr.push(name);
+        }
+        namesArr.sort();
+        this.dashboardNames = namesArr;
+        var id = (dlgName == 'Save') ? 'listSavedDashboardsDialog' : 'listDashboardsDialog';
+        var dialog = document.getElementById(id);
+        if (dialog) {
+            dialog.name = dlgName;
+            if (dlgName == 'Save') {
+                dialog.style.left = event.x + 'px';
+                dialog.style.top = (event.y + 14) + 'px';
+            }
+            else if (dlgName == 'Open') {
+                dialog.style.right = '60px';
+            }
+            else if (dlgName == 'Delete') {
+                dialog.style.right = '0px';
+            }
+            dialog.open();
+            if (dlgName == 'Save') {
+                var saveDialog = document.getElementById('saveDashboardDialog');
+                dialog.style.zIndex = String(Number(saveDialog.style.zIndex) + 1);
+                this.$.listSavedDashboardsMenu.selected = -1;
+            }
+            else {
+                dialog.style.zIndex = String(this.getMaxZindex() + 1);
+                this.$.dashboardNamesMenu.selected = -1;
+            }
+        }
+    },
+    loadAddOnClicked : function (e) {
+        if (this.$.addOnErrorToast.opened) {
+            this.$.addOnErrorToast.text = '';
+            this.$.addOnErrorToast.close();
+        }
+        var path = this.parseAddOnPath(this.$.addOnInput.value);
+        if (this.isDupAddOn(path)) {
+            this.$.addOnErrorToast.text = path + ' has already been added';
+            this.$.addOnErrorToast.open();
+            return;
+        }
+        this.addOnInputPath = this.$.addOnInput.value;
+        this.importHref(path,
+            function(e) {
+                var addOn = {};
+                addOn.path = this.addOnInputPath;
+                addOn.element = this.getImportedAddOnId(e.target.import.activeElement);
+                var elem = document.createElement(addOn.element);
+                if (elem.viewName == undefined || elem.textContent.length == 0) {
+                    this.$.addOnErrorToast.text = 'Error creating element <' + addOn.element + '>';
+                    this.$.addOnErrorToast.open();
+                    Polymer.dom.flush();
+                    return;
+                }
+                addOn.name = elem.viewName;
+                addOn.href = e.target.href;
+                var other = (this.otherViews.length > 0) ? rovUtils.shallowCopy(this.otherViews) : [];
+                other.push(addOn);
+                this.set('otherViews', other);
+                this.set('dlgOtherViews', other);
+                this.$.curAddOnsList.selected = -1;
+                this.$.removeAddOnButton.disabled = true;
+                this.$.addOnInput.value = '';
+                if (!this.enableOtherViews) {
+                    this.enableOtherViews = true;
+                    this.$$('#otherViewsButton').disabled = true;
+                }
+                this.saveAddOnMru(addOn.path);
+                var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+                rovSettings.otherViews = this.otherViews;
+                rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+            },
+            function(e){
+                this.$.addOnErrorToast.text = 'Error importing ' + e.target.href;
+                this.$.addOnErrorToast.fitInto = this.$.manageAddOnsDialog;
+                this.$.addOnErrorToast.open();
+            }
+          );
+    },
+    loadMissingDashboardAddon : function(dashboardAddonView, showIt) {
+        var path = this.parseAddOnPath(dashboardAddonView.elemPath);
+        this.addOnsHash[path] = dashboardAddonView;
+        this.importHref(path,
+            function(e){
+                var key = this.getAddOnHashKey(e.target.outerHTML);
+                var dashboardItem = this.addOnsHash[key];
+                var elem = document.createElement(dashboardItem.elemName);
+                if (elem.viewName == undefined || elem.textContent.length == 0) {
+                    this.showStatus('Error creating ' + dashboardItem.viewName + ' element', 'error');
+                    Polymer.dom.flush();
+                }
+                else {
+                    var addOn = {};
+                    addOn.element = dashboardItem.elemName;
+                    addOn.path = dashboardItem.elemPath;
+                    addOn.name = elem.viewName;
+                    addOn.href = e.target.href;
+                    if (showIt) {
+                        this.newDashboardRovView(dashboardItem);
+                    }
+                    var other = (this.otherViews.length > 0) ? rovUtils.shallowCopy(this.otherViews) : [];
+                    other.push(addOn);
+                    this.set('otherViews', other);
+                    this.enableOtherViews = true;
+                    var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+                    rovSettings.otherViews = this.otherViews;
+                    rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+                }
+            },
+            function(e){
+                var dashboardItem = this.addOnsHash[this.getAddOnHashKey(e.target.outerHTML)];
+                this.showStatus('Error importing ' + dashboardItem.viewName + ' at ' + e.target.href, 'error');
+            }
+        );
+    },
+    manageStorageKeyPress : function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) {
+            if (!this.$.clearViewStorageButton.disabled) {
+                this.clearViewStorageClicked();
+            }
+            if (this.$.manageStorageDialog.opened) {
+                this.$.manageStorageDialog.close();
+            }
+        }
+    },
+    makeModulesToc : function(modules) {
+        var info = rovUtils.getPackagesInfo(modules);
+        var modulesToc = [];
+        /* Get all units and sort by name */
+        var units = [];
+        for (var i = 0; i < info.pkgNames.length; i++) {
+            var pkg = info.pkgs[info.pkgNames[i]];
+            for (var j = 0; j < pkg.units.length; j++) {
+                pkg.units[j].qual = info.pkgNames[i];
+                units.push(pkg.units[j]);
+            }
+        }
+        units.sort(rovUtils.objNameCompare);
+
+        var i = 0;
+        while (i < units.length - 1) {
+            if (units[i + 1].name == units[i].name) {
+                var j = i + 1;
+                var uSame = [units[i], units[j]];
+                while (j < units.length - 1) {
+                    if (units[j + 1].name == units[j].name) {
+                        uSame.push(units[++j]);
+                    }
+                    else {
+                        ++j;
+                        break;
+                    }
+                }
+                uSame.sort(rovUtils.objQualCompare);
+
+                var tocItem = {};
+                tocItem.name = units[i].name;
+                if (uSame.length) {
+                    tocItem.id = units[i].name;
+                    tocItem.hasDups = true;
+                    tocItem.expanded = false;
+                    tocItem.dups = [];
+                    for (k = 0; k < uSame.length; k++) {
+                        var dup = {};
+                        dup.name = uSame[k].qual;
+                        dup.id = uSame[k].qual + '.' + uSame[k].name;
+                        tocItem.dups.push(dup);
+                    }
+
+                }
+                else {
+                    tocItem.id = units[i].qual + '.' + units[i].name;
+                }
+                modulesToc.push(tocItem);
+                i = j;
+                continue;
+            }
+            else {
+                var tocItem = {};
+                tocItem.name = units[i].name;
+                tocItem.id = units[i].qual + '.' + units[i].name;
+                modulesToc.push(tocItem);
+            }
+            ++i;
+        }
+        if (i == units.length - 1 &&
+            (i == 0 || (i > 0 && units[i].name != units[i - 1].name))) {
+            var tocItem = {};
+            tocItem.name = units[i].name;
+            tocItem.id = units[i].qual + '.' + units[i].name;
+            modulesToc.push(tocItem);
+        }
+        return (modulesToc);
+    },
+    modClicked : function(e) {
+        var viewsData = rovUtils.getLocalStorageObject('viewsData-storage');
+        var moduleName = e.currentTarget.id;
+        var viewName = viewsData[moduleName] ? viewsData[moduleName].defaultViewName : null;
+        if (!viewName && this.viewList[moduleName]) {
+            viewName = this.viewList[moduleName][0].name;
+        }
+        var elem = this.newModuleView(moduleName, viewName);
+        elem.style.zIndex = String(this.getMaxZindex() + 1);
+        var offset = this.getNewClickedViewPosition();
+        if (offset.left > 0) {
+            elem.style.left = offset.left + 'px';
+        }
+        if (offset.top > 0) {
+            elem.style.top = offset.top + 'px';
+        }
+    },
+    modContextMenu : function (e) {
+          e.preventDefault();
+          if (this.allModulesVisible) {
+              var idx = this.favoriteModules.indexOf(e.currentTarget.id);
+              this.favoriteMenuItem = idx == -1 ? 'Add to' : 'Remove from';
+          }
+          else {
+              this.favoriteMenuItem = 'Remove from';
+          }
+          this.favoriteMenuItem += ' Favorite Modules';
+          var dialog = this.$.modContextDialog;
+          dialog.style.left = event.x + 'px';
+          dialog.style.top = event.y + 'px';
+          dialog.selectedMod = e.currentTarget.id;
+          dialog.open();
+    },
+    modContextMenuItemClicked : function (e) {
+        var selectedMod = this.$.modContextDialog.selectedMod;
+        var menuItem = e.currentTarget.textContent;
+        this.$.modContextDialog.close();
+        if (menuItem.indexOf('Add') == 0) {
+            this.addFavorite(selectedMod);
+        }
+        else {
+            this.clearFavoriteConfirm(selectedMod);
+        }
+    },
+    modulesViewItemSelected : function (e) {
+        var sel = e.currentTarget.selectedItem.textContent.trim();
+        this.$.selectModulesViewMenu.selected = -1;
+        var dialog = this.$.selectModulesViewDialog;
+        if (dialog) {
+            dialog.close();
+        }
+        if (sel == 'All Modules') {
+            this.set('curModsLabel', sel);
+            this.set('otherModsLabel', 'Viewable Modules');
+            this.set('curTocModules', this.allModules);
+            this.set('tocItems', this.makeModulesToc(this.allModules));
+        }
+        else {
+            this.set('curModsLabel', sel);
+            this.set('otherModsLabel', 'All Modules');
+            this.set('curTocModules', this.viewableModules);
+            this.set('tocItems', this.makeModulesToc(this.viewableModules));
+        }
+        if (this.filterValue!= '') {
+            this.filterModules(this.filterValue);
+        }
+        var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+        rovSettings.curModsLabel = sel;
+        rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+    },
+    moduleViewsShowing : function () {
+        var count = 0;
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            var elem = this.getViewById(this.rovModuleViews[i].id);
+            if (elem) {
+                if (elem.viewIsShowing || elem.viewSelected) {
+                    ++count;
+                }
+            }
+            else {
+                console.error('Undefined view, id: ' + this.rovModuleViews[i].id);
+            }
+        }
+        return (count);
+    },
+    mruClicked : function (e) {
+        var dlgId = e.currentTarget.id.replace(/Button/, 'Dialog');
+        var dialog = document.getElementById(dlgId);
+        if (dialog) {
+            dialog.open();
+            dialog.style.left = (event.x + 4) + 'px';
+            dialog.style.top = (event.y + 14) + 'px';
+        }
+    },
+    mruSelected : function (e) {
+        var pre = e.currentTarget.id.replace(/MruMenu/, '');
+        var sel = e.currentTarget.selectedItem.textContent.trim();
+        this.$[e.currentTarget.id].selected = -1;
+        this.$[pre + 'MruDialog'].close();
+        this.$[pre + 'Input'].value = sel;
+    },
+    multiDashboardFileLoaded : function (file, done, e) {
+        var valid = false;
+        var error = null;
+        try {
+            var dashboard = JSON.parse(e.target.result);
+            if (rovUtils.isArray(dashboard) &&
+                (dashboard[0].moduleName || dashboard[0].elemName)) {
+                valid = true;
+                var name = dashboard.pop();
+                var savedDashboards = Object.keys(this.dashboards);
+                if (savedDashboards.length > 0 && savedDashboards.indexOf(name) >= 0) {
+                    this.dashboardConflicts.push({name: name, dashboard: dashboard, file: file});
+                }
+                else {
+                    this.dashboards[name] = dashboard;
+                    rovUtils.setLocalStorageObject('dashboards-storage', this.dashboards);
+                    if (savedDashboards.length == 0) {
+                        this.enableOpenDashboardButton(true);
+                        this.$.deleteDashboardButton.disabled = false;
+                    }
+                    this.showStatus('Saved dashboard ' + name, 'info');
+                }
+            }
+        }
+        catch (e) {
+            error = e;
+        }
+        if (!valid) {
+            this.showStatus(file.name + ' is not a valid dashboard file', 'error');
+        }
+        if (error) {
+            this.showStatus(error, 'error');
+        }
+        if (done && this.dashboardConflicts.length > 0) {
+            if (this.dashboardConflicts.length == 1) {
+                this.confirmDialog('Overwite dashboard',
+                                   'Overwite ' + name + ' ?',
+                                   'dashboardConflict',
+                                   {name: this.dashboardConflicts[0].name,
+                                    dashboard: this.dashboardConflicts[0].dashboard,
+                                    show: false});
+            }
+            else {
+                this.dashboardConflictsDialog();
+            }
+        }
+    },
+    newDashboardRovView : function (dashboardItem) {
+        var view = this.newRovView(dashboardItem.elemName, dashboardItem.elemPath);
+        view.style.left = dashboardItem.left + 'px';
+        view.style.top = dashboardItem.top + 'px';
+        view.$.viewPaperCard.style.width = dashboardItem.width;
+        view.$.viewPaperCard.style.height = dashboardItem.height;
+        view.style.zIndex = dashboardItem.zIndex;
+    },
+    newModuleView : function(moduleName, viewName, dashboardViewsData, viewArgs) {
+        var rovViews = [];
+        if (this.rovModuleViews.length > 0) {
+            for (var i = 0; i < this.rovModuleViews.length; i++) {
+                rovViews.push(rovUtils.shallowCopy(this.rovModuleViews[i]));
+            }
+        }
+        var newView = {};
+        newView.id = this.getNewModuleViewId();
+        rovViews.push(newView);
+        this.rovModuleViews = rovViews;
+
+        var view = document.createElement('ti-rov-view');
+        view.setAttribute('id', newView.id);
+        if (dashboardViewsData) {
+            view.dashboardView = true;
+            view.viewsData = dashboardViewsData;
+        }
+        if (viewArgs) {
+            view.viewArgs = viewArgs;
+        }
+
+        /* this triggers moduleNameChanged() in ti-rov-view.js */
+        view.moduleName = moduleName;
+
+        Polymer.dom(this.$.contentDiv).appendChild(view);
+        Polymer.dom.flush();
+        if (viewName) {
+            view.showView(viewName, false);
+        }
+        this.toolbarButtonsState();
+        this.dashboardButtonsState();
+        return (view);
+    },
+    newRovView : function(elemName, elemPath, toTop) {
+        var rovViews = [];
+        if (this.rovViews.length > 0) {
+            for (var i = 0; i < this.rovViews.length; i++) {
+                rovViews.push(rovUtils.shallowCopy(this.rovViews[i]));
+            }
+        }
+        var newView = {};
+        newView.id = this.getNewViewId();
+        rovViews.push(newView);
+        this.rovViews = rovViews;
+
+        var elem = document.createElement(elemName);
+        elem.setAttribute('id', newView.id);
+        elem.name = elemName;
+        elem.path = elemPath;
+
+        Polymer.dom(this.$.contentDiv).appendChild(elem);
+        Polymer.dom.flush();
+        this.toolbarButtonsState();
+        this.dashboardButtonsState();
+        if (toTop) {
+            elem.style.zIndex = String(this.getMaxZindex() + 1);
+        }
+        return (elem);
+    },
+    onIronResize: function(e) {      /* height only resize */
+        if (!this.inited || this.panelWidth == this.$.rovDrawerPanel.offsetWidth) {
+            return;
+        }
+        if (!this.$.rovDrawerPanel.narrow &&
+            this.$.rovDrawerPanel.offsetWidth < 875 &&
+            (this.$.rovDrawerPanel.offsetWidth < this.panelWidth || this.panelWidth == -1)) {
+
+            this.toggleDrawerClicked();
+        }
+        this.panelWidth = this.$.rovDrawerPanel.offsetWidth;
+    },
+    openDashboardClicked : function(e) {
+        if (this.hasSavedDashboards()) {
+            this.listDashboardsDialog('Open', e);
+        }
+    },
+    openDashboardDrop : function (e) {
+        this.dashboardButtonsState();
+        if (this.isADragDropFile(e)) {
+            e.preventDefault();
+            var files = e.dataTransfer.files;
+            if (files.length == 1) {
+                var reader = new FileReader();
+                reader.onload = this.dashboardFileLoaded.bind(this, files[0]);
+                reader.readAsText(files[0]);
+            }
+            else {
+                this.dashboardConflicts = [];
+                for (var i = 0; i < files.length; i++) {
+                    var reader = new FileReader();
+                    reader.onload = this.multiDashboardFileLoaded.bind(this, files[i], i == (files.length - 1));
+                    reader.readAsText(files[i]);
+                }
+            }
+        }
+        else {
+            alert('Not a valid dashboard file');
+        }
+    },
+    openDashboardFileClicked : function (e) {
+        this.$.openDashboardFileInput.value = '';
+        this.$.openDashboardFileInput.click();
+    },
+    openDashboardFileSelected : function (e) {
+        var files = e.currentTarget.files;
+        if (files.length == 1) {
+            if (files[0].name.match(/\.rov\.json$/) != null) {
+                var reader = new FileReader();
+                reader.onload = this.dashboardFileLoaded.bind(this, files[0]);
+                reader.readAsText(files[0]);
+            }
+            else {
+                this.showStatus(files[0].name + ' is not a valid dashboard file', 'error');
+            }
+            this.$.openDashboardFileInput.value = '';
+        }
+    },
+    otherViewsDialog : function(event) {
+        var dialog = document.getElementById('otherViewsDialog');
+        if (dialog) {
+            this.set('dlgOtherViews', this.otherViews);
+                               /* 24 is the padding + 10 */
+            dialog.style.left = (event.x - 34) + 'px';
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+            if (this.$.otherViewsMenu.selected != undefined) {
+                this.$.otherViewsMenu.selected = -1;
+            }
+        }
+    },
+    otherViewsDialogClosed : function(e) {
+        this.set('dlgOtherViews', []);
+    },
+    otherViewSelected : function(e) {
+        var elemName = e.detail.item.id;
+        var elemPath = this.getAddonPath(elemName);
+        var elem = this.newRovView(elemName, elemPath, true);
+        this.$.otherViewsMenu.selected = -1;
+        var dialog = document.getElementById('otherViewsDialog');
+        if (dialog) {
+            dialog.close();
+        }
+        var offset = this.getNewClickedViewPosition();
+        if (offset.left > 0) {
+            elem.style.left = offset.left + 'px';
+        }
+        if (offset.top > 0) {
+            elem.style.top = offset.top + 'px';
+        }
+    },
+    otherViewsHaveElem : function (elemName) {
+        for (var i = 0; i < this.otherViews.length; i++) {
+            if (this.otherViews[i].element == elemName) {
+                return (true);
+            }
+        }
+        return (false);
+    },
+    overwriteADashboardChecked : function (e) {
+        if (!this.$.overwriteDashboardsDialog.opened) {
+            return;
+        }
+        this.enableChecklistDialogActionButton(e, 'overwriteDashboardsList',
+                                               'overwriteDashboardsButton');
+    },
+    overwriteDashboardsClicked : function (e) {
+        var listItems = this.$.overwriteDashboardsList.items;
+        /* make list of checked and unchecked items */
+        var checked = [];
+        var unchecked = [];
+        for (var i = 0; i < listItems.length; i++) {
+            if (listItems[i].lastElementChild.checked) {
+                checked.push(listItems[i].innerText.trim());
+                listItems[i].lastElementChild.checked = false;
+            }
+            else {
+                unchecked.push(listItems[i].innerText.trim());
+            }
+        }
+        /* save all checked dashboards */
+        for (var i = 0; i < this.dashboardConflicts.length; i++) {
+            if (checked.indexOf(this.dashboardConflicts[i].name) >= 0) {
+                this.saveDroppedDashboard(this.dashboardConflicts[i].name,
+                                          this.dashboardConflicts[i].dashboard,
+                                          false);
+            }
+        }
+        if (unchecked.length > 0) {   /* redisplay unchecked dashboards */
+            unchecked.sort();
+            this.set('overwriteDashboardsItems', unchecked);
+            this.$.overwriteDashboardsButton.disabled = true;
+        }
+        else {
+            this.$.overwriteDashboardsDialog.close();
+        }
+    },
+    overwriteDashboardsKeyPress : function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) {
+            if (!this.$.overwriteDashboardsButton.disabled) {
+                this.overwriteDashboardsClicked();
+            }
+            if (this.$.overwriteDashboardsDialog.opened) {
+                this.$.overwriteDashboardsDialog.close();
+            }
+        }
+    },
+    parseAddOnPath : function (path) {
+        /*  If path does not end in '.html', assume it is either the
+         *  add on files directory, or the add on .html file with the
+         *  '.html' missing.
+         */
+        if (path) {
+            if (path.search(/\.html$/) == -1) {
+                path = path.replace(/\\/g,'/');
+                if (path.search(/\/$/) > 0) {
+                    path = path.slice(0, -1);
+                }
+                /* Get the add on files directory from the path */
+                if (path.indexOf('/') != -1) {
+                    var dirName = path.substr(path.lastIndexOf('/'));
+                    /* Also check if full name was entered w/o '.html' at the end */
+                    var checkStr = path.slice(0, dirName.length * -1);
+                    var rgex = new RegExp(dirName + '$');
+                    if (checkStr.search(rgex) == -1) {
+                       /* Is just the directory, append it before adding '.html' */
+                        path += dirName;
+                    }
+                }
+                else {
+                    path = path + '/' + path;
+                }
+                path += '.html';
+            }
+            path = path.replace(/([^:])\/\/+/g, '$1/'); /* clean any dup '/' */
+        }
+        return (path);
+    },
+    queryViewSearchModules : function(module, searchArr) {
+        /*  First, search for exact match */
+        var foundArr = [];
+        if (searchArr.indexOf(module) >= 0) {
+            foundArr.push({module : module});
+        }
+        else {
+            /* If not found, try case insensitive and suffixes */
+            var exp = RegExp(module + '$', 'i');
+            var exp2 = RegExp(module, 'i');
+            for (var i = 0; i < searchArr.length; i++) {
+                if (searchArr[i].search(exp) >= 0) {
+                    foundArr.push({module : searchArr[i]});
+                }
+                else if (searchArr[i].search(exp2) >= 0) {
+                    foundArr.push({module : searchArr[i]});
+                }
+            }
+        }
+        return (foundArr);
+    },
+    refreshAllClicked : function() {
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            var elem = this.getViewById(this.rovModuleViews[i].id);
+            if (elem.viewName) {
+                elem.showView(elem.viewName, true);
+            }
+        }
+        /* Notify any other views */
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var view = this.getViewById(this.rovViews[i].id);
+            if (view && view.onRefresh) {
+                view.onRefresh();
+            }
+        }
+    },
+   removeAddOnClicked : function (e) {
+        var selHref = this.$.curAddOnsList.selectedItem.title;
+        var otherViews = [];
+        for (var i = 0; i < this.otherViews.length; i++) {
+            if (this.otherViews[i].href != selHref) {
+                otherViews.push(this.otherViews[i]);
+            }
+        }
+        this.set('otherViews', otherViews);
+        this.set('dlgOtherViews', otherViews);
+        this.$.curAddOnsList.selected = -1;
+        this.$.removeAddOnButton.disabled = true;
+        this.enableOtherViews = this.otherViews.length > 0;
+        var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+        rovSettings.otherViews = this.otherViews;
+        rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+    },
+    repeatRefreshAll: function () {
+        if (this.repeatHandle != 0) {
+            if (this.dataViewsShowing() > 0) {
+                this.refreshAllClicked();
+                this.repeatHandle = this.async(this.repeatRefreshAll, this.refreshInterval);
+            }
+            else {
+                this.repeatHandle = 0;
+                this.stopRepeatRefresh(true);
+                this.toolbarButtonsState();
+            }
+        }
+    },
+    repeatRefreshClicked : function () {
+        this.inRepeatRefresh = true;
+        this.$.refreshAllButton.disabled = true;
+        if (this.repeatHandle == 0) {
+            this.refreshAllClicked();
+            this.repeatHandle = this.async(this.repeatRefreshAll, this.refreshInterval);
+        }
+    },
+    rovOptionsClicked : function(e) {
+        var dialog = this.$.rovOptionsMenuDialog;
+        if (dialog) {
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+
+            /* set disabled state of storage options button */
+//            this.$.storageOptionsDialog.disabled = !this.hasViewsStorage();
+
+            /* show/disable connect dialog at startup */
+            this.$.showIntroCheckbox.checked = !this.rovInit.autoConnect;
+        }
+    },
+    rovOptionsItemSelected : function (e) {
+        var selected = e.currentTarget.selectedItem.id;
+        this.$.rovOptionsMenu.selected = -1;
+        this.$.rovOptionsMenuDialog.close();
+        if (selected != 'showIntroItem') {
+            this[selected](e); /* id of the item is the function name */
+        }
+    },
+    sanityCheckAddons : function () {
+        if (this.otherViews.length) {
+            var others = [];
+            var errFound = false;
+            for (var i = 0; i < this.otherViews.length; i++) {
+                if (this.otherViews[i].href != 'error') {
+                    others.push(this.otherViews[i]);
+                }
+                else if (!errFound) {
+                    errFound = true;
+                }
+            }
+            if (errFound) {
+                this.otherViews = rovUtils.shallowCopy(others);
+                var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+                rovSettings.otherViews = this.otherViews;
+                rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+            }
+        }
+    },
+    saveAddOnMru : function (addOnHref) {
+        this.saveMru(addOnHref, this.addOnMrus.indexOf(addOnHref), 'addOnMrus',
+                     rovUtils.shallowCopy(this.addOnMrus));
+    },
+    saveAllViews : function (e) {
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            var elem = this.getViewById(this.rovModuleViews[i].id);
+            if (elem.viewName) {
+                elem.onSave();
+            }
+        }
+        /* Notify any other views */
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var elem = this.getViewById(this.rovViews[i].id);
+            if (elem && elem.onSave) {
+                elem.onSave();
+            }
+        }
+    },
+    saveCommLinkMru : function (commLink) {
+        this.saveMru(commLink, this.commLinkMrus.indexOf(commLink), 'commLinkMrus',
+                     rovUtils.shallowCopy(this.commLinkMrus));
+    },
+    saveDashboardClicked : function(e) {
+        var dialog = document.getElementById('saveDashboardDialog');
+        if (dialog) {
+            dialog.addEventListener('iron-overlay-closed', function() {
+                var reason = this.closingReason;
+                return (false);
+            });
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+            this.$.saveDashboardInput.value = this.currentDashboard;
+            this.$.showSavedDashboardsButton.disabled = !this.hasSavedDashboards();
+            this.$.exportDashboardCheckbox.checked = false;
+        }
+    },
+    saveDashboardKeyPress : function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13 && this.$.saveDashboardInput.value != '') {
+            this.saveDashboardOkClicked(e);
+        }
+    },
+    saveDashboardOkClicked : function (e) {
+        var dashName = this.$.saveDashboardInput.value;
+        if (dashName.length) {
+            this.setCurrentDashboard(dashName);
+            this.$.saveDashboardInput.value = '';
+            var exportChecked = this.$.exportDashboardCheckbox.checked;
+            this.$.saveDashboardDialog.close();
+            var dashArr = [];
+            for (var i = 0; i < this.rovModuleViews.length; i++) {
+                var elem = this.getViewById(this.rovModuleViews[i].id);
+                elem.setDashboardView(true);
+                var elemObj = {};
+                elemObj.id = elem.id;
+                elemObj.moduleName = elem.moduleName;
+                elemObj.viewName = elem.viewName;
+                elemObj.viewsData = {};
+                if (elem.viewName) {
+                    elemObj.viewsData[elem.moduleName + '.' + elem.viewName] =
+                        elem.getViewsData()[elem.moduleName + '.' + elem.viewName];
+                }
+                if (elem.viewArgs) {
+                    elemObj.viewArgs = elem.viewArgs;
+                }
+                elemObj.left = elem.offsetLeft;
+                elemObj.top  = elem.offsetTop;
+                elemObj.width = elem.$.viewPaperCard.offsetWidth;
+                elemObj.height = elem.$.viewPaperCard.offsetHeight;
+                elemObj.zIndex = elem.style.zIndex;
+                if (elem.$.viewContentDiv.style.position == 'absolute') {
+                    elemObj.resized = true;
+                }
+                elemObj.dashboardVersion = this.dashboardVersion;
+                dashArr.push(elemObj);
+                /*  If any changes are made to the fields here, make sure to change */
+                /*  the dashboard version property!!!!!!!!!  */
+            }
+            for (var i = 0; i < this.rovViews.length; i++) {
+                var elem = this.getViewById(this.rovViews[i].id);
+                var elemObj = {};
+                elemObj.elemName = elem.name;
+                elemObj.elemPath = elem.path ? elem.path : this.getAddonPath(elem.name);
+                elemObj.id = elem.id;
+                elemObj.viewName = elem.viewName;
+                elemObj.left = elem.offsetLeft;
+                elemObj.top  = elem.offsetTop;
+                elemObj.width = elem.$.viewPaperCard.style.width;
+                elemObj.height = elem.$.viewPaperCard.style.height;
+                elemObj.zIndex = elem.style.zIndex;
+                elemObj.dashboardVersion = this.dashboardVersion;
+                dashArr.push(elemObj);
+                /*  If any changes are made to the fields here, make sure to change */
+                /*  the dashboard version property!!!!!!!!!  */
+            }
+            this.dashboards[dashName] = dashArr;
+            rovUtils.setLocalStorageObject('dashboards-storage', this.dashboards);
+            if (exportChecked) {
+                this.exportDashboard(dashName, dashArr);
+            }
+            this.dashboardButtonsState();
+        }
+    },
+    saveDataOptionsOkClicked: function(e) {
+        this.$.repeatRefreshInputInvalid.hidden = true;
+        this.$.dataTimeoutInputInvalid.hidden = true;
+        var invalidInterval = false;
+        var invalidDataTimeout = false;
+        var invalidConnectTimeout = false;
+        var interval = this.$.repeatRefreshInput.value;
+        var dataTimeout = this.$.dataTimeoutInput.value;
+        var connectTimeout = this.$.connectTimeoutInput.value;
+        if (!interval.match(/^[1-9][0-9]*$/)) {
+            invalidInterval = true;
+            this.$.repeatRefreshInputInvalid.hidden = false;
+        }
+        if (!dataTimeout.match(/^[1-9][0-9]*$/)) {
+            invalidDataTimeout = true;
+            this.$.dataTimeoutInputInvalid.hidden = false;
+        }
+        if (!connectTimeout.match(/^[1-9][0-9]*$/)) {
+            invalidConnectTimeout = true;
+            this.$.connectTimeoutInputInvalid.hidden = false;
+        }
+        if (!invalidInterval && !invalidDataTimeout && !invalidConnectTimeout) {
+            this.refreshInterval = Number(interval);
+            this.dataTimeoutPeriod = Number(dataTimeout);
+            this.connectTimeoutPeriod = Number(connectTimeout);
+            this.rovData.setRequestTimeout(dataTimeout);
+            this.rovData.setConnectTimeout(connectTimeout);
+            var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+            rovSettings.refreshInterval = this.refreshInterval;
+            rovSettings.dataTimeoutPeriod = this.dataTimeoutPeriod;
+            rovSettings.connectTimeoutPeriod = this.connectTimeoutPeriod;
+            rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+            this.$.dataOptionsDialog.close();
+        }
+    },
+    saveDroppedDashboard : function (name, dashboard, show) {
+        this.dashboards[name] = dashboard;
+        rovUtils.setLocalStorageObject('dashboards-storage', this.dashboards);
+        if (show) {
+            this.showDashboard(dashboard, name);
+        }
+        else {
+            this.dashboardButtonsState();
+        }
+        this.showStatus('Saved dashboard: ' + name, 'info');
+    },
+    saveExeMru : function (exe) {
+        if (this.ccs7) {
+            this.exeMrus.shift(); /* remove 'use current program' from top */
+        }
+        exe = exe.replace(/\\/g, '/');
+        var lwrExe = exe.toLowerCase();
+        var index = -1;
+        for (var i = 0; i < this.exeMrus.length; i++) {
+            if (this.exeMrus[i].toLowerCase() == lwrExe) {
+                index = i;
+                break;
+            }
+        }
+        this.saveMru(exe, index, 'exeMrus', rovUtils.shallowCopy(this.exeMrus));
+    },
+    saveMru : function (mru, mruIndex, mrusProp, mrusArr) {
+        if (mruIndex > 0) {
+            mrusArr.splice(mruIndex, 1);
+            mrusArr.unshift(mru);
+        }
+        else if (mruIndex < 0) {
+            mrusArr.unshift(mru);
+        }
+        if (mrusArr.length > 8) {
+            while (mrusArr.length > 8) {
+                mrusArr.pop();
+            }
+        }
+        this.set(mrusProp, mrusArr);
+        var rovSettings = rovUtils.getLocalStorageObject('rovSettings-storage');
+        rovSettings[mrusProp] = this[mrusProp];
+        rovUtils.setLocalStorageObject('rovSettings-storage', rovSettings);
+    },
+    selectAllViewStorageClicked : function(e) {
+        if (!this.$.manageStorageDialog.opened) {
+            return;
+        }
+        var listItems = this.$.viewsStorageList.items;
+        for (var i = 0; i < listItems.length; i++) {
+            listItems[i].lastElementChild.checked = e.currentTarget.checked;
+        }
+        this.$.clearViewStorageButton.disabled = !e.currentTarget.checked;
+    },
+    selectModulesViewDialogClicked : function (e) {
+        if (this.allModules.length > 0) {
+            var dialog = this.$.selectModulesViewDialog;
+            if (dialog) {
+                dialog.style.left = (e.x) + 'px';
+                dialog.open();
+                this.$.selectModulesViewMenu.selected = -1;
+            }
+        }
+    },
+    setCurrentDashboard : function (name) {
+        this.currentDashboard = name;
+        this.$.currentDashboardDiv.title = (name == '') ? '' : 'Current dashboard';
+    },
+    setExecutableCallback : function (resObj) {
+        var res = resObj.resStr;
+        if (res != 'OK') {
+            if (this.$.introDialog.hidden == false) {
+                this.$.introLoadButton.disabled = false;
+                this.introMessage = res;
+                this.$.introErrorIcon.hidden = false;
+                this.$.introMessageDiv.hidden = false;
+                this.$.introProgress.hidden = true;
+            }
+            else if (this.$.autoConnectProgressDialog.opened) {
+                this.$.autoConnectProgressDialog.close();
+                if (this.rovInit.autoConnect) {
+                    this.rovInit.autoConnect = false;
+                    rovUtils.setLocalStorageObject('rovInit-storage', this.rovInit);
+                }
+                this.showIntro(res);
+            }
+            else {
+                this.showStatus(res, 'error');
+            }
+            return;
+        }
+        if (this.$.introDialog.hidden == false) {
+            this.rovInit.exe = this.$.exeInput.value;
+            this.rovInit.commLink = this.$.commLinkInput.value;
+            this.rovInit.autoConnect = this.$.autoConnectCheckbox.checked;
+            this.rovInit.noExe = this.$.exeInput.value == this.useCurrentProgram;
+            this.averageIntroProgess();
+            rovUtils.setLocalStorageObject('rovInit-storage', this.rovInit);
+            this.$.introDialog.hidden = true;
+            this.$.introDialog.style.display = 'none';
+        }
+        else if (this.$.autoConnectProgressDialog.opened) {
+            this.averageIntroProgess();
+            rovUtils.setLocalStorageObject('rovInit-storage', this.rovInit);
+            this.$.autoConnectProgressDialog.close();
+        }
+        if (this.exeName == '' && resObj.exeName.length > 0) {
+            var exe = resObj.exeName.replace(/\\/g, '/');
+            this.$.rovTitleToolbar.title = exe;
+            this.exeName  = exe.substr(exe.lastIndexOf('/') + 1);
+        }
+        else {
+            this.$.rovTitleToolbar.title = this.rovInit.exe;
+        }
+        document.title = "ROV: " + this.exeName;
+        if (window.rov_setTitle) {
+            window.rov_setTitle(document.title);
+        }
+
+        /* Enable toolbars */
+        this.$.toggleDrawerBtn.disabled = false;
+        this.$.rovOptionsButton.disabled = false;
+        this.$.listAllIconButton.disabled = false;
+        this.$.favoritesIconButton.disabled = false;
+        this.$.openDashboardButton.disabled = false;
+        this.dashboardButtonsState();
+        this.toolbarButtonsState();
+        this.sanityCheckAddons();
+        if (!this.ccs7 || !this.rovInit.noExe) {
+            this.saveExeMru(this.rovInit.exe);
+        }
+        this.saveCommLinkMru(this.rovInit.commLink);
+        this.rovData.getViewList(this);
+        this.inited = true;
+    },
+    setExecutableProgressCallback : function (res) {
+        if (this.$.introDialog.hidden == false && this.$.introProgress.hidden == false) {
+            this.$.introProgress.value += this.rovInit.progressInfo.step;
+            ++this.rovInit.progressInfo.notifyCount;
+        }
+        else if (this.$.introDialog.hidden == true && this.rovInit.autoConnect) {
+            this.$.autoConnectProgress.value += this.rovInit.progressInfo.step;
+            ++this.rovInit.progressInfo.notifyCount;
+        }
+    },
+    setRovSettings : function(rovSettings) {
+        this.set('rovSettings', rovSettings);
+        if (this.rovSettings.refreshInterval) {
+            this.refreshInterval = this.rovSettings.refreshInterval;
+        }
+        if (this.rovSettings.dataTimeoutPeriod) {
+            this.dataTimeoutPeriod = this.rovSettings.dataTimeoutPeriod;
+            this.rovData.setRequestTimeout(this.dataTimeoutPeriod);
+        }
+        if (this.rovSettings.connectTimeoutPeriod) {
+            this.connectTimeoutPeriod = this.rovSettings.connectTimeoutPeriod;
+            this.rovData.setConnectTimeout(this.connectTimeoutPeriod);
+        }
+        if (this.rovSettings.curModsLabel) {
+            this.curModsLabel = this.rovSettings.curModsLabel;
+            if (this.curModsLabel == 'All Modules') {
+                /* Only change it if not default */
+                this.otherModsLabel = 'Viewable Modules';
+            }
+        }
+        if (this.rovSettings.otherViews) {
+            this.otherViews = rovUtils.shallowCopy(this.rovSettings.otherViews);
+            for (var i = 0; i < this.otherViews.length; i++) {
+                var path = this.parseAddOnPath(this.otherViews[i].path);
+                this.addOnsHash[path] = this.otherViews[i];
+                this.importHref(path,
+                    function(e){
+                        var key = this.getAddOnHashKey(e.target.outerHTML);
+                        this.addOnsHash[key].href = e.target.href;
+                    },
+                    function(e){
+                        var key = this.getAddOnHashKey(e.target.outerHTML);
+                        this.addOnsHash[key].href = 'error';
+                        this.showStatus('Error importing ' + e.target.href, 'error');
+                    }
+                );
+            }
+        }
+        if (this.rovSettings.addOnMrus) {
+            this.addOnMrus = rovUtils.shallowCopy(this.rovSettings.addOnMrus);
+        }
+        if (this.rovSettings.exeMrus) {
+            this.exeMrus = rovUtils.shallowCopy(this.rovSettings.exeMrus);
+        }
+        if (this.rovSettings.commLinkMrus) {
+            this.commLinkMrus = rovUtils.shallowCopy(this.rovSettings.commLinkMrus);
+        }
+    },
+    showAllClicked : function () {
+        this.set('allModulesVisible', true);
+        this.$.listAllIconButton.style.color = tiRovStyles.modulesViewSelectedColor;
+        this.$.listAllIconButton.style.backgroundColor = tiRovStyles.modulesViewSelectedBackground;
+        this.$.favoritesIconButton.style.color = tiRovStyles.titleToolbarColor;
+        this.$.favoritesIconButton.style.backgroundColor = 'transparent';
+    },
+    showDashboard : function (dashboard, dashName) {
+        if (dashboard.length > 0 &&
+            (!dashboard[0].dashboardVersion ||
+              dashboard[0].dashboardVersion != this.dashboardVersion)) {
+            this.showStatus('Incompatible dashboard', 'warning');
+        }
+        this.closeAllViews();
+        this.setCurrentDashboard(dashName);
+        for (var i = 0; i < dashboard.length; i++) {
+            if (dashboard[i].moduleName) {
+                if (this.allModules.indexOf(dashboard[i].moduleName) >= 0) {
+                    var view = this.newModuleView(dashboard[i].moduleName, dashboard[i].viewName,
+                                                  dashboard[i].viewsData, dashboard[i].viewArgs);
+                    view.style.left = dashboard[i].left + 'px';
+                    view.style.top = dashboard[i].top + 'px';
+                    if (dashboard[i].resized) {
+                        view.$.viewContentDiv.style.position = 'absolute';
+                        view.$.viewPaperCard.style.width = dashboard[i].width + 'px';
+                        view.$.viewPaperCard.style.height = dashboard[i].height + 'px';
+                    }
+                    view.style.zIndex = dashboard[i].zIndex;
+                }
+                else {
+                    this.showStatus('Module ' + dashboard[i].moduleName + ' is not present in ' + document.title, 'warning');
+                }
+            }
+            else if (dashboard[i].elemName) {   /* is otherView */
+                if (!this.otherViewsHaveElem(dashboard[i].elemName)) {
+                    this.loadMissingDashboardAddon(dashboard[i], true);
+                }
+                else {
+                    this.newDashboardRovView(dashboard[i]);                }
+            }
+        }
+    },
+    showFavoritesClicked : function () {
+        this.set('allModulesVisible', false);
+        if (this.favoriteModules.length > 0 && this.favoriteTocItems.length == 0) {
+            this.set('favoriteTocItems', this.makeModulesToc(this.favoriteModules));
+        }
+        this.$.favoritesIconButton.style.color = tiRovStyles.modulesViewSelectedColor;
+        this.$.favoritesIconButton.style.backgroundColor = tiRovStyles.modulesViewSelectedBackground;
+        this.$.listAllIconButton.style.color = tiRovStyles.titleToolbarColor;
+        this.$.listAllIconButton.style.backgroundColor = 'transparent';
+    },
+    showIntro : function (autoConnectError) {
+        this.$.introMessageDiv.hidden = true;
+        this.$.commLinkInputInvalid.hidden = true;
+        this.$.exeInputInvalid.hidden = true;
+        if (this.rovInit.exe) {
+            this.$.exeInput.value = this.rovInit.exe;
+        }
+        else if (this.ccs7) {
+            this.$.exeInput.value = this.useCurrentProgram;
+        }
+        if (this.ccs7) {
+            var exeMrus = [this.useCurrentProgram];
+            for (var i = 0; i < this.exeMrus.length; i++) {
+                exeMrus.push(this.exeMrus[i]);
+            }
+            this.set('exeMrus', exeMrus);
+        }
+        if (this.rovInit.commLink) {
+            this.$.commLinkInput.value = this.rovInit.commLink;
+        }
+        else if (this.ccs7) {
+            this.$.commLinkInput.value = 'Debugger';
+        }
+        if (!this.rovInit.progressInfo) {
+            this.rovInit.progressInfo = {};
+            this.rovInit.progressInfo.min = 0;
+            this.rovInit.progressInfo.max = 10;
+            this.rovInit.progressInfo.step = 1;
+        }
+        this.$.introProgress.min = this.rovInit.progressInfo.min;
+        this.$.introProgress.max = this.rovInit.progressInfo.max;
+        this.$.introProgress.step = this.rovInit.progressInfo.step;
+        this.$.introProgress.value = 0;
+        this.$.introLoadButton.disabled = false;
+        if (autoConnectError) {
+            this.introMessage = autoConnectError;
+            this.$.introErrorIcon.hidden = false;
+            this.$.introMessageDiv.hidden = false;
+            this.$.introProgress.hidden = true;
+        }
+        this.$.introDialog.hidden = false;
+        this.$.introDialog.style.display = 'inline-block';
+    },
+    showIntroChecked : function (e) {
+        this.$.rovOptionsMenu.selected = -1;
+        this.rovInit.autoConnect = !e.currentTarget.checked;
+        rovUtils.setLocalStorageObject('rovInit-storage', this.rovInit);
+    },
+    showSavedDashboardsClicked : function (event) {
+        this.listDashboardsDialog('Save', event);
+    },
+    showStatus : function (message, type) {
+        var statusItems = [];
+        if (this.statusItems.length > 0) {
+            statusItems = rovUtils.shallowCopy(this.statusItems);
+        }
+        var statusItem = {};
+        if (!type) {
+            statusItem.iconHidden = true;
+            statusItem.style = 'margin-left:33px';
+        }
+        else {
+            statusItem.style = '';
+            statusItem.iconHidden = false;
+            if (type == 'warning') {
+                statusItem.icon = 'warning';
+                statusItem.iconStyle = 'color:goldenrod;--iron-icon-stroke-color:black';
+                statusItem.iconClass = 'consoleWarningIcon';
+            }
+            else if (type == 'error') {
+                statusItem.icon = 'error';
+                statusItem.iconStyle = 'color:red';
+                statusItem.iconClass = 'consoleErrorIcon';
+            }
+            else if (type == 'info') {
+                statusItem.icon = 'info-outline';
+                statusItem.iconStyle = 'color:blue';
+                statusItem.iconClass = 'consoleStatusIcon';
+            }
+        }
+        statusItem.message = message;
+        statusItems.push(statusItem);
+        var maxWidth = 0;
+        for (var i = 0; i < statusItems.length; i++) {
+            var width = rovUtils.getStringWidth(statusItems[i].message);
+            if (width > maxWidth) {
+                maxWidth = width;
+            }
+        }
+        this.$.statusConsole.style.width = String(maxWidth + 48) + 'px';
+        if (statusItems.length > 10) {
+            if (this.$.statusConsole.style.overflowY != 'auto') {
+                this.$.statusConsole.style.overflowY = 'auto';
+            }
+            this.$.statusConsole.style.height = String(10 * 34) + 'px';
+
+        }
+        else {
+            this.$.statusConsole.style.height = String(statusItems.length * 34) + 'px';
+        }
+        this.set('statusItems', statusItems);
+        this.$.statusConsole.hidden = false;
+    },
+    stopRepeatRefresh : function (cancelAll) {
+        this.inRepeatRefresh = false;
+        this.$.repeatRefreshButton.disabled =
+            this.$.refreshAllButton.disabled = (this.dataViewsShowing() < 1);
+        if (this.repeatHandle != 0) {
+            var handle = this.repeatHandle;
+            this.repeatHandle = 0;
+            this.cancelAsync(handle);
+        }
+        if (cancelAll) {
+            this.rovData.cancelAllPendingRequests();
+        }
+    },
+    stopRepeatRefreshClicked : function () {
+        this.stopRepeatRefresh(true);
+    },
+    storableRovViewsShowing : function() {
+        var count = 0;
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var elem = this.getViewById(this.rovViews[i].id);
+            if (elem) {
+                if (elem.hasStorableContent && elem.hasStorableContent()) {
+                    ++count;
+                }
+            }
+        }
+        return (count);
+    },
+    storageOptionsDialog : function (e) {
+        var dialog = document.getElementById('manageStorageDialog');
+        if (dialog) {
+            var viewsStorage = rovUtils.getLocalStorageObject('viewsData-storage');
+            var keys = Object.keys(viewsStorage);
+            var nonNullKeys = [];
+            var maxWidth = 0;
+            for (var i = 0; i < keys.length; i++) {
+                if (viewsStorage[keys[i]]) {
+                    nonNullKeys.push(keys[i]);
+                    var width = rovUtils.getStringWidth(keys[i]);
+                    if (width > maxWidth) {
+                        maxWidth = width;
+                    }
+                }
+            }
+            nonNullKeys.sort();
+            this.set('viewsStorageItems', nonNullKeys);
+            dialog.open();
+            this.$.viewsStorageList.style.width = maxWidth + 'px';
+            dialog.style.left = this.isNarrow() ? '0px': '256px';
+            dialog.style.zIndex = String(this.getMaxZindex() + 10);
+
+            /* Init checkboxes and clear selection button */
+            var listItems = this.$.viewsStorageList.items;
+            for (var i = 0; i < listItems.length; i++) {
+                listItems[i].lastElementChild.checked = false;
+            }
+            this.$.viewsStorageList.selected = -1;
+            this.$.clearViewStorageButton.disabled = true;
+            this.$.selectAllViewsStorageCheckbox.checked = false;
+            this.$.selectAllViewsStorageCheckbox.disabled = nonNullKeys.length == 0;
+        }
+    },
+    subMenuClicked : function (event) {
+        if (this.allModulesVisible) {
+            var index = this.getTocIndex(event.currentTarget.id, this.tocItems);
+            if (index >= 0) {
+                var str = 'tocItems.' + index + '.expanded';
+                this.set(str, !this.tocItems[index].expanded);
+            }
+        }
+        else {
+            var index = this.getTocIndex(event.currentTarget.id, this.favoriteTocItems);
+            if (index >= 0) {
+                var str = 'favoriteTocItems.' + index + '.expanded';
+                this.set(str, !this.favoriteTocItems[index].expanded);
+            }
+        }
+    },
+    toggleDrawerClicked : function (e) {
+        var narrow = !this.$.rovDrawerPanel.narrow;
+        this.$.rovDrawerPanel._responsiveChange(narrow);
+        this.set('toggleIcon', narrow ? 'chevron-right' : 'chevron-left');
+        this.set('toggleTooltip', narrow ? 'Show modules list' : 'Hide modules list');
+        this.$.rovTitle.hidden = narrow;
+        this.$.titleSpan.style.left = narrow ? '45px' : '210px';
+    },
+    toolbarButtonsState : function() {
+        var allViewsLength = this.rovModuleViews.length + this.rovViews.length;
+        this.$.viewToTopButton.disabled = allViewsLength <= 1;
+        this.$.saveAllButton.disabled = (this.moduleViewsShowing() + this.storableRovViewsShowing()) < 1;
+        this.$.repeatRefreshButton.disabled = this.$.refreshAllButton.disabled =
+                (this.dataViewsShowing() < 1 || this.repeatHandle != 0);
+        this.$.closeAllButton.disabled = allViewsLength == 0;
+        if (allViewsLength == 0) {
+            this.setCurrentDashboard('');
+        }
+        this.enableOtherViews = this.otherViews.length > 0;
+    },
+    toolbarDragEnter : function (e) {
+        this.dashboardDrag(e);
+    },
+    toolbarDragOver : function (e) {
+        this.dashboardDrag(e);
+    },
+    viewDragEnd : function (event) {
+        if (!rovUtils.validDragElement(event.target)) {
+            return;
+        }
+        var elem = this.getViewById(event.target.parentElement.dataHost.id);
+        if (elem.$.viewContentDiv) {  /* re-enable mouse events in content */
+            elem.$.viewContentDiv.style.pointerEvents = '';
+        }
+    },
+    viewDragEnter : function (event) {
+        if (!rovUtils.validDragElement(event.target)) {
+            return;
+        }
+        event.preventDefault();
+    },
+    viewDragOver : function (event) {
+        if (!rovUtils.validDragElement(event.target)) {
+            return;
+        }
+        if (event.target.id == 'contentDiv' || event.target.id == 'mainContainer' ||
+            event.target.id.indexOf('rovModuleView_') >= 0 ||
+            event.target.id.indexOf('rovView_') >= 0) {
+
+            event.preventDefault();
+        }
+    },
+    viewDragStart : function (event) {
+        if (event.target.id != 'dragDiv') {
+            if (rovUtils.validDragElement(event.target)) {
+                event.preventDefault();
+            }
+            return;
+        }
+        var id = event.target.parentElement.dataHost.id;
+        var elem = this.getViewById(id);
+        /* disable mouse events in content when dragging over our own view */
+        if (elem.$.viewContentDiv) {
+            elem.$.viewContentDiv.style.pointerEvents = 'none';
+        }
+        var rect = elem.getBoundingClientRect();
+        var cyOffset = String(event.screenY - event.clientY);
+        var cxOffset = String(event.screenX - event.clientX);
+        var data = [id, String(rect.left + this.viewContainer.scrollLeft), String(rect.top + this.viewContainer.scrollTop), cyOffset, cxOffset].join(',');
+        this.dragData = data;
+        event.dataTransfer.setData('text', data);
+        event.dataTransfer.effectAllowed = 'all';
+        event.dataTransfer.dropEffect = 'move';
+        var img = new Image();
+        img.src = './src/images/dragger.png';
+        img.alt = '';
+        event.dataTransfer.setDragImage(img, 0, 0);
+    },
+    viewDrop : function (event) {
+        var data = event.dataTransfer.getData('text');
+        if (!data || data.length == 0 || data.indexOf('cell: ') == 0) {
+           return;
+        }
+        event.preventDefault();
+        data = data.split(',');
+        var id = data[0];
+        var begClientX = Number(data[1]);
+        var begClientY = Number(data[2]);
+        var xOffset = Number(event.clientX) - begClientX + this.viewContainer.scrollLeft;
+        var yOffset = Number(event.clientY) - begClientY + this.viewContainer.scrollTop;
+        if (begClientY + yOffset < 48) {
+            yOffset = 48 - begClientY;
+        }
+        this.viewDropDisplay(event, id, xOffset, yOffset);
+    },
+    viewDropDisplay : function (event, id, xOffset, yOffset) {
+        var elem = this.getViewById(id);
+        var top;
+        var left;
+        if (elem.style.top == '') {
+            top = yOffset;
+            left = xOffset;
+        }
+        else {
+            top = Number(elem.style.top.replace(/px/, ''));
+            left = Number(elem.style.left.replace(/px/, ''));
+            top = top + yOffset;
+            left = left + xOffset;
+        }
+        var allViews = [];
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            allViews.push(this.rovModuleViews[i]);
+        }
+        for (var i = 0; i < this.rovViews.length; i++) {
+            allViews.push(this.rovViews[i]);
+        }
+        var cornerFound = false;
+        for (var i = 0; i < allViews.length; i++) {
+            if (allViews[i].id != id) {
+                var siblingElem = this.getViewById(allViews[i].id);
+                if (siblingElem.style.top == '') {
+                    var siblingTop = siblingElem.clientTop;
+                    var siblingLeft = siblingElem.clientLeft;
+                }
+                else {
+                    var siblingTop = Number(siblingElem.style.top.replace(/px/, ''));
+                    var siblingLeft = Number(siblingElem.style.left.replace(/px/, ''));
+                }
+                var siblingRight = siblingLeft + siblingElem.clientWidth;
+                var siblingBottom = siblingTop + siblingElem.clientHeight;
+                if (left > siblingRight - 20 && left < siblingRight + 20) {  /* right edge */
+                    if (top > siblingTop - 20 && top < siblingTop + 20) {    /* top right */
+                        top = siblingTop;
+                        left = siblingLeft + siblingElem.clientWidth + 1;
+                        cornerFound = true;
+                        break;
+                    }
+                    else if (top > siblingBottom - 20 && top < siblingBottom + 20) { /* bottom right */
+                        top = siblingBottom - 8;
+                        left = siblingLeft + siblingElem.clientWidth + 1;
+                        cornerFound = true;
+                        break;
+                    }
+                }
+                else if (top > siblingBottom - 30 && top < siblingBottom + 20) {  /* bottom edge */
+                    if (left > siblingLeft - 20 && left < siblingLeft + 20) { /* bottom left */
+                        top = siblingBottom - 8;
+                        left = siblingLeft;
+                        cornerFound = true;
+                        break;
+                    }
+               }
+            }
+        }
+        var topAssigned = false;
+        if (!cornerFound) {
+            var leftAssigned = false;
+            for (var i = 0; i < allViews.length; i++) {
+                if (allViews[i].id != id) {
+                    var siblingElem = this.getViewById(allViews[i].id);
+                    if (siblingElem.style.top == '') {
+                        var siblingTop = siblingElem.clientTop;
+                        var siblingLeft = siblingElem.clientLeft;
+                    }
+                    else {
+                        var siblingTop = Number(siblingElem.style.top.replace(/px/, ''));
+                        var siblingLeft = Number(siblingElem.style.left.replace(/px/, ''));
+                    }
+                    var siblingRight = siblingLeft + siblingElem.clientWidth;
+                    var siblingBottom = siblingTop + siblingElem.clientHeight;
+                    if (left > siblingRight - 20 && left < siblingRight + 20) {  /* right edge */
+                        left = siblingLeft + siblingElem.clientWidth + 1;
+                        leftAssigned = true;
+                    }
+                    else if (top > siblingBottom - 30 && top < siblingBottom + 20) {  /* bottom edge */
+                        top = siblingBottom - 8;
+                        topAssigned = true;
+                   }
+                }
+                if (leftAssigned && topAssigned) {
+                    break;
+                }
+            }
+        }
+        if (!cornerFound && !topAssigned) {
+            top -= 8;   /* -8 for cursor arrow */
+        }
+        elem.style.top = top + 'px';
+        elem.style.left = left + 'px';
+        elem.style.zIndex = String(this.getMaxZindex() + 1);
+    },
+    viewToTopDialog : function(event) {
+        this.viewToTopList = [];
+        var viewList = [];
+        for (var i = 0; i < this.rovModuleViews.length; i++) {
+            var listItem = {};
+            var elem = this.getViewById(this.rovModuleViews[i].id);
+            listItem.name = elem.shortModuleName;
+            listItem.fullName = elem.moduleName + ' ' + elem.viewName;
+            listItem.id = elem.id;
+            viewList.push(listItem);
+        }
+        for (var i = 0; i < this.rovViews.length; i++) {
+            var listItem = {};
+            var elem = this.getViewById(this.rovViews[i].id);
+            listItem.name = elem.viewName;
+            listItem.fullName = elem.viewName;
+            listItem.id = elem.id;
+            viewList.push(listItem);
+        }
+        this.set('viewToTopList', viewList);
+        var dialog = document.getElementById('listViewsDialog');
+        if (dialog) {
+                               /* 24 is the padding + 10 */
+            dialog.style.left = (event.x - 34) + 'px';
+            dialog.open();
+            dialog.style.zIndex = String(this.getMaxZindex() + 1);
+            if (this.$.viewToTopMenu.selected != undefined) {
+                this.$.viewToTopMenu.selected = -1;
+            }
+        }
+    },
+    viewToTopMenuItemSelected : function (e) {
+        var elem = this.getViewById(e.detail.item.id);
+        if (elem) {
+            elem.style.zIndex = String(this.getMaxZindex() + 1);
+        }
+        this.$.viewToTopMenu.selected = -1;
+        var dialog = document.getElementById('listViewsDialog');
+        if (dialog) {
+            dialog.close();
+        }
+    }
+});

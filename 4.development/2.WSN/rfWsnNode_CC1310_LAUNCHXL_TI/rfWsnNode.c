@@ -34,6 +34,9 @@
 #include <xdc/std.h>
 #include <xdc/runtime/System.h>
 
+/* POSIX Header files */
+//#include <pthread.h>
+
 /* BIOS Header files */
 #include <ti/sysbios/BIOS.h>
 #include <ti/drivers/Power.h>
@@ -44,6 +47,7 @@
 
 #include "NodeRadioTask.h"
 #include "NodeTask.h"
+#include "uartTask.h"
 
 
 /*
@@ -57,6 +61,8 @@ int main(void)
     /* Initialize sensor node tasks */
     NodeRadioTask_init();
     NodeTask_init();
+
+    //uartTask_init();
 
     /* Start BIOS */
     BIOS_start();

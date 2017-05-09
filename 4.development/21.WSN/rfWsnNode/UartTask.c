@@ -78,66 +78,6 @@ const char  echoPrompt[] = "Echoing characters:\r\n";
 
 
 /***** Prototypes *****/
-static void uartTaskFunction(UArg arg0, UArg arg1);
-
-/***** Function definitions *****/
-void UartTask_init(void)
-{
-
-
-
-
-	    /* Create the node task */
-	    Task_Params_init(&uartTaskParams);
-	    uartTaskParams.stackSize = UART_TASK_STACK_SIZE;
-	    uartTaskParams.priority = UART_TASK_PRIORITY;
-	    uartTaskParams.stack = &uartTaskStack;
-	     Task_construct(&uartTask, uartTaskFunction, &uartTaskParams, NULL);
-	 /* */
-}
-
-
-/*
- *  ======== mainThread ========
- */
-static void uartTaskFunction(UArg arg0, UArg arg1)
-{
-	 char        input;
-	 const char  echoPrompt[] = "Echoing characters:\r\n";
-
-//	 UART_Handle uart;
-//	 UART_Params uartParams;
-
-	 return;
-	// while(1);
-
-	 /* Call driver init functions */
-//	UART_init();
-
-	/* Create a UART with data processing off.
-	UART_Params_init(&uartParams);
-	uartParams.writeDataMode = UART_DATA_BINARY;
-	uartParams.readDataMode = UART_DATA_BINARY;
-	uartParams.readReturnMode = UART_RETURN_FULL;
-	uartParams.readEcho = UART_ECHO_OFF;
-	uartParams.baudRate = 115200;
-
-	uart = UART_open(Board_UART0, &uartParams);
-
-	if (uart == NULL) {
-		 UART_open() failed
-		while (1);
-	}
-
-	UART_write(uart, echoPrompt, sizeof(echoPrompt));
-
-	/* Loop forever echoing */
-//	while (1) {
-//		UART_read(uart, &input, 1);
-//		UART_write(uart, &input, 1);
-//	}
-
-}
 
 void UART_setup(void) {
 
@@ -169,8 +109,11 @@ void UART_setup(void) {
 
 void UART_loop(void) {
 
-	UART_read(uart, &input, 1);
-   // input = "d";
-	UART_write(uart, &input, 1);
+   /* if (UARTCharsAvail(Board_UART0) ) {
 
+        UART_read(uart, &input, 1);
+        // input = "d";
+        UART_write(uart, &input, 1);
+    }
+    */
 }

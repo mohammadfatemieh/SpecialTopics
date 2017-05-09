@@ -1,0 +1,878 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkB3GLfn1KAEVk&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "Board.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkB3GLfn1KAEVk",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkB3GLfn1KAEVk?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBDOlFmcDnsBQ&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "CC1310_LAUNCHXL.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBDOlFmcDnsBQ",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBDOlFmcDnsBQ?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkByZgomMfj9qA&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "CC1310_LAUNCHXL.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkByZgomMfj9qA",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkByZgomMfj9qA?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBbBsgGfGoWG8&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "CC1310_LAUNCHXL_TIRTOS.cmd",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBbBsgGfGoWG8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBbBsgGfGoWG8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.cmd",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkB0THBbzL4J50&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "NodeRadioTask.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkB0THBbzL4J50",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkB0THBbzL4J50?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "NodeRadioTask.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBL7pkJe_Yy7g&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "NodeRadioTask.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBL7pkJe_Yy7g",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBL7pkJe_Yy7g?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "NodeRadioTask.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkB09JoRpVx0c8&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "NodeTask.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkB09JoRpVx0c8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkB09JoRpVx0c8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "NodeTask.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBfQcimbeatIc&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "NodeTask.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBfQcimbeatIc",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBfQcimbeatIc?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "NodeTask.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkB1wEumq8wzHs&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "README.html",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkB1wEumq8wzHs",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkB1wEumq8wzHs?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBkus7GOD8SP8&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "README.md",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBkus7GOD8SP8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBkus7GOD8SP8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.md",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBbZRQWapcoiU&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "RadioProtocol.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBbZRQWapcoiU",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBbZRQWapcoiU?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "RadioProtocol.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBiXLE4ejU_Tc&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "SceAdc.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBiXLE4ejU_Tc",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBiXLE4ejU_Tc?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "SceAdc.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBHcsZ60OAy2Q&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "SceAdc.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBHcsZ60OAy2Q",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBHcsZ60OAy2Q?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "SceAdc.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBisganFp8sAM&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "ccfg.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBisganFp8sAM",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBisganFp8sAM?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "ccfg.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBlcrzEuE3s0w&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "overview.rov.json",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBlcrzEuE3s0w",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBlcrzEuE3s0w?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.json",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?id=VkBPFNbG_N53Ts&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode&removeoffline=true",
+    "resourceType": "file",
+    "name": "rfWsnNode.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "_id": "VkBPFNbG_N53Ts",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [
+      {
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "version": "1.30.0.06",
+        "require": "optional",
+        "message": "Required for building the project.",
+        "semver": "1.30.0"
+      }
+    ],
+    "link": "api/linkTo/VkBPFNbG_N53Ts?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FEasyLink%2FrfWsnNode%2FTI-RTOS%2FCCS%20Compiler%2FrfWsnNode&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.30.00.06",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "packagePath": "simplelink_cc13x0_sdk_1_30_00_06",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_30_00_06/.metadata/.tirex/.dependencies/spec_129.dependency.tirex.json",
+    "parentID": "VkB6sfAmVE_YI8",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "rfWsnNode.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "text": "easylink",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 2,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode/easylink&removeoffline=true",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "text": "sce",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 7,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode/sce&removeoffline=true",
+    "packageOrder": 19,
+    "offline": "true"
+  },
+  {
+    "text": "smartrf_settings",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 4,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS%20Compiler/rfWsnNode&package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10",
+    "license": "simplelink_cc13x0_sdk_1_30_00_06/license_simplelink_cc13x0_sdk_1_30_00_06.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.00.00::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00::ccs_training__1.00.00.07::sdtoutilities__1.00.00.01::xdsdebugprobes__1.00.00.02&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/EasyLink/rfWsnNode/TI-RTOS/CCS Compiler/rfWsnNode/smartrf_settings&removeoffline=true",
+    "packageOrder": 19,
+    "offline": "true"
+  }
+]

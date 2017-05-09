@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sensor and Collector - TI-15.4 Stack Project Zero</title>
+</head>
+
+<xmp theme="united2" style="display:none;" class="col-xs-6">
+
+Introduction
+==================================
+TI-15.4 Stack is an IEEE 802.15.4e/g RF communication stack. It is a main part of the SimpleLink CC13x0 Software Development Kit (SDK), and provides support for star-topology networks for Sub-1 GHz applications. TI-15.4 Stack runs on MCUs from the TI’s SimpleLink™ Sub-1 GHz CC13x0 wireless microcontroller (MCU) family. It offers several key benefits such as longer range in FCC band and better protection against in-band interference by implementing frequency hopping, as well as the ability to send BLE beacon packets while operating on Sub1GHz TI 15.4-Stack network when using dual-band CC1350. This complete stack offering provides customers an accelerated time to market with a complete end-to-end node-to-gateway solution.
+
+In this lab, we will run a pair of examples based on the complete TI-15.4 Stack, one Sensor and one Collector - creating a star network of sensor node(s) sending data to a collector. 
+* The Collector Example Application implements the PAN-Coordinator, or the central node in the network. This application starts the network, allows devices to join the network, and configures the joining devices on how often to report the sensor data. It then sends periodic tracking request messages (to which it expects tracking response messages) to determine whether or not the sensor nodes are alive in the network.
+* The Sensor Example Application implements the networked device, which joines the network started by the Collector. The Sensor periodically sends
+sensor data reports at the report interval configured by the Collector and responds to the tracking messages it receives.
+
+The purpose of this lab is to familiarize the users with the TI-15.4 Stack and with tools such as Code Composer Studio, by importing existing examples into the IDE. The lab contain several tasks:
+
+**Task 1**: Building and loading the collector example
+
+**Task 2**: Building and loading the sensor example
+
+**Task 3**: Using the Collector and Sensor
+
+**Task 4**: Updating the sensor's reporting rate
+
+[[b! Further reading
+This lab is the recommended first step for getting started with the TI-15.4 Stack, supposed to bring you up and running quickly. As such, many useful features are not actually discussed here. To learn more about features such as beacon vs. non-beacon mode, frequency hopping and more, please see **docs\ti154stack\ti154stack-software-developers-guide.html**, under the SDK installation folder.
+]]
+
+[[b! Technical support
+For any questions you may have, please consult the relevant E2E forum - [TI Sub-1 GHz E2E Forum](http://e2e.ti.com/support/wireless_connectivity/proprietary_sub_1_ghz_simpliciti/)
+]]
+
+Prerequisites
+==================================
+
+Background
+----------------
+* Basic TI-RTOS and CCS knowledge
+* Some basic familiarity with embedded programming.
+
+Software
+---------
+* [Code Composer Studio](http://www.ti.com/tool/ccstudio) v7.1 or later<br>
+  Make sure that CCS is using the latest updates: *Help* &rarr; *Check for Updates*
+* [SimpleLink CC13x0 SDK](http://www.ti.com/tool/simplelink-cc13x0-sdk) 1.30 or later
+* [Tera term](https://ttssh2.osdn.jp/index.html.en) or any other equivalent terminal program
+
+Hardware
+---------
+*  2 x CC13x0 LaunchPads
+*  2 x USB Cables
+
+[[y! Note
+* This lab can be performed using either CC1310 or CC1350 LaunchPads. The training material is based on CC1350, so if using CC1310, all references to CC1350 in text and screenshots should be refered to as CC1310.<br>
+* Some screenshots in this lab may have been taken with an older version of the respective SDK or tool, so your actual screen may look a bit different, however the functionality and overall look and feel should be the same.
+]]
+
+Group training additional requirements
+--------------------------------------
+Make sure to always use your designated channel, to avoid interfering with other students' operations
+
+	[[y! Channel allocation
+	If you are part of a group training, the instructor should give each student a unique number.
+	In this lab, each student uses a designated channel matching its student number: Student #1 should use channel 1, Student #2 should use channel 2, and so on.
+	]]
+
+Task 0: Label your LaunchPads
+=============================
+1. Label each of your LaunchPads with its XDS Device ID, as described [here](../util_identify_lp/util_identify_lp.html).
+
+2. Additionally, label one LaunchPad as "Sensor" and the other as "Collector". These labels will be referred to throughout this lab. It is recommended to use a non-permanent marking for this (e.g. sticky notes), as these labels may only be relevant for this specific lab.
+
+Task 1: Building and loading the collector example
+==================================================
+1. In CCS, open the resource explorer (**view** &rarr; **Resource Explorer**)
+
+* Expand the folders and select as in the following capture, then click **Import To IDE**: (Note: if using the CC1310 LaunchPads, make sure to select CC1310 platform under Development Tools folder rather than the CC1350)
+![Resource Explorer](resources/Figure3.png)
+
+* Update the target of the collector project to associate it with the "Collector" LaunchPad - as explained [here](../util_assign_lp_to_ccs_project/assign_lp_to_ccs_project.html).
+
+* Locate the file config.h in the project explorer, and open it by double-clicking
+![Resource Explorer](resources/config_h_location.png)
+
+* In config.h, update the definition of CONFIG_PHY_ID as explained below:
+
+	[[d! Selecting the right PHY
+
+	* The regulations in different parts of the world require the use of different frequency bands:
+		* 915 MHz in the US
+		* 868 MHz in Europe
+		* 433 MHz in China
+<br><br>
+	* For each of the frequency bands above, TI-15.4 Stack provides selection between two operation modes:
+		* A faster default mode (50kbps data rate)
+		* LRM - long-range mode (5kbps data rate over a longer range)
+<br><br>
+	* You are responsible to select the right PHY, according to the region of operation and the desired range. This is done by modifying the value of CONFIG_PHY_ID (defined in config.h) with one of the supported values from api_mac.h (see code snippets below).
+<br><br>
+	* For this lab, please select the faster mode (50kbps) of the required frequency band. After finishing the official lab content, you may also experiment with Long Range mode (LRM).
+
+	 ```c
+	/*! Setting for Phy ID */
+	#define CONFIG_PHY_ID                (APIMAC_STD_US_915_PHY_1)
+	``` Example from config.h: by default, the US-compatible PHY is selected
+
+	 ```c
+	 /*! PHY IDs - 915MHz US Frequency band operating mode # 1 */
+	 #define APIMAC_STD_US_915_PHY_1                 1
+	 /*! 863MHz ETSI Frequency band operating mode #1 */
+	 #define APIMAC_STD_ETSI_863_PHY_3               3
+	  /*! 433MHz China Frequency band operating mode #1 */
+	 #define APIMAC_GENERIC_CHINA_433_PHY_128        128
+	  /*! PHY IDs - 915MHz LRM US Frequency band operating mode # 1 */
+	 #define APIMAC_GENERIC_US_LRM_915_PHY_129       129
+	  /*! 433MHz China LRM Frequency band operating mode #1 */
+	 #define APIMAC_GENERIC_CHINA_LRM_433_PHY_130    130
+	  /*! 863MHz ETSI LRM Frequency band operating mode #1 */
+	 #define APIMAC_GENERIC_ETSI_LRM_863_PHY_131     131	
+	 ``` The available PHY options are defined in api_mac.h. Note that the 868 MHz Band in the code is referred to as 863 MHz, named after the lowest supported frequency rather than the band's middle frequency.
+	]]
+
+	[[y! Make sure you have the correct LaunchPad
+	* CC1350 LaunchPad is available in 3 different flavours, the difference being the frequency band for which each LaunchPad is optimized:
+		* **LAUNCHXL-CC1350US** for the US market - optimized for the 915 MHz band
+		* **LAUNCHXL-CC1350EU** for the European market - optimized for the 868 MHz band
+		* **LAUNCHXL-CC1350CN** for the Chinese market - optimized for the 433 MHz band
+	]]
+	
+* In the same file (config.h), update the definition of CONFIG_CHANNEL_MASK as explained below:
+	
+	[[d! Updating the channel mask
+
+	* The stack can be configured to enable any of the supported channels. If more than one channel is enabled, the best ("most quiet") channel is selected by the collector when starting the network. When the sensor looks for a network to join, it scans all the enabled channels until it finds the collector.
+<br><br>
+	* To enabled the required channel and disable the other channels, you will need to edit the **CONFIG_CHANNEL_MASK** definition in config.h. This configuration item is a bitmask representing all the available channels. For example, in the 915 MHz band, there are 129 channels available. The first byte in CONFIG_CHANNEL_MASK represents channels 0 to 7, the second byte represents channels 8 to 15, and so on. The last byte corresponds to channels 128 to 135 - but in this case, only bit 0 represents an actual channel (128), while the upper 7 bits are ignored.
+<br><br>
+	* Each student should update the definition of this configuration item such that only its designated channel is enabled, and all other channels are disabled. For example, student #10 should have it defined as follows:
+
+	 ```c
+    #define CONFIG_CHANNEL_MASK { 0x00, 0x04, 0x00, 0x00, 0x00, 0x00, \
+                                    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
+                                    0x00, 0x00, 0x00, 0x00, 0x00 }
+	``` Student #10 channel configuration (enable channel 10, disable all other channels)
+
+	* Note that the number of supported channels may be limited, depending on the frequency band being used. Please make sure to select a channel within the supported range - see the note box below.
+	]]
+
+	[[y! Available channels
+	* The number of supported channels depend on the selected frequency band:
+		* 915 MHz band - channels 0 to 128 - total of 129 channels
+		* 868 MHz band - channels 0 to  33 - total of  34 channels
+		* 433 MHz band - channels 0 to   6 - total of   7 channels
+	]]
+	
+	[[b! Multiple ways to prevent conflicts
+	In this lab, each student uses a different channel, in order to avoid conflicts. Using TI 802.15.4 Stack, there is another way to avoid conflicts, which allows using the same channels by everybody. This method involves pre-assigning the same PAN-ID to every device in the intended network, and different PAN-IDs to different networks. The stack will automatically filter and accept only the packets targeted for its PAN. The downside of this would be that in a large classroom with many setups this could lead to channel congestion and a high rate of dropped packets.
+	]]
+
+	[[b! More info
+	For more information regarding the available configuration settings, please see **docs\ti154stack\ti154stack-software-developers-guide.html**, under the SDK installation folder. 
+	]]
+
+* By default, when the collector receives a reading from the sensor, it shows only the sensor ID, but not the reading value. To change it so that it shows the reading value instead of the sensor ID, open csf.c, and change the following line inside Csf\_deviceSensorDataUpdate(): 
+
+	```c
+LCD_WRITE_STRING_VALUE("Sensor 0x", pSrcAddr->addr.shortAddr, 16, 6);
+	``` Original printed data.
+	to
+	```c
+LCD_WRITE_STRING_VALUE("Temperature=", pMsg->tempSensor.objectTemp, 10, 6);
+	``` Change to print a received sensor value.
+
+* Connect the "Collector" LaunchPad to the PC
+
+* Build the project and download it to the LaunchPad by selecting the collector project in the project explorer and clicking the green bug (or hitting <kbd>F11</kbd>)
+
+* When programming is finished, terminate the debug session by clicking the red square (or, select **Run**&rarr;**Terminate**).
+ 
+[[r! Troubleshooting: CCS says source file could not be found
+Sometimes, after closing and then reopening CCS, it may display an error message saying a source file could not be found (e.g. config.h), and request you to hit F5 to refresh. Simply pressing F5 does not work. To clear this error message and solve the issue, you need to right click on the containing folder in the project explorer (e.g. the folder "Application"), and select Refresh.
+]]
+
+Task 2: Building and loading the sensor example
+===============================================
+1. Repeat Task 1, but this time select the **sensor** project when importing and building and use the "Sensor" LaunchPad. Skip the section that deals with changes to csf.c.
+
+	[[y! Update the Channel Mask!
+	Make sure you did not forget to change the channel mask for the sensor project as well.
+	]]
+
+Task 3: Using the Collector and Sensor
+======================================
+1. Close CCS
+
+* Make sure no terminal program is running.
+
+* Disconnect, then reconnect both CC13x0 LaunchPads to your PC. Otherwise, the LaunchPads' Application UART may not be available.
+
+* Open two instances of the terminal program,  connect each to a different LaunchPad's COM port - these ports should have the word 'UART' in their names. For example, in the following image, the you should select COM111 and COM114:
+![Resource Explorer](resources/Figure4.png)
+
+* Configure the UARTs as follows: 
+	• Baud rate: 115200
+	• Data: 8 bit
+	• Parity: none
+	• Stop: 1 bit
+	• Flow control: none.
+
+* Reset each of the LaunchPads to Factory New state by pressing and holding Button2, and then pressing the Reset button (while button 2 is held down).
+
+	[[g! Observe and Understand
+	* The collector terminal should look like this:
+	![Resource Explorer](resources/Figure5.png)
+	* The sensor terminal like this:
+	![Resource Explorer](resources/Figure7.png)
+	* The red LED on the collector should turn on after a short while, and the LEDs on the sensor should both remain off. The red LED on the collector means that it have successfully created a network. The collector terminal will now also say "Started" and "Channel: x", where x will be the number of the actual channel that was selected.
+	* At this point (after starting the network) the collector does not allow devices to join the network.
+	]]
+
+* Press Button2 on the collector to allow new devices to join the network . The red LED will start blinking, meaning that the network is now open for joining, and the collector's terminal will say "PermitJoin-ON".
+
+	[[g! Observe and Understand
+	The sensor will join the network after a short while, indicated by the red LED turning on on the sensor (otherwise, see Troubleshooting below). The collector's terminal will say "Joined: 0xX" where 0xX is the sensor ID, and the sensor's terminal will say "Started: 0xX" (0xX is the sensor ID), "Channel: x" and "State Changed 3" indicating successful network connection.
+	]]
+
+	[[r! Troubleshooting
+	If the sensor does not join after a short while, please reset it using the reset button.
+	]]
+
+* To close the network, press the collector's Button2 again, and its red LED will stop blinking and remain on.
+	[[g! Observe and Understand
+	* The Collector's terminal will say "ConfigRsp: 0xX" when a configure response command is received from sensor X, and "Temperature=XXX" when a reading is received from the sensor.
+	* Whenever a reading is sent from the sensor or received by the collector, the green LED will toggle on the sensor / collector respectively.
+	* Readings are sent from the sensor periodically. By default, the period configured by the collector is 90 seconds, but if the sensor fails to receive the configuration from the collector, it will send the readings every 3 minutes.
+	* Commands from the collector to the sensor can be sent only after the sensor is polling for data. These poll requests are sent by the sensor periodically, so it allows the sensor to sleep in the meantime. The default sensor poll rate is 6 seconds. This poll rate can be changed by the collector as part of the configuration message.
+	]]
+
+* Toggle command: By pressing Button1 on the collector, you can have the red LED of the sensor toggle. Try this a few times. Notice that the LED state may take up to 6 seconds to change, since the collector can only send the toggle command following a poll request from the sensor.
+[[y! Using the toggle command when more than one sensor is connected
+Note that if more than one sensor is connected to the same collector, the toggle command will only be sent to sensor #1 (the first to join the collector).
+]]
+
+Task 4: Updating the sensor's reporting rate
+===================================
+Now let's make the reporting and the polling rate higher, to get a more responsive demo. All values below are in milliseconds. 
+1. Open CCS, using the same workpace you used before.
+
+* Update the _default reporting interval_ of the sensor: In the sensor project, in config.h, set **CONFIG\_REPORTING\_INTERVAL** to 500 (instead of 180000)
+
+* Update the _reporting interval_ that the collector will request from the sensor: In the collector project, in collector.c, set **CONFIG\_REPORTING\_INTERVAL** to 1000 (instead of 90000)
+
+* In the same file, Update the _polling interval_ that the collector will request from the sensor - set **CONFIG\_POLLING\_INTERVAL** to 100 (instead of 6000)
+
+	[[b! Sensor defualt polling interval
+	The _default polling interval_ (that is in effect in the sensor until configured otherwise by the collector) is defined by CONFIG\_POLLING\_INTERVAL in config.h (default is 6000). Don't change this value.
+	]]
+
+* When the sensor receives the poll interval configuration, it check whether the requested interval is within set limits. If it is outside the limits, the request will be ignored. The default lower limit is set to 1 second, so we will need to update it to support 100 ms interval. To do so, please set **MIN\_POLLING\_INTERVAL** in sensor.c to 100 (instead of 1000).
+
+* Rebuild the collector and sensor projects, and program the LaunchPads with the new builds, by following the next steps for each of the two projects:
+	* Select the project in Project Explorer
+	* Build and download to target by clicking the green bug icon
+	* Stop the debug session by clicking the red square icon once it becomes available
+	
+	
+* Reset both devices to Factory New (press the Reset button while holding Button2) and have the sensor connect to the collector as explained in the previous task.
+[[g! Observe and Understand
+See how the changes you made affect the sensor operation:
+  * As soon as the sensor connects to the network, the reporting rate is 500 ms.
+  * After about 6 seconds, the sensor polls for data and the configuration message is sent from the collector.
+  * Reporting rate is changed to 1 second.
+  * After a few more seconds, when the existing polling timer expires, the polling rate is increased to 100 ms - as evident by the high responsiveness of the sensor's red LED when pressing the collector's Button1 (i.e when sending the Toggle command). 
+]]
+
+References
+==================================
+**TI 15.4-Stack wiki pages** are at [http://www.ti.com/ti154stack-wiki](http://www.ti.com/ti154stack-wiki)
+
+**CC13xx Software Overview** &ndash; Available at [http://www.ti.com/tool/cc13xx-sw](http://www.ti.com/tool/cc13xx-sw).
+
+**CC13xx Technical Reference Manual** &ndash; Available [here][Technical Reference Manual]
+
+<!-- Definition of inline references -->
+[Technical Reference Manual]: http://www.ti.com/lit/swcu117
+
+</xmp>
+
+<link rel="stylesheet" href="../../web_support/highlight/styles/zenburn.css"/>
+<script src="../../web_support/strapdown/vendor/jquery-1.11.2.min.js"></script>
+<script src="../../web_support/strapdown/vendor/bootstrap.min.js"></script>
+<script src="../../web_support/highlight/highlight.pack.js"></script>
+<script src="../../web_support/strapdown/v/0.2/strapdown.js"></script>
+
+</html>

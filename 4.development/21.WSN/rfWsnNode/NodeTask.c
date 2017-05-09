@@ -154,7 +154,7 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
 
     /* setup timeout for fast report timeout */
     Clock_setTimeout(fastReportTimeoutClockHandle,
-            NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS * 1000 / Clock_tickPeriod);
+            NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS * 1000000 / Clock_tickPeriod);
 
     /* start fast report and timeout */
     Clock_start(fastReportTimeoutClockHandle);

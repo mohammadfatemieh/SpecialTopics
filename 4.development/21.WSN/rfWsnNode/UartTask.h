@@ -4,7 +4,6 @@
 #define TASKS_UARTTASK_H_
 
 /* Initializes the Node Task and creates all TI-RTOS objects */
-void UartTask_init(void);
 
 void UART_setup(void);
 

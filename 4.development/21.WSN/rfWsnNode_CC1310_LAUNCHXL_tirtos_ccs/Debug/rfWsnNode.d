@@ -191,6 +191,7 @@ rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/d
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc/hw_gpio.h
 rfWsnNode.obj: ../NodeRadioTask.h
 rfWsnNode.obj: ../NodeTask.h
+rfWsnNode.obj: ../UartTask.h
 
 ../rfWsnNode.c: 
 C:/ti/xdctools_3_50_00_10_core/packages/xdc/std.h: 
@@ -383,3 +384,4 @@ C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/gpio.h
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc/hw_gpio.h: 
 ../NodeRadioTask.h: 
 ../NodeTask.h: 
+../UartTask.h: 

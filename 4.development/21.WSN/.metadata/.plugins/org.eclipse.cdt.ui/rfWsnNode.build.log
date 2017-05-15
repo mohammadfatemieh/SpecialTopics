@@ -2,22 +2,295 @@
 **** Build of configuration Debug for project rfWsnNode ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: Entering directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Debug'
+'Building file: ../rfWsnNode.cfg'
+'Invoking: XDCtools'
+"C:/ti/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/packages;C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages;C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages;C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/uia_2_01_00_01/packages;C:/ti/ccsv7/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC1350F128 -r release -c "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=vfplib -me --include_path=\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode\" --include_path=\"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode\" --include_path=\"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272\" --include_path=\"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include\" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../rfWsnNode.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring rfWsnNode.xem3 from package/cfg/rfWsnNode_pem3.cfg ...
+generating custom ROM library makefile ... 
+Starting build of library sources ...
+making C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Entering directory `C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/src/sysbios'
+clem3 C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/BIOS.c ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/src/sysbios'
+Build of libraries done.
+clem3 package/cfg/rfWsnNode_pem3.c ...
+'Finished building: ../rfWsnNode.cfg'
+' '
+gmake[1]: Leaving directory 'C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Debug'
+        1 file(s) copied.
 making ../src/sysbios/rom_sysbios.aem3 ...
 gmake[1]: Nothing to be done for 'all'.
 'Building file: ../NodeTask.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="NodeTask.d" --cmd_file="configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\Board.h", line 87: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0A" (declared at line 158 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 88: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0B" (declared at line 159 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 89: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1A" (declared at line 160 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 90: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1B" (declared at line 161 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 91: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2A" (declared at line 162 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 92: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2B" (declared at line 163 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 93: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3A" (declared at line 164 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 94: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3B" (declared at line 165 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 109: warning #48-D: incompatible redefinition of macro "Board_PWM0" (declared at line 167 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 110: warning #48-D: incompatible redefinition of macro "Board_PWM1" (declared at line 168 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 111: warning #48-D: incompatible redefinition of macro "Board_PWM2" (declared at line 169 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 112: warning #48-D: incompatible redefinition of macro "Board_PWM3" (declared at line 170 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 113: warning #48-D: incompatible redefinition of macro "Board_PWM4" (declared at line 171 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 114: warning #48-D: incompatible redefinition of macro "Board_PWM5" (declared at line 172 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 115: warning #48-D: incompatible redefinition of macro "Board_PWM6" (declared at line 173 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 116: warning #48-D: incompatible redefinition of macro "Board_PWM7" (declared at line 174 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 118: warning #48-D: incompatible redefinition of macro "Board_SPI0" (declared at line 151 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 119: warning #48-D: incompatible redefinition of macro "Board_SPI1" (declared at line 152 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 147: error #20: identifier "define" is undefined
+"..\Board.h", line 147: error #66: expected a ";"
+"..\Board.h", line 154: warning #48-D: incompatible redefinition of macro "Board_UART0" (declared at line 124)
+"..\Board.h", line 156: warning #48-D: incompatible redefinition of macro "Board_WATCHDOG0" (declared at line 126)
+"..\Board.h", line 158: warning #48-D: incompatible redefinition of macro "Board_ADC0" (declared at line 58)
+"..\Board.h", line 159: warning #48-D: incompatible redefinition of macro "Board_ADC1" (declared at line 59)
+"..\sce\scif_framework.h", line 163: warning #12-D: parsing restarts here after previous syntax error
+"..\sce\scif_framework.h", line 256: error #20: identifier "SCIF_RESULT_T" is undefined
+"..\sce\scif_framework.h", line 274: error #20: identifier "SCIF_RESULT_T" is undefined
+"..\sce\scif_framework.h", line 275: error #20: identifier "SCIF_RESULT_T" is undefined
+"..\sce\scif_framework.h", line 276: error #20: identifier "SCIF_RESULT_T" is undefined
+"..\sce\scif_framework.h", line 277: error #20: identifier "SCIF_RESULT_T" is undefined
+"../NodeTask.c", line 96: error #20: identifier "CC1310_LAUNCHXL_PIN_RLED" is undefined
+"../NodeTask.c", line 105: error #20: identifier "CC1310_LAUNCHXL_PIN_BTN1" is undefined
 "../NodeTask.c", line 157: warning #62-D: integer operation result is out of range
 "../NodeTask.c", line 157: warning #69-D: integer conversion resulted in a change of sign
-'Finished building: ../NodeTask.c'
+9 errors detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+'Building file: ../NodeRadioTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="NodeRadioTask.d" --cmd_file="configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\Board.h", line 87: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0A" (declared at line 158 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 88: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0B" (declared at line 159 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 89: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1A" (declared at line 160 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 90: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1B" (declared at line 161 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 91: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2A" (declared at line 162 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 92: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2B" (declared at line 163 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 93: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3A" (declared at line 164 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 94: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3B" (declared at line 165 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 109: warning #48-D: incompatible redefinition of macro "Board_PWM0" (declared at line 167 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 110: warning #48-D: incompatible redefinition of macro "Board_PWM1" (declared at line 168 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 111: warning #48-D: incompatible redefinition of macro "Board_PWM2" (declared at line 169 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 112: warning #48-D: incompatible redefinition of macro "Board_PWM3" (declared at line 170 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 113: warning #48-D: incompatible redefinition of macro "Board_PWM4" (declared at line 171 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 114: warning #48-D: incompatible redefinition of macro "Board_PWM5" (declared at line 172 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 115: warning #48-D: incompatible redefinition of macro "Board_PWM6" (declared at line 173 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 116: warning #48-D: incompatible redefinition of macro "Board_PWM7" (declared at line 174 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 118: warning #48-D: incompatible redefinition of macro "Board_SPI0" (declared at line 151 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 119: warning #48-D: incompatible redefinition of macro "Board_SPI1" (declared at line 152 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 147: error #20: identifier "define" is undefined
+"..\Board.h", line 147: error #66: expected a ";"
+"..\Board.h", line 154: warning #48-D: incompatible redefinition of macro "Board_UART0" (declared at line 124)
+"..\Board.h", line 156: warning #48-D: incompatible redefinition of macro "Board_WATCHDOG0" (declared at line 126)
+"..\Board.h", line 158: warning #48-D: incompatible redefinition of macro "Board_ADC0" (declared at line 58)
+"..\Board.h", line 159: warning #48-D: incompatible redefinition of macro "Board_ADC1" (declared at line 59)
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h", line 92: warning #12-D: parsing restarts here after previous syntax error
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h", line 197: error #20: identifier "div_t" is undefined
+"../NodeRadioTask.c", line 65: fatal error #35: #error directive: "You must define DEVICE_FAMILY at the project level as one of cc26x0, cc26x0r2, cc13x0, etc."
+3 errors and 1 catastrophic error detected in the compilation of "../NodeRadioTask.c".
+Compilation terminated.
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: ../SceAdc.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="SceAdc.d" --cmd_file="configPkg/compiler.opt" "../SceAdc.c"
+'Finished building: ../SceAdc.c'
 ' '
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-'Building target: rfWsnNode.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"rfWsnNode.map" --heap_size=0 --stack_size=256 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="rfWsnNode_linkInfo.xml" --rom_model -o "rfWsnNode.out" "./CC1350_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./UartTask.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
-<Linking>
-'Finished building target: rfWsnNode.out'
+'Building file: ../CC1350_LAUNCHXL.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC1350_LAUNCHXL.d" --cmd_file="configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'CC1350_LAUNCHXL.obj' failed
+"../CC1350_LAUNCHXL.c", line 56: error #20: identifier "ADCBufCC26XX_Object" is undefined
+"../CC1350_LAUNCHXL.c", line 56: error #20: identifier "CC1310_LAUNCHXL_ADCBUFCOUNT" is undefined
+"../CC1350_LAUNCHXL.c", line 65: error #20: identifier "ADCBufCC26XX_AdcChannelLutEntry" is undefined
+"../CC1350_LAUNCHXL.c", line 65: error #20: identifier "CC1350_LAUNCHXL_ADCBUF0CHANNELCOUNT" is undefined
+"../CC1350_LAUNCHXL.c", line 79: error #20: identifier "ADCBufCC26XX_HWAttrs" is undefined
+"../CC1350_LAUNCHXL.c", line 83: error #28: expression must have a constant value
+"../CC1350_LAUNCHXL.c", line 85: error #20: identifier "UDMA_CHAN_TIMER0_A" is undefined
+"../CC1350_LAUNCHXL.c", line 89: error #20: identifier "ADCBuf_Config" is undefined
+"../CC1350_LAUNCHXL.c", line 89: error #20: identifier "CC1350_LAUNCHXL_ADCBUFCOUNT" is undefined
+"../CC1350_LAUNCHXL.c", line 91: error #20: identifier "ADCBufCC26XX_fxnTable" is undefined
+"../CC1350_LAUNCHXL.c", line 92: error #20: identifier "CC1350_LAUNCHXL_ADCBUF0" is undefined
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 87: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0A" (declared at line 158 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 88: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0B" (declared at line 159 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 89: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1A" (declared at line 160 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 90: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1B" (declared at line 161 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 91: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2A" (declared at line 162 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 92: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2B" (declared at line 163 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 93: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3A" (declared at line 164 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 94: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3B" (declared at line 165 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 109: warning #48-D: incompatible redefinition of macro "Board_PWM0" (declared at line 167 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 110: warning #48-D: incompatible redefinition of macro "Board_PWM1" (declared at line 168 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 111: warning #48-D: incompatible redefinition of macro "Board_PWM2" (declared at line 169 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 112: warning #48-D: incompatible redefinition of macro "Board_PWM3" (declared at line 170 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 113: warning #48-D: incompatible redefinition of macro "Board_PWM4" (declared at line 171 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 114: warning #48-D: incompatible redefinition of macro "Board_PWM5" (declared at line 172 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 115: warning #48-D: incompatible redefinition of macro "Board_PWM6" (declared at line 173 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 116: warning #48-D: incompatible redefinition of macro "Board_PWM7" (declared at line 174 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 118: warning #48-D: incompatible redefinition of macro "Board_SPI0" (declared at line 151 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 119: warning #48-D: incompatible redefinition of macro "Board_SPI1" (declared at line 152 of "..\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 147: error #20: identifier "define" is undefined
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 147: error #66: expected a ";"
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 154: warning #48-D: incompatible redefinition of macro "Board_UART0" (declared at line 124)
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 156: warning #48-D: incompatible redefinition of macro "Board_WATCHDOG0" (declared at line 126)
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 158: warning #48-D: incompatible redefinition of macro "Board_ADC0" (declared at line 58)
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 159: warning #48-D: incompatible redefinition of macro "Board_ADC1" (declared at line 59)
+"C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/knl/package/package.defs.h", line 16: warning #12-D: parsing restarts here after previous syntax error
+"../CC1350_LAUNCHXL.c", line 122: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 131: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 140: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 149: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 158: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 167: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 176: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 185: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 194: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 203: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 212: error #137: struct "ADCCC26XX_HWAttrs" has no field "returnAdjustedVal"
+"../CC1350_LAUNCHXL.c", line 378: error #20: identifier "PWMTimerCC26XX_fxnTable" is undefined
+"../CC1350_LAUNCHXL.c", line 483: warning #1238-D: excess initializers are ignored
+"../CC1350_LAUNCHXL.c", line 675: warning #1238-D: excess initializers are ignored
+25 errors detected in the compilation of "../CC1350_LAUNCHXL.c".
+gmake: *** [CC1350_LAUNCHXL.obj] Error 1
+'Building file: ../UartTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="UartTask.d" --cmd_file="configPkg/compiler.opt" "../UartTask.c"
+
+>> Compilation failure
+subdir_rules.mk:37: recipe for target 'UartTask.obj' failed
+"..\Board.h", line 87: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0A" (declared at line 158 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 88: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0B" (declared at line 159 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 89: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1A" (declared at line 160 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 90: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1B" (declared at line 161 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 91: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2A" (declared at line 162 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 92: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2B" (declared at line 163 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 93: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3A" (declared at line 164 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 94: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3B" (declared at line 165 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 109: warning #48-D: incompatible redefinition of macro "Board_PWM0" (declared at line 167 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 110: warning #48-D: incompatible redefinition of macro "Board_PWM1" (declared at line 168 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 111: warning #48-D: incompatible redefinition of macro "Board_PWM2" (declared at line 169 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 112: warning #48-D: incompatible redefinition of macro "Board_PWM3" (declared at line 170 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 113: warning #48-D: incompatible redefinition of macro "Board_PWM4" (declared at line 171 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 114: warning #48-D: incompatible redefinition of macro "Board_PWM5" (declared at line 172 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 115: warning #48-D: incompatible redefinition of macro "Board_PWM6" (declared at line 173 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 116: warning #48-D: incompatible redefinition of macro "Board_PWM7" (declared at line 174 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 118: warning #48-D: incompatible redefinition of macro "Board_SPI0" (declared at line 151 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 119: warning #48-D: incompatible redefinition of macro "Board_SPI1" (declared at line 152 of "..\CC1350_LAUNCHXL.h")
+"..\Board.h", line 147: error #20: identifier "define" is undefined
+"..\Board.h", line 147: error #66: expected a ";"
+"..\Board.h", line 154: warning #48-D: incompatible redefinition of macro "Board_UART0" (declared at line 124)
+"..\Board.h", line 156: warning #48-D: incompatible redefinition of macro "Board_WATCHDOG0" (declared at line 126)
+"..\Board.h", line 158: warning #48-D: incompatible redefinition of macro "Board_ADC0" (declared at line 58)
+"..\Board.h", line 159: warning #48-D: incompatible redefinition of macro "Board_ADC1" (declared at line 59)
+"../UartTask.c", line 66: warning #12-D: parsing restarts here after previous syntax error
+"../UartTask.c", line 67: warning #179-D: variable "uartTaskStack" was declared but never referenced
+2 errors detected in the compilation of "../UartTask.c".
+gmake: *** [UartTask.obj] Error 1
+'Building file: ../ccfg.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d" --cmd_file="configPkg/compiler.opt" "../ccfg.c"
+
+>> Compilation failure
+subdir_rules.mk:44: recipe for target 'ccfg.obj' failed
+"../ccfg.c", line 55: fatal error #35: #error directive: "You must define DEVICE_FAMILY at the project level as one of cc26x0, cc26x0r2, cc13x0, etc."
+1 catastrophic error detected in the compilation of "../ccfg.c".
+Compilation terminated.
+gmake: *** [ccfg.obj] Error 1
+'Building file: ../rfWsnNode.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="rfWsnNode.d" --cmd_file="configPkg/compiler.opt" "../rfWsnNode.c"
+
+>> Compilation failure
+subdir_rules.mk:51: recipe for target 'rfWsnNode.obj' failed
+"../rfWsnNode.c", line 43: fatal error #1965: cannot open source file "ti/display/Display.h"
+1 catastrophic error detected in the compilation of "../rfWsnNode.c".
+Compilation terminated.
+gmake: *** [rfWsnNode.obj] Error 1
+'Building file: ../sce/scif_osal_tirtos.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sce/scif_osal_tirtos.d" --obj_directory="sce" --cmd_file="configPkg/compiler.opt" "../sce/scif_osal_tirtos.c"
+'Finished building: ../sce/scif_osal_tirtos.c'
 ' '
+'Building file: ../easylink/EasyLink.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="easylink/EasyLink.d" --obj_directory="easylink" --cmd_file="configPkg/compiler.opt" "../easylink/EasyLink.c"
+
+>> Compilation failure
+easylink/subdir_rules.mk:9: recipe for target 'easylink/EasyLink.obj' failed
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 87: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0A" (declared at line 158 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 88: warning #48-D: incompatible redefinition of macro "Board_GPTIMER0B" (declared at line 159 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 89: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1A" (declared at line 160 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 90: warning #48-D: incompatible redefinition of macro "Board_GPTIMER1B" (declared at line 161 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 91: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2A" (declared at line 162 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 92: warning #48-D: incompatible redefinition of macro "Board_GPTIMER2B" (declared at line 163 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 93: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3A" (declared at line 164 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 94: warning #48-D: incompatible redefinition of macro "Board_GPTIMER3B" (declared at line 165 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 109: warning #48-D: incompatible redefinition of macro "Board_PWM0" (declared at line 167 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 110: warning #48-D: incompatible redefinition of macro "Board_PWM1" (declared at line 168 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 111: warning #48-D: incompatible redefinition of macro "Board_PWM2" (declared at line 169 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 112: warning #48-D: incompatible redefinition of macro "Board_PWM3" (declared at line 170 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 113: warning #48-D: incompatible redefinition of macro "Board_PWM4" (declared at line 171 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 114: warning #48-D: incompatible redefinition of macro "Board_PWM5" (declared at line 172 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 115: warning #48-D: incompatible redefinition of macro "Board_PWM6" (declared at line 173 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 116: warning #48-D: incompatible redefinition of macro "Board_PWM7" (declared at line 174 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 118: warning #48-D: incompatible redefinition of macro "Board_SPI0" (declared at line 151 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 119: warning #48-D: incompatible redefinition of macro "Board_SPI1" (declared at line 152 of "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\rfWsnNode\CC1350_LAUNCHXL.h")
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 147: error #20: identifier "define" is undefined
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 147: error #66: expected a ";"
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 154: warning #48-D: incompatible redefinition of macro "Board_UART0" (declared at line 124)
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 156: warning #48-D: incompatible redefinition of macro "Board_WATCHDOG0" (declared at line 126)
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 158: warning #48-D: incompatible redefinition of macro "Board_ADC0" (declared at line 58)
+"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode/Board.h", line 159: warning #48-D: incompatible redefinition of macro "Board_ADC1" (declared at line 59)
+"../easylink/EasyLink.c", line 59: warning #12-D: parsing restarts here after previous syntax error
+"../easylink/EasyLink.c", line 281: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 348: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 352: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 361: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 371: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 381: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 405: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 558: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 597: error #71: incomplete type is not allowed
+"../easylink/EasyLink.c", line 129: error #237: variable "EasyLink_cmdPropRadioSetup" was declared with a never-completed type
+12 errors detected in the compilation of "../easylink/EasyLink.c".
+gmake: *** [easylink/EasyLink.obj] Error 1
+'Building file: ../sce/scif.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sce/scif.d" --obj_directory="sce" --cmd_file="configPkg/compiler.opt" "../sce/scif.c"
+'Finished building: ../sce/scif.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d" --obj_directory="smartrf_settings" --cmd_file="configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: ../smartrf_settings/smartrf_settings.c'
+' '
+'Building file: ../sce/scif_framework.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sce/scif_framework.d" --obj_directory="sce" --cmd_file="configPkg/compiler.opt" "../sce/scif_framework.c"
+'Finished building: ../sce/scif_framework.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings_predefined.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d" --obj_directory="smartrf_settings" --cmd_file="configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: ../smartrf_settings/smartrf_settings_predefined.c'
+' '
+gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

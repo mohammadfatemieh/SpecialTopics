@@ -50,6 +50,11 @@
 #include "NodeTask.h"
 #include "NodeRadioTask.h"
 
+/* uart task */
+//#include "UartTask.h"
+
+
+
 
 /***** Defines *****/
 #define NODE_TASK_STACK_SIZE 1024
@@ -113,6 +118,7 @@ void buttonCallback(PIN_Handle handle, PIN_Id pinId);
 void NodeTask_init(void)
 {
 
+    System_printf("ENTERING NODE INIT");
     /* Create event used internally for state changes */
     Event_Params eventParam;
     Event_Params_init(&eventParam);
@@ -167,6 +173,8 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
     {
         System_abort("Error registering button callback function");
     }
+
+
 
     while(1) {
         /* Wait for event */

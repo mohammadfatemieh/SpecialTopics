@@ -184,6 +184,8 @@ UartTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/s
 UartTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/PIN.h
 UartTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdbool.h
 UartTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h
+UartTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h
+UartTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h
 UartTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/UART.h
 UartTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h
 UartTask.obj: ../Board.h
@@ -212,6 +214,7 @@ UartTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/dr
 UartTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/gpio.h
 UartTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc/hw_gpio.h
 UartTask.obj: ../uartTask.h
+UartTask.obj: ../microgen.h
 
 ../UartTask.c: 
 C:/ti/xdctools_3_50_00_10_core/packages/xdc/std.h: 
@@ -397,6 +400,8 @@ C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/knl/pac
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/PIN.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdbool.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/UART.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h: 
 ../Board.h: 
@@ -425,3 +430,4 @@ C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../dri
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/gpio.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc/hw_gpio.h: 
 ../uartTask.h: 
+../microgen.h: 

@@ -246,6 +246,8 @@ NodeRadioTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdl
 NodeRadioTask.obj: ../easylink/EasyLink.h
 NodeRadioTask.obj: ../RadioProtocol.h
 NodeRadioTask.obj: ../NodeRadioTask.h
+NodeRadioTask.obj: ../microgen.h
+NodeRadioTask.obj: ../UartTask.h
 NodeRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/aon_batmon.h
 NodeRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc/hw_aon_batmon.h
 NodeRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/trng.h
@@ -497,6 +499,8 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h:
 ../easylink/EasyLink.h: 
 ../RadioProtocol.h: 
 ../NodeRadioTask.h: 
+../microgen.h: 
+../UartTask.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/aon_batmon.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc/hw_aon_batmon.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/trng.h: 

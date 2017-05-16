@@ -51,7 +51,7 @@
 #include "NodeRadioTask.h"
 
 /* uart task */
-//#include "UartTask.h"
+#include "UartTask.h"
 
 
 
@@ -178,16 +178,21 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
 
     while(1) {
         /* Wait for event */
-        uint32_t events = Event_pend(nodeEventHandle, 0, NODE_EVENT_ALL, BIOS_WAIT_FOREVER);
-
+      //  uint32_t events = Event_pend(nodeEventHandle, 0, NODE_EVENT_ALL, BIOS_WAIT_FOREVER);
+        UInt32 milis;
+        milis = 1000 / Clock_tickPeriod;
+        Task_sleep(milis*1000);
         /* If new ADC value, send this data */
-        if (events & NODE_EVENT_NEW_ADC_VALUE) {
+        //if (events & NODE_EVENT_NEW_ADC_VALUE) {
             /* Toggle activity LED */
             PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED,!PIN_getOutputValue(NODE_ACTIVITY_LED));
 
             /* Send ADC value to concentrator */
             NodeRadioTask_sendAdcData(latestAdcValue);
-        }
+           // NodeRadioTask_sendAdcData((uint16_t) pv2wifi_[1]);
+
+
+        //}
     }
 }
 

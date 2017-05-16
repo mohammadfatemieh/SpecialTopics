@@ -2,6 +2,21 @@
 **** Build of configuration Debug for project rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../ccfg.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: ../ccfg.c'
+' '
+'Building file: ../ConcentratorTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: ../ConcentratorTask.c'
+' '
+'Building file: ../rfWsnConcentrator.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: ../rfWsnConcentrator.c'
+' '
 'Building file: ../smartrf_settings/smartrf_settings.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d" --obj_directory="smartrf_settings" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
@@ -12,16 +27,6 @@ smartrf_settings/subdir_rules.mk:9: recipe for target 'smartrf_settings/smartrf_
 1 catastrophic error detected in the compilation of "../smartrf_settings/smartrf_settings.c".
 Compilation terminated.
 gmake: *** [smartrf_settings/smartrf_settings.obj] Error 1
-'Building file: ../smartrf_settings/smartrf_settings_predefined.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d" --obj_directory="smartrf_settings" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
-
->> Compilation failure
-smartrf_settings/subdir_rules.mk:16: recipe for target 'smartrf_settings/smartrf_settings_predefined.obj' failed
-"../smartrf_settings/smartrf_settings_predefined.c", line 28: fatal error #1965: cannot open source file "driverlib/rf_mailbox.h"
-1 catastrophic error detected in the compilation of "../smartrf_settings/smartrf_settings_predefined.c".
-Compilation terminated.
-gmake: *** [smartrf_settings/smartrf_settings_predefined.obj] Error 1
 'Building file: ../easylink/EasyLink.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d" --obj_directory="easylink" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
@@ -32,6 +37,26 @@ easylink/subdir_rules.mk:9: recipe for target 'easylink/EasyLink.obj' failed
 1 catastrophic error detected in the compilation of "../easylink/EasyLink.c".
 Compilation terminated.
 gmake: *** [easylink/EasyLink.obj] Error 1
+'Building file: ../smartrf_settings/smartrf_settings_predefined.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d" --obj_directory="smartrf_settings" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+
+>> Compilation failure
+smartrf_settings/subdir_rules.mk:16: recipe for target 'smartrf_settings/smartrf_settings_predefined.obj' failed
+"../smartrf_settings/smartrf_settings_predefined.c", line 28: fatal error #1965: cannot open source file "driverlib/rf_mailbox.h"
+1 catastrophic error detected in the compilation of "../smartrf_settings/smartrf_settings_predefined.c".
+Compilation terminated.
+gmake: *** [smartrf_settings/smartrf_settings_predefined.obj] Error 1
+'Building file: ../ConcentratorRadioTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+'Finished building: ../ConcentratorRadioTask.c'
+' '
+'Building file: ../CC1310_LAUNCHXL.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1310_LAUNCHXL.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1310_LAUNCHXL.c"
+'Finished building: ../CC1310_LAUNCHXL.c'
+' '
 gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

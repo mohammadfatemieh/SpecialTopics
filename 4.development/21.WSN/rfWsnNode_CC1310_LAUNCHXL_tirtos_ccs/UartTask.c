@@ -80,7 +80,7 @@ int pv2wifi_[NUM_OF_COMMANDS];
 
 ugen_comm pv2wifi_commands[NUM_OF_COMMANDS];
 
-char receivedMessage[100];
+char receivedMessage[30];
 char receivedNumber[10];
 //boolean status_command;
 int STATE_cardinal = 0;
@@ -136,20 +136,24 @@ static void uartTaskFunction(UArg arg0, UArg arg1) {
         /* We want to sleep for 10000 microseconds */
         UInt32 milis;
         milis = 1000 / Clock_tickPeriod;
-        Task_sleep(milis*10000);
+        Task_sleep(milis*500);
 
-        UART_read(uart, &input, 1);
+        //UART_read(uart, &input, 1);
 
         for(count=0; count < NUM_OF_COMMANDS; count++) {
             UART_write(uart, pv2wifi_commands[count].command, pv2wifi_commands[count].size);
 
+            //Task_sleep(milis*1);
+            runProtocol(count);
+                //Task_sleep(100);
+
             //clear protocol
             toSendCRC=0;
             nbytes=0;
-            receivedMessage[0]='\0';
+            receivedMessage[0]= '\0';
+            receivedNumber[0] = '\0';
             STATE_cardinal=0;
-            while( runProtocol(count) != 0);
-            Task_sleep(milis*5);
+            Task_sleep(milis*30);
         }
 
     }
@@ -157,6 +161,10 @@ static void uartTaskFunction(UArg arg0, UArg arg1) {
 }
 
 void UART_setup(void) {
+
+
+    /* timeout for uart read */
+    UInt32 milis = 1000 / Clock_tickPeriod;
 
     pv2wifi_commands[0].command="#DCBUS#05#";
     pv2wifi_commands[1].command="#VPV#03#";
@@ -178,14 +186,16 @@ void UART_setup(void) {
 
     /* Call driver init functions */
 	UART_init();
+
+
 	/* Create a UART with data processing off. */
 	UART_Params_init(&uartParams);
 	uartParams.writeDataMode = UART_DATA_BINARY;
 	uartParams.readDataMode = UART_DATA_BINARY;
-	//uartParams.readTimeout =
+	uartParams.readTimeout = milis * 200;  //wait k (ms) before timeout
 	uartParams.readReturnMode = UART_RETURN_FULL;
 	uartParams.readEcho = UART_ECHO_OFF;
-	uartParams.baudRate = 115200;
+	uartParams.baudRate = 57600; //115200;
 
 	uart = UART_open(Board_UART0, &uartParams);
 	
@@ -193,65 +203,70 @@ void UART_setup(void) {
 	    System_abort("Error opening the UART");
 	}
 
-	UART_write(uart, echoPrompt, sizeof(echoPrompt));
+	//UART_write(uart, echoPrompt, sizeof(echoPrompt));
 
 
 }
 
 int  runProtocol(int count) {
 
+    while(UART_read(uart, &receivedMessage[nbytes], 1) != UART_ERROR) {
 
-    //UART_read(uart, &input, 1);
-                //receivedMessage[nbytes] = U2RXREG;
-      UART_read(uart, &receivedMessage[nbytes], 1);
-       //START STATE MACHINE TO PROCESS INCOMING BUFFER
+        //UART_read(uart, &input, 1);
+                        //receivedMessage[nbytes] = U2RXREG;
+               //START STATE MACHINE TO PROCESS INCOMING BUFFER
 
-      if(receivedMessage[nbytes]=='#') {
-          if(STATE_cardinal==START_MSG)  {       //START MESSAGE
-              STATE_cardinal = MSG_DATA;
-              receivedMessage[nbytes]='\0';
-          }
-          else if(STATE_cardinal==MSG_DATA) {      //MESSAGE DATA
-              STATE_cardinal = CRC_DATA;
-              receivedMessage[nbytes]='\0';
-              cnt=10;
-          }
-          else if(STATE_cardinal==CRC_DATA) {      //CRC DATA
-              if(nbytes == toSendCRC) {
-                  receivedMessage[nbytes]='\0';
-                  //receivedNumber[nbytes-1] = '\0';
-                  //setMessage(mensagem);
-                  //manageMessage();
+              if(receivedMessage[nbytes]=='#') {
+                  if(STATE_cardinal==START_MSG)  {       //START MESSAGE
+                      STATE_cardinal = MSG_DATA;
+                      receivedMessage[nbytes]='\0';
+                  }
+                  else if(STATE_cardinal==MSG_DATA) {      //MESSAGE DATA
+                      STATE_cardinal = CRC_DATA;
+                      receivedMessage[nbytes]='\0';
+                      cnt=10;
+                  }
+                  else if(STATE_cardinal==CRC_DATA) {      //CRC DATA
+                      if(nbytes == toSendCRC) {
+                          receivedMessage[nbytes]='\0';
+                          receivedNumber[nbytes] = '\0';
+                          //receivedNumber[nbytes-1] = '\0';
+                          //setMessage(mensagem);
+                          //manageMessage();
 
-                  pv2wifi_[count] = manage_message();
-                   return 0;
+                          pv2wifi_[count] = manage_message();
+                           break;
+                      }
+                      else {
+                          //strcpy(receivedMessage, CRC_ERROR);
+                          //nbytes=strlen(CRC_ERROR);
+                          receivedMessage[nbytes]='\0';
+                          receivedNumber[nbytes] = '\0';
+                          //microGen_serial.setMessage(mensagem);
+                          pv2wifi_[count] = manage_message();
+                          break;
+                     }
+                  }
               }
-              else {
-                  //strcpy(receivedMessage, CRC_ERROR);
-                  //nbytes=strlen(CRC_ERROR);
-                  receivedMessage[nbytes]='\0';
-                  //microGen_serial.setMessage(mensagem);
-                  pv2wifi_[count] = manage_message();
-                  return 0;
-             }
-          }
-      }
-      else if(STATE_cardinal==MSG_DATA) {
-          //check if is a command with value
-          //if(receivedMessage[nbytes]=='{') {
-              //nop
-              // enableCommand();
-          //}
-          receivedNumber[nbytes]=receivedMessage[nbytes];
-          nbytes++;
-      }
-      else if(STATE_cardinal==CRC_DATA) {
-          toSendCRC+=(receivedMessage[nbytes]-48)*cnt;
-          cnt/=10;
-      }
+              else if(STATE_cardinal==MSG_DATA) {
+                  //check if is a command with value
+                  //if(receivedMessage[nbytes]=='{') {
+                      //nop
+                      // enableCommand();
+                  //}
+                  receivedNumber[nbytes]=receivedMessage[nbytes];
+                  nbytes++;
+              }
+              else if(STATE_cardinal==CRC_DATA) {
+                  toSendCRC+=(receivedMessage[nbytes]-48)*cnt;
+                  cnt/=10;
+              }
 
 
-      return -1;
+
+    }
+
+    return 0;
 
 }
 
@@ -268,6 +283,6 @@ void UART_loop(void) {
 int manage_message(void) {
 
 
-    UART_write(uart, &receivedNumber, 3);
+   // UART_write(uart, &receivedNumber, 3);
     return atoi(receivedNumber);//number;
 }

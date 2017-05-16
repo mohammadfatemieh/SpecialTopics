@@ -217,6 +217,8 @@ NodeTask.obj: ../sce/scif_framework.h
 NodeTask.obj: ../sce/scif_osal_tirtos.h
 NodeTask.obj: ../NodeTask.h
 NodeTask.obj: ../NodeRadioTask.h
+NodeTask.obj: ../UartTask.h
+NodeTask.obj: ../microgen.h
 
 ../NodeTask.c: 
 C:/ti/xdctools_3_50_00_10_core/packages/xdc/std.h: 
@@ -435,3 +437,5 @@ C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc
 ../sce/scif_osal_tirtos.h: 
 ../NodeTask.h: 
 ../NodeRadioTask.h: 
+../UartTask.h: 
+../microgen.h: 

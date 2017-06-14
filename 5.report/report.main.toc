@@ -4,16 +4,16 @@
 \contentsline {section}{\numberline {1.2}Context and motivation of monitoring PV converters using WSN's}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Document structure}{2}{section.1.3}
 \contentsline {chapter}{\numberline {2}System Specification}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overview of the existing communication system}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}System Requirement Specification}{4}{section.2.2}
+\contentsline {section}{\numberline {2.1}Overview of the existing wireless communication system}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}System Requirement Specification}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Market survey on wireless technologies}{4}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Atmel -- SAM R21 Xplained Pro Evaluation Kit}{4}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}CC1310 SimpleLink\IeC {\texttrademark } Sub-1 GHz Ultra-Low Power Wireless Microcontroller}{5}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Adafruit Feather 32u4 Radio (RFM69HCW)}{6}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Adafruit Feather 32u4 Radio (RFM69HCW)}{5}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Adafruit Feather HUZZAH ESP8266}{6}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}ATxmega256A3U AT86RF233 ZigBit Module}{6}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}CC1350 SimpleLink\IeC {\texttrademark } Ultra-Low Power Dual Band Wireless Microcontroller}{7}{subsection.2.3.6}
-\contentsline {section}{\numberline {2.4}Protocols and standards}{7}{section.2.4}
+\contentsline {section}{\numberline {2.4}Protocols and standards}{8}{section.2.4}
 \contentsline {section}{\numberline {2.5}Communication KPI\IeC {\textquoteright }s}{8}{section.2.5}
 \contentsline {chapter}{\numberline {3}Development of Wireless Monitoring System}{9}{chapter.3}
 \contentsline {chapter}{\numberline {4}Results and Discussion}{10}{chapter.4}

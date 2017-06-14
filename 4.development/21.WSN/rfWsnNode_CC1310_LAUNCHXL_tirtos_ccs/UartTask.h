@@ -11,6 +11,8 @@
 #define CRC_ERROR "CRC_ERROR"
 #define NOT_DEF   "NOT_DEF"
 #define CRC_NUM   "CRC_NUM"
+#define TIMEOUT_PROTOCOL   15
+
 
 /* Initializes the Node Task and creates all TI-RTOS objects */
 

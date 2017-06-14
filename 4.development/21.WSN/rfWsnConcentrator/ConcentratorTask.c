@@ -262,7 +262,7 @@ static void updateLcd(void) {
     Display_printf(hDisplayLcd, 0, 0, "Nodes Value SW  RSSI");
 
     //clear screen, put cuser to beggining of terminal and print the header
-    Display_printf(hDisplaySerial, 0, 0, "Nodes   Value   SW    RSSI    DCBUS    VPV     IPV     PWR");
+   // Display_printf(hDisplaySerial, 0, 0, "Nodes   Value   SW    RSSI    DCBUS    VPV     IPV     PWR");
 
     /* Start on the second line */
     currentLcdLine = 1;
@@ -278,10 +278,16 @@ static void updateLcd(void) {
                 nodePointer->latestRssi);
 
         /* print to UART */
-        Display_printf(hDisplaySerial, 0, 0, "0x%02x       %04d       %d         %04d       %04d       %04d        %04d       %04d",
-                nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
-                nodePointer->latestRssi,
-                nodePointer->DCBUS, nodePointer->VPV, nodePointer->IPV, nodePointer->PWR );
+
+        Display_printf(hDisplaySerial, 0, 0, "0x%02x;%04d;%d;%04d;%5d;%5d;%5d;%5d",
+                        nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
+                        nodePointer->latestRssi,
+                        nodePointer->DCBUS, nodePointer->VPV, nodePointer->IPV, nodePointer->PWR );
+
+        //Display_printf(hDisplaySerial, 0, 0, "0x%02x       %04d       %d         %04d       %04d       %04d        %04d       %04d",
+        //        nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
+        //        nodePointer->latestRssi,
+        //        nodePointer->DCBUS, nodePointer->VPV, nodePointer->IPV, nodePointer->PWR );
 
         nodePointer++;
         currentLcdLine++;

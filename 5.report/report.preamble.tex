@@ -11,6 +11,9 @@
 \usepackage{lipsum}  
 \usepackage{verbatim}
 \usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{subcaption}
 
 
 \usepackage{array}
@@ -21,6 +24,7 @@
 %\usepackage[nolist,nohyperlinks]{acronym}
 
 \usepackage[]{nomencl}
+\usepackage[final]{pdfpages}
 
 %\usepackage{biblatex}
 %\addbibresource{references.bib}
@@ -31,8 +35,38 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+%%%  para ter capítulos xpto
+%%%  https://hstuart.dk/2007/05/21/styling-the-chapter/
 
 
+\usepackage{tikz, blindtext}
+\usepackage{kpfonts}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\definecolor{FEUP_color}{RGB}{140,45,25}
+
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+{\gdef\chapterlabel{}
+	\normalfont\sffamily\huge\bfseries\scshape}
+{\gdef\chapterlabel{\thechapter\ }}{0pt}
+{\begin{tikzpicture}[remember picture,overlay]
+	\node[yshift=-6cm] at (current page.north west)
+	{\begin{tikzpicture}[remember picture, overlay]
+		%\draw[fill=white] (-1,0) rectangle
+	%	(1.2\paperwidth,8cm);
+		\node[anchor=west,xshift=3cm,rectangle,
+		rounded corners=1pt,inner sep=11pt,
+		fill=black]
+		{\color{white}\chapterlabel#1};
+		\end{tikzpicture}
+	};
+\end{tikzpicture}
+}
+\titlespacing*{\chapter}{0pt}{50pt}{50pt}
 
 \makenomenclature
 \input{chapters/A.acronyms}
+
+
+

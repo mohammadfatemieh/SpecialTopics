@@ -56,6 +56,10 @@ struct AdcSensorPacket {
 struct DualModeSensorPacket {
     struct PacketHeader header;
     uint16_t adcValue;
+//    uint16_t DCBUS;
+//    uint16_t VPV;
+//    uint16_t IPV;
+//    uint16_t PWR;
     uint16_t batt;
     uint32_t time100MiliSec;
     uint8_t button;

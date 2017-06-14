@@ -158,7 +158,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "rfWsnConcentrator.out"
 
 dependents:
-	-cd C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug && $(MAKE) all
+	-cd C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug && $(MAKE) clean all
 
 # Tool invocations
 rfWsnConcentrator.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC1310_LAUNCHXL_release_ccs.lib

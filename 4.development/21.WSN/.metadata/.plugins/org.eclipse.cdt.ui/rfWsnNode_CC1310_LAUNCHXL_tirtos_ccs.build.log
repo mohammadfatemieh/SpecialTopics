@@ -2,10 +2,12 @@
 **** Build of configuration Debug for project rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
-'Building file: ../NodeTask.c'
+'Building file: ../UartTask.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
-'Finished building: ../NodeTask.c'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="UartTask.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../UartTask.c"
+"../UartTask.c", line 126: warning #179-D: variable "input" was declared but never referenced
+"../UartTask.c", line 74: warning #179-D: variable "uartEventHandle" was declared but never referenced
+'Finished building: ../UartTask.c'
 ' '
 'Building target: rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out'
 'Invoking: ARM Linker'

@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,twoside,openright]{report}
+\documentclass[10pt,a4paper,twoside]{report}
 \usepackage[utf8]{inputenc}
 
 \usepackage[]{feupteses}
@@ -40,20 +40,16 @@
 \input{chapters/1.Introduction}
 
 
-\chapter{Railways Remote Monitoring Systems}
-\input{chapters/2.Railways}
+\chapter{System Specification}
+\input{chapters/2.SystemSpecification}
 
+\chapter{Development of Wireless Monitoring System}
+\input{chapters/3.Development}
 
-\chapter{Railways Energy Model}
-\input{chapters/3.Models}
+\chapter{Results and Discussion}
+\input{chapters/4.Results}
 
-\chapter{Outliers Detection}
-\input{chapters/4.Outliers}
-
-\chapter{Future Research}
-\input{chapters/4.Future}
-
-\chapter{Conclusion}
+\chapter{Conclusions and Future Work}
 \input{chapters/5.Conclusions}
 
 
@@ -68,6 +64,11 @@
 
 %\bibliographystyle{plainnat}
 %\bibliography{references}
+
+\chapter*{Attachment 1 --- \large{Overview of communication systems for Smart Grids}}
+\includepdf[pages=-, scale=0.9, offset=-10 0, pagecommand={\thispagestyle{plain}}]  {chapters/communication}
+\chapter*{Attachment 2 --- \large{System Requirements Specification}}
+\includepdf[pages=-, scale=1, offset=0 0, pagecommand={\thispagestyle{plain}}]  {chapters/SRS}
 
 
 \end{document}

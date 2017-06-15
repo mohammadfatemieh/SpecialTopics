@@ -4,10 +4,10 @@
 #define NUM_OF_COMMANDS 4
 
 typedef struct{
-    int DCBUS;
-    int VPV;
-    int IPV;
-    int PWR;
+    uint16_t DCBUS;
+    uint16_t VPV;
+    uint16_t IPV;
+    uint16_t PWR;
 }pv2wifi;
 
 

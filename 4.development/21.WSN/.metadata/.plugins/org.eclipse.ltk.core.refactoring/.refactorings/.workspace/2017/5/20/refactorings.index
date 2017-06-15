@@ -3,3 +3,5 @@
 1494863804184	Delete resource 'mutex_CC1350_LAUNCHXL_TI'
 1494866379300	Delete resource 'swi_CC1350_LAUNCHXL_TI'
 1494866411178	Delete resource 'hello_CC1350_LAUNCHXL_TI'
+1494956226092	Rename resource 'rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs'
+1494956245345	Rename resource 'rfWsnConcentrator_CC1310_LAUNCHXL_tirtos_ccs'

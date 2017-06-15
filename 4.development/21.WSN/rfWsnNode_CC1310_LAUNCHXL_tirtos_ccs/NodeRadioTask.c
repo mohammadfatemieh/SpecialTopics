@@ -54,6 +54,9 @@
 #include "RadioProtocol.h"
 #include "NodeRadioTask.h"
 
+#include "microgen.h"
+#include "UartTask.h"
+
 #ifdef DEVICE_FAMILY
     #undef DEVICE_FAMILY_PATH
     #define DEVICE_FAMILY_PATH(x) <ti/devices/DEVICE_FAMILY/x>
@@ -214,6 +217,11 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
             dmSensorPacket.adcValue = adcData;
             dmSensorPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
 
+            dmSensorPacket.DCBUS = (uint16_t) pv2wifi_[0];
+            dmSensorPacket.VPV   = (uint16_t) pv2wifi_[1];
+            dmSensorPacket.IPV   = (uint16_t) pv2wifi_[2];
+            dmSensorPacket.PWR   = (uint16_t) pv2wifi_[3];
+
 
             sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NORERADIO_ACK_TIMEOUT_TIME_MS);
         }
@@ -301,6 +309,14 @@ static void sendDmPacket(struct DualModeSensorPacket sensorPacket, uint8_t maxNu
     currentRadioOperation.easyLinkTxPacket.payload[8] = (dmSensorPacket.time100MiliSec & 0xFF00) >> 8;
     currentRadioOperation.easyLinkTxPacket.payload[9] = (dmSensorPacket.time100MiliSec & 0xFF);
     currentRadioOperation.easyLinkTxPacket.payload[10] = dmSensorPacket.button;
+    currentRadioOperation.easyLinkTxPacket.payload[11] = (dmSensorPacket.DCBUS & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[12] = (dmSensorPacket.DCBUS & 0xFF);
+    currentRadioOperation.easyLinkTxPacket.payload[13] = (dmSensorPacket.VPV & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[14] = (dmSensorPacket.VPV & 0xFF);
+    currentRadioOperation.easyLinkTxPacket.payload[15] = (dmSensorPacket.IPV & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[16] = (dmSensorPacket.IPV & 0xFF);
+    currentRadioOperation.easyLinkTxPacket.payload[17] = (dmSensorPacket.PWR & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[18] = (dmSensorPacket.PWR & 0xFF);
 
     currentRadioOperation.easyLinkTxPacket.len = sizeof(struct DualModeSensorPacket);
 

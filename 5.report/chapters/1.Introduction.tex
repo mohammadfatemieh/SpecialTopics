@@ -1,5 +1,5 @@
 %\lipsum[4-4]
-This chapter presents the context, motivation and document structure of a study of outlier detection in a railways WSN-based smart grid. 
+This chapter presents the context, motivation and document structure of the activity report of monitoring photovoltaic converters using Wireless Sensor Networks. 
 
 \section{Context and motivation of PhD}
 
@@ -12,68 +12,15 @@ This detailed mapping of the energy flows should include, not only the rolling s
 
 The knowledge of all the load curves permits the load prevision, peak shaving and energy cost optimization for all global railway system.
 
-
-\section{Shift2Rail Framework}
-
-This work is supported by the iRail PhD programme – Innovation in Railway Systems and Technologies whose objectives are aligned with the Shift2Rail objectives, \cite{shift2rail2015}: 
-
-\begin{itemize}
-		\setlength\itemsep{-0.5em}
-		\item 1. Cutting the life-cycle cost of railway transport by as much as 50\%;
-		\item 2. Doubling the railway capacity;
-		\item 3. Increasing the reliability and punctuality by as much as 50\%.
-\end{itemize}
+\section{Context and motivation of monitoring PV converters using WSN's}
 
 
-Framed on the Shift2Rail (S2R) Innovation Programme 3 (IP3) with the focus on ”Cost efficient and reliable infrastructure”, it is proposed to develop a Smart Metering Demonstrator (SMD) that reach a detailed monitoring and supervision of various energy flows on the premises of embrace the entire Railway System.
+This activity report is inserted in the scope of a microgeneration project of the SYSTEC Research Unit. Figure 1 in attachment presents the main architecture of this project. Currently, several work has been done in this project to implement a monitoring subsystem. This work focuses on data collection from each power converter and also on its control by sending references and actions. At the moment of this proposal, no work has been done to implement the monitoring feature in the PV converters. This way, a wireless network implementation is proposed to monitor the PV power converters.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.60\textwidth,keepaspectratio]{figures/IPs}
-	\caption{Shif2Rail Inovation Programmes. }
-	\label{fig:ips}
-\end{figure}
-
-The purpose of any energy management strategy is to build the dynamics of every loads and generators of the power system. 
-
-This should be performed based on an extensive knowledge of every energy flows. 
-
-This way, the SMD is required to propose and validate a standard metering architecture that involves the coordination of every measurements either in on-board and in ground. 
-In advance, energy data analysis should be provided based on relevant stored data. 
-
-\section{PhD state of the art}
-
-This section will cover a summary of the state of the art that supports this PhD.
-
-Based on the state of the art, current metering systems focus on rolling stock on-board energy meters for energy billing purposes only, where the metering devices are located close to the pantograph, \cite{shift2rail2015}.
-
-An advance beyond the state of the art is the expansion of the measurement system at railway system level, making it a distributed one, including both on-board and track-side measurements, thus achieving detailed mappings. 
-
-\vspace{2em}
-
-Other point in the state of the art is the intrusion level of currently used metering systems, that in one way, became a critical subsystem of the rolling stock and in other way, requires relatively long implementation, \cite{shift2rail2015}. 
-
-An advance beyond the state of the art is a solution based on non-intrusive technology. More detailed simulation models in conjunction with field measurements is the methodology to be investigated.
+The PV converter uses a non-isolated high gain DC/DC topology and has a PIC32 microcontroller which implements a MPPT algorithm in the control loop. It is currently possible to connect a device with wireless capabilities to the PV power converter. The converter is able to provide power and data. The data collected from the monitoring device is sent to an aggregator node for post processing and data storage. Currently, several work has already been done to have a reliable wired data aggregator/concentrator (figure 2). This subsystem is also responsible for sending user commands to the power converters and presenting the user interface in a webpage remotely accessed via a web browser. 
 
 
 
-%\textbf{\textit{Research Plan}}
-
-Specific challenges and requirements of this research are the development of non-intrusive Wireless Sensor Networks (WSN)  in the railway environment. 
-It is intended that this technology should be based on an open system and open interfaces for the data collection, aggregation and analysis. 
-Issues like metering redundancy, outlier detection, fault tolerance and communication reliability, should be considered during the research.
-In addition, it is expected to design and specify a set of user applications.
-Those applications are focused in the energy analysis process with the aim of providing more information and detailed knowledge.
-It is expected that this detailed knowledge would be useful in a decision support system related with, in e.g., eco-driving strategies, timetable planning and preventive maintenance.
-
-\section{Influence of outliers in a railway remote monitoring system}
-	%Outlier Detection towards improving fault tolerance and communication reliability of SMD}
-
-Having in mind the state of the art that was previously presented in section 1.3, an important contribution of a wireless sensor network in the railway system is the availability of useful knowledge of the energy consumption to the decision support systems.
-
-Therefore, such acquisition systems are required to provide accurate data regardless of the quality of the acquisition sensors, electromagnetic influences (EMI), sensor supply fluctuations, among others.
-
-Through computational algorithms, the increasing of communication reliability and fault tolerance is possible. Those computational algorithms detect outliers or, in the scope of this PhD, detect erroneous data that will perturb the outcomes of decision support systems. Further on in chapter 2, this thematic is extensively explored.
 
 \section{Document structure}
 
@@ -89,8 +36,9 @@ This document is divided in 5 chapters, each of them incorporate the relevant su
     \textbf{Chapter} & \textbf{Title}                    \\ \hline
     1       &                   Introduction             \\ \hline
   %  2       &                   Railways Remote Monitoring Systems       \\ \hline
-    2       &                   Outliers Detection    \\ \hline
-    3       &                   Future Research    \\ \hline
-    4       &                   Conclusions               \\
+    2       &                   System Specification    \\ \hline
+    3       &                   Development of Wireless Monitoring System    \\ \hline
+    4       &                   Results and Discussion    \\ \hline
+    5       &                   Conclusions and Future Work      \\ 
     \end{tabular}
 \end{table}

@@ -80,11 +80,12 @@ int pv2wifi_[NUM_OF_COMMANDS];
 
 ugen_comm pv2wifi_commands[NUM_OF_COMMANDS];
 
-char receivedMessage[100];
+char receivedMessage[30];
 char receivedNumber[10];
 //boolean status_command;
 int STATE_cardinal = 0;
 int toSendCRC = 0, nbytes = 0, cnt = 0;
+int timeoutProtocol = 0;
 //pv2rpi pv2rpi_;
 
 
@@ -125,6 +126,7 @@ static void uartTaskFunction(UArg arg0, UArg arg1) {
     char input;
     UART_setup();
     int count;
+    int aux=0;
 
 
 
@@ -134,22 +136,36 @@ static void uartTaskFunction(UArg arg0, UArg arg1) {
     while(1) {
 
         /* We want to sleep for 10000 microseconds */
-        UInt32 milis;
+        UInt32 milis, micros;
         milis = 1000 / Clock_tickPeriod;
-        Task_sleep(milis*10000);
+        micros  = milis / 1000;
+        Task_sleep(milis*500);
 
-        UART_read(uart, &input, 1);
+        //UART_read(uart, &input, 1);
 
         for(count=0; count < NUM_OF_COMMANDS; count++) {
-            UART_write(uart, pv2wifi_commands[count].command, pv2wifi_commands[count].size);
+
+            for (aux = 0; aux < pv2wifi_commands[count].size; aux++) {
+                //uchar_aux = ;
+                UART_write(uart, &pv2wifi_commands[count].command[aux], 1);
+                Task_sleep(micros * 400);
+            }
+
+           // char aux_char = "\n";
+
+            //UART_write(uart, &aux_char, 1);
+
+            //Task_sleep(milis*1);
+            runProtocol(count);
+                //Task_sleep(100);
 
             //clear protocol
             toSendCRC=0;
             nbytes=0;
-            receivedMessage[0]='\0';
+            receivedMessage[0]= '\0';
+            receivedNumber[0] = '\0';
             STATE_cardinal=0;
-            while( runProtocol(count) != 0);
-            Task_sleep(milis*5);
+            Task_sleep(milis*20);
         }
 
     }
@@ -158,10 +174,14 @@ static void uartTaskFunction(UArg arg0, UArg arg1) {
 
 void UART_setup(void) {
 
-    pv2wifi_commands[0].command="#DCBUS#05#";
-    pv2wifi_commands[1].command="#VPV#03#";
-    pv2wifi_commands[2].command="#IPV#03#";
-    pv2wifi_commands[3].command="#PWR#03#";
+
+    /* timeout for uart read */
+    UInt32 milis = 1000 / Clock_tickPeriod;
+
+    pv2wifi_commands[0].command="{DCBUS#05}";
+    pv2wifi_commands[1].command="{VPV#03}";
+    pv2wifi_commands[2].command="{IPV#03}";
+    pv2wifi_commands[3].command="{PWR#03}";
 
     pv2wifi_commands[0].size=10;
     pv2wifi_commands[1].size=8;
@@ -178,14 +198,17 @@ void UART_setup(void) {
 
     /* Call driver init functions */
 	UART_init();
+
+
 	/* Create a UART with data processing off. */
 	UART_Params_init(&uartParams);
+    uartParams.readMode = UART_MODE_BLOCKING;
 	uartParams.writeDataMode = UART_DATA_BINARY;
 	uartParams.readDataMode = UART_DATA_BINARY;
-	//uartParams.readTimeout =
+	uartParams.readTimeout = milis * 50;  //wait k (ms) before timeout
 	uartParams.readReturnMode = UART_RETURN_FULL;
 	uartParams.readEcho = UART_ECHO_OFF;
-	uartParams.baudRate = 115200;
+	uartParams.baudRate = 19200; //57600; //115200;
 
 	uart = UART_open(Board_UART0, &uartParams);
 	
@@ -193,65 +216,79 @@ void UART_setup(void) {
 	    System_abort("Error opening the UART");
 	}
 
-	UART_write(uart, echoPrompt, sizeof(echoPrompt));
+	//UART_write(uart, echoPrompt, sizeof(echoPrompt));
 
 
 }
 
 int  runProtocol(int count) {
 
+    timeoutProtocol = 0;
+    while(UART_read(uart, &receivedMessage[nbytes], 1) != UART_ERROR) {
 
-    //UART_read(uart, &input, 1);
-                //receivedMessage[nbytes] = U2RXREG;
-      UART_read(uart, &receivedMessage[nbytes], 1);
-       //START STATE MACHINE TO PROCESS INCOMING BUFFER
+        timeoutProtocol += 1;
 
-      if(receivedMessage[nbytes]=='#') {
-          if(STATE_cardinal==START_MSG)  {       //START MESSAGE
-              STATE_cardinal = MSG_DATA;
-              receivedMessage[nbytes]='\0';
-          }
-          else if(STATE_cardinal==MSG_DATA) {      //MESSAGE DATA
-              STATE_cardinal = CRC_DATA;
-              receivedMessage[nbytes]='\0';
-              cnt=10;
-          }
-          else if(STATE_cardinal==CRC_DATA) {      //CRC DATA
-              if(nbytes == toSendCRC) {
-                  receivedMessage[nbytes]='\0';
-                  //receivedNumber[nbytes-1] = '\0';
-                  //setMessage(mensagem);
-                  //manageMessage();
+        if (timeoutProtocol > TIMEOUT_PROTOCOL) {
+            timeoutProtocol = 0;
+            break;
+        }
+        //UART_read(uart, &input, 1);
+                        //receivedMessage[nbytes] = U2RXREG;
+               //START STATE MACHINE TO PROCESS INCOMING BUFFER
 
-                  pv2wifi_[count] = manage_message();
-                   return 0;
+              if(receivedMessage[nbytes]=='#') {
+                  if(STATE_cardinal==START_MSG)  {       //START MESSAGE
+                      STATE_cardinal = MSG_DATA;
+                      receivedMessage[nbytes]='\0';
+                  }
+                  else if(STATE_cardinal==MSG_DATA) {      //MESSAGE DATA
+                      STATE_cardinal = CRC_DATA;
+                      receivedMessage[nbytes]='\0';
+                      cnt=10;
+                  }
+                  else if(STATE_cardinal==CRC_DATA) {      //CRC DATA
+                      if(nbytes == toSendCRC) {
+                          receivedMessage[nbytes]='\0';
+                          receivedNumber[nbytes] = '\0';
+                          //receivedNumber[nbytes-1] = '\0';
+                          //setMessage(mensagem);
+                          //manageMessage();
+
+                          pv2wifi_[count] = manage_message();
+                          timeoutProtocol = 0;
+                           break;
+                      }
+                      else {
+                          //strcpy(receivedMessage, CRC_ERROR);
+                          //nbytes=strlen(CRC_ERROR);
+                          receivedMessage[nbytes]='\0';
+                          receivedNumber[nbytes] = '\0';
+                          //microGen_serial.setMessage(mensagem);
+                          pv2wifi_[count] = manage_message();
+                          timeoutProtocol = 0;
+                          break;
+                     }
+                  }
               }
-              else {
-                  //strcpy(receivedMessage, CRC_ERROR);
-                  //nbytes=strlen(CRC_ERROR);
-                  receivedMessage[nbytes]='\0';
-                  //microGen_serial.setMessage(mensagem);
-                  pv2wifi_[count] = manage_message();
-                  return 0;
-             }
-          }
-      }
-      else if(STATE_cardinal==MSG_DATA) {
-          //check if is a command with value
-          //if(receivedMessage[nbytes]=='{') {
-              //nop
-              // enableCommand();
-          //}
-          receivedNumber[nbytes]=receivedMessage[nbytes];
-          nbytes++;
-      }
-      else if(STATE_cardinal==CRC_DATA) {
-          toSendCRC+=(receivedMessage[nbytes]-48)*cnt;
-          cnt/=10;
-      }
+              else if(STATE_cardinal==MSG_DATA) {
+                  //check if is a command with value
+                  //if(receivedMessage[nbytes]=='{') {
+                      //nop
+                      // enableCommand();
+                  //}
+                  receivedNumber[nbytes]=receivedMessage[nbytes];
+                  nbytes++;
+              }
+              else if(STATE_cardinal==CRC_DATA) {
+                  toSendCRC+=(receivedMessage[nbytes]-48)*cnt;
+                  cnt/=10;
+              }
 
 
-      return -1;
+
+    }
+
+    return 0;
 
 }
 
@@ -268,6 +305,6 @@ void UART_loop(void) {
 int manage_message(void) {
 
 
-    UART_write(uart, &receivedNumber, 3);
+   // UART_write(uart, &receivedNumber, 3);
     return atoi(receivedNumber);//number;
 }

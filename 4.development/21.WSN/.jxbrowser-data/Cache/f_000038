@@ -1,0 +1,191 @@
+[
+  {
+    "text": "CC1310 Development Kit",
+    "type": "folder",
+    "numChildren": 93,
+    "numChildrenLocal": 93,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC1310 Development Kit&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools/.metadata/.tirex/img/cc1310dk.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  },
+  {
+    "text": "CC1310 LaunchPad",
+    "type": "folder",
+    "numChildren": 90,
+    "numChildrenLocal": 90,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC1310 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools/.metadata/.tirex/img/launchxl-cc1310_p.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  },
+  {
+    "text": "CC1350 LaunchPad",
+    "type": "folder",
+    "numChildren": 30,
+    "numChildrenLocal": 30,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC1350 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 51,
+    "offline": "true"
+  },
+  {
+    "text": "CC1350 SensorTag",
+    "type": "folder",
+    "numChildren": 30,
+    "numChildrenLocal": 30,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC1350 SensorTag&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools/.metadata/.tirex/img/cc1350stk.jpg",
+    "packageOrder": 51,
+    "offline": "true"
+  },
+  {
+    "text": "CC2650 LaunchPad",
+    "type": "folder",
+    "numChildren": 108,
+    "numChildrenLocal": 108,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  },
+  {
+    "text": "CC2650 Development Kit (4XS)",
+    "type": "folder",
+    "numChildren": 64,
+    "numChildrenLocal": 64,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 Development Kit (4XS)&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools/.metadata/.tirex/img/cc2650dk.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  },
+  {
+    "text": "CC2650 Development Kit (5XD)",
+    "type": "folder",
+    "numChildren": 64,
+    "numChildrenLocal": 64,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 Development Kit (5XD)&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools/.metadata/.tirex/img/cc2650dk.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  },
+  {
+    "text": "CC2650 Development Kit (7ID)",
+    "type": "folder",
+    "numChildren": 112,
+    "numChildrenLocal": 112,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 Development Kit (7ID)&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools/.metadata/.tirex/img/cc2650dk.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  },
+  {
+    "text": "CC2650 SensorTag",
+    "type": "folder",
+    "numChildren": 72,
+    "numChildrenLocal": 72,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "TI-RTOS for CC2650",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20CC2650/Development%20Tools&package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12",
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.00.00::com.ti.MMWAVE_SDK__01.00.00.05::com.ti.SAIL__1.00.00.09::com.ti.AWS_CC32XX__1.00.00.12::com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33::com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42::com.ti.mmwave_training__1.0.2::cc3200sdk__1.1.0.0::sitara__1.02.00.00::com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37::com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03::tirtos_simplelink__2.13.01.09::tm4c__2.1.3.156::tirtos_tivac__2.16.00.08::tirtos_msp43X__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::xdctools__3.50.01.12::msp430ware__3.60.00.10::sysbios__6.50.01.12::com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16::ccs_training__1.00.00.08::sdtoutilities__1.00.00.02::xdsdebugprobes__1.00.00.03::msp432_devices__1.00.00.00::msp432_devtools__1.00.00.00::cc26x0_devices__1.00.00.0002::cc26xx_devtools__1.00.00.0001::cc13x0_devices__1.00.00.0002::cc13xx_devtools__1.00.00.0002::cc32xx_devices__1.00.00.00::cc32xx_devices__1.00.00.00::cc32xx_devtools__1.00.00.00::cc32xx_devtools__1.00.00.00::mspdevtools__1.00.00.40::com.ti.mmwave_devices__1.0.0::com.ti.mmwave_devtools__0.2.0::msp430_devices__1.00.00.00::msp430_devtools__1.00.00.00::c2000ware_devices_package__1.00.00.00::sitara_devices__1.00.00.00::sitara_devtools__1.00.00.00::tivac_devices__1.00.00.00::tivac_devtools__1.00.00.00&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 SensorTag&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools/.metadata/.tirex/img/cc2650stk.jpg",
+    "packageOrder": 51,
+    "offline": "partial"
+  }
+]

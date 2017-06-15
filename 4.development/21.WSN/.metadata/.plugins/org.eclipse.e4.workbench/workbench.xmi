@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_NfFR0TNPEeeRHZWSKAo5YA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_NfFR0jNPEeeRHZWSKAo5YA" bindingContexts="_NfFR2DNPEeeRHZWSKAo5YA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;NodeTask.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/NodeTask.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/NodeTask.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;rfWsnNode.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UartTask.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UartTask.h&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UART.h&quot; tooltip=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\source\ti\drivers\UART.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\source\ti\drivers\UART.h&quot; project=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;microgen.h&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/microgen.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/microgen.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.rtsc.xdctools.cfgEditor&quot; name=&quot;uartecho.cfg&quot; tooltip=&quot;uartecho_CC1350_LAUNCHXL_TI/uartecho.cfg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/uartecho_CC1350_LAUNCHXL_TI/uartecho.cfg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;uartecho.c&quot; tooltip=&quot;uartecho_CC1350_LAUNCHXL_TI/uartecho.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/uartecho_CC1350_LAUNCHXL_TI/uartecho.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;hello.c&quot; tooltip=&quot;hello_CC1350_LAUNCHXL_TI/hello.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hello_CC1350_LAUNCHXL_TI/hello.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;swi.c&quot; tooltip=&quot;swi_CC1350_LAUNCHXL_TI/swi.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/swi_CC1350_LAUNCHXL_TI/swi.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;com.ti.dvt.resource.explorer.editor.elementFactory&quot; id=&quot;com.ti.dvt.resource.explorer.editor.resourceExplorer&quot; name=&quot;TI Resource Explorer&quot; tooltip=&quot;TI Resource Explorer&quot;>&#xD;&#xA;&lt;persistable name=&quot;TI Resource Explorer&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;CC1310_LAUNCHXL.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Event.h&quot; tooltip=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\kernel\tirtos\packages\ti\sysbios\knl\Event.h&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/knl/Event.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;mutex.c&quot; tooltip=&quot;mutex_CC1350_LAUNCHXL_TI/mutex.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mutex_CC1350_LAUNCHXL_TI/mutex.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;clock.c&quot; tooltip=&quot;clock_CC1350_LAUNCHXL_TI/clock.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/clock_CC1350_LAUNCHXL_TI/clock.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;com.ti.dvt.resource.explorer.editor.elementFactory&quot; id=&quot;com.ti.dvt.resource.explorer.editor.resourceExplorer&quot; name=&quot;TI Resource Explorer&quot; tooltip=&quot;TI Resource Explorer&quot;>&#xD;&#xA;&lt;persistable name=&quot;TI Resource Explorer&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;rfWsnNode.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;NodeTask.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/NodeTask.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/NodeTask.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UartTask.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UartTask.h&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UART.h&quot; tooltip=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\source\ti\drivers\UART.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\source\ti\drivers\UART.h&quot; project=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;microgen.h&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/microgen.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/microgen.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.rtsc.xdctools.cfgEditor&quot; name=&quot;uartecho.cfg&quot; tooltip=&quot;uartecho_CC1350_LAUNCHXL_TI/uartecho.cfg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/uartecho_CC1350_LAUNCHXL_TI/uartecho.cfg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;uartecho.c&quot; tooltip=&quot;uartecho_CC1350_LAUNCHXL_TI/uartecho.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/uartecho_CC1350_LAUNCHXL_TI/uartecho.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;hello.c&quot; tooltip=&quot;hello_CC1350_LAUNCHXL_TI/hello.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hello_CC1350_LAUNCHXL_TI/hello.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;swi.c&quot; tooltip=&quot;swi_CC1350_LAUNCHXL_TI/swi.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/swi_CC1350_LAUNCHXL_TI/swi.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;CC1310_LAUNCHXL.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Event.h&quot; tooltip=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\kernel\tirtos\packages\ti\sysbios\knl\Event.h&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/knl/Event.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;mutex.c&quot; tooltip=&quot;mutex_CC1350_LAUNCHXL_TI/mutex.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mutex_CC1350_LAUNCHXL_TI/mutex.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;clock.c&quot; tooltip=&quot;clock_CC1350_LAUNCHXL_TI/clock.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/clock_CC1350_LAUNCHXL_TI/clock.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_NfFR0jNPEeeRHZWSKAo5YA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_NzqasTNPEeeRHZWSKAo5YA" x="0" y="0" width="1924" height="1056">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_NfFR0jNPEeeRHZWSKAo5YA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_NzqasTNPEeeRHZWSKAo5YA" x="0" y="0" width="1378" height="780">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -64,9 +64,10 @@
           <tags>persp.newWizSC:org.eclipse.rtsc.builddefinitions.dspbios.ui.DSPBIOSCreateNew</tags>
           <tags>persp.newWizSC:org.eclipse.rtsc.xdctools.ui.cdt.wizards.configfile.RTSCConfigFileWizard</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_N4G10jNPEeeRHZWSKAo5YA" selectedElement="_N4G12DNPEeeRHZWSKAo5YA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_N4G10jNPEeeRHZWSKAo5YA" selectedElement="_N4G10zNPEeeRHZWSKAo5YA" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_N4G10zNPEeeRHZWSKAo5YA" containerData="1964" selectedElement="_N4G11DNPEeeRHZWSKAo5YA">
               <children xsi:type="basic:PartStack" xmi:id="_N4G11DNPEeeRHZWSKAo5YA" elementId="left" containerData="5000" selectedElement="_N4G11TNPEeeRHZWSKAo5YA">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_N4G11TNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_N3-S8DNPEeeRHZWSKAo5YA"/>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_N4G11jNPEeeRHZWSKAo5YA" elementId="org.eclipse.rtsc.xdctools.model.ui.views.packageViewMStack" containerData="5000" selectedElement="_N4G11zNPEeeRHZWSKAo5YA">
@@ -86,7 +87,7 @@
                 </children>
               </children>
               <children xsi:type="basic:PartSashContainer" xmi:id="_N4G14TNPEeeRHZWSKAo5YA" containerData="7500" selectedElement="_N4G14jNPEeeRHZWSKAo5YA">
-                <children xsi:type="basic:PartSashContainer" xmi:id="_N4G14jNPEeeRHZWSKAo5YA" containerData="8176" selectedElement="_N4G14zNPEeeRHZWSKAo5YA">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_N4G14jNPEeeRHZWSKAo5YA" containerData="6000" selectedElement="_N4G14zNPEeeRHZWSKAo5YA">
                   <children xsi:type="basic:PartSashContainer" xmi:id="_N4G14zNPEeeRHZWSKAo5YA" containerData="5000" selectedElement="_N4G15DNPEeeRHZWSKAo5YA" horizontal="true">
                     <children xsi:type="advanced:Placeholder" xmi:id="_N4G15DNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_N34MUDNPEeeRHZWSKAo5YA"/>
                     <children xsi:type="basic:PartStack" xmi:id="_N4G15TNPEeeRHZWSKAo5YA" elementId="right" containerData="2500" selectedElement="_N4G15jNPEeeRHZWSKAo5YA">
@@ -106,7 +107,7 @@
                     </children>
                   </children>
                 </children>
-                <children xsi:type="basic:PartSashContainer" xmi:id="_N4G18DNPEeeRHZWSKAo5YA" containerData="1824" selectedElement="_N4G18zNPEeeRHZWSKAo5YA" horizontal="true">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_N4G18DNPEeeRHZWSKAo5YA" containerData="4000" selectedElement="_N4G18TNPEeeRHZWSKAo5YA" horizontal="true">
                   <children xsi:type="basic:PartStack" xmi:id="_N4G18TNPEeeRHZWSKAo5YA" elementId="bottomLeft" containerData="3691" selectedElement="_N4G18jNPEeeRHZWSKAo5YA">
                     <children xsi:type="advanced:Placeholder" xmi:id="_N4G18jNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.console.ConsoleView" ref="_N4AIJDNPEeeRHZWSKAo5YA"/>
                   </children>
@@ -182,7 +183,7 @@
             <children xsi:type="basic:PartStack" xmi:id="_0jrHsjNPEeeRHZWSKAo5YA" elementId="left" toBeRendered="false" containerData="2500">
               <children xsi:type="advanced:Placeholder" xmi:id="_0jrHszNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.navigator.ProjectExplorer" toBeRendered="false" ref="_N3-S8DNPEeeRHZWSKAo5YA"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_0jrHtDNPEeeRHZWSKAo5YA" containerData="7500" selectedElement="_0jrHvTNPEeeRHZWSKAo5YA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_0jrHtDNPEeeRHZWSKAo5YA" containerData="7500" selectedElement="_0jrHtTNPEeeRHZWSKAo5YA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_0jrHtTNPEeeRHZWSKAo5YA" containerData="2500" selectedElement="_0jrHtjNPEeeRHZWSKAo5YA" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_0jrHtjNPEeeRHZWSKAo5YA" elementId="topLeft" containerData="4500" selectedElement="_0jrHtzNPEeeRHZWSKAo5YA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_0jrHtzNPEeeRHZWSKAo5YA" elementId="org.eclipse.debug.ui.DebugView" ref="_N3_hEDNPEeeRHZWSKAo5YA"/>
@@ -250,66 +251,21 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_N34MUDNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.editorss" selectedElement="_N34MUTNPEeeRHZWSKAo5YA">
-      <children xsi:type="basic:PartStack" xmi:id="_N34MUTNPEeeRHZWSKAo5YA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_JHugcDl4EeeS4a30hBSpXg">
+      <children xsi:type="basic:PartStack" xmi:id="_N34MUTNPEeeRHZWSKAo5YA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_PwdPMD_fEee3uZtVnhyG3A">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>Maximized</tags>
-        <tags>active</tags>
         <children xsi:type="advanced:Placeholder" xmi:id="_N4DLcDNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_NzpzoTNPEeeRHZWSKAo5YA"/>
-        <children xsi:type="basic:Part" xmi:id="_mVVNcDlUEeelG6lj59nKXg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UartTask.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UartTask.c&quot; partName=&quot;UartTask.c&quot; title=&quot;UartTask.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2590&quot; selectionTopPixel=&quot;782&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_PwdPMD_fEee3uZtVnhyG3A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="rfWsnNode.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;rfWsnNode.c&quot; partName=&quot;rfWsnNode.c&quot; title=&quot;rfWsnNode.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_3aW0sDlUEeelG6lj59nKXg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="rfWsnNode.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;rfWsnNode.c&quot; partName=&quot;rfWsnNode.c&quot; title=&quot;rfWsnNode.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/rfWsnNode.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2320&quot; selectionTopPixel=&quot;426&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_JHugcDl4EeeS4a30hBSpXg" elementId="org.eclipse.e4.ui.compatibility.editor" containerData="5000" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NodeTask.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;NodeTask.c&quot; partName=&quot;NodeTask.c&quot; title=&quot;NodeTask.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/NodeTask.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/NodeTask.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;14&quot; selectionOffset=&quot;3033&quot; selectionTopPixel=&quot;2385&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_E_SnQDl_EeeS4a30hBSpXg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Event.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Event.h&quot; partName=&quot;Event.h&quot; title=&quot;Event.h&quot; tooltip=&quot;C:\ti\simplelink_cc13x0_sdk_1_30_00_06\kernel\tirtos\packages\ti\sysbios\knl\Event.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/knl/Event.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;22384&quot; selectionTopPixel=&quot;8385&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_RE2q4Dl_EeeS4a30hBSpXg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CC1310_LAUNCHXL.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;CC1310_LAUNCHXL.c&quot; partName=&quot;CC1310_LAUNCHXL.c&quot; title=&quot;CC1310_LAUNCHXL.c&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;27175&quot; selectionTopPixel=&quot;9645&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_1wblgDmAEeeS4a30hBSpXg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Resource Explorer" iconURI="platform:/plugin/com.ti.dvt.resource.explorer/icons/obj16/navigator.png" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="__DE2cD_fEee3uZtVnhyG3A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Resource Explorer" iconURI="platform:/plugin/com.ti.dvt.resource.explorer/icons/obj16/navigator.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ti.dvt.resource.explorer.editor.resourceExplorer&quot; name=&quot;TI Resource Explorer&quot; partName=&quot;Resource Explorer&quot; title=&quot;Resource Explorer&quot; tooltip=&quot;TI Resource Explorer&quot;>&#xD;&#xA;&lt;input factoryID=&quot;com.ti.dvt.resource.explorer.editor.elementFactory&quot; name=&quot;TI Resource Explorer&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.ti.dvt.resource.explorer.editor.resourceExplorer</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_8RPqUDmEEeeS4a30hBSpXg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="uartecho.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;uartecho.c&quot; partName=&quot;uartecho.c&quot; title=&quot;uartecho.c&quot; tooltip=&quot;uartecho_CC1350_LAUNCHXL_TI/uartecho.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/uartecho_CC1350_LAUNCHXL_TI/uartecho.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;27&quot; selectionOffset=&quot;3288&quot; selectionTopPixel=&quot;986&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_IL3IkDmNEeeOs64E3ka-7Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="microgen.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;microgen.h&quot; partName=&quot;microgen.h&quot; title=&quot;microgen.h&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/microgen.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/microgen.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;5&quot; selectionOffset=&quot;90&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_2i9CEDmVEeeOs64E3ka-7Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UartTask.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;UartTask.h&quot; partName=&quot;UartTask.h&quot; title=&quot;UartTask.h&quot; tooltip=&quot;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/UartTask.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;357&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
         </children>
       </children>
@@ -320,6 +276,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_N6UcUDNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -394,7 +352,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_N4AIJTNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.ProblemsView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Errors&quot;/>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings (1 item)&quot;/>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;714&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Errors&quot;/>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings (3 items)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;714&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_N9UF8DNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.views.ProblemView">
@@ -575,7 +533,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_N0_QYDNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_BoU_kDmMEeeOs64E3ka-7Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Nfjy_TNPEeeRHZWSKAo5YA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_vUi9gD_eEee3uZtVnhyG3A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Nfjy_TNPEeeRHZWSKAo5YA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_N0_3cDNPEeeRHZWSKAo5YA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -611,7 +569,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_N0_3dDNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_BokQIDmMEeeOs64E3ka-7Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Nfik6jNPEeeRHZWSKAo5YA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_vUodED_eEee3uZtVnhyG3A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Nfik6jNPEeeRHZWSKAo5YA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_N0_3dTNPEeeRHZWSKAo5YA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -662,6 +620,10 @@
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_lueTwD_hEee3uZtVnhyG3A" elementId="org.eclipse.rtsc.xdctools.model.ui.views.packageViewMStack(IDEWindow).(com.ti.ccstudio.TICPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
     </trimBars>
     <trimBars xmi:id="_NfFR1jNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Right">
       <children xsi:type="menu:ToolControl" xmi:id="_dJkQkDmYEeeOs64E3ka-7Q" elementId="topRight(IDEWindow).(com.ti.ccstudio.TIDebugPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
@@ -669,6 +631,14 @@
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_dJ0vQDmYEeeOs64E3ka-7Q" elementId="bottomRight(IDEWindow).(com.ti.ccstudio.TIDebugPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_luuycD_hEee3uZtVnhyG3A" elementId="right(IDEWindow).(com.ti.ccstudio.TICPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_lvBGUD_hEee3uZtVnhyG3A" elementId="bottomLeft(IDEWindow).(com.ti.ccstudio.TICPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
@@ -1497,12 +1467,6 @@
     <tags>View</tags>
     <tags>categoryTag:Debug</tags>
   </descriptors>
-  <descriptors xmi:id="_NikqsDNPEeeRHZWSKAo5YA" elementId="com.ti.ccstudio.debug.ui.msp430.targetVoltageView" label="Target Voltage" iconURI="platform:/plugin/com.ti.ccstudio.debug.ui.msp430/icons/targetVoltage.gif" tooltip="" category="MSP430" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="com.ti.ccstudio.debug.ui.msp430.views.TargetVoltageView"/>
-    <persistedState key="originalCompatibilityViewBundle" value="com.ti.ccstudio.debug.ui.msp430"/>
-    <tags>View</tags>
-    <tags>categoryTag:MSP430</tags>
-  </descriptors>
   <descriptors xmi:id="_NikqsTNPEeeRHZWSKAo5YA" elementId="com.ti.ccstudio.multi.purpose.view.ui.TargetSpecificView" label="Control Panel" iconURI="platform:/plugin/com.ti.ccstudio.multi.purpose.view/icons/view16/overview_obj.gif" tooltip="" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.ti.ccstudio.multi.purpose.view.ui.internal.TargetSpecificView"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.ti.ccstudio.multi.purpose.view"/>
@@ -1562,12 +1526,6 @@
     <persistedState key="originalCompatibilityViewBundle" value="com.ti.ccstudio.webcontent"/>
     <tags>View</tags>
     <tags>categoryTag:General</tags>
-  </descriptors>
-  <descriptors xmi:id="_Nio8ITNPEeeRHZWSKAo5YA" elementId="com.ti.ccstudio.debug.cacheview.ui.CtrvView" label="Cache" iconURI="platform:/plugin/com.ti.ccstudio.debug.cacheView/icons/view16/CacheView.gif" tooltip="" allowMultiple="true" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="com.ti.ccstudio.debug.cacheview.ui.internal.CtrvView"/>
-    <persistedState key="originalCompatibilityViewBundle" value="com.ti.ccstudio.debug.cacheView"/>
-    <tags>View</tags>
-    <tags>categoryTag:Debug</tags>
   </descriptors>
   <descriptors xmi:id="_NipjMDNPEeeRHZWSKAo5YA" elementId="com.ti.dvt.analysis.suite.UseCaseDashboard" label="Analysis Dashboard" iconURI="platform:/plugin/com.ti.dvt.analysis.suite.gui/icons/view.gif" tooltip="" category="DVT" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.ti.dvt.analysis.suite.UseCaseDashboard"/>
@@ -2604,7 +2562,7 @@
   <addons xmi:id="_NfFR5DNPEeeRHZWSKAo5YA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_NfFR5TNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_NfJjQDNPEeeRHZWSKAo5YA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_BafX4TmMEeeOs64E3ka-7Q" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_NfdFQDNPEeeRHZWSKAo5YA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_NfdFQTNPEeeRHZWSKAo5YA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

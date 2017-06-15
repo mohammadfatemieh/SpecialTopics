@@ -170,10 +170,10 @@ easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h
-easylink/EasyLink.obj: C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings_predefined.h
+easylink/EasyLink.obj: C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings_predefined.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_hs_mailbox.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_hs_cmd.h
-easylink/EasyLink.obj: C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings.h
+easylink/EasyLink.obj: C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h
 easylink/EasyLink.obj: C:/ti/xdctools_3_50_00_10_core/packages/xdc/runtime/Error.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/BIOS.h
@@ -189,7 +189,7 @@ easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../driverlib/rom.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/inc/hw_ccfg.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/inc/hw_ccfg_simple_struct.h
-easylink/EasyLink.obj: C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/Board.h
+easylink/EasyLink.obj: C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/Board.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/ADC.h
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/ADCBuf.h
@@ -201,7 +201,7 @@ easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/UART.h
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/Watchdog.h
-easylink/EasyLink.obj: C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.h
+easylink/EasyLink.obj: C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/PIN.h
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/ioc.h
@@ -385,10 +385,10 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h:
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h: 
-C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings_predefined.h: 
+C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings_predefined.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_hs_mailbox.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/rf_hs_cmd.h: 
-C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings.h: 
+C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/smartrf_settings/smartrf_settings.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h: 
 C:/ti/xdctools_3_50_00_10_core/packages/xdc/runtime/Error.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/BIOS.h: 
@@ -404,7 +404,7 @@ C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../inc
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/../driverlib/rom.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/inc/hw_ccfg.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/inc/hw_ccfg_simple_struct.h: 
-C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/Board.h: 
+C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/Board.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/ADC.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/ADCBuf.h: 
@@ -416,7 +416,7 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h:
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/UART.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/Watchdog.h: 
-C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.h: 
+C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs/CC1310_LAUNCHXL.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/PIN.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stddef.h: 
 C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/ioc.h: 

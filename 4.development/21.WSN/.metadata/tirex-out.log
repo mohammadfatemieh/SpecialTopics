@@ -1,135 +1,807 @@
------TI-REX started at Mon May 15 2017 16:39:20 GMT+0100 (GMT Daylight Time)
-Mon, 15 May 2017 15:39:23 GMT connect deprecated methodOverride: use method-override npm module instead at app.js:571:21
-ed at Mon May 15 2017 16:39:20 GMT+0100 (GMT Daylight Time)"
+-----TI-REX started at Tue May 23 2017 19:42:00 GMT+0100 (GMT Daylight Time)
+Tue, 23 May 2017 18:42:04 GMT connect deprecated methodOverride: use method-override npm module instead at app.js:571:21
+dress": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4",
+        "mac": "0a:00:27:00:00:0f",
+        "internal": false
+    }
 ]
-2017-05-15T15:39:23.138Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:289:12:initApp() [
+removing old log file tirex-2017-05-07.log
+-----TI-REX started at Tue May 23 2017 19:42:00 GMT+0100 (GMT Daylight Time)
+2017-05-23T18:42:00.509Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:240:12:initApp() [
+    "-----TI-REX started at Tue May 23 2017 19:42:00 GMT+0100 (GMT Daylight Time)"
+]
+2017-05-23T18:42:03.073Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:289:12:initApp() [
     "Version: 3.1.3"
 ]
-2017-05-15T15:39:23.140Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:161:12:Function.Vars.createDirs() [
+2017-05-23T18:42:03.075Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:161:12:Function.Vars.createDirs() [
     "content dir: c:\\ti"
 ]
-2017-05-15T15:39:23.140Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:165:12:Function.Vars.createDirs() [
-    "db dir: C:\\Users\\VMORAIS\\ti\\tirex-localserver-3.1.3\\.db"
+2017-05-23T18:42:03.075Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:165:12:Function.Vars.createDirs() [
+    "db dir: C:\\Users\\Vitor\\ti\\tirex-localserver-3.1.3\\.db"
 ]
-2017-05-15T15:39:23.141Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:170:12:Function.Vars.createDirs() [
-    "db logs dir: C:\\Users\\VMORAIS\\ti\\tirex-localserver-3.1.3\\.db\\logs"
+2017-05-23T18:42:03.076Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:170:12:Function.Vars.createDirs() [
+    "db logs dir: C:\\Users\\Vitor\\ti\\tirex-localserver-3.1.3\\.db\\logs"
 ]
-2017-05-15T15:39:23.141Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:175:12:Function.Vars.createDirs() [
-    "sitemap dir: C:\\Users\\VMORAIS\\ti\\tirex-localserver-3.1.3\\.db\\sitemap"
+2017-05-23T18:42:03.078Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:175:12:Function.Vars.createDirs() [
+    "sitemap dir: C:\\Users\\Vitor\\ti\\tirex-localserver-3.1.3\\.db\\sitemap"
 ]
-2017-05-15T15:39:23.142Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:180:12:Function.Vars.createDirs() [
-    "downloads dir: C:\\Users\\VMORAIS\\ti\\tirex-localserver-3.1.3\\.downloads"
+2017-05-23T18:42:03.078Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:180:12:Function.Vars.createDirs() [
+    "downloads dir: C:\\Users\\Vitor\\ti\\tirex-localserver-3.1.3\\.downloads"
 ]
-2017-05-15T15:39:23.142Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:185:12:Function.Vars.createDirs() [
-    "user config dir: C:\\Users\\VMORAIS\\ti\\tirex-localserver-3.1.3"
+2017-05-23T18:42:03.079Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\vars.js:185:12:Function.Vars.createDirs() [
+    "user config dir: C:\\Users\\Vitor\\ti\\tirex-localserver-3.1.3"
 ]
-2017-05-15T15:39:23.252Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+2017-05-23T18:42:03.167Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
     "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\"]"
 ]
-2017-05-15T15:39:23.255Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:78:28:() [
+2017-05-23T18:42:03.172Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:78:28:() [
     "DB: Loading com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06"
 ]
-2017-05-15T15:39:23.480Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\"}"
+2017-05-23T18:42:03.777Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:78:28:() [
+    "DB: Loading tm4c__2.1.3.156"
 ]
-2017-05-15T15:39:23.748Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
+2017-05-23T18:42:03.928Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:78:28:() [
+    "DB: Loading tirtos_cc13xx_cc26xx__2.21.00.06"
+]
+2017-05-23T18:42:03.948Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
+]
+2017-05-23T18:42:04.579Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
     "localserver",
     "Starting up local server ..."
 ]
-2017-05-15T15:39:23.786Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
+2017-05-23T18:42:04.608Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
     "localserver",
-    "CCS host: http://localhost:50090/"
+    "CCS host: http://localhost:64081/"
 ]
-2017-05-15T15:39:23.796Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
+2017-05-23T18:42:04.639Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
     "localserver",
     "Connecting to remote server host: http://dev.ti.com/tirex"
 ]
-2017-05-15T15:39:23.824Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:2529:20:Server.<anonymous>() [
-    "Express server listening on port 50430"
+2017-05-23T18:42:04.693Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:2529:20:Server.<anonymous>() [
+    "Express server listening on port 64274"
 ]
-removing old log file tirex-2017-05-03.log
-removing old log file tirex-2017-05-04.log
-removing old log file tirex-2017-05-06.log
-removing old log file tirex-2017-05-07.log
-2017-05-15T15:39:28.251Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
+2017-05-23T18:42:08.326Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\lib\localserver.js:50:12:logInfo() [
     "localserver",
     "Connected to remote server host: http://dev.ti.com/tirex"
 ]
-2017-05-15T15:39:31.845Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+2017-05-23T18:48:14.953Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
     "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.30.00.25\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.30.00.27\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\"]"
 ]
-2017-05-15T15:39:31.847Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\"}"
+2017-05-23T18:48:14.957Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
 ]
-2017-05-15T15:39:36.724Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
+2017-05-23T18:48:21.054Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\"]"
 ]
-2017-05-15T15:39:36.727Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:78:28:() [
+2017-05-23T18:48:21.077Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:78:28:() [
     "DB: Loading com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16"
 ]
-2017-05-15T15:39:36.746Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
+2017-05-23T18:48:21.083Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
 ]
-2017-05-15T15:39:36.753Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
+2017-05-23T18:48:21.100Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\"]"
 ]
-2017-05-15T15:39:36.755Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
+2017-05-23T18:48:21.105Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
 ]
-2017-05-15T15:45:00.285Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:161:20:() [
-    "RexDBSplit: insert(): creating new DB tirtos_cc13xx_cc26xx__2.21.00.06"
+2017-05-23T19:04:25.001Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:176:28:RexDB.insertSync() [
+    "rexdb insert: _id already exists: BV3sZPW-LcqP7o(TI-RTOS for CC2650). Skipping."
 ]
-2017-05-15T15:45:00.832Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
+2017-05-23T19:04:25.008Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:176:28:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smPgqnUnHH7bk(LAUNCHXL-CC1310). Skipping."
 ]
-2017-05-15T15:45:00.835Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
+2017-05-23T19:04:25.009Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:176:28:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smfvx1I_VorVw(LAUNCHXL-CC1350). Skipping."
 ]
-2017-05-15T15:45:00.838Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1460:28:() [
-    "finished progressId=2b07fa70-38d6-4069-be7d-f056ca69100d"
+2017-05-23T19:04:25.013Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smQDS41X-ev6g(Release Notes). Skipping."
 ]
-2017-05-15T15:46:17.850Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
+2017-05-23T19:04:25.014Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm4KbEelXp6wA(Documentation Links). Skipping."
 ]
-2017-05-15T15:46:17.854Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
+2017-05-23T19:04:25.014Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smNvx75ZTRCuQ(Empty Project). Skipping."
 ]
-2017-05-15T15:46:17.858Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1460:28:() [
-    "finished progressId=4110c63a-7a04-4d52-a2e2-e7dbd60f3844"
+2017-05-23T19:04:25.014Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm6mEpUOOgpRI(Empty (Minimal) Project). Skipping."
 ]
-2017-05-15T15:46:20.305Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:2204:16:() [
+2017-05-23T19:04:25.015Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm4GNfMISpluw(Display). Skipping."
+]
+2017-05-23T19:04:25.015Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smcujKlhHjF3U(LCD SmartRF06EB). Skipping."
+]
+2017-05-23T19:04:25.015Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm-hd6Q70rrpA(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.016Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm572wrb2m3Rw(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.016Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm48mlP1Cxv8M(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.016Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smTVVo7a6TOls(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.016Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smwBFV2nW4VhM(RF Packet TX). Skipping."
+]
+2017-05-23T19:04:25.017Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smvFoegh93F3g(RF Packet RX). Skipping."
+]
+2017-05-23T19:04:25.017Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smAeE7PoJ2OPE(RF Carrier Wave). Skipping."
+]
+2017-05-23T19:04:25.017Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smMLgizjondcs(RF EasyLink TX). Skipping."
+]
+2017-05-23T19:04:25.017Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smx18gFQNpDTw(RF EasyLink RX). Skipping."
+]
+2017-05-23T19:04:25.018Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smaxCwCAq8rQg(RF EasyLink Network Processor). Skipping."
+]
+2017-05-23T19:04:25.018Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlmv40yeoSP4(RF Packet Error Rate Test). Skipping."
+]
+2017-05-23T19:04:25.018Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smf91nAi4vLXs(RF Wireless Sensor Network Concentrator). Skipping."
+]
+2017-05-23T19:04:25.018Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlzwYhBscJKk(RF Wireless Sensor Network Node). Skipping."
+]
+2017-05-23T19:04:25.019Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smDG5_p6ZMTqs(RF Wake-on-Radio TX). Skipping."
+]
+2017-05-23T19:04:25.019Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smFzvYoxNqfJ0(RF Wake-on-Radio RX). Skipping."
+]
+2017-05-23T19:04:25.019Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smVExKgnKgjJA(RF Listen Before Talk). Skipping."
+]
+2017-05-23T19:04:25.019Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smZxoqoov00do(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.020Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm3KDgjNykUNA(ADCBuf Project). Skipping."
+]
+2017-05-23T19:04:25.020Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smorK4I1x9r_c(ADC Project). Skipping."
+]
+2017-05-23T19:04:25.022Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smfRgEbgbJs80(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.023Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smAjf8OgkEmto(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.025Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlykBeMTseII(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.026Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm_WRcG7E7zNs(Error Example). Skipping."
+]
+2017-05-23T19:04:25.026Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm00qZQyGyEKQ(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.026Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smgaX-dsqGC0g(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.027Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm4e5waTH35tc(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.028Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smSOSaoT3jDfo(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.028Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smKVbrABBij4A(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.029Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smD-BAMgNvjCE(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.029Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smPP-O99tl5No(Display). Skipping."
+]
+2017-05-23T19:04:25.029Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smhJ25RMFc7iI(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.030Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smxe2z-cFxhSo(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.030Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smvRcPrtNdzq0(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.031Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smFQinaJgRZnk(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.031Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smv4UHj9mZ3fU(RF Packet TX). Skipping."
+]
+2017-05-23T19:04:25.031Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smMtPmX5Vqk0M(RF Packet RX). Skipping."
+]
+2017-05-23T19:04:25.031Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sma-_Ej60nVL8(RF Carrier Wave). Skipping."
+]
+2017-05-23T19:04:25.032Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smHThky2GTgBw(RF EasyLink TX). Skipping."
+]
+2017-05-23T19:04:25.032Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smM0LDIW0-_ZU(RF EasyLink RX). Skipping."
+]
+2017-05-23T19:04:25.032Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smc-yqY1szjkI(RF EasyLink Network Processor). Skipping."
+]
+2017-05-23T19:04:25.032Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smUlUpzgZ4DB4(RF Packet Error Rate Test). Skipping."
+]
+2017-05-23T19:04:25.032Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smCN7NyGni5Y0(RF Wireless Sensor Network Concentrator). Skipping."
+]
+2017-05-23T19:04:25.033Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smUYzptw0836Q(RF Wireless Sensor Network Node). Skipping."
+]
+2017-05-23T19:04:25.033Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm3x45v31I_Y4(RF Wake-on-Radio TX). Skipping."
+]
+2017-05-23T19:04:25.033Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smry0gWijIMzw(RF Wake-on-Radio RX). Skipping."
+]
+2017-05-23T19:04:25.033Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smKW6WXGBZEQA(RF Listen Before Talk). Skipping."
+]
+2017-05-23T19:04:25.033Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smI0PAKUqRVR0(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.034Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smI4XoeJsw-IQ(ADCBuf Project). Skipping."
+]
+2017-05-23T19:04:25.034Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smhqDmzX5ElPk(ADC Project). Skipping."
+]
+2017-05-23T19:04:25.034Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smoGlVy8z-7fg(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.034Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm9edTWoGFLVA(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.035Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smjYGS8FQoQUM(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.035Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smsqzZ1bnNkbk(Error Example). Skipping."
+]
+2017-05-23T19:04:25.035Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm4IzO6eRx99M(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.035Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smXNLgT5fLuI4(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.035Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smJ9zaoHATnhU(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.036Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm2Z1_G3PEse4(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.036Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smLSgJ_IDXhj4(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.037Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smpnmuCh08fqk(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.037Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smtC7A8HVb5UY(Display). Skipping."
+]
+2017-05-23T19:04:25.037Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smaauO4-6vyaE(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.038Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smc1Y_uUJV9cg(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.038Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlikVtmcxK08(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.038Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smwvAukXHd2Uk(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.040Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smeL3XyA6gkzQ(RF Packet TX). Skipping."
+]
+2017-05-23T19:04:25.041Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm0gQU-bjXW3s(RF Packet RX). Skipping."
+]
+2017-05-23T19:04:25.041Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smW_QZbE6M1OA(RF Carrier Wave). Skipping."
+]
+2017-05-23T19:04:25.042Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smtwhBeF18CVA(RF EasyLink TX). Skipping."
+]
+2017-05-23T19:04:25.042Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlFouEiGrkjE(RF EasyLink RX). Skipping."
+]
+2017-05-23T19:04:25.043Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smsQGzqBQtGTk(RF EasyLink Network Processor). Skipping."
+]
+2017-05-23T19:04:25.043Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smfTYkPkOGUDE(RF Packet Error Rate Test). Skipping."
+]
+2017-05-23T19:04:25.043Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smp-xzDY5U2y8(RF Dual Mode Wireless Sensor Network Concentrator). Skipping."
+]
+2017-05-23T19:04:25.043Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm3vlElZGuLDU(RF Dual Mode Wireless Sensor Network Node). Skipping."
+]
+2017-05-23T19:04:25.043Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlcUV6gpTwTs(RF Wake-on-Radio TX). Skipping."
+]
+2017-05-23T19:04:25.043Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smHc0K0hksnT4(RF Wake-on-Radio RX). Skipping."
+]
+2017-05-23T19:04:25.044Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smhDBp6UD-bJ0(RF Listen Before Talk). Skipping."
+]
+2017-05-23T19:04:25.044Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smigdZpjmhCI4(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.044Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm0ugIaP-sgI0(ADCBuf Project). Skipping."
+]
+2017-05-23T19:04:25.045Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smdcaY9lmLqik(ADC Project). Skipping."
+]
+2017-05-23T19:04:25.045Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smaStFkc7W8qw(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.045Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm6txk1Z_eG5Q(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.046Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlOQ88gLYx3Q(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.046Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smnK8n_lnoxB0(Error Example). Skipping."
+]
+2017-05-23T19:04:25.046Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smP09kMad1CwI(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.046Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smaCwimp-tNlo(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.046Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smP_YSUuJ9T4M(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.047Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smi_s913mmCRU(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.047Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smHx-QUStXZq4(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.047Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm69fu_sedPr8(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.047Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smdplA9rAiBoA(I2C TMP007). Skipping."
+]
+2017-05-23T19:04:25.047Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smgZ0RRSzNmAY(Display). Skipping."
+]
+2017-05-23T19:04:25.048Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smK_GmzSBnRYM(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.048Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm1ud79g0iOck(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.048Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smhuZNe9uZCsg(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.049Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smZb-uMFbRQP8(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.049Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smoTJzEF4CaR0(RF Packet TX). Skipping."
+]
+2017-05-23T19:04:25.049Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smLAampNR-7Tc(RF Packet RX). Skipping."
+]
+2017-05-23T19:04:25.050Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smV-6631G5bXQ(RF Carrier Wave). Skipping."
+]
+2017-05-23T19:04:25.050Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm-vqMEN9_Na4(RF EasyLink TX). Skipping."
+]
+2017-05-23T19:04:25.050Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm7gH_N913MVQ(RF EasyLink RX). Skipping."
+]
+2017-05-23T19:04:25.050Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smnTt7fkmN7GU(RF EasyLink Network Processor). Skipping."
+]
+2017-05-23T19:04:25.050Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm8aSWjo8cf8M(RF Packet Error Rate Test). Skipping."
+]
+2017-05-23T19:04:25.051Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smo7XTKaCjHZU(RF Dual Mode Wireless Sensor Network Concentrator). Skipping."
+]
+2017-05-23T19:04:25.051Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smQXL64Sz4AmA(RF Dual Mode Wireless Sensor Network Node). Skipping."
+]
+2017-05-23T19:04:25.051Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smh3wHTWiU28Q(RF Wake-on-Radio TX). Skipping."
+]
+2017-05-23T19:04:25.051Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smdnXGIobyVfk(RF Wake-on-Radio RX). Skipping."
+]
+2017-05-23T19:04:25.051Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smxEt0qFGVzeM(RF Listen Before Talk). Skipping."
+]
+2017-05-23T19:04:25.052Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smz2y3eGd2MrQ(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.052Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smKF1CZhI2k04(PDM Stream). Skipping."
+]
+2017-05-23T19:04:25.052Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smJR_CNkWO8eM(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.052Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smbxkg0Im88dE(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.052Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smtr61BUnGsTk(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.053Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm8jVnml_wTy0(Error Example). Skipping."
+]
+2017-05-23T19:04:25.053Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smTkiDcczV6IA(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.053Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smzHVSZkuFvy8(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.053Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smk47aGrYg_Oc(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.053Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smF3jFZM70Cm4(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.054Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smecGrVHBTV0w(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.054Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm9my_bzvpheg(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.054Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smvdm16dhU1z4(Display). Skipping."
+]
+2017-05-23T19:04:25.054Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smHaheKkAbfnQ(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.057Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smhFsg0lNCpd4(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.058Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm-ai2KeNANVQ(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.069Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smF5c0_klQHXE(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.069Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlAGHBvLtVyo(RF Packet TX). Skipping."
+]
+2017-05-23T19:04:25.070Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm2JdDYkQn56Y(RF Packet RX). Skipping."
+]
+2017-05-23T19:04:25.070Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smhbUZSxAtXXs(RF Carrier Wave). Skipping."
+]
+2017-05-23T19:04:25.070Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smOm_38xh-A1A(RF EasyLink TX). Skipping."
+]
+2017-05-23T19:04:25.070Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smKckzIQ57nvQ(RF EasyLink RX). Skipping."
+]
+2017-05-23T19:04:25.071Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smx78NxalfDNo(RF EasyLink Network Processor). Skipping."
+]
+2017-05-23T19:04:25.071Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smfmjpaEFUMzQ(RF Packet Error Rate Test). Skipping."
+]
+2017-05-23T19:04:25.074Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm2bqqnMTmkNo(RF Wireless Sensor Network Concentrator). Skipping."
+]
+2017-05-23T19:04:25.075Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smkTsEf9vx99o(RF Wireless Sensor Network Node). Skipping."
+]
+2017-05-23T19:04:25.075Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm8rwZhLAPSQA(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.076Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smCKIfHz9amvE(ADCBuf Project). Skipping."
+]
+2017-05-23T19:04:25.076Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm-g2G4WKyDF8(ADC Project). Skipping."
+]
+2017-05-23T19:04:25.076Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smq1SEVY44q3Q(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.077Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sml3hwA9Yu41c(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.077Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm_gr9IJFPo5U(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.077Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smIROpcx2TMLQ(Error Example). Skipping."
+]
+2017-05-23T19:04:25.077Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smEL8_fIjR-6M(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.078Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smGWSBhpHqTTk(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.078Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smsD_YCr44jg8(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.078Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm1z0oZqNGOXA(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.079Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smoRg10Az2zWM(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.079Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smpqgvXGrZNlU(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.079Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm__HOvoMd9-M(Display). Skipping."
+]
+2017-05-23T19:04:25.080Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smZUfrIj10k00(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.080Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smapACbPq3yUc(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.080Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smXp_pD89czy8(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.080Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smrv9HGpmzEVQ(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.081Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smVqc2bvPy6M8(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.081Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smDAthJ2_OFME(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.081Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smKMiSNlvcHKI(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.081Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smvncmM2B7fh4(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.081Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smGuaNV4lXRMY(Error Example). Skipping."
+]
+2017-05-23T19:04:25.082Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm8kucG6TWsH8(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.082Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smusotrmji6DI(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.082Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm4rm2ysRP4CE(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.082Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smByCbZlJooWo(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.082Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smFsD3pVpZXQk(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.082Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smiDSRzY0X9H0(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.083Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smdgyiPhZ96nw(Display). Skipping."
+]
+2017-05-23T19:04:25.083Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smmyv02zqr3pE(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.083Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm28eNx_pf7Kg(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.083Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smA_UGibNwye0(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.083Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smHcOP4uDmU3c(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.084Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlKBKp8sJqpA(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.084Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smJk5ydWwkM7E(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.084Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smWvvPUXwmgMo(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.084Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smbWFooeYJPEc(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.084Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smzj5rhIKt9GM(Error Example). Skipping."
+]
+2017-05-23T19:04:25.084Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smQ9L3I8PAPlc(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.085Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smnq1Wk1ceBhk(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.085Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smQmB5_6yuh-Q(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.085Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smJDwhcn14AHM(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.085Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smBBEms4OQfo8(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.085Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smCXOiUvjODew(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.086Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smGkDoeKVl9lg(Display). Skipping."
+]
+2017-05-23T19:04:25.086Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smSoCHw7Imd6M(LCD SmartRF06EB). Skipping."
+]
+2017-05-23T19:04:25.086Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smXUrYPJKugkk(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.086Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm3RjSrwWHbKg(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.086Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smT0tk0y4LYnY(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.086Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smbKv4D6FG9lQ(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm6PqqjOLU3RA(RF Packet TX). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smYDIRjZQWa9A(RF Packet RX). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smmLQjLBYQjik(RF Carrier Wave). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smgTDt5s0Y8cA(RF EasyLink TX). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smITsdpectgw8(RF EasyLink RX). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smsnaN2cy034I(RF EasyLink Network Processor). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smfaxTPyUhP5s(RF Packet Error Rate Test). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smQnpEGAcQ0cE(RF Wireless Sensor Network Concentrator). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smivZJjagvIZc(RF Wireless Sensor Network Node). Skipping."
+]
+2017-05-23T19:04:25.087Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smUyz2A9Fzckw(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.088Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smUpv0RlFECYA(ADCBuf Project). Skipping."
+]
+2017-05-23T19:04:25.089Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smKS_dzJr-roA(ADC Project). Skipping."
+]
+2017-05-23T19:04:25.090Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smWw_wQo75w_4(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.090Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smJbfJKqG0w6o(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.091Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smsDIsCgAODYM(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.091Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smSUpzxpkEub4(Error Example). Skipping."
+]
+2017-05-23T19:04:25.091Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smjSamhBYLxWA(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.092Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smOC_dnPHxReY(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.092Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm2-3rvJS62gI(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.092Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smZvwE7NMi_Fk(Swi Example). Skipping."
+]
+2017-05-23T19:04:25.093Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smJYyweKz54T0(Empty Project). Skipping."
+]
+2017-05-23T19:04:25.093Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smSguq5ugYG-k(Empty (Minimal) Project). Skipping."
+]
+2017-05-23T19:04:25.093Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smTHu6NWnPU0Y(Display). Skipping."
+]
+2017-05-23T19:04:25.094Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smqp29aR1C62s(I2C TMP007). Skipping."
+]
+2017-05-23T19:04:25.094Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smCcfVyDQI9c4(Pin Interrupt). Skipping."
+]
+2017-05-23T19:04:25.094Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smvDHDEhSNo0E(Pin Shutdown). Skipping."
+]
+2017-05-23T19:04:25.094Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smmcKFLB6Y3Ps(Pin Standby). Skipping."
+]
+2017-05-23T19:04:25.095Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm-GuvtRG9BvM(PWM LED). Skipping."
+]
+2017-05-23T19:04:25.095Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smZ3K2gOeqQQU(UART Echo). Skipping."
+]
+2017-05-23T19:04:25.095Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smaPCQ5lARUig(PDM Stream). Skipping."
+]
+2017-05-23T19:04:25.096Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sml4Ogqxbj5v8(Benchmark Example). Skipping."
+]
+2017-05-23T19:04:25.096Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm-b4Pdj5ZUPc(C++ Example (bigtime)). Skipping."
+]
+2017-05-23T19:04:25.096Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smD6BqFNTfsTg(Clock Example). Skipping."
+]
+2017-05-23T19:04:25.096Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smxZ_HJLjz7vo(Error Example). Skipping."
+]
+2017-05-23T19:04:25.097Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smeJEmfhrBbT8(Hello Example). Skipping."
+]
+2017-05-23T19:04:25.097Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm57PEI9eLG6I(Memory Example). Skipping."
+]
+2017-05-23T19:04:25.097Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6smlUa3J_mNvUQ(Task Mutex Example). Skipping."
+]
+2017-05-23T19:04:25.097Z WARNING DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb.js:186:24:RexDB.insertSync() [
+    "rexdb insert: _id already exists: 6sm4mXUqMEF2gM(Swi Example). Skipping."
+]
+2017-05-23T19:04:26.209Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\"]"
+]
+2017-05-23T19:04:26.214Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
+]
+2017-05-23T19:04:26.220Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1460:28:() [
+    "finished progressId=e75b51db-5e6f-4f43-989d-4c7b91ec1841"
+]
+2017-05-23T20:11:46.578Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:2204:16:() [
     "Rediscover products request made by client"
 ]
-2017-05-15T15:46:22.343Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
+2017-05-23T20:11:50.135Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\"]"
 ]
-2017-05-15T15:46:22.345Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
+2017-05-23T20:11:50.142Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
 ]
-2017-05-15T15:46:24.403Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
+2017-05-23T20:11:52.772Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
+    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\"]"
 ]
-2017-05-15T15:46:24.405Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
-]
-2017-05-15T15:47:13.768Z ERROR DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1735:28:Request._callback() [
-    "null"
-]
-2017-05-15T15:53:34.451Z ERROR DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1735:28:Request._callback() [
-    "null"
-]
-2017-05-15T16:12:01.408Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:49:12:RexDBSplit.use() [
-    "DB: use() called with[\"c2000ware_software_package__1.00.00.00\",\"com.ti.MMWAVE_SDK__01.00.00.05\",\"com.ti.SAIL__1.00.00.09\",\"com.ti.AWS_CC32XX__1.00.00.12\",\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\",\"com.ti.SIMPLELINK_CC2640R2_SDK__1.35.00.33\",\"com.ti.SIMPLELINK_MSP432_SDK_BLUETOOTH_PLUGIN__1.10.00.42\",\"com.ti.mmwave_training__1.0.2\",\"cc3200sdk__1.1.0.0\",\"sitara__1.02.00.00\",\"com.ti.SIMPLELINK_MSP432_SDK__1.30.00.40\",\"com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.30.00.03\",\"com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.35.00.37\",\"com.ti.SIMPLELINK_CC32XX_SDK__1.30.01.03\",\"tirtos_simplelink__2.13.01.09\",\"tm4c__2.1.3.156\",\"tirtos_tivac__2.16.00.08\",\"tirtos_msp43X__2.20.00.06\",\"tirtos_cc13xx_cc26xx__2.21.00.06\",\"xdctools__3.50.01.12\",\"msp430ware__3.60.00.10\",\"sysbios__6.50.01.12\",\"com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC32XXSDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\",\"com.ti.SIMPLELINK_ACADEMY_MSP432SDK__1.12.01.16\"]"
-]
-2017-05-15T16:12:01.410Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
-    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\"}"
-]
-2017-05-15T16:12:33.167Z ERROR DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1735:28:Request._callback() [
-    "null"
-]
-2017-05-15T16:39:48.120Z ERROR DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1735:28:Request._callback() [
-    "null"
-]
-2017-05-15T16:41:16.253Z ERROR DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\app.js:1735:28:Request._callback() [
-    "null"
+2017-05-23T20:11:52.776Z INFO DAEMON tirex C:\ti\ccsv7\tirex\ti-rex-core\rexdb\lib\rexdb-split.js:83:16:() [
+    "DB: status {\"com.ti.SIMPLELINK_CC13X0_SDK__1.30.00.06\":\"LOADED\",\"tm4c__2.1.3.156\":\"LOADED\",\"tirtos_cc13xx_cc26xx__2.21.00.06\":\"LOADED\",\"com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.12.01.16\":\"LOADED\"}"
 ]

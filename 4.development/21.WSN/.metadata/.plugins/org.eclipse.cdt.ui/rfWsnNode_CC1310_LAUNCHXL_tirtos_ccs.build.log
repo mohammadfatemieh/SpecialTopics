@@ -2,17 +2,173 @@
 **** Build of configuration Debug for project rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
-'Building file: ../UartTask.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs" --include_path="C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="UartTask.d" --cmd_file="C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../UartTask.c"
-"../UartTask.c", line 74: warning #179-D: variable "uartEventHandle" was declared but never referenced
-'Finished building: ../UartTask.c'
-' '
 'Building target: rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./UartTask.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/Users/VMORAIS/Desktop/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DEVICE_FAMILY=cc13x0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./UartTask.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/Users/Vitor/Desktop/Doutoramento/2nd_semester/SpecialTopics/4.development/21.WSN/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
 <Linking>
-'Finished building target: rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out'
-' '
+error #10008-D: cannot find file "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\tirtos_builds_CC1310_LAUNCHXL_release_ccs\Debug\configPkg\package\cfg\release_pem3.oem3"
+error #10008-D: cannot find file "C:\Users\VMORAIS\Desktop\2nd_semester\SpecialTopics\4.development\21.WSN\tirtos_builds_CC1310_LAUNCHXL_release_ccs\src\sysbios\rom_sysbios.aem3"
+
+ undefined                                                                  first referenced                                                                                                 
+  symbol                                                                        in file                                                                                                      
+ ---------                                                                  ----------------                                                                                                 
+ ResetISR                                                                                                                                                                                    
+ ti_sysbios_BIOS_Module__state__V                                                                                                                                                            
+ ti_sysbios_family_arm_cc26xx_Timer_Module__id__C                                                                                                                                            
+ ti_sysbios_family_arm_cc26xx_Timer_Module__state__V                                                                                                                                         
+ ti_sysbios_family_arm_cc26xx_Timer_startupNeeded__C                                                                                                                                         
+ ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V                                                                                                                             
+ ti_sysbios_family_arm_cc26xx_TimestampProvider_useClockTimer__C                                                                                                                             
+ ti_sysbios_family_arm_m3_Hwi_E_alreadyDefined__C                                                                                                                                            
+ ti_sysbios_family_arm_m3_Hwi_E_hwiLimitExceeded__C                                                                                                                                          
+ ti_sysbios_family_arm_m3_Hwi_Module__id__C                                                                                                                                                  
+ ti_sysbios_family_arm_m3_Hwi_Module__state__V                                                                                                                                               
+ ti_sysbios_family_arm_m3_Hwi_NUM_INTERRUPTS__C                                                                                                                                              
+ ti_sysbios_family_arm_m3_Hwi_Object__DESC__C                                                                                                                                                
+ ti_sysbios_family_arm_m3_Hwi_Object__PARAMS__C                                                                                                                                              
+ ti_sysbios_family_arm_m3_Hwi_Object__count__C                                                                                                                                               
+ ti_sysbios_family_arm_m3_Hwi_Object__table__C                                                                                                                                               
+ ti_sysbios_family_arm_m3_Hwi_ccr__C                                                                                                                                                         
+ ti_sysbios_family_arm_m3_Hwi_clearInterrupt__E                             ./sce/scif_framework.obj                                                                                         
+ ti_sysbios_family_arm_m3_Hwi_excHandlerFunc__C                                                                                                                                              
+ ti_sysbios_family_arm_m3_Hwi_nullIsrFunc__C                                                                                                                                                 
+ ti_sysbios_family_arm_m3_Hwi_numSparseInterrupts__C                                                                                                                                         
+ ti_sysbios_family_arm_m3_Hwi_post__E                                       C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_family_arm_m3_Hwi_priGroup__C                                                                                                                                                    
+ ti_sysbios_family_arm_m3_Hwi_setFunc__E                                    C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_family_arm_m3_TaskSupport_stackAlignment__C                                                                                                                                      
+ ti_sysbios_gates_GateHwi_Module__FXNS__C                                                                                                                                                    
+ ti_sysbios_gates_GateHwi_Module__id__C                                                                                                                                                      
+ ti_sysbios_gates_GateHwi_Object__DESC__C                                                                                                                                                    
+ ti_sysbios_gates_GateHwi_Object__PARAMS__C                                                                                                                                                  
+ ti_sysbios_gates_GateMutex_Instance_State_sem__O                                                                                                                                            
+ ti_sysbios_gates_GateMutex_Module__FXNS__C                                                                                                                                                  
+ ti_sysbios_gates_GateMutex_Module__id__C                                                                                                                                                    
+ ti_sysbios_gates_GateMutex_Object__DESC__C                                                                                                                                                  
+ ti_sysbios_gates_GateMutex_Object__PARAMS__C                                                                                                                                                
+ ti_sysbios_hal_Hwi_Object__DESC__C                                                                                                                                                          
+ ti_sysbios_hal_Hwi_Object__PARAMS__C                                                                                                                                                        
+ ti_sysbios_heaps_HeapMem_E_memory__C                                                                                                                                                        
+ ti_sysbios_heaps_HeapMem_Module__FXNS__C                                                                                                                                                    
+ ti_sysbios_heaps_HeapMem_Module__gateObj__C                                                                                                                                                 
+ ti_sysbios_heaps_HeapMem_Module__id__C                                                                                                                                                      
+ ti_sysbios_heaps_HeapMem_Object__DESC__C                                                                                                                                                    
+ ti_sysbios_heaps_HeapMem_Object__PARAMS__C                                                                                                                                                  
+ ti_sysbios_heaps_HeapMem_Object__count__C                                                                                                                                                   
+ ti_sysbios_heaps_HeapMem_Object__table__C                                                                                                                                                   
+ ti_sysbios_heaps_HeapMem_reqAlign__C                                                                                                                                                        
+ ti_sysbios_knl_Clock_Module_State_clockQ__O                                                                                                                                                 
+ ti_sysbios_knl_Clock_Module__state__V                                                                                                                                                       
+ ti_sysbios_knl_Clock_Object__DESC__C                                                                                                                                                        
+ ti_sysbios_knl_Clock_Object__PARAMS__C                                                                                                                                                      
+ ti_sysbios_knl_Clock_getTicksUntilInterrupt__E                             C:/ti/simplelink_cc13x0_sdk_1_30_00_06/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3<PowerCC26XX_tirtos.oem3>
+ ti_sysbios_knl_Clock_getTimeout__E                                         C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_knl_Clock_isActive__E                                           C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_knl_Clock_serviceMargin__C                                                                                                                                                       
+ ti_sysbios_knl_Clock_stop__E                                               C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_knl_Clock_tickMode__C                                                                                                                                                            
+ ti_sysbios_knl_Clock_tickPeriod__C                                         ./NodeRadioTask.obj                                                                                              
+ ti_sysbios_knl_Event_Params__init__S                                       ./NodeRadioTask.obj                                                                                              
+ ti_sysbios_knl_Event_construct                                             ./NodeRadioTask.obj                                                                                              
+ ti_sysbios_knl_Event_pend__E                                               ./NodeRadioTask.obj                                                                                              
+ ti_sysbios_knl_Event_post__E                                               ./NodeRadioTask.obj                                                                                              
+ ti_sysbios_knl_Idle_funcList__C                                                                                                                                                             
+ ti_sysbios_knl_Mailbox_Instance_State_dataQue__O                                                                                                                                            
+ ti_sysbios_knl_Mailbox_Instance_State_dataSem__O                                                                                                                                            
+ ti_sysbios_knl_Mailbox_Instance_State_freeQue__O                                                                                                                                            
+ ti_sysbios_knl_Mailbox_Instance_State_freeSem__O                                                                                                                                            
+ ti_sysbios_knl_Mailbox_Object__DESC__C                                                                                                                                                      
+ ti_sysbios_knl_Mailbox_Object__PARAMS__C                                                                                                                                                    
+ ti_sysbios_knl_Mailbox_Object__count__C                                                                                                                                                     
+ ti_sysbios_knl_Mailbox_Object__table__C                                                                                                                                                     
+ ti_sysbios_knl_Mailbox_maxTypeAlign__C                                                                                                                                                      
+ ti_sysbios_knl_Queue_Object__DESC__C                                                                                                                                                        
+ ti_sysbios_knl_Queue_Object__PARAMS__C                                                                                                                                                      
+ ti_sysbios_knl_Queue_Object__count__C                                                                                                                                                       
+ ti_sysbios_knl_Queue_Object__table__C                                                                                                                                                       
+ ti_sysbios_knl_Semaphore_Instance_State_pendQ__O                                                                                                                                            
+ ti_sysbios_knl_Semaphore_Object__DESC__C                                                                                                                                                    
+ ti_sysbios_knl_Semaphore_Object__PARAMS__C                                                                                                                                                  
+ ti_sysbios_knl_Swi_Module__state__V                                                                                                                                                         
+ ti_sysbios_knl_Swi_Object__DESC__C                                                                                                                                                          
+ ti_sysbios_knl_Swi_Object__PARAMS__C                                                                                                                                                        
+ ti_sysbios_knl_Swi_Object__count__C                                                                                                                                                         
+ ti_sysbios_knl_Swi_Object__table__C                                                                                                                                                         
+ ti_sysbios_knl_Swi_getTrigger__E                                           C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_knl_Swi_numPriorities__C                                                                                                                                                         
+ ti_sysbios_knl_Swi_or__E                                                   C:/ti/simplelink_cc13x0_sdk_1_30_00_06/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3<RFCC26XX_multiMode.oem3>
+ ti_sysbios_knl_Task_Module_State_inactiveQ__O                                                                                                                                               
+ ti_sysbios_knl_Task_Module__state__V                                                                                                                                                        
+ ti_sysbios_knl_Task_Object__DESC__C                                                                                                                                                         
+ ti_sysbios_knl_Task_Object__PARAMS__C                                                                                                                                                       
+ ti_sysbios_knl_Task_Object__count__C                                                                                                                                                        
+ ti_sysbios_knl_Task_Object__table__C                                                                                                                                                        
+ ti_sysbios_knl_Task_allBlockedFunc__C                                                                                                                                                       
+ ti_sysbios_knl_Task_defaultStackHeap__C                                                                                                                                                     
+ ti_sysbios_knl_Task_defaultStackSize__C                                                                                                                                                     
+ ti_sysbios_knl_Task_initStackFlag__C                                                                                                                                                        
+ ti_sysbios_knl_Task_numConstructedTasks__C                                                                                                                                                  
+ ti_sysbios_rom_ROM_AONRTCChannelEnable                                                                                                                                                      
+ ti_sysbios_rom_ROM_AONRTCCompareValueSet                                                                                                                                                    
+ ti_sysbios_rom_ROM_AONRTCCurrentCompareValueGet                                                                                                                                             
+ ti_sysbios_rom_ROM_AONRTCEventClear                                                                                                                                                         
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_getCount64__E                                                                                                                         
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_getCurrentTick__E                                                                                                                     
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_getMaxTicks__E                                                                                                                        
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_initDevice__I                                                                                                                         
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_setNextTick__E                                                                                                                        
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_setThreshold__I                                                                                                                       
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_start__E                                                                                                                              
+ ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_TimestampProvider_get32__E                                                                                                                  
+ ti_sysbios_rom_ROM_xdc_runtime_Startup_getState__I                                                                                                                                          
+ ti_sysbios_rom_ROM_xdc_runtime_System_SupportProxy_abort__E                                                                                                                                 
+ ti_sysbios_rom_ROM_xdc_runtime_System_SupportProxy_exit__E                                                                                                                                  
+ xdc_runtime_Assert_E_assertFailed__C                                                                                                                                                        
+ xdc_runtime_Error_E_memory__C                                                                                                                                                               
+ xdc_runtime_Error_init__E                                                  ./easylink/EasyLink.obj                                                                                          
+ xdc_runtime_Error_policyFxn__C                                                                                                                                                              
+ xdc_runtime_Error_policy__C                                                                                                                                                                 
+ xdc_runtime_IGateProvider_Interface__BASE__C                                                                                                                                                
+ xdc_runtime_IHeap_Interface__BASE__C                                                                                                                                                        
+ xdc_runtime_IModule_Interface__BASE__C                                                                                                                                                      
+ xdc_runtime_Main_Module__diagsEnabled__C                                                                                                                                                    
+ xdc_runtime_Main_Module__diagsIncluded__C                                                                                                                                                   
+ xdc_runtime_Main_Module__diagsMask__C                                                                                                                                                       
+ xdc_runtime_Main_Module__id__C                                                                                                                                                              
+ xdc_runtime_Memory_Module__id__C                                                                                                                                                            
+ xdc_runtime_Memory_Module__state__V                                                                                                                                                         
+ xdc_runtime_Memory_defaultHeapInstance__C                                                                                                                                                   
+ xdc_runtime_Startup_Module__state__V                                                                                                                                                        
+ xdc_runtime_Startup_execImpl__C                                                                                                                                                             
+ xdc_runtime_Startup_firstFxns__C                                                                                                                                                            
+ xdc_runtime_Startup_lastFxns__C                                                                                                                                                             
+ xdc_runtime_Startup_maxPasses__C                                                                                                                                                            
+ xdc_runtime_Startup_reset__I                                               C:\ti\simplelink_cc13x0_sdk_1_30_00_06\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\boot.aem3<boot.oem3>     
+ xdc_runtime_Startup_sfxnRts__C                                                                                                                                                              
+ xdc_runtime_Startup_sfxnTab__C                                                                                                                                                              
+ xdc_runtime_Startup_startModsFxn__C                                                                                                                                                         
+ xdc_runtime_SysCallback_abortFxn__C                                                                                                                                                         
+ xdc_runtime_SysCallback_exitFxn__C                                                                                                                                                          
+ xdc_runtime_System_Module__state__V                                                                                                                                                         
+ xdc_runtime_System_abortFxn__C                                                                                                                                                              
+ xdc_runtime_System_exitFxn__C                                                                                                                                                               
+ xdc_runtime_System_maxAtexitHandlers__C                                                                                                                                                     
+ xdc_runtime_System_printf__E                                               ./NodeTask.obj                                                                                                   
+ xdc_runtime_Text_charCnt__C                                                                                                                                                                 
+ xdc_runtime_Text_charTab__C                                                                                                                                                                 
+ xdc_runtime_Text_isLoaded__C                                                                                                                                                                
+ xdc_runtime_Text_nameEmpty__C                                                                                                                                                               
+ xdc_runtime_Text_nameStatic__C                                                                                                                                                              
+ xdc_runtime_Text_nameUnknown__C                                                                                                                                                             
+
+error #10234-D: unresolved symbols remain
+
+warning #10062-D: entry-point symbol "ResetISR" undefined
+>> Compilation failure
+makefile:172: recipe for target 'rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out' failed
+error #10010: errors encountered during linking; "rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out" not built
+gmake[1]: *** [rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs.out] Error 1
+gmake: *** [all] Error 2
+makefile:165: recipe for target 'all' failed
 
 **** Build Finished ****

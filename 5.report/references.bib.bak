@@ -1,0 +1,77 @@
+% Encoding: UTF-8
+
+@Article{Hodge_2004,
+  author    = {Victoria Hodge and Jim Austin},
+  title     = {A Survey of Outlier Detection Methodologies},
+  journal   = {Artificial Intelligence Review},
+  year      = {2004},
+  volume    = {22},
+  number    = {2},
+  pages     = {85--126},
+  month     = {oct},
+  doi       = {10.1023/b:aire.0000045502.10941.a9},
+  publisher = {Springer Nature},
+}
+
+@Article{Chandola_2009,
+  author    = {Varun Chandola and Arindam Banerjee and Vipin Kumar},
+  title     = {Anomaly detection: A Survey},
+  journal   = {{ACM} Computing Surveys},
+  year      = {2009},
+  volume    = {41},
+  number    = {3},
+  pages     = {1--58},
+  month     = {jul},
+  doi       = {10.1007/978-1-4899-7502-7_912-1},
+  publisher = {Association for Computing Machinery ({ACM})},
+}
+
+@Article{Alsheikh_2014,
+  author       = {Mohammad Abu Alsheikh and Shaowei Lin and Dusit Niyato and Hwee-Pink Tan},
+  title        = {Machine Learning in Wireless Sensor Networks: Algorithms, Strategies, and Applications},
+  journal      = {{IEEE} Communications Surveys {\&} Tutorials},
+  year         = {2014},
+  volume       = {16},
+  number       = {4},
+  pages        = {1996--2018},
+  abstract     = {Wireless sensor networks monitor dynamic environments that change rapidly over time. This dynamic behavior is either caused by external factors or initiated by the system designers themselves. To adapt to such conditions, sensor networks often adopt machine learning techniques to eliminate the need for unnecessary redesign. Machine learning also inspires many practical solutions that maximize resource utilization and prolong the lifespan of the network. In this paper, we present an extensive literature review over the period 2002-2013 of machine learning methods that were used to address common issues in wireless sensor networks (WSNs). The advantages and disadvantages of each proposed algorithm are evaluated against the corresponding problem. We also provide a comparative guide to aid WSN designers in developing suitable machine learning solutions for their specific application challenges.},
+  date         = {2014-05-18},
+  doi          = {10.1109/COMST.2014.2320099},
+  eprint       = {1405.4463v2},
+  eprintclass  = {cs.NI},
+  eprinttype   = {arXiv},
+  file         = {online:http\://arxiv.org/pdf/1405.4463v2:PDF},
+  journaltitle = {IEEE Communications Surveys \& Tutorials, vol. 16, no. 4, pp. 1996-2018, Fourthquarter 2014},
+  keywords     = {cs.NI, cs.LG},
+  publisher    = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Article{Yang_Zhang_2010,
+  author    = {Yang Zhang and Nirvana Meratnia and Paul Havinga},
+  title     = {Outlier Detection Techniques for Wireless Sensor Networks: A Survey},
+  journal   = {{IEEE} Communications Surveys {\&} Tutorials},
+  year      = {2010},
+  volume    = {12},
+  number    = {2},
+  pages     = {159--170},
+  doi       = {10.1109/surv.2010.021510.00088},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@InProceedings{Hackmann2006,
+  author = {Greg Hackmann},
+  title  = {802.15 Personal Area Networks},
+  year   = {2006},
+}
+
+@InProceedings{Radmand2010,
+  author        = {Radmand, Pedram and Talevski, Alex and Petersen, Stig and Carlsen, Simon},
+  title         = {Comparison of industrial WSN standards},
+  booktitle     = {Digital Ecosystems and Technologies (DEST), 2010 4th IEEE International Conference on},
+  year          = {2010},
+  pages         = {632--637},
+  organization  = {IEEE},
+  __markedentry = {[Vitor:6]},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

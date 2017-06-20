@@ -29,7 +29,8 @@ The research areas of interest on the WSNs in the last decade are the following:
 	\item Protocols design (routing, MAC)
 	\item Energy conservation
 	\item Security
-	\item Topology Control
+	\item Topology Control
+
 \end{itemize}
 
 \section{System Requirement Specification}
@@ -214,7 +215,71 @@ Both Adafruit Feather modules (for sub-GHz and for WiFi) are designed for cheap 
 This CC1350 adds the Bluetooth® low energy functionality to the CC1310 module with small increase on the cost of the solution. 
 
 \section{Protocols and standards}
-\lipsum[4]
+%\lipsum[4]
+
+In computer networks, a protocol is a set of rules that ensure a communication of specific set of information between two machines. A standard is a document that specifies several aspects of something that has the overwhelming agreement and support of a entity (the standards making body). In the networking area, several protocols are supported by standards. In this section is presented some of the protocols that ensure a coherent communication among the sensor networks.
+
+\subsection{IEEE 802.15}
+
+The standard family defines the topologies and network roles. In particular, it defines the physical (frequency and channels, spectrum handling, modulation and bit rate) and MAC (packet formats, operational modes, timing aspects, topologies) layers of the OSI model (\cite{Hackmann2006}).
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.1\textwidth,keepaspectratio]{figures/nancy2014}
+	\caption{Members of the 802.15 family. Adapted from \cite{nancy2014} lecture presentation slides.}
+	\label{fig:nancy2014}
+\end{figure}
+
+Based on figure \ref{fig:nancy2014}, the 802.15.4 is the standard that defines the PHY and MAC layers for low rate wireless personal area networks. It supports \textbf{full-function devices} (device capable of being the network coordinator or simple node and can have implemented complex network functionalities) and \textbf{reduced-function device} (limited devices with low-bandwidth limitations and limited or no-network intelligence). The possible network topologies are the following:
+
+\begin{description}
+	\item[Star ---] Each device in the network communicates with the full-function device network coordinator;
+	
+	\item[Peer-to-peer ---] All devices communicate with each others (if they are in the communication range). Sufficiently flexible to implement more complex topologies such as multi-hoping, cluster trees and mesh topologies;
+	
+	\item[Multi-hopping ---] This is a technique that allows the usage of two or more wireless nodes to convey data from a source to a destination;
+	
+	\item[Cluster trees] Topology to reduce the routing complexity where each node knows its parent node and all it's child nodes. It has always only one single path between two nodes.
+	
+	\item[Wireless mesh] This technique allows data to be propagated along a path by hopping from node to node until it reaches its destination.
+		
+\end{description}
+
+\subsection{802.15.4-based wireless standards}
+
+\cite{Radmand2010} presents a comparison of wireless sensor standards for industrial applications. In figure \ref{fig:randmand2010} is present the overall schema of the wireless standards.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\textwidth,keepaspectratio]{figures/radmand2010}
+	\caption{Overall schema of wireless standards. Adapted from \cite{radmand2010}.}
+	\label{fig:radmand2010}
+\end{figure}
+
 
 \section{Communication KPI’s}
-\lipsum[4]
+%\lipsum[4]
+
+According to \cite{Radmand2010}, it is identified the following "Industrial Requirements" for the WSN's:
+
+\begin{description}
+	\item[Reliability ---] Reliability is a measurement of the transmission accuracy, in percentage, that evaluates the amount of data that reach it's destination. This measurement uses the properties of data communication, acknowledge-based usually.
+	
+	\item[Latency ---] Latency is the measurement of the time delay and is defined as the time that a data packet takes to be transmited from the source to the destination. The latency is directly related to the link quality and a high latency link is result of a link with high signal-to-noise ratio. 
+	
+	\item[Sensor Data Update Rates ---] This KPI is not directly related with the communication link. However the update rate of the sensor data affects the power consumption due to the increase of the processing effort. In a SYNC-based update rate, this KPI is related to the frequency of the SYNC event.
+	
+	\item[Wireless Transmission Range ---] This KPI is the the maximum distance that a communication link supports the data transfer with a given reliability and in specific conditions (indoor/outdoor; line-of-sight or LOS).
+	
+	\item[Power consumption ---] The power consumption is a measurement of the combination of the computational effort of the nodes and the transmission effort. It is directly related with the update rate as well as with the link quality and, if it exists, the routing activity in each node.
+
+\end{description}
+
+
+
+
+
+
+

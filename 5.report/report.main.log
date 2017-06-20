@@ -1,1140 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.21)  15 JUN 2017 17:15
-entering extended mode
-**./report.main.tex
-(report.main.tex
-LaTeX2e <2017/01/01> patch level 1
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
-)
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-)
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-)) (feupteses.sty
-Package: feupteses 2014/01/24 1.1.1 
-
-Document Style `FEUP Teses' 1.1.1 <2014/01/24>
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2016/04/23 3.9r The Babel package
-
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
-Language: english 2017/01/24 v3.3q English support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count88
-\U@D=\dimen103
-)
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count89
-\Gm@cntv=\count90
-\c@Gm@tempcnt=\count91
-\Gm@bindingoffset=\dimen104
-\Gm@wd@mp=\dimen105
-\Gm@odd@mp=\dimen106
-\Gm@even@mp=\dimen107
-\Gm@layoutwidth=\dimen108
-\Gm@layoutheight=\dimen109
-\Gm@layouthoffset=\dimen110
-\Gm@layoutvoffset=\dimen111
-\Gm@dimlist=\toks17
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
-Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup4
-\symitalic=\mathgroup5
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\courier-scaled\couriers.sty"
-Package: couriers 2004/07/10 Scaled Courier (HS) 
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
-Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count92
-))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen114
-\captionmargin@=\dimen115
-\captionwidth=\dimen116
-\caption@tempdima=\dimen117
-\caption@indent=\dimen118
-\caption@parindent=\dimen119
-\caption@hangindent=\dimen120
-)
-\c@ContinuedFloat=\count93
-) (lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count94
-\output=\toks18
-\linenoprevgraf=\count95
-\linenumbersep=\dimen121
-\linenumberwidth=\dimen122
-\c@linenumber=\count96
-\c@pagewiselinenumber=\count97
-\c@LN@truepage=\count98
-\c@internallinenumber=\count99
-\c@internallinenumbers=\count100
-\quotelinenumbersep=\dimen123
-\bframerule=\dimen124
-\bframesep=\dimen125
-\bframebox=\box26
-LaTeX Info: Redefining \\ on input line 3056.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip43
-\bibsep=\skip44
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count101
-)
-\@vivatext=\box27
-\@supervisorstext=\box28
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip45
-\f@ncyO@elh=\skip46
-\f@ncyO@erh=\skip47
-\f@ncyO@olh=\skip48
-\f@ncyO@orh=\skip49
-\f@ncyO@elf=\skip50
-\f@ncyO@erf=\skip51
-\f@ncyO@olf=\skip52
-\f@ncyO@orf=\skip53
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
-\@linkdim=\dimen126
-\Hy@linkcounter=\count102
-\Hy@pagecounter=\count103
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-\Hy@SavedSpaceFactor=\count104
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4362.
-Package hyperref Info: Option `bookmarks' set `true' on input line 4362.
-Package hyperref Info: Option `hyperindex' set `true' on input line 4362.
-Package hyperref Info: Option `hyperfigures' set `true' on input line 4362.
-Package hyperref Info: Hyper figures ON on input line 4484.
-Package hyperref Info: Link nesting OFF on input line 4491.
-Package hyperref Info: Hyper index ON on input line 4494.
-Package hyperref Info: Plain pages OFF on input line 4501.
-Package hyperref Info: Backreferencing OFF on input line 4506.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count105
-LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen127
-\Fld@menulength=\count106
-\Field@Width=\dimen128
-\Fld@charsize=\dimen129
-Package hyperref Info: Hyper figures ON on input line 6340.
-Package hyperref Info: Link nesting OFF on input line 6347.
-Package hyperref Info: Hyper index ON on input line 6350.
-Package hyperref Info: backreferencing OFF on input line 6357.
-Package hyperref Info: Link coloring OFF on input line 6362.
-Package hyperref Info: Link coloring with OCG OFF on input line 6367.
-Package hyperref Info: PDF/A mode OFF on input line 6372.
-LaTeX Info: Redefining \ref on input line 6412.
-LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count107
-\c@Item=\count108
-\c@Hfootnote=\count109
-)
-
-Package hyperref Message: Driver: hpdftex.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count110
-\c@bookmark@seq@number=\count111
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip54
-)
-Package hyperref Info: Option `plainpages' set `false' on input line 497.
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 497.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 497.
-
-Package hyperref Info: Option `breaklinks' set `true' on input line 497.
-Package hyperref Info: Option `linktocpage' set `true' on input line 497.
-Package hyperref Info: Option `colorlinks' set `true' on input line 497.
-)
-(report.preamble.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\framed\framed.sty"
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip55
-\fb@frw=\dimen130
-\fb@frh=\dimen131
-\FrameRule=\dimen132
-\FrameSep=\dimen133
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip56
-\multirow@cntb=\count112
-\multirow@dima=\skip57
-\bigstrutjot=\dimen134
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count113
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks19
-\verbatim@line=\toks20
-\verbatim@in@stream=\read1
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip58
-
-For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen135
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count114
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count115
-\leftroot@=\count116
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count117
-\DOTSCASE@=\count118
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box29
-\strutbox@=\box30
-\big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count119
-\c@MaxMatrixCols=\count120
-\dotsspace@=\muskip11
-\c@parentequation=\count121
-\dspbrk@lvl=\count122
-\tag@help=\toks22
-\row@=\count123
-\column@=\count124
-\maxfields@=\count125
-\andhelp@=\toks23
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks24
-\multlinegap=\skip59
-\multlinetaggap=\skip60
-\mathdisplay@stack=\toks25
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen144
-\extrarowheight=\dimen145
-\NC@list=\toks26
-\extratabsurround=\skip61
-\backup@length=\skip62
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
-Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
-)
-\XKV@depth=\count126
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
-Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box31
-)
-\tc@llx=\dimen146
-\tc@lly=\dimen147
-\tc@urx=\dimen148
-\tc@ury=\dimen149
-Package trimclip Info: Using driver 'tc-pdftex.def'.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
-File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen150
-\adjbox@Height=\dimen151
-\adjbox@Depth=\dimen152
-\adjbox@Totalheight=\dimen153
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count127
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box32
-\sift@deathcycles=\count128
-\@vwid@loff=\dimen154
-\@vwid@roff=\dimen155
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\nomencl\nomencl.sty"
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen156
-\nom@tempdim=\dimen157
-\nomitemsep=\skip63
-)
-\@nomenclaturefile=\write3
-\openout3 = `report.main.nlo'.
-
-
-Writing nomenclature file report.main.nlo
-(chapters/A.acronyms.tex))
-\@input{report.macros.aux}
-\openout2 = `report.macros.aux'.
-
-(report.macros.tex) (report.main.aux (report.info.aux))
-\openout1 = `report.main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 12.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includehead includefoot twoside 
-* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=661.23584pt
-* \oddsidemargin=27.31465pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-15.36449pt
-* \headheight=15.5pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=103.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen158
-\scratchbox=\box33
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen159
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks30
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box34
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 12.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count135
-)
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
-
-(report.main.out) (report.main.out)
-\@outlinefile=\write4
-\openout4 = `report.main.out'.
-
-\openout2 = `report.info.aux'.
-
- (report.info.tex)
-\@crestbox=\box35
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 23.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
-
-<figures/uporto.pdf, id=103, 2405.98875pt x 522.95375pt>
-File: figures/uporto.pdf Graphic file (type pdf)
-
-<use figures/uporto.pdf>
-Package pdftex.def Info: figures/uporto.pdf used on input line 23.
-(pdftex.def)             Requested size: 204.85983pt x 44.52628pt.
- [-3
-
-
-
-
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/uporto.pdf>] [-
-2
-
-
-
-]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
- [-1] [0
-
-] (report.main.toc
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 3.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 3.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 3.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 3.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-)
-\tf@toc=\write5
-\openout5 = `report.main.toc'.
-
- [1
-
-
-] [2
-
-]
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
-(chapters/1.Introduction.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
-
-<figures/IPs.jpg, id=167, 602.25pt x 332.24126pt>
-File: figures/IPs.jpg Graphic file (type jpg)
- <use figures/IPs.jpg>
-Package pdftex.def Info: figures/IPs.jpg used on input line 32.
-(pdftex.def)             Requested size: 256.07741pt x 141.27417pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[1
-
-] [2 <./figures/IPs.jpg>]) [3] [4
-
-]
-Chapter 2.
-(chapters/2.Railways.tex) [5] [6
-
-]
-Chapter 3.
-(chapters/3.Models.tex) [7] [8
-
-]
-Chapter 4.
-(chapters/4.Outliers.tex
-
-LaTeX Warning: Reference `sec:classbased' on page 9 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:statbased' on page 9 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:nnbased' on page 9 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:clustbased' on page 9 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:specbased' on page 9 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:synth' on page 9 undefined on input line 11.
-
-<figures/general.png, id=224, 4979.60374pt x 3319.40125pt>
-File: figures/general.png Graphic file (type png)
-
-<use figures/general.png>
-Package pdftex.def Info: figures/general.png used on input line 30.
-(pdftex.def)             Requested size: 320.0935pt x 213.33746pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9]
-Overfull \hbox (4.45905pt too wide) in paragraph at lines 44--45
-[]\T1/ptm/m/n/10.95 The De-ci-sion Sup-port Sub-sys-tem out-
- []
-
-[10 <./figures/general.png (PNG copy)>]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
- [11] [12]
-
-LaTeX Warning: Reference `table:t1' on page 13 undefined on input line 119.
-
-
-LaTeX Warning: Reference `table:t2' on page 13 undefined on input line 125.
-
-[13]
-
-LaTeX Warning: Reference `table:t3' on page 14 undefined on input line 133.
-
-[14]) [15] [16
-
-]
-Chapter 5.
-(chapters/4.Future.tex) [17] [18
-
-]
-Chapter 6.
-(chapters/5.Conclusions.tex) (report.main.bbl [19] [20
-
-] [21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
-
-(report.main.aux (report.info.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
-Package rerunfilecheck Info: File `report.main.out' has not changed.
-(rerunfilecheck)             Checksum: 402817BCE81A919F63CEFA03A9DB0DB1;1723.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
- ) 
-Here is how much of TeX's memory you used:
- 10447 strings out of 493333
- 151402 string characters out of 3139194
- 359455 words of memory out of 3000000
- 13632 multiletter control sequences out of 15000+200000
- 59879 words of font info for 66 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 43i,11n,77p,751b,460s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.main.pdf (28 pages, 681882 bytes).
-PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.6)  14 JUN 2017 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.21)  15 JUN 2017 23:41
 entering extended mode
 **./report.main.tex
 (report.main.tex
@@ -2894,7 +1758,7 @@ ABD: EveryShipout initializing macros
  (report.info.tex)
 \@crestbox=\box53
 
-<figures/uporto.pdf, id=86, 2405.98875pt x 522.95375pt>
+<figures/uporto.pdf, id=110, 2405.98875pt x 522.95375pt>
 File: figures/uporto.pdf Graphic file (type pdf)
 
 <use figures/uporto.pdf>
@@ -2992,7 +1856,7 @@ l.63 	\hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-<figures/samr21.jpg, id=160, 324.21124pt x 243.91125pt>
+<figures/samr21.jpg, id=190, 324.21124pt x 243.91125pt>
 File: figures/samr21.jpg Graphic file (type jpg)
 
 <use figures/samr21.jpg>
@@ -3007,14 +1871,14 @@ l.88 	\hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-<figures/cc1310_board.jpg, id=169, 84.315pt x 54.2025pt>
+<figures/cc1310_board.jpg, id=199, 84.315pt x 54.2025pt>
 File: figures/cc1310_board.jpg Graphic file (type jpg)
 
 <use figures/cc1310_board.jpg>
 Package pdftex.def Info: figures/cc1310_board.jpg used on input line 106.
 (pdftex.def)             Requested size: 213.39568pt x 137.1865pt.
 
-<figures/cc1310.png, id=170, 393.72093pt x 514.92375pt>
+<figures/cc1310.png, id=200, 393.72093pt x 514.92375pt>
 File: figures/cc1310.png Graphic file (type png)
 
 <use figures/cc1310.png>
@@ -3043,7 +1907,7 @@ l.145 	\hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-<figures/feather_3077.jpg, id=178, 4423.52625pt x 3401.70876pt>
+<figures/feather_3077.jpg, id=208, 4423.52625pt x 3401.70876pt>
 File: figures/feather_3077.jpg Graphic file (type jpg)
 
 <use figures/feather_3077.jpg>
@@ -3054,7 +1918,7 @@ Underfull \hbox (badness 1546) in paragraph at lines 161--161
 []\T1/jkp/m/n/10 Figure 2.4: |Adafruit Feather 32u4 Ra-dio
  []
 
-<figures/feather_wifi.jpg, id=179, 535.5207pt x 411.939pt>
+<figures/feather_wifi.jpg, id=209, 535.5207pt x 411.939pt>
 File: figures/feather_wifi.jpg Graphic file (type jpg)
 
 <use figures/feather_wifi.jpg>
@@ -3080,7 +1944,7 @@ I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [6 <./figures/feather_3077.jpg> <./figures/feather_wifi.jpg>]
-<figures/atxmega.png, id=185, 774.64406pt x 602.25pt>
+<figures/atxmega.png, id=215, 774.64406pt x 602.25pt>
 File: figures/atxmega.png Graphic file (type png)
 
 <use figures/atxmega.png>
@@ -3100,23 +1964,84 @@ l.207 	\hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
+[7 <./figures/atxmega.png>]
 
-Underfull \vbox (badness 8113) has occurred while \output is active []
+Package natbib Warning: Citation `Hackmann2006' on page 8 undefined on input li
+ne 224.
 
- [7 <./figures/atxmega.png>]) [8]
+<figures/nancy2014.png, id=222, 1118.67938pt x 577.40718pt>
+File: figures/nancy2014.png Graphic file (type png)
+
+<use figures/nancy2014.png>
+Package pdftex.def Info: figures/nancy2014.png used on input line 229.
+(pdftex.def)             Requested size: 469.47308pt x 242.31554pt.
+
+Overfull \hbox (42.68173pt too wide) in paragraph at lines 229--230
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `nancy2014' on page 8 undefined on input line 
+230.
+
+
+Package natbib Warning: Citation `nancy2014' on page 8 undefined on input line 
+230.
+
+[8 <./figures/nancy2014.png>]
+
+Package natbib Warning: Citation `Radmand2010' on page 9 undefined on input lin
+e 251.
+
+
+LaTeX Warning: Reference `fig:randmand2010' on page 9 undefined on input line 2
+51.
+
+<figures/radmand2010.png, id=229, 534.49687pt x 352.31625pt>
+File: figures/radmand2010.png Graphic file (type png)
+
+<use figures/radmand2010.png>
+Package pdftex.def Info: figures/radmand2010.png used on input line 256.
+(pdftex.def)             Requested size: 256.07741pt x 168.79807pt.
+
+
+Package natbib Warning: Citation `radmand2010' on page 9 undefined on input lin
+e 257.
+
+
+Package natbib Warning: Citation `radmand2010' on page 9 undefined on input lin
+e 257.
+
+
+Package natbib Warning: Citation `Radmand2010' on page 9 undefined on input lin
+e 265.
+
+
+Overfull \hbox (1.42397pt too wide) in paragraph at lines 272--273
+[]\T1/jkp/m/n/10 This KPI is not di-rectly re-lated with the com-mu-ni-ca-tion 
+link. How-
+ []
+
+
+Overfull \hbox (21.97795pt too wide) in paragraph at lines 274--275
+\T1/jkp/m/n/10 link sup-ports the data trans-fer with a given re-li-a-bil-ity a
+nd in spe-cific con-di-tions (in-door/outdoor;
+ []
+
+[9 <./figures/radmand2010.png>]) [10]
 Chapter 3.
-(chapters/3.Development.tex) [9
+(chapters/3.Development.tex [11
 
-]
+]) [12]
 Chapter 4.
-(chapters/4.Results.tex) [10
+(chapters/4.Results.tex) [13
 
 ]
 Chapter 5.
-(chapters/5.Conclusions.tex) (report.main.bbl) [11
+(chapters/5.Conclusions.tex) (report.main.bbl) [14
 
 ]
-<chapters/communication.pdf, id=208, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=256, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf>
@@ -3127,7 +2052,7 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf used on input line 69.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<chapters/communication.pdf, id=211, page=1, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=259, page=1, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 1>
@@ -3140,7 +2065,7 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page1 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [12
+ [15
 
 ]
 File: chapters/communication.pdf Graphic file (type pdf)
@@ -3161,211 +2086,211 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page1 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [13 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=233, page=2, 614.295pt x 794.97pt>
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 2>
-Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 2>
-Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 2>
-Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [14 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=248, page=3, 614.295pt x 794.97pt>
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 3>
-Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 3>
-Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 3>
-Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [15 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=253, page=4, 614.295pt x 794.97pt>
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 4>
-Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 4>
-Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: chapters/communication.pdf Graphic file (type pdf)
-
-<use chapters/communication.pdf, page 4>
-Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
-9.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [16 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=263, page=5, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=280, page=2, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 5>
-Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
+<use chapters/communication.pdf, page 2>
+Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 5>
-Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
+<use chapters/communication.pdf, page 2>
+Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 5>
-Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
+<use chapters/communication.pdf, page 2>
+Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [17 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=268, page=6, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=295, page=3, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 6>
-Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
+<use chapters/communication.pdf, page 3>
+Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 6>
-Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
+<use chapters/communication.pdf, page 3>
+Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 6>
-Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
+<use chapters/communication.pdf, page 3>
+Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [18 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=273, page=7, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=300, page=4, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 7>
-Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
+<use chapters/communication.pdf, page 4>
+Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 7>
-Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
+<use chapters/communication.pdf, page 4>
+Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 7>
-Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
+<use chapters/communication.pdf, page 4>
+Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [19 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=279, page=8, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=311, page=5, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 8>
-Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
+<use chapters/communication.pdf, page 5>
+Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 8>
-Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
+<use chapters/communication.pdf, page 5>
+Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 8>
-Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
+<use chapters/communication.pdf, page 5>
+Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [20 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=284, page=9, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=316, page=6, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 9>
-Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
+<use chapters/communication.pdf, page 6>
+Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 9>
-Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
+<use chapters/communication.pdf, page 6>
+Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 9>
-Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
+<use chapters/communication.pdf, page 6>
+Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [21 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=289, page=10, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=321, page=7, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 10>
-Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
-69.
+<use chapters/communication.pdf, page 7>
+Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
+9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 10>
-Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
-69.
+<use chapters/communication.pdf, page 7>
+Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
+9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 10>
-Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
-69.
+<use chapters/communication.pdf, page 7>
+Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
+9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [22 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=294, page=11, 614.295pt x 794.97pt>
+<chapters/communication.pdf, id=326, page=8, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 11>
-Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
-69.
+<use chapters/communication.pdf, page 8>
+Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
+9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 11>
-Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
-69.
+<use chapters/communication.pdf, page 8>
+Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
+9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: chapters/communication.pdf Graphic file (type pdf)
 
-<use chapters/communication.pdf, page 11>
-Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
-69.
+<use chapters/communication.pdf, page 8>
+Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
+9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [23 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=331, page=9, 614.295pt x 794.97pt>
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 9>
+Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
+9.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 9>
+Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
+9.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 9>
+Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
+9.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [24 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=336, page=10, 614.295pt x 794.97pt>
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 10>
+Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
+69.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 10>
+Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
+69.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 10>
+Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
+69.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [25 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=342, page=11, 614.295pt x 794.97pt>
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 11>
+Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
+69.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 11>
+Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
+69.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: chapters/communication.pdf Graphic file (type pdf)
+
+<use chapters/communication.pdf, page 11>
+Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
+69.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [26 <./chapters/communication.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=304, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=352, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
  <use chapters/SRS.pdf>
 Package pdftex.def Info: chapters/SRS.pdf used on input line 71.
@@ -3386,7 +2311,7 @@ F version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=307, page=1, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=355, page=1, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 1>
@@ -3396,7 +2321,7 @@ File: chapters/SRS.pdf Graphic file (type pdf)
  <use chapters/SRS.pdf, page 1>
 Package pdftex.def Info: chapters/SRS.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [24
+ [27
 
 ]
 File: chapters/SRS.pdf Graphic file (type pdf)
@@ -3413,11 +2338,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 1>
 Package pdftex.def Info: chapters/SRS.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [25 <./chapters/SRS.pdf>]
+ [28 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=347, page=2, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=394, page=2, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 2>
@@ -3432,11 +2357,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 2>
 Package pdftex.def Info: chapters/SRS.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [26 <./chapters/SRS.pdf>]
+ [29 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=364, page=3, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=411, page=3, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 3>
@@ -3451,11 +2376,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 3>
 Package pdftex.def Info: chapters/SRS.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [27 <./chapters/SRS.pdf>]
+ [30 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=375, page=4, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=422, page=4, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 4>
@@ -3470,11 +2395,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 4>
 Package pdftex.def Info: chapters/SRS.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [28 <./chapters/SRS.pdf>]
+ [31 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=382, page=5, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=430, page=5, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 5>
@@ -3489,11 +2414,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 5>
 Package pdftex.def Info: chapters/SRS.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [29 <./chapters/SRS.pdf>]
+ [32 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=387, page=6, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=435, page=6, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 6>
@@ -3508,11 +2433,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 6>
 Package pdftex.def Info: chapters/SRS.pdf, page6 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [30 <./chapters/SRS.pdf>]
+ [33 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=393, page=7, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=441, page=7, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 7>
@@ -3527,11 +2452,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 7>
 Package pdftex.def Info: chapters/SRS.pdf, page7 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [31 <./chapters/SRS.pdf>]
+ [34 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=399, page=8, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=446, page=8, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 8>
@@ -3546,11 +2471,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 8>
 Package pdftex.def Info: chapters/SRS.pdf, page8 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [32 <./chapters/SRS.pdf>]
+ [35 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=411, page=9, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=458, page=9, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 9>
@@ -3565,11 +2490,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 9>
 Package pdftex.def Info: chapters/SRS.pdf, page9 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [33 <./chapters/SRS.pdf>]
+ [36 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=416, page=10, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=463, page=10, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 10>
@@ -3584,11 +2509,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 10>
 Package pdftex.def Info: chapters/SRS.pdf, page10 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [34 <./chapters/SRS.pdf>]
+ [37 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=421, page=11, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=469, page=11, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 11>
@@ -3603,11 +2528,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 11>
 Package pdftex.def Info: chapters/SRS.pdf, page11 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [35 <./chapters/SRS.pdf>]
+ [38 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=428, page=12, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=476, page=12, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 12>
@@ -3622,11 +2547,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 12>
 Package pdftex.def Info: chapters/SRS.pdf, page12 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [36 <./chapters/SRS.pdf>]
+ [39 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=435, page=13, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=483, page=13, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 13>
@@ -3641,11 +2566,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 13>
 Package pdftex.def Info: chapters/SRS.pdf, page13 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [37 <./chapters/SRS.pdf>]
+ [40 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=441, page=14, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=488, page=14, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 14>
@@ -3660,11 +2585,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 14>
 Package pdftex.def Info: chapters/SRS.pdf, page14 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [38 <./chapters/SRS.pdf>]
+ [41 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=446, page=15, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=493, page=15, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 15>
@@ -3679,11 +2604,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 15>
 Package pdftex.def Info: chapters/SRS.pdf, page15 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [39 <./chapters/SRS.pdf>]
+ [42 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=516, page=16, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=563, page=16, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 16>
@@ -3698,11 +2623,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 16>
 Package pdftex.def Info: chapters/SRS.pdf, page16 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [40 <./chapters/SRS.pdf>]
+ [43 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=521, page=17, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=569, page=17, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 17>
@@ -3717,11 +2642,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 17>
 Package pdftex.def Info: chapters/SRS.pdf, page17 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [41 <./chapters/SRS.pdf>]
+ [44 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=526, page=18, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=574, page=18, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 18>
@@ -3736,11 +2661,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 18>
 Package pdftex.def Info: chapters/SRS.pdf, page18 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [42 <./chapters/SRS.pdf>]
+ [45 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=531, page=19, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=579, page=19, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 19>
@@ -3755,11 +2680,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 19>
 Package pdftex.def Info: chapters/SRS.pdf, page19 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [43 <./chapters/SRS.pdf>]
+ [46 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=593, page=20, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=640, page=20, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 20>
@@ -3774,11 +2699,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 20>
 Package pdftex.def Info: chapters/SRS.pdf, page20 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [44 <./chapters/SRS.pdf>]
+ [47 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=654, page=21, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=701, page=21, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 21>
@@ -3793,11 +2718,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 21>
 Package pdftex.def Info: chapters/SRS.pdf, page21 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [45 <./chapters/SRS.pdf>]
+ [48 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=729, page=22, 597.50786pt x 845.04686pt>
+<chapters/SRS.pdf, id=776, page=22, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 22>
@@ -3812,7 +2737,7 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 22>
 Package pdftex.def Info: chapters/SRS.pdf, page22 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
- [46 <./chapters/SRS.pdf>]
+ [49 <./chapters/SRS.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3821,25 +2746,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 (report.main.aux (report.info.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package rerunfilecheck Info: File `report.main.out' has not changed.
+(rerunfilecheck)             Checksum: 37CA875FE1FBDB8F0E4B904C31A4E76E;2227.
 
 
-Package rerunfilecheck Warning: File `report.main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `report.main.out':
-(rerunfilecheck)             Before: 2833259719BD9886E7D6B77E9005D617;1701
-(rerunfilecheck)             After:  E8D9D2CE51E8388045A60027FF2AF6B4;1710.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 23237 strings out of 493333
- 403552 string characters out of 3139189
- 584821 words of memory out of 3000000
- 26104 multiletter control sequences out of 15000+200000
+ 23271 strings out of 493333
+ 404113 string characters out of 3139194
+ 586021 words of memory out of 3000000
+ 26125 multiletter control sequences out of 15000+200000
  131053 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,19n,77p,995b,1214s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3859,10 +2781,9 @@ ts/jkpmn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/kpfonts/jkpssbsc8a.pfb>
-Output written on report.main.pdf (52 pages, 21782843 bytes).
+Output written on report.main.pdf (55 pages, 22419400 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 403 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 852 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 461 words of extra memory for PDF output out of 10000 (max. 10000000)
 
->>>>>>> master

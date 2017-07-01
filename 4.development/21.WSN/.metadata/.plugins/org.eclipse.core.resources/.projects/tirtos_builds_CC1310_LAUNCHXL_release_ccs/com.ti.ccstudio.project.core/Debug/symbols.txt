@@ -1,11 +1,6 @@
 #define __unsigned_chars__ 1	/* Predefined */
-<<<<<<< HEAD
-#define __DATE__ "May 23 2017"	/* Predefined */
-#define __TIME__ "19:39:28"	/* Predefined */
-=======
-#define __DATE__ "May 28 2017"	/* Predefined */
-#define __TIME__ "17:56:59"	/* Predefined */
->>>>>>> master
+#define __DATE__ "Jul  2 2017"	/* Predefined */
+#define __TIME__ "17:23:37"	/* Predefined */
 #define __STDC__ 1	/* Predefined */
 #define __STDC_VERSION__ 199409L	/* Predefined */
 #define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */

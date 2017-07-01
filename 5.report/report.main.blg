@@ -1,5 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.main.aux
 A level-1 auxiliary file: report.info.aux
-I found no \bibdata command---while reading file report.main.aux
-I found no \bibstyle command---while reading file report.main.aux
-(There were 2 error messages)
+The style file: chicago.bst
+Database file #1: outliers.bib
+Database file #2: shift2rail.bib
+Database file #3: references.bib
+Warning--empty booktitle in Hackmann2006
+(There was 1 warning)

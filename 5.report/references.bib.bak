@@ -74,4 +74,10 @@
   __markedentry = {[Vitor:6]},
 }
 
+@Misc{nancy2014,
+  author       = {Nancy Panousopoulou},
+  title        = {Notes on Wireless Sensor Networks: Applications, Standards and Programming Tools},
+  howpublished = {lecture presentation slides},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

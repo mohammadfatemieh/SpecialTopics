@@ -1,5 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.main.aux
 A level-1 auxiliary file: report.info.aux
-I found no \bibdata command---while reading file report.main.aux
-I found no \bibstyle command---while reading file report.main.aux
+Case mismatch error between cite keys radmand2010 and Radmand2010
+---line 71 of file report.main.aux
+ : \citation{radmand2010
+ :                      }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys radmand2010 and Radmand2010
+---line 72 of file report.main.aux
+ : \citation{radmand2010
+ :                      }
+I'm skipping whatever remains of this command
+The style file: chicago.bst
+Database file #1: outliers.bib
+Database file #2: shift2rail.bib
+Database file #3: references.bib
+Warning--empty booktitle in Hackmann2006
+Warning--empty year in nancy2014
 (There were 2 error messages)

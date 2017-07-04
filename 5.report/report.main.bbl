@@ -12,8 +12,13 @@ Birol, F. and J.-P. Loubinoux (2016).
 Hackmann, G. (2006).
 \newblock 802.15 personal area networks.
 
+<<<<<<< HEAD
 \bibitem[\protect\citeauthoryear{Panousopoulou}{Panousopoulou}{2014}]{nancy2014}
 Panousopoulou, N. (2014).
+=======
+\bibitem[\protect\citeauthoryear{Panousopoulou}{Panousopoulou}{}]{nancy2014}
+Panousopoulou, N.
+>>>>>>> master
 \newblock Notes on wireless sensor networks: Applications, standards and
   programming tools.
 \newblock lecture presentation slides.

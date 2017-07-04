@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.6)  4 JUL 2017 19:48
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.6)  1 JUL 2017 18:18
+>>>>>>> master
 entering extended mode
 **./report.main.tex
 (report.main.tex
@@ -1949,6 +1953,7 @@ nd in spe-cific con-di-tions (in-door/outdoor;
 [9 <./figures/radmand2010.png>]) [10]
 Chapter 3.
 (chapters/3.Development.tex
+<<<<<<< HEAD
 <figures/hw.png, id=265, 3652.64626pt x 1519.6775pt>
 File: figures/hw.png Graphic file (type png)
  <use figures/hw.png>
@@ -1989,6 +1994,30 @@ Chapter 4.
 
 ]
 <chapters/communication.pdf, id=302, 614.295pt x 794.97pt>
+=======
+<figures/hw.png, id=263, 3652.64626pt x 1519.6775pt>
+File: figures/hw.png Graphic file (type png)
+ <use figures/hw.png>
+Package pdftex.def Info: figures/hw.png used on input line 17.
+(pdftex.def)             Requested size: 384.1096pt x 159.79114pt.
+
+Underfull \vbox (badness 6842) has occurred while \output is active []
+
+ [11
+
+ <./figures/hw.png (PNG copy)>]) [12]
+Chapter 4.
+(chapters/4.Results.tex) [13
+
+]
+Chapter 5.
+(chapters/5.Conclusions.tex) (report.main.bbl [14
+
+]) [15
+
+]
+<chapters/communication.pdf, id=287, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf>
@@ -1999,7 +2028,11 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf used on input line 69.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
+<<<<<<< HEAD
 <chapters/communication.pdf, id=305, page=1, 614.295pt x 794.97pt>
+=======
+<chapters/communication.pdf, id=290, page=1, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 1>
@@ -2012,7 +2045,11 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page1 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [17
+=======
+ [16
+>>>>>>> master
 
 ]
 File: chapters/communication.pdf Graphic file (type pdf)
@@ -2033,8 +2070,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page1 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [18 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=326, page=2, 614.295pt x 794.97pt>
+=======
+ [17 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=311, page=2, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 2>
@@ -2053,8 +2095,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [19 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=342, page=3, 614.295pt x 794.97pt>
+=======
+ [18 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=326, page=3, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 3>
@@ -2073,8 +2120,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [20 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=347, page=4, 614.295pt x 794.97pt>
+=======
+ [19 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=332, page=4, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 4>
@@ -2093,8 +2145,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [21 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=357, page=5, 614.295pt x 794.97pt>
+=======
+ [20 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=342, page=5, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 5>
@@ -2113,8 +2170,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [22 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=362, page=6, 614.295pt x 794.97pt>
+=======
+ [21 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=347, page=6, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 6>
@@ -2133,8 +2195,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [23 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=367, page=7, 614.295pt x 794.97pt>
+=======
+ [22 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=352, page=7, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 7>
@@ -2153,8 +2220,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [24 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=372, page=8, 614.295pt x 794.97pt>
+=======
+ [23 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=357, page=8, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 8>
@@ -2173,8 +2245,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [25 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=378, page=9, 614.295pt x 794.97pt>
+=======
+ [24 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=362, page=9, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 9>
@@ -2193,8 +2270,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [26 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=383, page=10, 614.295pt x 794.97pt>
+=======
+ [25 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=368, page=10, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 10>
@@ -2213,8 +2295,13 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
 69.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [27 <./chapters/communication.pdf>]
 <chapters/communication.pdf, id=388, page=11, 614.295pt x 794.97pt>
+=======
+ [26 <./chapters/communication.pdf>]
+<chapters/communication.pdf, id=373, page=11, 614.295pt x 794.97pt>
+>>>>>>> master
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 11>
@@ -2233,11 +2320,19 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
 69.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+<<<<<<< HEAD
  [28 <./chapters/communication.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=398, 597.50786pt x 845.04686pt>
+=======
+ [27 <./chapters/communication.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=383, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
  <use chapters/SRS.pdf>
 Package pdftex.def Info: chapters/SRS.pdf used on input line 71.
@@ -2258,7 +2353,11 @@ F version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
+<<<<<<< HEAD
 <chapters/SRS.pdf, id=401, page=1, 597.50786pt x 845.04686pt>
+=======
+<chapters/SRS.pdf, id=386, page=1, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 1>
@@ -2268,7 +2367,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
  <use chapters/SRS.pdf, page 1>
 Package pdftex.def Info: chapters/SRS.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [29
+=======
+ [28
+>>>>>>> master
 
 ]
 File: chapters/SRS.pdf Graphic file (type pdf)
@@ -2285,11 +2388,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 1>
 Package pdftex.def Info: chapters/SRS.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [30 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=440, page=2, 597.50786pt x 845.04686pt>
+=======
+ [29 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=425, page=2, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 2>
@@ -2304,11 +2415,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 2>
 Package pdftex.def Info: chapters/SRS.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [31 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=458, page=3, 597.50786pt x 845.04686pt>
+=======
+ [30 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=442, page=3, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 3>
@@ -2323,11 +2442,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 3>
 Package pdftex.def Info: chapters/SRS.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [32 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=469, page=4, 597.50786pt x 845.04686pt>
+=======
+ [31 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=454, page=4, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 4>
@@ -2342,11 +2469,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 4>
 Package pdftex.def Info: chapters/SRS.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [33 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=476, page=5, 597.50786pt x 845.04686pt>
+=======
+ [32 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=461, page=5, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 5>
@@ -2361,11 +2496,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 5>
 Package pdftex.def Info: chapters/SRS.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [34 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=481, page=6, 597.50786pt x 845.04686pt>
+=======
+ [33 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=466, page=6, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 6>
@@ -2380,11 +2523,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 6>
 Package pdftex.def Info: chapters/SRS.pdf, page6 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [35 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=487, page=7, 597.50786pt x 845.04686pt>
+=======
+ [34 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=472, page=7, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 7>
@@ -2399,11 +2550,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 7>
 Package pdftex.def Info: chapters/SRS.pdf, page7 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [36 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=492, page=8, 597.50786pt x 845.04686pt>
+=======
+ [35 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=477, page=8, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 8>
@@ -2418,11 +2577,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 8>
 Package pdftex.def Info: chapters/SRS.pdf, page8 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [37 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=505, page=9, 597.50786pt x 845.04686pt>
+=======
+ [36 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=489, page=9, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 9>
@@ -2437,11 +2604,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 9>
 Package pdftex.def Info: chapters/SRS.pdf, page9 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [38 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=510, page=10, 597.50786pt x 845.04686pt>
+=======
+ [37 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=495, page=10, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 10>
@@ -2456,11 +2631,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 10>
 Package pdftex.def Info: chapters/SRS.pdf, page10 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [39 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=515, page=11, 597.50786pt x 845.04686pt>
+=======
+ [38 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=500, page=11, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 11>
@@ -2475,11 +2658,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 11>
 Package pdftex.def Info: chapters/SRS.pdf, page11 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [40 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=522, page=12, 597.50786pt x 845.04686pt>
+=======
+ [39 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=507, page=12, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 12>
@@ -2494,11 +2685,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 12>
 Package pdftex.def Info: chapters/SRS.pdf, page12 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [41 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=529, page=13, 597.50786pt x 845.04686pt>
+=======
+ [40 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=514, page=13, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 13>
@@ -2513,11 +2712,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 13>
 Package pdftex.def Info: chapters/SRS.pdf, page13 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [42 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=534, page=14, 597.50786pt x 845.04686pt>
+=======
+ [41 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=519, page=14, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 14>
@@ -2532,11 +2739,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 14>
 Package pdftex.def Info: chapters/SRS.pdf, page14 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [43 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=540, page=15, 597.50786pt x 845.04686pt>
+=======
+ [42 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=524, page=15, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 15>
@@ -2551,11 +2766,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 15>
 Package pdftex.def Info: chapters/SRS.pdf, page15 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [44 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=610, page=16, 597.50786pt x 845.04686pt>
+=======
+ [43 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=595, page=16, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 16>
@@ -2570,11 +2793,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 16>
 Package pdftex.def Info: chapters/SRS.pdf, page16 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [45 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=615, page=17, 597.50786pt x 845.04686pt>
+=======
+ [44 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=600, page=17, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 17>
@@ -2589,11 +2820,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 17>
 Package pdftex.def Info: chapters/SRS.pdf, page17 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [46 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=620, page=18, 597.50786pt x 845.04686pt>
+=======
+ [45 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=605, page=18, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 18>
@@ -2608,11 +2847,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 18>
 Package pdftex.def Info: chapters/SRS.pdf, page18 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [47 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=625, page=19, 597.50786pt x 845.04686pt>
+=======
+ [46 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=610, page=19, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 19>
@@ -2627,11 +2874,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 19>
 Package pdftex.def Info: chapters/SRS.pdf, page19 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [48 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=686, page=20, 597.50786pt x 845.04686pt>
+=======
+ [47 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=671, page=20, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 20>
@@ -2646,11 +2901,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 20>
 Package pdftex.def Info: chapters/SRS.pdf, page20 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [49 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=748, page=21, 597.50786pt x 845.04686pt>
+=======
+ [48 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=732, page=21, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 21>
@@ -2665,11 +2928,19 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 21>
 Package pdftex.def Info: chapters/SRS.pdf, page21 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [50 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 <chapters/SRS.pdf, id=823, page=22, 597.50786pt x 845.04686pt>
+=======
+ [49 <./chapters/SRS.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<chapters/SRS.pdf, id=808, page=22, 597.50786pt x 845.04686pt>
+>>>>>>> master
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 22>
@@ -2684,7 +2955,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 22>
 Package pdftex.def Info: chapters/SRS.pdf, page22 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<<<<<<< HEAD
  [51 <./chapters/SRS.pdf>]
+=======
+ [50 <./chapters/SRS.pdf>]
+>>>>>>> master
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (report.main.aux
@@ -2692,7 +2967,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `report.main.out' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 90A468683B16ED1F274E513FE39180E7;2226.
+=======
+(rerunfilecheck)             Checksum: 37CA875FE1FBDB8F0E4B904C31A4E76E;2227.
+>>>>>>> master
 
 
 LaTeX Warning: There were undefined references.
@@ -2700,10 +2979,17 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  23316 strings out of 493333
  404914 string characters out of 3139189
  586743 words of memory out of 3000000
  26158 multiletter control sequences out of 15000+200000
+=======
+ 23302 strings out of 493333
+ 404616 string characters out of 3139189
+ 586570 words of memory out of 3000000
+ 26146 multiletter control sequences out of 15000+200000
+>>>>>>> master
  136444 words of font info for 105 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,19n,77p,995b,1214s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2723,9 +3009,17 @@ ts/jkpmn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/kpfonts/jkpssbsc8a.pfb>
+<<<<<<< HEAD
 Output written on report.main.pdf (57 pages, 25123744 bytes).
 PDF statistics:
  900 PDF objects out of 1000 (max. 8388607)
  103 named destinations out of 1000 (max. 500000)
  481 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+Output written on report.main.pdf (56 pages, 23334056 bytes).
+PDF statistics:
+ 884 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> master
 

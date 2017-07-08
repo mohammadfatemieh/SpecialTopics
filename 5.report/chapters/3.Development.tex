@@ -46,19 +46,92 @@ As proposed in the SRS, figure \ref{fig:3.3.domainModel} presents the domain mod
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,keepaspectratio]{figures/domainModel}
+	\includegraphics[width=0.85\textwidth,keepaspectratio]{figures/domainModel}
 	\caption{Domain Model Diagram.}
 	\label{fig:3.3.domainModel}
 \end{figure}
 
-The software architecture was based on a proprietary implementation of a WSN by the manufacturer of the CC1350 (Texas Instruments).
+The software architecture was based on a proprietary implementation of a WSN by the manufacturer of the CC1350 (Texas Instruments). In the power converter side, a serial request-response protocol was implemented. In addition, the database was constructed based on flowchart of figure \ref{fig:3.3.sw1}. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.55\textwidth,keepaspectratio]{figures/sw1}
+	\caption{PV power converter implemented software.}
+	\label{fig:3.3.sw1}
+\end{figure}
 
 
+The power converter acts as a communication slave that responds upon wireless node requests. The following list presents the data exchange between both devices:
+\begin{description}
+	\setlength\itemsep{-0.5em}
+	\item[\#VPV\#03\#] Request for panel voltage, with 0,1V precision;
+	\item[\#IPV\#03\#] Request for panel current, with 0,01A precision;
+	\item[\#VDC\#03\#] Request for DC Bus voltage, with 1V precision;
+	\item[\#PWR\#03\#] Request for PV power, with 1W precision;
+	\item[\#EVE\#03\#] Request for PV power converter events;
+	\item[\#WHOIS\#05\#] Request for board identification.
+	\item[\#SYNC\#04\#] Request for Database synchronization.
+\end{description}
 
-\section{Communication results and KPI metrics}
+The remote node will request for the values in the PV power converter database. At a 1 second period, the data is sent to the data concentrator.
+
+\section{Communication results}
 \label{sec:3.4}
-\lipsum[4-4]
+%\lipsum[4-4]
+In figure \ref{fig:3.4.armario1} and \ref{fig:3.4.armario2} is presented the pretended test-bench for the wireless nodes. 
+\begin{figure}[!htb]
+	\centering
+	\begin{minipage}{.55\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth,keepaspectratio]{figures/armario1}
+		\caption{Back view of microgeneration system.}
+		\label{fig:3.4.armario1}
+	\end{minipage}%
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth, keepaspectratio]{figures/armario2}
+		\caption{Detail of wireless module}
+		\label{fig:3.4.armario2}
+	\end{minipage}
+\end{figure}
 
-\section{Discussion of the results}
-\label{sec:3.5}
-\lipsum[4-4]
+\subsection{Validating the electric measurements}
+
+The first results collected by the wireless node are presented in figure \ref{fig:3.4.measurements}.
+Identified in red in the graph are presented the three electric tests: a) increase of the DC\_bus voltage with a voltage controlled source; b)increase of the DC current in the PV current transducer, with a current controlled source; c) Increase of the PV DC voltage, with a voltage controlled source. As a consequence of the power converter topology, the DC\_bus voltage increases due to a diode between two sides of the converter.
+
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.85\textwidth,keepaspectratio]{figures/measurements}
+	\caption{PV power converter electric measurements. (horizontal axis in seconds)}
+	\label{fig:3.4.measurements}
+\end{figure}
+
+\subsection{Validating the wireless communication}
+The Texas Instruments WSN implementation used evaluates the wireless strength of the received data. In figure \ref{fig:3.4.rssi} is presented the Received Signal Strength Indication (RSSI), as a measurement of the power present in a received radio signal. 
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.85\textwidth,keepaspectratio]{figures/RSSI}
+	\caption{PV power converter electric measurements. (horizontal axis in seconds)}
+	\label{fig:3.4.rssi}
+\end{figure}
+
+Complementary, the existence of multiple nodes was validated, as presented in the raw data of the concentrator verified in figure \ref{fig:3.4.twonodes}.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.80\textwidth,keepaspectratio]{figures/twonodes}
+	\caption{Concentrator raw data received.}
+	\label{fig:3.4.twonodes}
+\end{figure} 
+
+
+%\section{Discussion of the results}
+%\label{sec:3.5}
+%\lipsum[4-4]
+

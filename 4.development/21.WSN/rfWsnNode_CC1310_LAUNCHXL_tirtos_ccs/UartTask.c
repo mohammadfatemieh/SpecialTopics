@@ -179,14 +179,14 @@ void UART_setup(void) {
     UInt32 milis = 1000 / Clock_tickPeriod;
 
     pv2wifi_commands[0].command="{DCBUS#05}";
-    pv2wifi_commands[1].command="{VPV#03}";
-    pv2wifi_commands[2].command="{IPV#03}";
-    pv2wifi_commands[3].command="{PWR#03}";
+    pv2wifi_commands[1].command="{VPVSS#05}";
+    pv2wifi_commands[2].command="{IPVSS#05}";
+    pv2wifi_commands[3].command="{PWRSS#05}";
 
     pv2wifi_commands[0].size=10;
-    pv2wifi_commands[1].size=8;
-    pv2wifi_commands[2].size=8;
-    pv2wifi_commands[3].size=8;
+    pv2wifi_commands[1].size=10;
+    pv2wifi_commands[2].size=10;
+    pv2wifi_commands[3].size=10;
     pv2wifi_[0] = 0;
     pv2wifi_[1] = 0;
     pv2wifi_[2] = 0;

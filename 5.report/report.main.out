@@ -21,6 +21,7 @@
 \BOOKMARK [1][-]{section.3.1}{3.1 Description of the selected wireless technology}{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.2}{3.2 Hardware architecture}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.3}{3.3 Software Architecture}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.4}{3.4 Communication results and KPI metrics}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.5}{3.5 Discussion of the results}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{4 Conclusions and Future Work}{}% 26
+\BOOKMARK [1][-]{section.3.4}{3.4 Communication results}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Validating the electric measurements}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Validating the wireless communication}{section.3.4}% 26
+\BOOKMARK [0][-]{chapter.4}{4 Conclusions and Future Work}{}% 27

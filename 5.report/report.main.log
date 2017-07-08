@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.6)  4 JUL 2017 19:48
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.6)  1 JUL 2017 18:18
->>>>>>> master
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.6)  8 JUL 2017 19:21
 entering extended mode
 **./report.main.tex
 (report.main.tex
@@ -762,10 +758,17 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count131
 \c@subtable=\count132
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box35
+\sift@deathcycles=\count133
+\@vwid@loff=\dimen145
+\@vwid@roff=\dimen146
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen145
-\extrarowheight=\dimen146
+\col@sep=\dimen147
+\extrarowheight=\dimen148
 \NC@list=\toks27
 \extratabsurround=\skip65
 \backup@length=\skip66
@@ -781,7 +784,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks28
 \XKV@tempa@toks=\toks29
 )
-\XKV@depth=\count133
+\XKV@depth=\count134
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
@@ -793,32 +796,25 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box35
+\collectedbox=\box36
 )
-\tc@llx=\dimen147
-\tc@lly=\dimen148
-\tc@urx=\dimen149
-\tc@ury=\dimen150
+\tc@llx=\dimen149
+\tc@lly=\dimen150
+\tc@urx=\dimen151
+\tc@ury=\dimen152
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen151
-\adjbox@Height=\dimen152
-\adjbox@Depth=\dimen153
-\adjbox@Totalheight=\dimen154
+\adjbox@Width=\dimen153
+\adjbox@Height=\dimen154
+\adjbox@Depth=\dimen155
+\adjbox@Totalheight=\dimen156
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count134
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box36
-\sift@deathcycles=\count135
-\@vwid@loff=\dimen155
-\@vwid@roff=\dimen156
+\c@checkoddpage=\count135
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\nomencl\nomencl.sty"
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
@@ -877,17 +873,250 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count139
 \AM@templatesizebox=\box38
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\mdframed.sty"
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2017/04/01 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2017/04/01 L3 programming layer (code)
+\c_max_int=\count140
+\l_tmpa_int=\count141
+\l_tmpb_int=\count142
+\g_tmpa_int=\count143
+\g_tmpb_int=\count144
+\g__prg_map_int=\count145
+\c_log_iow=\count146
+\l_iow_line_count_int=\count147
+\l__iow_line_target_int=\count148
+\l__iow_one_indent_int=\count149
+\l__iow_indent_int=\count150
+\c_zero_dim=\dimen163
+\c_max_dim=\dimen164
+\l_tmpa_dim=\dimen165
+\l_tmpb_dim=\dimen166
+\g_tmpa_dim=\dimen167
+\g_tmpb_dim=\dimen168
+\c_zero_skip=\skip71
+\c_max_skip=\skip72
+\l_tmpa_skip=\skip73
+\l_tmpb_skip=\skip74
+\g_tmpa_skip=\skip75
+\g_tmpb_skip=\skip76
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count151
+\c__fp_leading_shift_int=\count152
+\c__fp_middle_shift_int=\count153
+\c__fp_trailing_shift_int=\count154
+\c__fp_big_leading_shift_int=\count155
+\c__fp_big_middle_shift_int=\count156
+\c__fp_big_trailing_shift_int=\count157
+\c__fp_Bigg_leading_shift_int=\count158
+\c__fp_Bigg_middle_shift_int=\count159
+\c__fp_Bigg_trailing_shift_int=\count160
+\c__fp_rand_size_int=\count161
+\c__fp_rand_four_int=\count162
+\c__fp_rand_eight_int=\count163
+\l__sort_length_int=\count164
+\l__sort_min_int=\count165
+\l__sort_top_int=\count166
+\l__sort_max_int=\count167
+\l__sort_true_max_int=\count168
+\l__sort_block_int=\count169
+\l__sort_begin_int=\count170
+\l__sort_end_int=\count171
+\l__sort_A_int=\count172
+\l__sort_B_int=\count173
+\l__sort_C_int=\count174
+\c_empty_box=\box39
+\l_tmpa_box=\box40
+\l_tmpb_box=\box41
+\g_tmpa_box=\box42
+\g_tmpb_box=\box43
+\l__coffin_internal_box=\box44
+\l__coffin_internal_dim=\dimen169
+\l__coffin_offset_x_dim=\dimen170
+\l__coffin_offset_y_dim=\dimen171
+\l__coffin_x_dim=\dimen172
+\l__coffin_y_dim=\dimen173
+\l__coffin_x_prime_dim=\dimen174
+\l__coffin_y_prime_dim=\dimen175
+\c_empty_coffin=\box45
+\l__coffin_aligned_coffin=\box46
+\l__coffin_aligned_internal_coffin=\box47
+\l_tmpa_coffin=\box48
+\l_tmpb_coffin=\box49
+\l__coffin_display_coffin=\box50
+\l__coffin_display_coord_coffin=\box51
+\l__coffin_display_pole_coffin=\box52
+\l__coffin_display_offset_dim=\dimen176
+\l__coffin_display_x_dim=\dimen177
+\l__coffin_display_y_dim=\dimen178
+\l__box_top_dim=\dimen179
+\l__box_bottom_dim=\dimen180
+\l__box_left_dim=\dimen181
+\l__box_right_dim=\dimen182
+\l__box_top_new_dim=\dimen183
+\l__box_bottom_new_dim=\dimen184
+\l__box_left_new_dim=\dimen185
+\l__box_right_new_dim=\dimen186
+\l__box_internal_box=\box53
+\l__coffin_bounding_shift_dim=\dimen187
+\l__coffin_left_corner_dim=\dimen188
+\l__coffin_right_corner_dim=\dimen189
+\l__coffin_bottom_corner_dim=\dimen190
+\l__coffin_top_corner_dim=\dimen191
+\l__coffin_scaled_total_height_dim=\dimen192
+\l__coffin_scaled_width_dim=\dimen193
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count175
+\l__driver_tmp_box=\box54
+))
+Package: xparse 2017/04/01 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count176
+\g__xparse_grabber_int=\count177
+\l__xparse_m_args_int=\count178
+\l__xparse_mandatory_args_int=\count179
+\l__xparse_v_nesting_int=\count180
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count181
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-base.sty"
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count182
+Package zref Info: New property: abspage on input line 62.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip77
+\c@mdf@globalstyle@cnt=\count183
+\mdf@skipabove@length=\skip78
+\mdf@skipbelow@length=\skip79
+\mdf@leftmargin@length=\skip80
+\mdf@rightmargin@length=\skip81
+\mdf@innerleftmargin@length=\skip82
+\mdf@innerrightmargin@length=\skip83
+\mdf@innertopmargin@length=\skip84
+\mdf@innerbottommargin@length=\skip85
+\mdf@splittopskip@length=\skip86
+\mdf@splitbottomskip@length=\skip87
+\mdf@outermargin@length=\skip88
+\mdf@innermargin@length=\skip89
+\mdf@linewidth@length=\skip90
+\mdf@innerlinewidth@length=\skip91
+\mdf@middlelinewidth@length=\skip92
+\mdf@outerlinewidth@length=\skip93
+\mdf@roundcorner@length=\skip94
+\mdf@footenotedistance@length=\skip95
+\mdf@userdefinedwidth@length=\skip96
+\mdf@needspace@length=\skip97
+\mdf@frametitleaboveskip@length=\skip98
+\mdf@frametitlebelowskip@length=\skip99
+\mdf@frametitlerulewidth@length=\skip100
+\mdf@frametitleleftmargin@length=\skip101
+\mdf@frametitlerightmargin@length=\skip102
+\mdf@shadowsize@length=\skip103
+\mdf@extratopheight@length=\skip104
+\mdf@subtitleabovelinewidth@length=\skip105
+\mdf@subtitlebelowlinewidth@length=\skip106
+\mdf@subtitleaboveskip@length=\skip107
+\mdf@subtitlebelowskip@length=\skip108
+\mdf@subtitleinneraboveskip@length=\skip109
+\mdf@subtitleinnerbelowskip@length=\skip110
+\mdf@subsubtitleabovelinewidth@length=\skip111
+\mdf@subsubtitlebelowlinewidth@length=\skip112
+\mdf@subsubtitleaboveskip@length=\skip113
+\mdf@subsubtitlebelowskip@length=\skip114
+\mdf@subsubtitleinneraboveskip@length=\skip115
+\mdf@subsubtitleinnerbelowskip@length=\skip116
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\md-frame-0.mdf"
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box55
+\mdf@footnotebox=\box56
+\mdf@splitbox@one=\box57
+\mdf@splitbox@two=\box58
+\mdf@splitbox@save=\box59
+\mdfsplitboxwidth=\skip117
+\mdfsplitboxtotalwidth=\skip118
+\mdfsplitboxheight=\skip119
+\mdfsplitboxdepth=\skip120
+\mdfsplitboxtotalheight=\skip121
+\mdfframetitleboxwidth=\skip122
+\mdfframetitleboxtotalwidth=\skip123
+\mdfframetitleboxheight=\skip124
+\mdfframetitleboxdepth=\skip125
+\mdfframetitleboxtotalheight=\skip126
+\mdffootnoteboxwidth=\skip127
+\mdffootnoteboxtotalwidth=\skip128
+\mdffootnoteboxheight=\skip129
+\mdffootnoteboxdepth=\skip130
+\mdffootnoteboxtotalheight=\skip131
+\mdftotallinewidth=\skip132
+\mdfboundingboxwidth=\skip133
+\mdfboundingboxtotalwidth=\skip134
+\mdfboundingboxheight=\skip135
+\mdfboundingboxdepth=\skip136
+\mdfboundingboxtotalheight=\skip137
+\mdf@freevspace@length=\skip138
+\mdf@horizontalwidthofbox@length=\skip139
+\mdf@verticalmarginwhole@length=\skip140
+\mdf@horizontalspaceofbox=\skip141
+\mdfsubtitleheight=\skip142
+\mdfsubsubtitleheight=\skip143
+\c@mdfcountframes=\count184
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newmdtheoremenv with sig. 'O{} m o m o ' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
+.................................................
+\mdf@envdepth=\count185
+\c@mdf@env@i=\count186
+\c@mdf@env@ii=\count187
+\c@mdf@zref@counter=\count188
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen163
-\pgfutil@tempdimb=\dimen164
+\pgfutil@tempdima=\dimen194
+\pgfutil@tempdimb=\dimen195
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
 x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box39
+\pgfutil@abb=\box60
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -909,20 +1138,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 x"
 \pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen165
-\pgf@y=\dimen166
-\pgf@xa=\dimen167
-\pgf@ya=\dimen168
-\pgf@xb=\dimen169
-\pgf@yb=\dimen170
-\pgf@xc=\dimen171
-\pgf@yc=\dimen172
+\pgf@x=\dimen196
+\pgf@y=\dimen197
+\pgf@xa=\dimen198
+\pgf@ya=\dimen199
+\pgf@xb=\dimen256
+\pgf@yb=\dimen257
+\pgf@xc=\dimen258
+\pgf@yc=\dimen259
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count140
-\c@pgf@countb=\count141
-\c@pgf@countc=\count142
-\c@pgf@countd=\count143
+\c@pgf@counta=\count189
+\c@pgf@countb=\count190
+\c@pgf@countc=\count191
+\c@pgf@countd=\count192
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
@@ -941,8 +1170,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count144
-\pgfsyssoftpath@bigbuffer@items=\count145
+\pgfsyssoftpath@smallbuffer@items=\count193
+\pgfsyssoftpath@bigbuffer@items=\count194
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -953,9 +1182,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen173
-\pgfmath@count=\count146
-\pgfmath@box=\box40
+\pgfmath@dimen=\dimen260
+\pgfmath@count=\count195
+\pgfmath@box=\box61
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
@@ -978,57 +1207,57 @@ ex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
 hmetics.code.tex")))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count147
+\c@pgfmathroundto@lastzeros=\count196
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen174
-\pgf@picmaxx=\dimen175
-\pgf@picminy=\dimen176
-\pgf@picmaxy=\dimen177
-\pgf@pathminx=\dimen178
-\pgf@pathmaxx=\dimen179
-\pgf@pathminy=\dimen180
-\pgf@pathmaxy=\dimen181
-\pgf@xx=\dimen182
-\pgf@xy=\dimen183
-\pgf@yx=\dimen184
-\pgf@yy=\dimen185
-\pgf@zx=\dimen186
-\pgf@zy=\dimen187
+\pgf@picminx=\dimen261
+\pgf@picmaxx=\dimen262
+\pgf@picminy=\dimen263
+\pgf@picmaxy=\dimen264
+\pgf@pathminx=\dimen265
+\pgf@pathmaxx=\dimen266
+\pgf@pathminy=\dimen267
+\pgf@pathmaxy=\dimen268
+\pgf@xx=\dimen269
+\pgf@xy=\dimen270
+\pgf@yx=\dimen271
+\pgf@yy=\dimen272
+\pgf@zx=\dimen273
+\pgf@zy=\dimen274
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen188
-\pgf@path@lasty=\dimen189
+\pgf@path@lastx=\dimen275
+\pgf@path@lasty=\dimen276
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen190
-\pgf@shorten@start@additional=\dimen191
+\pgf@shorten@end@additional=\dimen277
+\pgf@shorten@start@additional=\dimen278
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box41
-\pgf@hbox=\box42
-\pgf@layerbox@main=\box43
-\pgf@picture@serial@count=\count148
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count197
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen192
+\pgflinewidth=\dimen279
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen193
-\pgf@pt@y=\dimen194
-\pgf@pt@temp=\dimen195
+\pgf@pt@x=\dimen280
+\pgf@pt@y=\dimen281
+\pgf@pt@temp=\dimen282
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1044,12 +1273,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen196
+\pgfarrowsep=\dimen283
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen197
-\pgf@sys@shading@range@num=\count149
+\pgf@max=\dimen284
+\pgf@sys@shading@range@num=\count198
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1057,7 +1286,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
 ex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box44
+\pgfexternal@startupbox=\box65
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
 "
@@ -1073,15 +1302,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box45
+\pgfnodeparttextbox=\box66
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
 sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen198
-\pgf@nodesepend=\dimen199
+\pgf@nodesepstart=\dimen285
+\pgf@nodesepend=\dimen286
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
 sty"
@@ -1095,8 +1324,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen256
-\pgffor@skip=\dimen257
+\pgffor@iter=\dimen287
+\pgffor@skip=\dimen288
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
 ))
@@ -1106,31 +1335,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count150
-\pgfplotmarksize=\dimen258
+\pgf@plot@mark@count=\count199
+\pgfplotmarksize=\dimen289
 )
-\tikz@lastx=\dimen259
-\tikz@lasty=\dimen260
-\tikz@lastxsaved=\dimen261
-\tikz@lastysaved=\dimen262
-\tikzleveldistance=\dimen263
-\tikzsiblingdistance=\dimen264
-\tikz@figbox=\box46
-\tikz@figbox@bg=\box47
-\tikz@tempbox=\box48
-\tikz@tempbox@bg=\box49
-\tikztreelevel=\count151
-\tikznumberofchildren=\count152
-\tikznumberofcurrentchild=\count153
-\tikz@fig@count=\count154
+\tikz@lastx=\dimen290
+\tikz@lasty=\dimen291
+\tikz@lastxsaved=\dimen292
+\tikz@lastysaved=\dimen293
+\tikzleveldistance=\dimen294
+\tikzsiblingdistance=\dimen295
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count266
+\tikznumberofchildren=\count267
+\tikznumberofcurrentchild=\count268
+\tikz@fig@count=\count269
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count155
-\pgfmatrixcurrentcolumn=\count156
-\pgf@matrix@numberofcolumns=\count157
+\pgfmatrixcurrentrow=\count270
+\pgfmatrixcurrentcolumn=\count271
+\pgf@matrix@numberofcolumns=\count272
 )
-\tikz@expandcount=\count158
+\tikz@expandcount=\count273
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -1142,24 +1371,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count159
-\c@Blindtext=\count160
-\c@blind@countparstart=\count161
-\blind@countxx=\count162
-\blindtext@numBlindtext=\count163
-\blind@countyy=\count164
-\c@blindlist=\count165
-\c@blindlistlevel=\count166
-\c@blindlist@level=\count167
-\blind@listitem=\count168
-\c@blind@listcount=\count169
-\c@blind@levelcount=\count170
-\blind@mathformula=\count171
-\blind@Mathformula=\count172
-\c@blind@randomcount=\count173
-\c@blind@randommax=\count174
-\c@blind@pangramcount=\count175
-\c@blind@pangrammax=\count176
+\c@blindtext=\count274
+\c@Blindtext=\count275
+\c@blind@countparstart=\count276
+\blind@countxx=\count277
+\blindtext@numBlindtext=\count278
+\blind@countyy=\count279
+\c@blindlist=\count280
+\c@blindlistlevel=\count281
+\c@blindlist@level=\count282
+\blind@listitem=\count283
+\c@blind@listcount=\count284
+\c@blind@levelcount=\count285
+\blind@mathformula=\count286
+\blind@Mathformula=\count287
+\c@blind@randomcount=\count288
+\c@blind@randommax=\count289
+\c@blind@pangramcount=\count290
+\c@blind@pangrammax=\count291
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\kpfonts.sty"
 Package: kpfonts  2010/08/20 v3.31
@@ -1321,10 +1550,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\c@mv@rm=\count177
-\c@mv@boldrm=\count178
-\c@mv@sf=\count179
-\c@mv@boldsf=\count180
+\c@mv@rm=\count292
+\c@mv@boldrm=\count293
+\c@mv@sf=\count294
+\c@mv@boldsf=\count295
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 354.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/ztmcm/m/n --> OT1/jkp/m/n on input line 354.
@@ -1591,15 +1820,15 @@ LaTeX Info: Redefining \not on input line 1580.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box50
-\beforetitleunit=\skip71
-\aftertitleunit=\skip72
-\ttl@plus=\dimen265
-\ttl@minus=\dimen266
+\ttl@box=\box71
+\beforetitleunit=\skip144
+\aftertitleunit=\skip145
+\ttl@plus=\dimen296
+\ttl@minus=\dimen297
 \ttl@toksa=\toks44
-\titlewidth=\dimen267
-\titlewidthlast=\dimen268
-\titlewidthfirst=\dimen269
+\titlewidth=\dimen298
+\titlewidthlast=\dimen299
+\titlewidthfirst=\dimen300
 )
 \@nomenclaturefile=\write4
 \openout4 = `report.main.nlo'.
@@ -1696,16 +1925,16 @@ File: t1jkp.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkp.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count181
-\scratchdimen=\dimen270
-\scratchbox=\box51
-\nofMPsegments=\count182
-\nofMParguments=\count183
+\scratchcounter=\count296
+\scratchdimen=\dimen301
+\scratchbox=\box72
+\nofMPsegments=\count297
+\nofMParguments=\count298
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count184
-\MPscratchDim=\dimen271
-\MPnumerator=\count185
-\makeMPintoPDFobject=\count186
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen302
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
 \everyMPtoPDFconversion=\toks46
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1728,7 +1957,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box52
+\AtBeginShipoutBox=\box73
 Package hyperref Info: Link coloring ON on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1737,7 +1966,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count187
+\c@section@level=\count302
 )
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
@@ -1760,9 +1989,9 @@ ABD: EveryShipout initializing macros
 \openout2 = `report.info.aux'.
 
  (report.info.tex)
-\@crestbox=\box53
+\@crestbox=\box74
 
-<figures/uporto.pdf, id=110, 2405.98875pt x 522.95375pt>
+<figures/uporto.pdf, id=114, 2405.98875pt x 522.95375pt>
 File: figures/uporto.pdf Graphic file (type pdf)
 
 <use figures/uporto.pdf>
@@ -1844,180 +2073,221 @@ Chapter 1.
 
 ]) [2]
 Chapter 2.
-(chapters/2.SystemSpecification.tex [3
+(chapters/2.SystemSpecification.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+ [3
 
 ]
-<figures/samr21.jpg, id=194, 324.21124pt x 243.91125pt>
+Package mdframed Info: mdframed works in twoside mode on input line 61.
+
+Overfull \hbox (0.7505pt too wide) in paragraph at lines 65--66
+[]\T1/jkp/m/it/9 The At-mel SAM R21 Xplained Pro eval-u-a-tion kit is a hard-wa
+re plat-form to eval-u-ate the AT-SAMR21G18A
+ []
+
+<figures/samr21.jpg, id=201, 324.21124pt x 243.91125pt>
 File: figures/samr21.jpg Graphic file (type jpg)
 
 <use figures/samr21.jpg>
-Package pdftex.def Info: figures/samr21.jpg used on input line 74.
+Package pdftex.def Info: figures/samr21.jpg used on input line 75.
 (pdftex.def)             Requested size: 149.37958pt x 112.38289pt.
  [4 <./figures/samr21.jpg>]
-<figures/cc1310_board.jpg, id=203, 84.315pt x 54.2025pt>
+Package mdframed Info: mdframed works in twoside mode on input line 84.
+
+<figures/cc1310_board.jpg, id=210, 84.315pt x 54.2025pt>
 File: figures/cc1310_board.jpg Graphic file (type jpg)
 
 <use figures/cc1310_board.jpg>
-Package pdftex.def Info: figures/cc1310_board.jpg used on input line 106.
+Package pdftex.def Info: figures/cc1310_board.jpg used on input line 100.
 (pdftex.def)             Requested size: 213.39568pt x 137.1865pt.
 
-<figures/cc1310.png, id=204, 393.72093pt x 514.92375pt>
+<figures/cc1310.png, id=211, 393.72093pt x 514.92375pt>
 File: figures/cc1310.png Graphic file (type png)
 
 <use figures/cc1310.png>
-Package pdftex.def Info: figures/cc1310.png used on input line 113.
+Package pdftex.def Info: figures/cc1310.png used on input line 107.
 (pdftex.def)             Requested size: 149.37631pt x 195.35876pt.
+Package mdframed Info: mdframed works in twoside mode on input line 119.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-[]\T1/jkp/m/n/10 https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rf
-m69hcw-
+Overfull \hbox (1.23785pt too wide) in paragraph at lines 120--121
+[]\T1/jkp/b/n/10 https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rf
+m69hcw-module/overview 
  []
 
 [5 <./figures/cc1310_board.jpg> <./figures/cc1310.png>]
-<figures/feather_3077.jpg, id=212, 4423.52625pt x 3401.70876pt>
+Package mdframed Info: mdframed works in twoside mode on input line 132.
+
+<figures/feather_3077.jpg, id=219, 4423.52625pt x 3401.70876pt>
 File: figures/feather_3077.jpg Graphic file (type jpg)
 
 <use figures/feather_3077.jpg>
-Package pdftex.def Info: figures/feather_3077.jpg used on input line 159.
+Package pdftex.def Info: figures/feather_3077.jpg used on input line 148.
 (pdftex.def)             Requested size: 180.53198pt x 138.79619pt.
 
-Underfull \hbox (badness 1546) in paragraph at lines 161--161
+Underfull \hbox (badness 1546) in paragraph at lines 150--150
 []\T1/jkp/m/n/10 Figure 2.4: |Adafruit Feather 32u4 Ra-dio
  []
 
-<figures/feather_wifi.jpg, id=213, 535.5207pt x 411.939pt>
+<figures/feather_wifi.jpg, id=220, 535.5207pt x 411.939pt>
 File: figures/feather_wifi.jpg Graphic file (type jpg)
 
 <use figures/feather_wifi.jpg>
-Package pdftex.def Info: figures/feather_wifi.jpg used on input line 170.
+Package pdftex.def Info: figures/feather_wifi.jpg used on input line 159.
 (pdftex.def)             Requested size: 180.53198pt x 138.8694pt.
 
-Underfull \hbox (badness 5817) in paragraph at lines 171--171
+Underfull \hbox (badness 5817) in paragraph at lines 160--160
 []\T1/jkp/m/n/10 Figure 2.5: |Adafruit Feather HUZ-ZAH
  []
 
+Package mdframed Info: mdframed works in twoside mode on input line 168.
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
-[]\T1/jkp/m/n/10 http://www.atmel.com/pt/br/devices/ATxmega256A3U-and-AT86RF233
--ZigBit-
+Overfull \hbox (0.54218pt too wide) in paragraph at lines 169--170
+[]\T1/jkp/b/n/10 http://www.atmel.com/pt/br/devices/\T1/jkp/b/n/8 ATxmega256A3U
+-and-AT86RF233-ZigBit-Wireless-Module.aspx  
  []
 
-[6 <./figures/feather_3077.jpg> <./figures/feather_wifi.jpg>]
-<figures/atxmega.png, id=219, 774.64406pt x 602.25pt>
+<figures/atxmega.png, id=221, 774.64406pt x 602.25pt>
 File: figures/atxmega.png Graphic file (type png)
 
 <use figures/atxmega.png>
-Package pdftex.def Info: figures/atxmega.png used on input line 193.
+Package pdftex.def Info: figures/atxmega.png used on input line 178.
 (pdftex.def)             Requested size: 149.37958pt x 116.12875pt.
+ [6 <./figures/feather_3077.jpg> <./figures/feather_wifi.jpg> <./figures/atxmeg
+a.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 187.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-[]\T1/jkp/m/n/10 http://www.atmel.com/pt/br/devices/ATxmega256A3U-and-AT86RF233
--ZigBit-
- []
-
-[7 <./figures/atxmega.png>]
-<figures/nancy2014.png, id=228, 1118.67938pt x 577.40718pt>
+<figures/nancy2014.png, id=230, 1118.67938pt x 577.40718pt>
 File: figures/nancy2014.png Graphic file (type png)
 
 <use figures/nancy2014.png>
-Package pdftex.def Info: figures/nancy2014.png used on input line 229.
+Package pdftex.def Info: figures/nancy2014.png used on input line 211.
 (pdftex.def)             Requested size: 469.47308pt x 242.31554pt.
 
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 229--230
+Overfull \hbox (42.68173pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
-[8 <./figures/nancy2014.png>]
 
-LaTeX Warning: Reference `fig:randmand2010' on page 9 undefined on input line 2
-51.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/radmand2010.png, id=243, 534.49687pt x 352.31625pt>
+[7] <figures/radmand2010.png, id=246, 534.49687pt x 352.31625pt>
 File: figures/radmand2010.png Graphic file (type png)
 
 <use figures/radmand2010.png>
-Package pdftex.def Info: figures/radmand2010.png used on input line 256.
+Package pdftex.def Info: figures/radmand2010.png used on input line 238.
 (pdftex.def)             Requested size: 256.07741pt x 168.79807pt.
 
-Overfull \hbox (1.42397pt too wide) in paragraph at lines 272--273
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (1.42397pt too wide) in paragraph at lines 254--255
 []\T1/jkp/m/n/10 This KPI is not di-rectly re-lated with the com-mu-ni-ca-tion 
 link. How-
  []
 
-
-Overfull \hbox (21.97795pt too wide) in paragraph at lines 274--275
+[8 <./figures/nancy2014.png>]
+Overfull \hbox (21.97795pt too wide) in paragraph at lines 256--257
 \T1/jkp/m/n/10 link sup-ports the data trans-fer with a given re-li-a-bil-ity a
 nd in spe-cific con-di-tions (in-door/outdoor;
  []
 
-[9 <./figures/radmand2010.png>]) [10]
+) [9 <./figures/radmand2010.png>]
 Chapter 3.
 (chapters/3.Development.tex
-<<<<<<< HEAD
-<figures/hw.png, id=265, 3652.64626pt x 1519.6775pt>
+
+LaTeX Warning: Reference `sec:3.5' on page 10 undefined on input line 2.
+
+<figures/hw.png, id=268, 3652.64626pt x 1519.6775pt>
 File: figures/hw.png Graphic file (type png)
  <use figures/hw.png>
 Package pdftex.def Info: figures/hw.png used on input line 18.
 (pdftex.def)             Requested size: 384.1096pt x 159.79114pt.
 
-[11
+[10
 
  <./figures/hw.png (PNG copy)>]
-<figures/pcb.jpg, id=272, 1460.45625pt x 1639.12375pt>
+<figures/pcb.jpg, id=275, 1460.45625pt x 1639.12375pt>
 File: figures/pcb.jpg Graphic file (type jpg)
  <use figures/pcb.jpg>
 Package pdftex.def Info: figures/pcb.jpg used on input line 27.
 (pdftex.def)             Requested size: 170.71393pt x 191.58412pt.
 
-<figures/concentr.jpg, id=274, 1461.46pt x 1553.805pt>
+<figures/concentr.jpg, id=277, 1461.46pt x 1553.805pt>
 File: figures/concentr.jpg Graphic file (type jpg)
 
 <use figures/concentr.jpg>
 Package pdftex.def Info: figures/concentr.jpg used on input line 36.
 (pdftex.def)             Requested size: 213.39568pt x 226.8726pt.
 
-<figures/domainModel.png, id=276, 7042.31pt x 4979.60374pt>
+<figures/domainModel.png, id=279, 7042.31pt x 4979.60374pt>
 File: figures/domainModel.png Graphic file (type png)
 
 <use figures/domainModel.png>
 Package pdftex.def Info: figures/domainModel.png used on input line 49.
-(pdftex.def)             Requested size: 426.79135pt x 301.72665pt.
+(pdftex.def)             Requested size: 362.77525pt x 256.51704pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./figures/pcb.jpg> <./figures/concentr.jpg>] [13 <./figures/domainModel.p
-ng (PNG copy)>]) [14]
+ [11 <./figures/pcb.jpg> <./figures/concentr.jpg>]
+<figures/sw1.png, id=287, 3345.49875pt x 2711.12875pt>
+File: figures/sw1.png Graphic file (type png)
+ <use figures/sw1.png>
+Package pdftex.def Info: figures/sw1.png used on input line 58.
+(pdftex.def)             Requested size: 234.73654pt x 190.21208pt.
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+ [12 <./figures/domainModel.png (PNG copy)> <./figures/sw1.png (PNG copy)>]
+<figures/armario1.jpg, id=296, 1461.46pt x 1981.4025pt>
+File: figures/armario1.jpg Graphic file (type jpg)
+
+<use figures/armario1.jpg>
+Package pdftex.def Info: figures/armario1.jpg used on input line 86.
+(pdftex.def)             Requested size: 176.0524pt x 238.66505pt.
+
+<figures/armario2.jpg, id=297, 1460.45625pt x 1855.93375pt>
+File: figures/armario2.jpg Graphic file (type jpg)
+
+<use figures/armario2.jpg>
+Package pdftex.def Info: figures/armario2.jpg used on input line 92.
+(pdftex.def)             Requested size: 188.21288pt x 239.15591pt.
+
+<figures/measurements.png, id=299, 889.07156pt x 362.10281pt>
+File: figures/measurements.png Graphic file (type png)
+
+<use figures/measurements.png>
+Package pdftex.def Info: figures/measurements.png used on input line 107.
+(pdftex.def)             Requested size: 362.77525pt x 147.75035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./figures/armario1.jpg> <./figures/armario2.jpg>]
+<figures/RSSI.png, id=308, 1204.5pt x 436.63126pt>
+File: figures/RSSI.png Graphic file (type png)
+ <use figures/RSSI.png>
+Package pdftex.def Info: figures/RSSI.png used on input line 118.
+(pdftex.def)             Requested size: 362.77525pt x 131.50339pt.
+
+<figures/twonodes.png, id=310, 582.175pt x 263.98625pt>
+File: figures/twonodes.png Graphic file (type png)
+
+<use figures/twonodes.png>
+Package pdftex.def Info: figures/twonodes.png used on input line 128.
+(pdftex.def)             Requested size: 341.43437pt x 154.82407pt.
+) [14 <./figures/measurements.png> <./figures/RSSI.png> <./figures/twonodes.png
+>]
 Chapter 4.
 (chapters/5.Conclusions.tex) (report.main.bbl [15
 
 ]) [16
 
 ]
-<chapters/communication.pdf, id=302, 614.295pt x 794.97pt>
-=======
-<figures/hw.png, id=263, 3652.64626pt x 1519.6775pt>
-File: figures/hw.png Graphic file (type png)
- <use figures/hw.png>
-Package pdftex.def Info: figures/hw.png used on input line 17.
-(pdftex.def)             Requested size: 384.1096pt x 159.79114pt.
-
-Underfull \vbox (badness 6842) has occurred while \output is active []
-
- [11
-
- <./figures/hw.png (PNG copy)>]) [12]
-Chapter 4.
-(chapters/4.Results.tex) [13
-
-]
-Chapter 5.
-(chapters/5.Conclusions.tex) (report.main.bbl [14
-
-]) [15
-
-]
-<chapters/communication.pdf, id=287, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=329, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf>
@@ -2028,11 +2298,7 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf used on input line 69.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<<<<<<< HEAD
-<chapters/communication.pdf, id=305, page=1, 614.295pt x 794.97pt>
-=======
-<chapters/communication.pdf, id=290, page=1, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=332, page=1, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 1>
@@ -2045,11 +2311,7 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page1 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [17
-=======
- [16
->>>>>>> master
 
 ]
 File: chapters/communication.pdf Graphic file (type pdf)
@@ -2070,13 +2332,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page1 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [18 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=326, page=2, 614.295pt x 794.97pt>
-=======
- [17 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=311, page=2, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=353, page=2, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 2>
@@ -2095,13 +2352,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page2 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [19 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=342, page=3, 614.295pt x 794.97pt>
-=======
- [18 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=326, page=3, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=369, page=3, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 3>
@@ -2120,13 +2372,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page3 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [20 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=347, page=4, 614.295pt x 794.97pt>
-=======
- [19 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=332, page=4, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=374, page=4, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 4>
@@ -2145,13 +2392,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page4 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [21 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=357, page=5, 614.295pt x 794.97pt>
-=======
- [20 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=342, page=5, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=384, page=5, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 5>
@@ -2170,13 +2412,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page5 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [22 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=362, page=6, 614.295pt x 794.97pt>
-=======
- [21 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=347, page=6, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=389, page=6, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 6>
@@ -2195,13 +2432,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page6 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [23 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=367, page=7, 614.295pt x 794.97pt>
-=======
- [22 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=352, page=7, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=394, page=7, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 7>
@@ -2220,13 +2452,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page7 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [24 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=372, page=8, 614.295pt x 794.97pt>
-=======
- [23 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=357, page=8, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=399, page=8, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 8>
@@ -2245,13 +2472,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page8 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [25 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=378, page=9, 614.295pt x 794.97pt>
-=======
- [24 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=362, page=9, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=405, page=9, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 9>
@@ -2270,13 +2492,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page9 used on input line 6
 9.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [26 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=383, page=10, 614.295pt x 794.97pt>
-=======
- [25 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=368, page=10, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=410, page=10, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 10>
@@ -2295,13 +2512,8 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page10 used on input line 
 69.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [27 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=388, page=11, 614.295pt x 794.97pt>
-=======
- [26 <./chapters/communication.pdf>]
-<chapters/communication.pdf, id=373, page=11, 614.295pt x 794.97pt>
->>>>>>> master
+<chapters/communication.pdf, id=415, page=11, 614.295pt x 794.97pt>
 File: chapters/communication.pdf Graphic file (type pdf)
 
 <use chapters/communication.pdf, page 11>
@@ -2320,19 +2532,11 @@ File: chapters/communication.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/communication.pdf, page11 used on input line 
 69.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-<<<<<<< HEAD
  [28 <./chapters/communication.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=398, 597.50786pt x 845.04686pt>
-=======
- [27 <./chapters/communication.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=383, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=425, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
  <use chapters/SRS.pdf>
 Package pdftex.def Info: chapters/SRS.pdf used on input line 71.
@@ -2353,11 +2557,7 @@ F version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<chapters/SRS.pdf, id=401, page=1, 597.50786pt x 845.04686pt>
-=======
-<chapters/SRS.pdf, id=386, page=1, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=428, page=1, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 1>
@@ -2367,11 +2567,7 @@ File: chapters/SRS.pdf Graphic file (type pdf)
  <use chapters/SRS.pdf, page 1>
 Package pdftex.def Info: chapters/SRS.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [29
-=======
- [28
->>>>>>> master
 
 ]
 File: chapters/SRS.pdf Graphic file (type pdf)
@@ -2388,19 +2584,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 1>
 Package pdftex.def Info: chapters/SRS.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [30 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=440, page=2, 597.50786pt x 845.04686pt>
-=======
- [29 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=425, page=2, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=467, page=2, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 2>
@@ -2415,19 +2603,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 2>
 Package pdftex.def Info: chapters/SRS.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [31 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=458, page=3, 597.50786pt x 845.04686pt>
-=======
- [30 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=442, page=3, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=485, page=3, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 3>
@@ -2442,19 +2622,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 3>
 Package pdftex.def Info: chapters/SRS.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [32 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=469, page=4, 597.50786pt x 845.04686pt>
-=======
- [31 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=454, page=4, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=496, page=4, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 4>
@@ -2469,19 +2641,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 4>
 Package pdftex.def Info: chapters/SRS.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [33 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=476, page=5, 597.50786pt x 845.04686pt>
-=======
- [32 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=461, page=5, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=503, page=5, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 5>
@@ -2496,19 +2660,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 5>
 Package pdftex.def Info: chapters/SRS.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [34 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=481, page=6, 597.50786pt x 845.04686pt>
-=======
- [33 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=466, page=6, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=508, page=6, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 6>
@@ -2523,19 +2679,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 6>
 Package pdftex.def Info: chapters/SRS.pdf, page6 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [35 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=487, page=7, 597.50786pt x 845.04686pt>
-=======
- [34 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=472, page=7, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=514, page=7, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 7>
@@ -2550,19 +2698,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 7>
 Package pdftex.def Info: chapters/SRS.pdf, page7 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [36 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=492, page=8, 597.50786pt x 845.04686pt>
-=======
- [35 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=477, page=8, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=519, page=8, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 8>
@@ -2577,19 +2717,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 8>
 Package pdftex.def Info: chapters/SRS.pdf, page8 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [37 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=505, page=9, 597.50786pt x 845.04686pt>
-=======
- [36 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=489, page=9, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=532, page=9, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 9>
@@ -2604,19 +2736,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 9>
 Package pdftex.def Info: chapters/SRS.pdf, page9 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [38 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=510, page=10, 597.50786pt x 845.04686pt>
-=======
- [37 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=495, page=10, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=537, page=10, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 10>
@@ -2631,19 +2755,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 10>
 Package pdftex.def Info: chapters/SRS.pdf, page10 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [39 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=515, page=11, 597.50786pt x 845.04686pt>
-=======
- [38 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=500, page=11, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=542, page=11, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 11>
@@ -2658,19 +2774,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 11>
 Package pdftex.def Info: chapters/SRS.pdf, page11 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [40 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=522, page=12, 597.50786pt x 845.04686pt>
-=======
- [39 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=507, page=12, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=549, page=12, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 12>
@@ -2685,19 +2793,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 12>
 Package pdftex.def Info: chapters/SRS.pdf, page12 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [41 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=529, page=13, 597.50786pt x 845.04686pt>
-=======
- [40 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=514, page=13, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=556, page=13, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 13>
@@ -2712,19 +2812,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 13>
 Package pdftex.def Info: chapters/SRS.pdf, page13 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [42 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=534, page=14, 597.50786pt x 845.04686pt>
-=======
- [41 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=519, page=14, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=561, page=14, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 14>
@@ -2739,19 +2831,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 14>
 Package pdftex.def Info: chapters/SRS.pdf, page14 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [43 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=540, page=15, 597.50786pt x 845.04686pt>
-=======
- [42 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=524, page=15, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=567, page=15, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 15>
@@ -2766,19 +2850,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 15>
 Package pdftex.def Info: chapters/SRS.pdf, page15 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [44 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=610, page=16, 597.50786pt x 845.04686pt>
-=======
- [43 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=595, page=16, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=637, page=16, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 16>
@@ -2793,19 +2869,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 16>
 Package pdftex.def Info: chapters/SRS.pdf, page16 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [45 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=615, page=17, 597.50786pt x 845.04686pt>
-=======
- [44 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=600, page=17, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=642, page=17, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 17>
@@ -2820,19 +2888,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 17>
 Package pdftex.def Info: chapters/SRS.pdf, page17 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [46 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=620, page=18, 597.50786pt x 845.04686pt>
-=======
- [45 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=605, page=18, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=647, page=18, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 18>
@@ -2847,19 +2907,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 18>
 Package pdftex.def Info: chapters/SRS.pdf, page18 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [47 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=625, page=19, 597.50786pt x 845.04686pt>
-=======
- [46 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=610, page=19, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=652, page=19, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 19>
@@ -2874,19 +2926,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 19>
 Package pdftex.def Info: chapters/SRS.pdf, page19 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [48 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=686, page=20, 597.50786pt x 845.04686pt>
-=======
- [47 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=671, page=20, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=713, page=20, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 20>
@@ -2901,19 +2945,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 20>
 Package pdftex.def Info: chapters/SRS.pdf, page20 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [49 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=748, page=21, 597.50786pt x 845.04686pt>
-=======
- [48 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=732, page=21, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=775, page=21, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 21>
@@ -2928,19 +2964,11 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 21>
 Package pdftex.def Info: chapters/SRS.pdf, page21 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [50 <./chapters/SRS.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=823, page=22, 597.50786pt x 845.04686pt>
-=======
- [49 <./chapters/SRS.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./chapters/SRS.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<chapters/SRS.pdf, id=808, page=22, 597.50786pt x 845.04686pt>
->>>>>>> master
+<chapters/SRS.pdf, id=850, page=22, 597.50786pt x 845.04686pt>
 File: chapters/SRS.pdf Graphic file (type pdf)
 
 <use chapters/SRS.pdf, page 22>
@@ -2955,11 +2983,7 @@ File: chapters/SRS.pdf Graphic file (type pdf)
 <use chapters/SRS.pdf, page 22>
 Package pdftex.def Info: chapters/SRS.pdf, page22 used on input line 71.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<<<<<<< HEAD
  [51 <./chapters/SRS.pdf>]
-=======
- [50 <./chapters/SRS.pdf>]
->>>>>>> master
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (report.main.aux
@@ -2967,11 +2991,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `report.main.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: 90A468683B16ED1F274E513FE39180E7;2226.
-=======
-(rerunfilecheck)             Checksum: 37CA875FE1FBDB8F0E4B904C31A4E76E;2227.
->>>>>>> master
+(rerunfilecheck)             Checksum: 412FCCD8A39B0C1E97D229816CCEA60C;2328.
 
 
 LaTeX Warning: There were undefined references.
@@ -2979,20 +2999,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 23316 strings out of 493333
- 404914 string characters out of 3139189
- 586743 words of memory out of 3000000
- 26158 multiletter control sequences out of 15000+200000
-=======
- 23302 strings out of 493333
- 404616 string characters out of 3139189
- 586570 words of memory out of 3000000
- 26146 multiletter control sequences out of 15000+200000
->>>>>>> master
- 136444 words of font info for 105 fonts, out of 3000000 for 9000
+ 31731 strings out of 493333
+ 574164 string characters out of 3139189
+ 741418 words of memory out of 3000000
+ 34512 multiletter control sequences out of 15000+200000
+ 169169 words of font info for 139 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,19n,77p,995b,1214s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,19n,77p,10426b,1185s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/P
 rogram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
@@ -3009,17 +3022,9 @@ ts/jkpmn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/kpfonts/jkpssbsc8a.pfb>
-<<<<<<< HEAD
-Output written on report.main.pdf (57 pages, 25123744 bytes).
+Output written on report.main.pdf (57 pages, 26436505 bytes).
 PDF statistics:
- 900 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on report.main.pdf (56 pages, 23334056 bytes).
-PDF statistics:
- 884 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> master
+ 929 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 
